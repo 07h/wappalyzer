@@ -118,7 +118,7 @@ class Wappalyzer:
                 last_modification_time = datetime.fromtimestamp(
                     _technologies_file.stat().st_mtime
                 )
-                if datetime.now() - last_modification_time < timedelta(hours=24):
+                if datetime.now() - last_modification_time < timedelta(hours=24 * 7):
                     should_update = False
 
             # Get the lastest file
