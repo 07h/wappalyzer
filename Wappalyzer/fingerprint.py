@@ -5,12 +5,9 @@ This module is an implementation detail and is not considered public API.
 """
 import sre_compile
 import re
-import logging
 from typing import Optional, Optional, Union, Mapping, Dict, List, Any
 
 import requests
-
-logger = logging.getLogger(name="python-Wappalyzer")
 
 
 class Pattern:
@@ -178,11 +175,6 @@ class Fingerprint:
                         attrs["regex"] = re.compile(expression, re.I)  # type: ignore
                     except re.error as err:
                         # Wappalyzer is a JavaScript application therefore some of the regex wont compile in Python.
-                        logger.debug(
-                            "Caught '{error}' compiling regex: {regex}".format(
-                                error=err, regex=patterns
-                            )
-                        )
                         # regex that never matches:
                         # http://stackoverflow.com/a/1845097/413622
                         attrs["regex"] = re.compile(r"(?!x)x")  # type: ignore

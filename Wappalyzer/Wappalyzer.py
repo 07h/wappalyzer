@@ -1,6 +1,5 @@
 from typing import Callable, Dict, Iterable, List, Any, Mapping, Set, Union
 import json
-import logging
 import re
 import os
 import pathlib
@@ -16,8 +15,6 @@ from Wappalyzer.fingerprint import (
     get_latest_tech_data,
 )
 from Wappalyzer.webpage import WebPage, IWebPage
-
-logger = logging.getLogger(name="python-Wappalyzer")
 
 
 class WappalyzerError(Exception):
@@ -138,27 +135,13 @@ class Wappalyzer:
 
                     with _technologies_file.open("w", encoding="utf-8") as tfile:
                         tfile.write(json.dumps(obj))
-                    logger.info("python-Wappalyzer technologies.json file updated")
 
                 except Exception as err:  # Or loads default
-                    logger.error(
-                        "Could not download latest Wappalyzer technologies.json file because of error : '{}'. Using default. ".format(
-                            err
-                        )
-                    )
                     obj = None
             else:
-                logger.debug(
-                    "python-Wappalyzer technologies.json file not updated because already updated in the last 24h"
-                )
                 with _technologies_file.open("r", encoding="utf-8") as tfile:
                     obj = json.load(tfile)
 
-            logger.info(
-                "Using technologies.json file at {}".format(
-                    _technologies_file.as_posix()
-                )
-            )
         else:
             obj = None
 
