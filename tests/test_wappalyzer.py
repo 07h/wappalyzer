@@ -20,6 +20,14 @@ def async_mock():
         yield m
 
 
+def test_analyze_sync():
+    wappalyzer = Wappalyzer.latest(update=True)
+    webpage = WebPage.new_from_url("https://www.illeva.com/")
+    result = wappalyzer.analyze_with_versions_and_categories(webpage)
+
+    assert "PHP" in result
+
+
 @httprettified
 def test_new_from_url():
     HTTPretty.register_uri(HTTPretty.GET, "https://www.delish.com/", body="snerble")

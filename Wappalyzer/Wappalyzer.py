@@ -301,17 +301,25 @@ class Wappalyzer:
                 if selector.attributes:
                     for attrname, patterns in list(selector.attributes.items()):
                         _content = item.attributes.get(attrname)
+
+                        # _content может быть строкой, списком или None, делаем проверку
+                        if isinstance(_content, str):
+                            _content = [_content]
+                        elif _content is None:
+                            _content = ""
+
                         if _content:
-                            for pattern in patterns:
-                                if pattern.regex.search(_content):
-                                    self._set_detected_app(
-                                        webpage.url,
-                                        tech_fingerprint,
-                                        "dom",
-                                        pattern,
-                                        value=_content,
-                                    )
-                                    has_tech = True
+                            for _content_item in _content:
+                                for pattern in patterns:
+                                    if pattern.regex.search(_content_item):
+                                        self._set_detected_app(
+                                            webpage.url,
+                                            tech_fingerprint,
+                                            "dom",
+                                            pattern,
+                                            value=_content_item,
+                                        )
+                                        has_tech = True
         return has_tech
 
     def _set_detected_app(
@@ -492,6 +500,10 @@ class Wappalyzer:
         for app_name in detected_apps:
             versions = self.get_versions(webpage.url, app_name)
             versioned_apps[app_name] = {"versions": versions}
+            versioned_apps[app_name]["description"] = self.technologies[
+                app_name
+            ].description
+            versioned_apps[app_name]["website"] = self.technologies[app_name].website
 
         return versioned_apps
 
