@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "wappalyzer"
+name = "python-Wappalyzer"
 version = "0.2.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
