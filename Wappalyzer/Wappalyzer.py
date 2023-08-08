@@ -500,10 +500,6 @@ class Wappalyzer:
         for app_name in detected_apps:
             versions = self.get_versions(webpage.url, app_name)
             versioned_apps[app_name] = {"versions": versions}
-            versioned_apps[app_name]["description"] = self.technologies[
-                app_name
-            ].description
-            versioned_apps[app_name]["website"] = self.technologies[app_name].website
 
         return versioned_apps
 
@@ -555,6 +551,23 @@ class Wappalyzer:
             versioned_and_categorised_apps[app_name]["categories"] = cat_names
 
         return versioned_and_categorised_apps
+
+    async def analyze_full_info(self, webpage: IWebPage) -> Set[str]:
+        """
+        Return a set of technology that can be detected on the web page.
+
+        :param webpage: The Webpage to analyze
+        """
+
+        detected_apps = self.analyze_with_versions_and_categories(webpage)
+        result = {}
+
+        for app_name in detected_apps:
+            result[app_name] = detected_apps[app_name]
+            result[app_name]["description"] = self.technologies[app_name].description
+            result[app_name]["website"] = self.technologies[app_name].website
+
+        return result
 
     def _sort_app_versions(self, version_a: str, version_b: str) -> int:
         return len(version_a) - len(version_b)

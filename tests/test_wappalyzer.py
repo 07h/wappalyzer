@@ -20,10 +20,11 @@ def async_mock():
         yield m
 
 
-def test_analyze_sync():
+@pytest.mark.asyncio
+async def test_analyze():
     wappalyzer = Wappalyzer.latest(update=True)
     webpage = WebPage.new_from_url("https://www.illeva.com/")
-    result = wappalyzer.analyze_with_versions_and_categories(webpage)
+    result = await wappalyzer.analyze_full_info(webpage)
 
     assert "PHP" in result
 
