@@ -15,7 +15,7 @@ httpretty = "^1.1.4"
 httpx = "^0.27.2"
 lxml = "^4.9.3"
 pytest-asyncio = "^0.21.1"
-python = "^3.9"
+python = ">=3.9,<3.12"
 
 [tool.poetry.dev-dependencies]
 black = "^23.7.0"
