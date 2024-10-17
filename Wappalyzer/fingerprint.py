@@ -1,13 +1,14 @@
 """
-Classes to load and prepare technology fingerprints. 
+Classes to load and prepare technology fingerprints.
 
 This module is an implementation detail and is not considered public API.
 """
+
 import sre_compile
 import re
-from typing import Optional, Optional, Union, Mapping, Dict, List, Any
+from typing import Optional, Union, Mapping, Dict, List, Any
 
-import requests
+import httpx
 
 
 class Pattern:
@@ -69,18 +70,10 @@ class Technology:
         return total
 
 
-# Prepare patterns for fields (TODO):
-# - "scriptSrc": "regex string"
-# - "js": dict string contains ins file to string (with version extraction).
-# - "requires" / "excludes" rules/
-# - "text" field.
-
-
-# Inspired by projectdiscovery/wappalyzergo (MIT License)
 class Fingerprint:
     """
     A Fingerprint represent a single piece of information about a tech.
-    Validated, normalized and regex expressions complied.
+    Validated, normalized and regex expressions compiled.
 
     See https://github.com/AliasIO/wappalyzer#json-fields
     """
@@ -92,13 +85,13 @@ class Fingerprint:
         # Metadata
         self.website: str = attrs.get("website", "??")
         self.cats: List[int] = attrs.get("cats", [])
-        self.description: Optional[str] = attrs.get("description")  # type:ignore
-        self.icon: Optional[str] = attrs.get("icon")  # type:ignore
-        self.cpe: Optional[str] = attrs.get("cpe")  # type:ignore
-        self.saas: Optional[bool] = attrs.get("saas")  # type:ignore
-        self.oss: Optional[bool] = attrs.get("oss")  # type:ignore
+        self.description: Optional[str] = attrs.get("description")
+        self.icon: Optional[str] = attrs.get("icon")
+        self.cpe: Optional[str] = attrs.get("cpe")
+        self.saas: Optional[bool] = attrs.get("saas")
+        self.oss: Optional[bool] = attrs.get("oss")
         self.pricing: List[str] = (
-            self._prepare_list(attrs["princing"]) if "princing" in attrs else []
+            self._prepare_list(attrs["pricing"]) if "pricing" in attrs else []
         )
 
         # Implies and cie
@@ -138,7 +131,7 @@ class Fingerprint:
             self._prepare_pattern(attrs["scripts"]) if "scripts" in attrs else []
         )
 
-        # For python-Wappayzer, we match
+        # For python-Wappalyzer, we match
 
         # self.cookies: Mapping[str, List[Pattern]] Not supported
         # self.dns: Mapping[str, List[Pattern]] Not supported
@@ -172,19 +165,19 @@ class Fingerprint:
                 if index == 0:
                     attrs["string"] = expression
                     try:
-                        attrs["regex"] = re.compile(expression, re.I)  # type: ignore
-                    except re.error as err:
-                        # Wappalyzer is a JavaScript application therefore some of the regex wont compile in Python.
+                        attrs["regex"] = re.compile(expression, re.I)
+                    except re.error:
+                        # Wappalyzer is a JavaScript application therefore some of the regex won't compile in Python.
                         # regex that never matches:
                         # http://stackoverflow.com/a/1845097/413622
-                        attrs["regex"] = re.compile(r"(?!x)x")  # type: ignore
+                        attrs["regex"] = re.compile(r"(?!x)x")
                 else:
                     attr = expression.split(":")
                     if len(attr) > 1:
                         key = attr.pop(0)
                         # This adds pattern['version'] when specified with "\\;version:\\1"
                         attrs[str(key)] = ":".join(attr)
-            pattern_objects.append(Pattern(**attrs))  # type: ignore
+            pattern_objects.append(Pattern(**attrs))
 
         return pattern_objects
 
@@ -203,14 +196,14 @@ class Fingerprint:
         # Ensure dict
         if not isinstance(thing, dict):
             thing = {"generator": thing}
-        # Enure lowercase keys
+        # Ensure lowercase keys
         return cls._prepare_pattern_dict({k.lower(): v for k, v in thing.items()})
 
     @classmethod
     def _prepare_headers(
         cls, thing: Dict[str, Union[str, List[str]]]
     ) -> Mapping[str, List[Pattern]]:
-        # Enure lowercase keys
+        # Ensure lowercase keys
         return cls._prepare_pattern_dict({k.lower(): v for k, v in thing.items()})
 
     @classmethod
@@ -235,7 +228,7 @@ class Fingerprint:
                     _prep_text_patterns = cls._prepare_pattern(clause["text"])
                 if clause.get("attributes"):
                     _prep_attr_patterns = {}
-                    for _key, pattern in clause["attributes"].items():  # type: ignore
+                    for _key, pattern in clause["attributes"].items():
                         _prep_attr_patterns[_key] = cls._prepare_pattern(pattern)
                 selectors.append(
                     DomSelector(
@@ -248,15 +241,22 @@ class Fingerprint:
         return selectors
 
 
-def get_latest_tech_data() -> Dict[str, Any]:
-    cats = requests.get(
-        "https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/categories.json"
-    ).json()
-    techs: Dict[str, Any] = {}
-    for _ in "_abcdefghijklmnopqrstuvwxyz":
-        r = requests.get(
-            f"https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/technologies/{_}.json"
+async def get_latest_tech_data() -> Dict[str, Any]:
+    async with httpx.AsyncClient() as client:
+        # Загружаем категории
+        cats_response = await client.get(
+            "https://raw.githubusercontent.com/projectdiscovery/wappalyzergo/refs/heads/main/categories_data.json"
         )
-        techs = {**techs, **r.json()}
-    obj = {"categories": cats, "technologies": techs}
-    return obj
+        cats_response.raise_for_status()
+        cats = cats_response.json()
+
+        # Загружаем технологии
+        techs_response = await client.get(
+            "https://raw.githubusercontent.com/projectdiscovery/wappalyzergo/refs/heads/main/fingerprints_data.json"
+        )
+        techs_response.raise_for_status()
+        techs_data = techs_response.json()
+        techs = techs_data.get("apps", {})
+
+        obj = {"categories": cats, "technologies": techs}
+        return obj

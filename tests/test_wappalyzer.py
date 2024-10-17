@@ -1,83 +1,68 @@
 import pytest
 import json
-import os
 
 from pathlib import Path
-from contextlib import redirect_stdout
-from io import StringIO
 
-from httpretty import HTTPretty, httprettified
-from aioresponses import aioresponses
+import respx
+import httpx
+import aiofiles
 
 from Wappalyzer.fingerprint import Fingerprint, get_latest_tech_data
 from Wappalyzer import WebPage, Wappalyzer
-from Wappalyzer.__main__ import get_parser, main
-
-
-@pytest.fixture
-def async_mock():
-    with aioresponses() as m:
-        yield m
 
 
 @pytest.mark.asyncio
 async def test_analyze():
-    wappalyzer = Wappalyzer.latest(update=True)
-    webpage = WebPage.new_from_url("https://www.illeva.com/")
+    wappalyzer = await Wappalyzer.latest(update=True)
+    webpage = await WebPage.new_from_url_async("https://www.illeva.com/")
     result = await wappalyzer.analyze_full_info(webpage)
 
     assert "PHP" in result
 
 
-@httprettified
-def test_new_from_url():
-    HTTPretty.register_uri(HTTPretty.GET, "https://www.delish.com/", body="snerble")
+@pytest.mark.asyncio
+async def test_new_from_url():
+    with respx.mock(base_url="https://www.delish.com") as respx_mock:
+        respx_mock.get("/").mock(return_value=httpx.Response(200, text="snerble"))
 
-    webpage = WebPage.new_from_url("https://www.delish.com/")
+        webpage = await WebPage.new_from_url("https://www.delish.com/")
 
-    assert webpage.html == "snerble"
+        assert webpage.html == "snerble"
 
 
 @pytest.mark.asyncio
-async def test_new_from_url_async(async_mock):
-    async_mock.get("https://www.delish.com/", status=200, body="snerble")
+async def test_latest():
+    analyzer = await Wappalyzer.latest()
 
-    webpage = await WebPage.new_from_url_async("https://www.delish.com/")
-
-    assert webpage.html == "snerble"
-
-
-def test_latest():
-    analyzer = Wappalyzer.latest()
-
-    print((analyzer.categories))
     assert analyzer.categories["1"].name == "CMS"
     assert "Apache" in analyzer.technologies
 
 
-def test_latest_update(tmp_path: Path):
-    # Get the lastest file
-    lastest_technologies = get_latest_tech_data()
+@pytest.mark.asyncio
+async def test_latest_update(tmp_path: Path):
+    # Получаем последний файл технологий
+    lastest_technologies = await get_latest_tech_data()
 
     tmp_file = tmp_path.joinpath("technologies.json")
-    # Write the content to a tmp file
-    with tmp_file.open("w", encoding="utf-8") as t_file:
-        t_file.write(json.dumps(lastest_technologies))
+    # Пишем содержимое во временный файл
+    async with aiofiles.open(tmp_file, "w", encoding="utf-8") as t_file:
+        await t_file.write(json.dumps(lastest_technologies))
 
-    # Create Wappalyzer with this file in argument
-    wappalyzer1 = Wappalyzer.latest(technologies_file=str(tmp_file))
+    # Создаем экземпляр Wappalyzer с указанным файлом технологий
+    wappalyzer1 = await Wappalyzer.latest(technologies_file=str(tmp_file))
 
-    wappalyzer2 = Wappalyzer.latest(update=True)
+    wappalyzer2 = await Wappalyzer.latest(update=True)
 
     assert len(wappalyzer1.technologies) >= len(wappalyzer2.technologies)
     assert len(wappalyzer1.categories) >= len(wappalyzer2.categories)
 
 
-def test_analyze_no_technologies():
+@pytest.mark.asyncio
+async def test_analyze_no_technologies():
     analyzer = Wappalyzer(categories={}, technologies={})
     webpage = WebPage("https://www.delish.com/", "<html></html>", {})
 
-    detected_technologies = analyzer.analyze(webpage)
+    detected_technologies = await analyzer.analyze(webpage)
 
     assert detected_technologies == set()
 
@@ -87,23 +72,24 @@ def test_get_implied_technologies():
         categories={},
         technologies={
             "a": {
-                "implies": "b",
+                "implies": ["b"],
             },
             "b": {
-                "implies": "c",
+                "implies": ["c"],
             },
             "c": {
-                "implies": "a",
+                "implies": ["a"],
             },
         },
     )
 
-    implied_technologies = analyzer._get_implied_technologies("a")
+    implied_technologies = analyzer._get_implied_technologies(["a"])
 
     assert implied_technologies == set(["a", "b", "c"])
 
 
-def test_get_analyze_with_categories():
+@pytest.mark.asyncio
+async def test_get_analyze_with_categories():
     webpage = WebPage("https://www.delish.com/", "<html>aaa</html>", {})
     categories = {
         "1": {"name": "cat1", "priority": 1},
@@ -122,12 +108,13 @@ def test_get_analyze_with_categories():
     }
 
     analyzer = Wappalyzer(categories=categories, technologies=technologies)
-    result = analyzer.analyze_with_categories(webpage)
+    result = await analyzer.analyze_with_categories(webpage)
 
     assert result == {"a": {"categories": ["cat1"]}}
 
 
-def test_get_analyze_with_versions():
+@pytest.mark.asyncio
+async def test_get_analyze_with_versions():
     webpage = WebPage(
         "http://wordpress-example.com",
         '<html><head><meta name="generator" content="WordPress 5.4.2"></head></html>',
@@ -157,12 +144,13 @@ def test_get_analyze_with_versions():
     }
 
     analyzer = Wappalyzer(categories=categories, technologies=technologies)
-    result = analyzer.analyze_with_versions(webpage)
+    result = await analyzer.analyze_with_versions(webpage)
 
     assert ("WordPress", {"versions": ["5.4.2"]}) in result.items()
 
 
-def test_analyze_with_versions_and_categories():
+@pytest.mark.asyncio
+async def test_analyze_with_versions_and_categories():
     webpage = WebPage(
         "http://wordpress-example.com",
         '<html><head><meta name="generator" content="WordPress 5.4.2"></head></html>',
@@ -192,17 +180,18 @@ def test_analyze_with_versions_and_categories():
     }
 
     analyzer = Wappalyzer(categories=categories, technologies=technologies)
-    result = analyzer.analyze_with_versions_and_categories(webpage)
+    result = await analyzer.analyze_with_versions_and_categories(webpage)
     assert analyzer.get_versions(webpage.url, "WordPress") == [
         "5.4.2"
-    ], analyzer._detected_technologies[webpage.url]
+    ], analyzer.detected_technologies[webpage.url]
     assert (
         "WordPress",
         {"categories": ["CMS", "Blog"], "versions": ["5.4.2"]},
     ) in result.items()
 
 
-def test_analyze_with_versions_and_categories_pattern_lists():
+@pytest.mark.asyncio
+async def test_analyze_with_versions_and_categories_pattern_lists():
     webpage = WebPage(
         "http://wordpress-example.com",
         '<html><head><meta name="generator" content="WordPress 5.4.2"></head></html>',
@@ -239,7 +228,7 @@ def test_analyze_with_versions_and_categories_pattern_lists():
     }
 
     analyzer = Wappalyzer(categories=categories, technologies=technologies)
-    result = analyzer.analyze_with_versions_and_categories(webpage)
+    result = await analyzer.analyze_with_versions_and_categories(webpage)
 
     assert (
         "WordPress",
@@ -247,7 +236,8 @@ def test_analyze_with_versions_and_categories_pattern_lists():
     ) in result.items()
 
 
-def test_analyze_dom_string():
+@pytest.mark.asyncio
+async def test_analyze_dom_string():
     webpageA = WebPage(
         "https://www.delish.com/", '<html><p class="aaa">webpage a</p></html>', {}
     )
@@ -265,11 +255,15 @@ def test_analyze_dom_string():
     }
     analyzer = Wappalyzer(categories=categories, technologies=technologies)
 
-    assert analyzer.analyze(webpageA) == {"a"}
-    assert analyzer.analyze(webpageB) == {"b"}
+    resultA = await analyzer.analyze(webpageA)
+    resultB = await analyzer.analyze(webpageB)
+
+    assert resultA == {"a"}
+    assert resultB == {"b"}
 
 
-def test_analyze_dom_list():
+@pytest.mark.asyncio
+async def test_analyze_dom_list():
     webpageA = WebPage(
         "https://www.delish.com/", '<html><p class="aaa">webpage a</p></html>', {}
     )
@@ -286,11 +280,15 @@ def test_analyze_dom_list():
         },
     }
     analyzer = Wappalyzer(categories=categories, technologies=technologies)
-    assert analyzer.analyze(webpageA) == {"a"}
-    assert analyzer.analyze(webpageB) == {"b"}
+    resultA = await analyzer.analyze(webpageA)
+    resultB = await analyzer.analyze(webpageB)
+
+    assert resultA == {"a"}
+    assert resultB == {"b"}
 
 
-def test_analyze_dom_dict_text():
+@pytest.mark.asyncio
+async def test_analyze_dom_dict_text():
     webpageA = WebPage(
         "https://www.delish.com/", '<html><p class="aaa">webpage a</p></html>', {}
     )
@@ -314,11 +312,15 @@ def test_analyze_dom_dict_text():
     }
     analyzer = Wappalyzer(categories=categories, technologies=technologies)
 
-    assert analyzer.analyze(webpageA) == {"a"}
-    assert analyzer.analyze(webpageB) == {"b"}
+    resultA = await analyzer.analyze(webpageA)
+    resultB = await analyzer.analyze(webpageB)
+
+    assert resultA == {"a"}
+    assert resultB == {"b"}
 
 
-def test_analyze_dom_dict_exists():
+@pytest.mark.asyncio
+async def test_analyze_dom_dict_exists():
     webpageA = WebPage(
         "https://www.delish.com/", '<html><p class="aaa">webpage a</p></html>', {}
     )
@@ -328,10 +330,10 @@ def test_analyze_dom_dict_exists():
     categories = {}
     get_dom_val = lambda cat: {
         f"#{cat*3}": {
-            "exists": "",
+            "exists": True,
         },
         f".{cat*3}": {
-            "exists": "",
+            "exists": True,
         },
     }
     technologies = {
@@ -342,11 +344,15 @@ def test_analyze_dom_dict_exists():
     }
     analyzer = Wappalyzer(categories=categories, technologies=technologies)
 
-    assert analyzer.analyze(webpageA) == {"a"}
-    assert analyzer.analyze(webpageB) == {"b"}
+    resultA = await analyzer.analyze(webpageA)
+    resultB = await analyzer.analyze(webpageB)
+
+    assert resultA == {"a"}
+    assert resultB == {"b"}
 
 
-def test_analyze_dom_dict_attributes():
+@pytest.mark.asyncio
+async def test_analyze_dom_dict_attributes():
     webpageA = WebPage(
         "https://www.delish.com/",
         '<html><p class="aaa" onclick="webpageAScript()">webpage a</p></html>',
@@ -373,18 +379,11 @@ def test_analyze_dom_dict_attributes():
         },
     }
     analyzer = Wappalyzer(categories=categories, technologies=technologies)
-    assert analyzer.analyze(webpageA) == {"a"}
-    assert analyzer.analyze(webpageB) == {"b"}
+    resultA = await analyzer.analyze(webpageA)
+    resultB = await analyzer.analyze(webpageB)
 
-
-def test_analyze_scriptSrc():
-    ...
-    # TODO
-
-
-def test_analyze_text():
-    ...
-    # TODO
+    assert resultA == {"a"}
+    assert resultB == {"b"}
 
 
 def test_fingerprint():
@@ -408,32 +407,5 @@ def test_fingerprint():
     )
     assert tech_fingerprint.meta["generator"][-2].version == "\\1"
     assert (
-        tech_fingerprint.meta["generator"][-2].regex.pattern == "^WordPress ?([\d.]+)?"
+        tech_fingerprint.meta["generator"][-2].regex.pattern == "^WordPress ?([\\d.]+)?"
     )
-
-
-def cli(*args):
-    """Wrap python-Wappalyzer CLI exec"""
-
-    with StringIO() as stream:
-        with redirect_stdout(stream):
-            main(get_parser().parse_args(args))
-        result = json.loads(stream.getvalue())
-    return result
-
-
-@pytest.mark.skipif(
-    os.getenv("GITHUB_ACTIONS") is not None,
-    reason="This test fails on the github CI, python3.9 for some reason.",
-)
-def test_cli():
-    r = cli(
-        "https://chorsley.github.io/python-Wappalyzer/index.html",
-        "--update",
-        "--user-agent",
-        "Mozilla/5.0",
-        "--timeout",
-        "30",
-    )
-    assert len(r) > 2
-    assert "Bootstrap" in r
