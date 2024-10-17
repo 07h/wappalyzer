@@ -13,7 +13,7 @@ from Wappalyzer import WebPage, Wappalyzer
 
 @pytest.mark.asyncio
 async def test_analyze():
-    wappalyzer = await Wappalyzer.latest(update=True)
+    wappalyzer = Wappalyzer()
     webpage = await WebPage.new_from_url_async("https://www.illeva.com/")
     result = await wappalyzer.analyze_full_info(webpage)
 

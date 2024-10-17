@@ -55,21 +55,35 @@ class Wappalyzer:
         await wappalyzer.analyze_with_categories(webpage)
     """
 
-    def __init__(self, categories: Dict[str, Any], technologies: Dict[str, Any]):
+    def __init__(
+        self, categories: Dict[str, Any] = None, technologies: Dict[str, Any] = None
+    ):
         """
         Manually initialize a new Wappalyzer instance.
 
         You might want to use the factory method: `latest`
 
-        :param categories: Map of category ids to names, as in ``technologies.json``.
-        :param technologies: Map of technology names to technology dicts, as in ``technologies.json``.
+        If no arguments are passed, import the default ``Wappalyzer/technologies.py`` file
+
+        :param categories: Map of category ids to names, as in ``technologies.json``. Default is None.
+        :param technologies: Map of technology names to technology dicts, as in ``technologies.json``. Default is None.
         """
+
+        if categories is None or technologies is None:
+            from Wappalyzer.technologies import TECHNOLOGIES_DATA
+
+            obj = TECHNOLOGIES_DATA
+
+            categories = obj["categories"]
+            technologies = obj["technologies"]
+
         self.categories: Mapping[str, Category] = {
             k: Category(**v) for k, v in categories.items()
         }
         self.technologies: Mapping[str, Fingerprint] = {
             k: Fingerprint(name=k, **v) for k, v in technologies.items()
         }
+
         self.detected_technologies: Dict[str, Dict[str, Technology]] = {}
 
         self._confidence_regexp = re.compile(r"(.+)\\;confidence:(\d+)")
