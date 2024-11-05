@@ -14,7 +14,9 @@ from Wappalyzer import WebPage, Wappalyzer
 @pytest.mark.asyncio
 async def test_analyze():
     wappalyzer = Wappalyzer()
-    webpage = await WebPage.new_from_url_async("https://www.illeva.com/")
+    webpage = await WebPage.new_from_url_async(
+        "https://web.archive.org/web/20180323055000/http://honeyletter.com/"
+    )
     result = await wappalyzer.analyze_full_info(webpage)
 
     assert "PHP" in result
