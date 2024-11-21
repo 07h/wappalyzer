@@ -1,6 +1,6 @@
 from typing import Callable, Dict, Iterable, List, Any, Mapping, Set, Union
 import json
-import re
+import regex as re
 import os
 import pathlib
 

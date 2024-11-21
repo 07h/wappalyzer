@@ -5,7 +5,7 @@ This module is an implementation detail and is not considered public API.
 """
 
 import sre_compile
-import re
+import regex as re
 from typing import Optional, Union, Mapping, Dict, List, Any
 
 import httpx

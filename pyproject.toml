@@ -16,6 +16,7 @@ httpx = "^0.24.1"
 lxml = "^4.9.3"
 pytest-asyncio = "^0.21.1"
 python = ">=3.9,<3.12"
+regex = "^2024.11.6"
 
 [tool.poetry.dev-dependencies]
 black = "^23.7.0"
