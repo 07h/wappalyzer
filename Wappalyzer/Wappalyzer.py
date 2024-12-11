@@ -260,6 +260,8 @@ class Wappalyzer:
         for name, patterns in list(tech_fingerprint.meta.items()):
             if name in webpage.meta:
                 content = webpage.meta[name]
+                if not isinstance(content, str):
+                    continue
                 for pattern in patterns:
                     if pattern.regex.search(content):
                         self._set_detected_app(
