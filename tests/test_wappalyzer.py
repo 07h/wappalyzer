@@ -9,14 +9,13 @@ import aiofiles
 
 from Wappalyzer.fingerprint import Fingerprint, get_latest_tech_data
 from Wappalyzer import WebPage, Wappalyzer
+import time
 
 
 @pytest.mark.asyncio
 async def test_analyze():
     wappalyzer = Wappalyzer()
-    webpage = await WebPage.new_from_url(
-        "https://web.archive.org/web/20180323055000/http://honeyletter.com/"
-    )
+    webpage = await WebPage.new_from_url("https://ok.ru/")
     result = await wappalyzer.analyze_full_info(webpage)
 
     assert "PHP" in result
@@ -870,9 +869,21 @@ playback timings (ms):
         "status_code": 200,
     }
 
-    webpage = WebPage("", html=html, headers=headers)
+    total_time = 0
+    for i in range(10):
+        start_time = time.time()
 
-    result = await wappalyzer.analyze_full_info(webpage)
+        webpage = WebPage("", html=html, headers=headers)
+        result = await wappalyzer.analyze_full_info(webpage)
+
+        end_time = time.time()
+        iteration_time = end_time - start_time
+        total_time += iteration_time
+
+        print(f"Execution time for run {i + 1}: {iteration_time} seconds")
+
+    average_time = total_time / 10
+    print(f"Average execution time over 10 runs: {average_time} seconds")
 
     assert "PHP" in result
 

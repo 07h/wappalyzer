@@ -1,24 +1,25 @@
 """
-Implementation of WebPage based on bs4, depends on lxml.
+Implementation of WebPage based on selectolax.
 """
+
 from typing import Iterable, Iterator, Mapping
 
 # Just to check if it's available
 import lxml  # type: ignore
-from bs4 import BeautifulSoup, Tag as bs4_Tag  # type: ignore
+from selectolax.parser import HTMLParser, Node
 from cached_property import cached_property  # type: ignore
 
 from ._common import BaseWebPage, BaseTag
 
 
 class Tag(BaseTag):
-    def __init__(self, name: str, attributes: Mapping[str, str], soup: bs4_Tag) -> None:
+    def __init__(self, name: str, attributes: Mapping[str, str], node: Node) -> None:
         super().__init__(name, attributes)
-        self._soup = soup
+        self._node = node
 
     @cached_property
     def inner_html(self) -> str:
-        return self._soup.decode_contents()
+        return self._node.html
 
 
 class WebPage(BaseWebPage):
@@ -31,7 +32,7 @@ class WebPage(BaseWebPage):
 
     This object is designed to be created for each website scanned
     by python-Wappalyzer.
-    It will parse the HTML with BeautifulSoup to find <script> and <meta> tags.
+    It will parse the HTML with selectolax to find <script> and <meta> tags.
 
     You can create it from manually from HTML with the `WebPage()` method
     or from the class methods.
@@ -39,21 +40,21 @@ class WebPage(BaseWebPage):
 
     def _parse_html(self):
         """
-        Parse the HTML with BeautifulSoup to find <script> and <meta> tags.
+        Parse the HTML with selectolax to find <script> and <meta> tags.
         """
-        self._parsed_html = soup = BeautifulSoup(self.html, "lxml")
+        self._parsed_html = parser = HTMLParser(self.html)
         self.scripts.extend(
-            script["src"] for script in soup.findAll("script", src=True)
+            script.attributes["src"] for script in parser.css("script[src]")
         )
         self.meta = {
-            meta["name"].lower(): meta["content"]
-            for meta in soup.findAll("meta", attrs=dict(name=True, content=True))
+            meta.attributes["name"].lower(): meta.attributes["content"]
+            for meta in parser.css("meta[name][content]")
         }
 
     def select(self, selector: str) -> Iterable[Tag]:
         """Execute a CSS select and returns results as Tag objects."""
         try:
-            for item in self._parsed_html.select(selector):
-                yield Tag(item.name, item.attrs, item)
+            for item in self._parsed_html.css(selector):
+                yield Tag(item.tag, item.attributes, item)
         except Exception as e:
             return ()
