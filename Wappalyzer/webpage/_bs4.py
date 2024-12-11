@@ -49,7 +49,9 @@ class WebPage(BaseWebPage):
         self.meta = {
             meta.attributes["name"].lower(): meta.attributes["content"]
             for meta in parser.css("meta[name][content]")
-            if "name" in meta.attributes and "content" in meta.attributes
+            if "name" in meta.attributes
+            and meta.attributes["name"] is not None
+            and "content" in meta.attributes
         }
 
     def select(self, selector: str) -> Iterable[Tag]:
