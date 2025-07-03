@@ -1,5 +1,5 @@
 """
-This module contains the raw fingerprints data. It has been automatically generated on the 2024-11-05T15:54:22.516515.
+This module contains the raw fingerprints data. It has been automatically generated on the 2025-07-03T10:49:21.113127.
 """
 
 TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'priority': 1},
@@ -207,6 +207,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': '5centsCDN.svg',
                                          'scriptSrc': ['\\.5centscdn\\.com/'],
                                          'website': 'https://www.5centscdn.net'},
+                        '6Valley eCommerce CMS': {   'cats': [1, 6],
+                                                     'cookies': {'6valley_session': ''},
+                                                     'description': '6Valley eCommerce CMS is a multi-vendor platform '
+                                                                    'designed to facilitate business launches by '
+                                                                    'providing tools for managing vendors, products, '
+                                                                    'and transactions within an ecommerce ecosystem.',
+                                                     'icon': '6ValleyEcommerceCMS.svg',
+                                                     'scripts': ['6valley_cookie_consent'],
+                                                     'website': 'https://6valley.app'},
                         '6sense': {   'cats': [32, 76],
                                       'description': '6sense is a B2B predictive intelligence platform for marketing '
                                                      'and sales.',
@@ -222,6 +231,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'dom': {"a[href*='7shifts.com/'] > img[src*='.7shifts.com/']": {'exists': ''}},
                                        'icon': '7Shifts.svg',
                                        'website': 'https://www.7shifts.com'},
+                        '7moor': {   'cats': [32, 53],
+                                     'description': '7moor is an integrated customer service marketing solution that '
+                                                    'combines communication, customer support, and marketing tools.',
+                                     'icon': '7moor.svg',
+                                     'js': {'moor7Source': ''},
+                                     'website': 'https://www.7moor.com'},
                         '8base': {   'cats': [3, 62],
                                      'description': '8base is a low-code development platform for building and running '
                                                     'enterprise-grade digital products including SaaS solutions, '
@@ -272,6 +287,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'ABTasty': '', '_abtasty': '', 'loadABTasty': ''},
                                         'scriptSrc': ['try\\.abtasty\\.com'],
                                         'website': 'https://www.abtasty.com'},
+                        'ABLyft': {   'cats': [74],
+                                      'description': 'ABlyft is an A/B-Testing Platform made for developers.',
+                                      'icon': 'ABlyft.svg',
+                                      'js': {   'ablyft.get': '',
+                                                'ablyftClickListener': '',
+                                                'ablyftEventQueueInterv': '',
+                                                'ablyftStopQueue': ''},
+                                      'website': 'https://ablyft.com'},
                         'ABOUT YOU Commerce Suite': {   'cats': [6],
                                                         'description': 'ABOUT YOU Commerce Suite is an enterprise '
                                                                        'ready infrastructure solution designed for '
@@ -378,6 +401,18 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                    'description': 'APC offers door-to-door parcel and mail delivery.',
                                    'icon': 'APC.svg',
                                    'website': 'https://www.apc-pli.com'},
+                        'APPLOVIN': {   'cats': [36],
+                                        'description': 'APPLOVIN is an advertising platform.',
+                                        'icon': 'APPLOVIN.png',
+                                        'scriptSrc': ['\\.applovin\\.com'],
+                                        'website': 'https://www.applovin.com/'},
+                        'ARCaptcha': {   'cats': [16],
+                                         'description': 'ARCaptcha is a CAPTCHA system designed to enhance online '
+                                                        'security by preventing automated bots from accessing '
+                                                        'websites.',
+                                         'icon': 'ARCaptcha.svg',
+                                         'js': {'arcaptcha.checkboxCreatorRegistered': ''},
+                                         'website': 'https://arcaptcha.co'},
                         'ARI Network Services': {   'cats': [6],
                                                     'description': 'ARI Network Services provides website, software, '
                                                                    'and data solutions to help dealers, distributors, '
@@ -747,6 +782,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'AdFixus.svg',
                                        'js': {'AfxIdentity': '', '_afxProfile': ''},
                                        'website': 'https://www.adfixus.com'},
+                        'AdGlare': {   'cats': [36],
+                                       'description': 'AdGlare is an ad serving solution designed for advertisers, '
+                                                      'publishers, and agencies.',
+                                       'icon': 'AdGlare.svg',
+                                       'scriptSrc': ['\\.adglare\\.net/'],
+                                       'website': 'https://www.adglare.com'},
                         'AdInfinity': {   'cats': [36],
                                           'icon': 'AdInfinity.png',
                                           'scriptSrc': ['adinfinity\\.com\\.au'],
@@ -1120,6 +1161,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                                                 'pieces of a document that will be '
                                                                                 'transformed into web page content.',
                                                                  'icon': 'Adobe Experience Manager Franklin.svg',
+                                                                 'js': {'hlx.RUM_MANUAL_ENHANCE': ''},
                                                                  'scriptSrc': ['^.+/scripts/lib-franklin\\.js$'],
                                                                  'website': 'https://www.hlx.live'},
                         'Adobe Experience Platform Identity Service': {   'cats': [97],
@@ -1160,6 +1202,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'description': 'Adobe Fonts is a web-based service providing access to a '
                                                           'vast library of high-quality fonts for web and print '
                                                           'design.',
+                                           'dom': {   "link[href*='use.typekit.net'], link[href*='use.typekit.com']": {   'exists': ''}},
                                            'html': ['<link [^>]*href="[^"]+use\\.typekit\\.(?:net|com)'],
                                            'icon': 'Adobe Fonts.svg',
                                            'js': {'Typekit.config.js': '^(.+)$\\;version:\\1'},
@@ -1388,6 +1431,21 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'age_gate': ''},
                                         'scriptSrc': [   'age-gate(?:\\/dist)?(?:\\/all)?(?:\\/focus)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1'],
                                         'website': 'https://wordpress.org/plugins/age-gate'},
+                        'AgentFire': {   'cats': [32],
+                                         'description': 'AgentFire is a platform designed for the real estate '
+                                                        'industry, offering tools and features that help agents '
+                                                        'capitalize on digital opportunities for marketing, lead '
+                                                        'generation, and client engagement.',
+                                         'icon': 'AgentFire.svg',
+                                         'js': {'AgentFire.Api': '', 'AgentFire_Oauth2': '', 'AgentFire_Settings': ''},
+                                         'website': 'https://agentfire.com'},
+                        'Agile CRM': {   'cats': [53],
+                                         'description': 'Agile CRM is a software for Customer Relationship Management '
+                                                        '(CRM) that provides sales and marketing automation features '
+                                                        'for businesses.',
+                                         'icon': 'AgileCRM.svg',
+                                         'js': {'AgileCRMTracker': '', 'Agile_API': ''},
+                                         'website': 'https://www.agilecrm.com'},
                         'Agoda': {   'cats': [104],
                                      'description': 'Agoda is an online travel platform offering its services globally '
                                                     'via its app and website.',
@@ -1482,6 +1540,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'aircall.png',
                                        'scriptSrc': ['^https?://cdn\\.aircall\\.io/'],
                                        'website': 'https://aircall.io'},
+                        'Airdata': {   'cats': [104],
+                                       'description': 'Airdata is a ticket booking system for agents in Vietnam, '
+                                                      'offering unique features to maximize benefits for businesses in '
+                                                      'managing and selling flight tickets.',
+                                       'icon': 'Airdata.svg',
+                                       'js': {'BOOKING_BASE_API_URL': 'api\\.airdata\\.vn'},
+                                       'website': 'https://airdata.vn'},
                         'Airee': {   'cats': [31],
                                      'headers': {'server': '^airee'},
                                      'icon': 'Airee.png',
@@ -1566,6 +1631,18 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'akaunting.svg',
                                          'implies': ['Laravel'],
                                          'website': 'https://akaunting.com'},
+                        'Akavita': {   'cats': [10, 36],
+                                       'description': 'Akavita is a Russian-based service offering analytics and '
+                                                      'advertising solutions.',
+                                       'icon': 'Akavita.svg',
+                                       'scriptSrc': ['adlik\\.akavita\\.com/'],
+                                       'website': 'https://akavita.com'},
+                        'Akero': {   'cats': [32],
+                                     'description': 'Akero is a platform that provides marketing and admissions '
+                                                    'technology designed for educational institutions.',
+                                     'icon': 'Akero.svg',
+                                     'scripts': ['\\.akerolabs\\.com'],
+                                     'website': 'https://akerolabs.com'},
                         'Akilli Ticaret': {   'cats': [6],
                                               'description': 'Akilli Ticaret is an all-in-one ecommerce platform from '
                                                              'Turkey.',
@@ -1689,6 +1766,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'icon': 'Alireviews.svg',
                                            'js': {'alireviews_tags': ''},
                                            'website': 'https://apps.shopify.com/ali-reviews'},
+                        'Alia': {   'cats': [100, 110],
+                                    'description': 'Alia is a Shopify app to design Email and SMS sign-up pop-up units',
+                                    'icon': 'Alia.png',
+                                    'implies': ['Shopify'],
+                                    'js': {'alia': ''},
+                                    'website': 'https://www.alialearn.com/'},
                         'Alibaba Cloud CDN': {   'cats': [31],
                                                  'description': 'Alibaba Cloud CDN is a global network of servers '
                                                                 'designed to deliver high-performance, low-latency '
@@ -1765,6 +1848,19 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                    'meta': {   'generator': [   '^all in one seo '
                                                                                 '\\(aioseo\\)\\s([\\d.]+)$\\;version:\\1']},
                                                    'website': 'https://aioseo.com'},
+                        'AllClients': {   'cats': [32],
+                                          'description': 'AllClients is an all-in-one platform that integrates contact '
+                                                         'management and marketing automation.',
+                                          'dom': {   "form[action*='www.allclients.com/']": {'exists': ''},
+                                                     "iframe[href*='www.allclients.com/']": {'exists': ''}},
+                                          'icon': 'AllClients.svg',
+                                          'website': 'https://allclients.com'},
+                        'Allbookable': {   'cats': [72],
+                                           'description': 'Allbookable is an online booking solution that enables '
+                                                          'users to book services through a digital platform.',
+                                           'icon': 'Allbookable.svg',
+                                           'scriptSrc': ['\\.allbookable\\.com/'],
+                                           'website': 'https://allbookable.com'},
                         'Alli': {   'cats': [54],
                                     'description': 'Alli is artificial intelligence for search engine optimisation.',
                                     'icon': 'Alli.png',
@@ -1806,6 +1902,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'headers': {'server': 'almalinux'},
                                          'icon': 'AlmaLinux.svg',
                                          'website': 'https://almalinux.org'},
+                        'Alpharank': {   'cats': [10],
+                                         'description': 'Alpharank is a tool focused on customer journey mapping to '
+                                                        'enhance conversion optimization specifically for banks.',
+                                         'icon': 'Alpharank.svg',
+                                         'scriptSrc': ['api\\.alpharank\\.io/'],
+                                         'website': 'https://www.alpharank.ai'},
                         'Alpine Linux': {   'cats': [28],
                                             'cpe': 'cpe:2.3:o:alpinelinux:alpine_linux:*:*:*:*:*:*:*:*',
                                             'description': 'Alpine Linux is a security-oriented, lightweight Linux '
@@ -1819,6 +1921,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {'Alpine.version': '^(.+)$\\;version:\\1'},
                                          'scriptSrc': ['/alpine(?:\\.min)?\\.js'],
                                          'website': 'https://github.com/alpinejs/alpine'},
+                        'Altcha': {   'cats': [16],
+                                      'description': 'Altcha is a spam and abuse protection solution for websites and '
+                                                     'apps, offering a privacy-friendly Captcha and other tools '
+                                                     'designed with GDPR compliance to provide strong security while '
+                                                     'safeguarding user privacy.',
+                                      'icon': 'Altcha.svg',
+                                      'js': {'ALTCHA_WIDGET_ATTRS': ''},
+                                      'scripts': ['.*altcha\\.(org|js)'],
+                                      'website': 'https://altcha.org'},
                         'AlternC': {   'cats': [9],
                                        'description': 'AlternC is a set of software management on Linux shared '
                                                       'hosting.',
@@ -2235,6 +2346,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'js': {'AnswerDash': '', 'AnswerDash.__plugin': ''},
                                           'scriptSrc': ['\\.answerdash\\.com/'],
                                           'website': 'https://www.answerdash.com'},
+                        'Answerbase': {   'cats': [5],
+                                          'description': 'Answerbase is a management platform for customer support and '
+                                                         'ecommerce, allowing users to ask questions, receive answers, '
+                                                         'and browse content and articles to meet their demand for '
+                                                         'information about products and services.',
+                                          'icon': 'Answerbase.svg',
+                                          'js': {'loadAnswerbaseCTAWidget': ''},
+                                          'website': 'https://answerbase.com'},
                         'Ant Design': {   'cats': [66],
                                           'description': 'Ant Design is a UI library that can be used with data flow '
                                                          'solutions and application frameworks in any React ecosystem.',
@@ -2469,6 +2588,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'appnexus': '', 'appnexusVideo': ''},
                                         'scriptSrc': ['adnxs\\.(?:net|com)'],
                                         'website': 'https://appnexus.com'},
+                        'AppSell': {   'cats': [6],
+                                       'description': 'AppSell is a cross-selling app designed for Wix that helps '
+                                                      'online stores recommend additional products to customers based '
+                                                      'on their shopping behavior, potentially increasing sales and '
+                                                      'improving customer engagement.',
+                                       'icon': 'AppSell.svg',
+                                       'scripts': ['appsell - upsell & cross sell'],
+                                       'website': 'https://appsell.io'},
                         'Appcast': {   'cats': [101],
                                        'description': 'Appcast is a service that allows job advertisements on a '
                                                       "'pay-per-applicant' basis across a network of career and "
@@ -2507,6 +2634,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Appifiny.svg',
                                         'scriptSrc': ['recently\\.appifiny\\.io/'],
                                         'website': 'https://www.appifiny.co.uk'},
+                        'Appjustable': {   'cats': [51],
+                                           'description': 'Appjustable is a platform offering Weebly app solutions for '
+                                                          'creating websites, enabling users to design and manage '
+                                                          'their online presence through customizable tools and '
+                                                          'features tailored to individual or business needs.',
+                                           'icon': 'Appjustable.svg',
+                                           'scriptSrc': ['//appjustable\\.com/'],
+                                           'website': 'https://appjustable.com'},
                         'Apple Business Chat': {   'cats': [52],
                                                    'description': 'Apple Business Chat is a service from Apple that '
                                                                   'allows your organization to directly chat with your '
@@ -2583,7 +2718,9 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                         'Appointo': {   'cats': [72],
                                         'description': 'Appointo is a Shopify based booking engine from Sidepanda.',
                                         'icon': 'Appointo.svg',
+                                        'js': {'onRefreshAppointoWidget': ''},
                                         'scriptSrc': ['/appointo-14/assets/appointo_bundle.js'],
+                                        'scripts': ['app\\.appointo\\.me'],
                                         'website': 'https://www.sidepanda.com/appointo'},
                         'Appointy': {   'cats': [72],
                                         'description': 'Appointy is a cloud-based scheduling solution that helps '
@@ -2613,6 +2750,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                        'native applications packaged as a set of Docker microservices.',
                                         'icon': 'Appwrite.svg',
                                         'website': 'https://appwrite.io'},
+                        'Appzi': {   'cats': [90],
+                                     'description': 'Appzi is a customer experience software that is a user feedback '
+                                                    'and bug reporting tool.',
+                                     'icon': 'Appzi.svg',
+                                     'js': {'appzi.At': '', 'appziSettings': '', 'apzbtgtr': ''},
+                                     'scriptSrc': ['app\\.appzi\\.io/'],
+                                     'website': 'https://www.appzi.com'},
                         'Aprimo': {   'cats': [95],
                                       'description': 'Aprimo is a United States-based company that develops and sells '
                                                      'marketing automation software and digital asset management '
@@ -2638,6 +2782,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'implies': ['Amazon Web Services', 'MongoDB', 'Next.js', 'Node.js', 'React'],
                                          'meta': {'powered-by': ['aquilacms']},
                                          'website': 'https://www.aquila-cms.com/'},
+                        'Arabot': {   'cats': [52],
+                                      'description': 'Arabot is a no-code chatbot platform designed to automate '
+                                                     'customer interactions and service fulfillment at scale.',
+                                      'icon': 'Arabot.svg',
+                                      'js': {'arabotChatScript': '', 'arabotSelector': '', 'injectArabotScript': ''},
+                                      'website': 'https://arabot.io'},
                         'Arastta': {   'cats': [6],
                                        'cpe': 'cpe:2.3:a:arastta:ecommerce:*:*:*:*:*:*:*:*',
                                        'description': 'Arastta is a free and open-source project with contributors '
@@ -2723,11 +2873,24 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'Arreva.png',
                                       'scriptSrc': ['/arreva-onlinedonations-portlet/'],
                                       'website': 'https://www.arreva.com'},
+                        'ArrowChat': {   'cats': [52],
+                                         'description': 'ArrowChat is a communication tool that enables users to send '
+                                                        'text messages and engage in video chats with one another.',
+                                         'icon': 'ArrowChat.svg',
+                                         'scriptSrc': ['/arrowchat/.*/jquery\\.js'],
+                                         'website': 'https://www.arrowchat.com'},
                         'Arsys Domain Parking': {   'cats': [109],
                                                     'description': 'Arsys is a Spanish domain registrar.',
                                                     'dom': {   "link[rel='stylesheet'][href*='arsys.es/css/parking2.css']": {   'exists': ''}},
                                                     'icon': 'arsys.png',
                                                     'website': 'https://www.arsys.es'},
+                        'ArtiBot': {   'cats': [52, 53],
+                                       'description': 'ArtiBot is a chatbot designed for websites, providing automated '
+                                                      'assistance and customer engagement through conversational '
+                                                      'interactions.',
+                                       'icon': 'ArtiBot.svg',
+                                       'js': {'ArtiBot': '', '_artibotLauncherInitializer': '', 'artibotApi': ''},
+                                       'website': 'https://www.artibot.ai'},
                         'Artifactory': {   'cats': [47],
                                            'cpe': 'cpe:2.3:a:jfrog:artifactory:*:*:*:*:*:*:*:*',
                                            'html': [   '<span class="version">artifactory(?: pro)?(?: power pack)?(?: '
@@ -2815,6 +2978,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                       'Poste and Swiss Post.',
                                        'icon': 'Asendia.svg',
                                        'website': 'https://www.asendia.com'},
+                        'Aseqbase': {   'cats': [18],
+                                        'description': 'Aseqbase is a sequence-based web development framework '
+                                                       'designed to create robust websites.',
+                                        'icon': 'Aseqbase.svg',
+                                        'meta': {'framwork': ['^aseqbase$'], 'product': ['www\\.aseqbase\\.ir']},
+                                        'website': 'https://aseqbase.mimfa.net'},
                         'Asgaros Forum': {   'cats': [87, 2],
                                              'description': 'Asgaros Forum is a lightweight and simple forum plugin '
                                                             'for WordPress.',
@@ -2822,6 +2991,30 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'icon': 'Asgaros Forum.png',
                                              'scriptSrc': ['/wp-content/plugins/asgaros-forum/'],
                                              'website': 'https://www.asgaros.de'},
+                        'AskNicely': {   'cats': [90],
+                                         'description': 'AskNicely is a platform that measures and improves customer '
+                                                        'happiness using the Net Promoter Score (NPS) framework.',
+                                         'icon': 'AskNicely.svg',
+                                         'js': {'askNicelyConversation': ''},
+                                         'scriptSrc': ['static\\.asknice\\.ly/'],
+                                         'website': 'https://www.asknicely.com'},
+                        'AskSpot': {   'cats': [52],
+                                       'description': 'AskSpot is an AI chatbot platform tailored for marketing, '
+                                                      'digital, and web development agencies.',
+                                       'icon': 'AskSpot.svg',
+                                       'js': {'askspot.Chatbot': ''},
+                                       'scripts': ['app\\.askspot\\.ai'],
+                                       'website': 'https://askspot.ai'},
+                        'Asksuite': {   'cats': [104],
+                                        'description': 'Asksuite is a platform that enhances direct bookings and '
+                                                       'revenue for hotels and resorts by improving service '
+                                                       'experiences and boosting reservation sales productivity.',
+                                        'icon': 'Asksuite.svg',
+                                        'js': {   'AsksuiteUtil.calcTime': '',
+                                                  'asksuiteLocalStorage': '',
+                                                  'asksuiteLog': '',
+                                                  'asksuiteSessionStorage': ''},
+                                        'website': 'https://asksuite.com'},
                         'Assertive Yield': {   'cats': [36],
                                                'description': 'Assertive Yield is a SaaS company that specialises in '
                                                               'helping SSPs (Supply-Side Platforms), publishers, and '
@@ -2846,6 +3039,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'dom': {   "link[href*='/wp-content/plugins/astra-widgets/']": {   'attributes': {   'href': '/wp-content/plugins/astra-widgets/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1'}}},
                                              'icon': 'Astra.svg',
                                              'website': 'https://wpastra.com/did-you-know-astra-is-widget-ready'},
+                        'AstraFit': {   'cats': [6],
+                                        'description': 'AstraFit is an online virtual fitting software for large and '
+                                                       'small retailers.',
+                                        'icon': 'AstraFit.svg',
+                                        'scriptSrc': ['widget\\.astrafit\\.com/'],
+                                        'website': 'https://www.astrafit.com'},
                         'Astro': {   'cats': [57, 12],
                                      'description': 'Astro is a new JavaScript-based static site builder.',
                                      'dom': {   "[class^='astro-']": {'attributes': {'class': 'astro-[\\d\\w]{8,}'}},
@@ -2884,6 +3083,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'icon': 'Athena Search.svg',
                                              'scriptSrc': ['wp-content/plugins/athena-search'],
                                              'website': 'https://www.athenasearch.io'},
+                        'Atlasmic': {   'cats': [52],
+                                        'description': 'Atlasmic is a live chat and business messenger platform '
+                                                       'designed to support modern online businesses.',
+                                        'icon': 'Atlasmic.svg',
+                                        'js': {'atlasmic': '', 'atlasmic.VERSION': '^([\\d\\.]+)$\\;version:\\1'},
+                                        'scripts': ['\\.atlasmic\\.com'],
+                                        'website': 'https://atlasmic.com'},
                         'Atlassian Bitbucket': {   'cats': [47],
                                                    'cpe': 'cpe:2.3:a:atlassian:bitbucket:*:*:*:*:*:*:*:*',
                                                    'description': 'Bitbucket is a web-based version control repository '
@@ -2995,6 +3201,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'dom': {"img[src*='listen.audiohook.com/']": {'exists': ''}},
                                          'icon': 'Audiohook.svg',
                                          'website': 'https://www.audiohook.com'},
+                        'Auglio': {   'cats': [105],
+                                      'description': 'Auglio is a virtual try-on tool enabling customers to try '
+                                                     'products using camera and augmented reality before the purchase.',
+                                      'icon': 'Auglio.svg',
+                                      'js': {   'VirtooalApp': '',
+                                                'loadVirtooalScript': '',
+                                                'virtooal_logger': '',
+                                                'virtooal_script_loaded': ''},
+                                      'website': 'https://auglio.com'},
                         'Aument': {   'cats': [75, 98],
                                       'description': 'Aument is an ecommerce toolbox with easy to use marketing '
                                                      'actions and workflows.',
@@ -3051,6 +3266,26 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'icon': 'AutoManager.svg',
                                            'scriptSrc': ['\\.automanager\\.com/'],
                                            'website': 'https://www.automanager.io'},
+                        'AutoOps': {   'cats': [72],
+                                       'description': 'AutoOps is an online scheduling tool that integrates with shop '
+                                                      'management softwares for auto shops.',
+                                       'icon': 'AutoOps.svg',
+                                       'js': {'AutoOps.addSourceTracking': ''},
+                                       'website': 'https://www.autoops.com/'},
+                        'Autocommerce': {   'cats': [100],
+                                            'description': 'Autocommerce is a product recommendation app for Shopify '
+                                                           'stores, similar to Amazon, designed to enhance the '
+                                                           'shopping experience by suggesting relevant products to '
+                                                           'customers based on their browsing and purchase history.',
+                                            'icon': 'Autocommerce.svg',
+                                            'scriptSrc': ['\\.autocommerce\\.io/'],
+                                            'website': 'https://autocommerce.io'},
+                        'Autoconf': {   'cats': [1],
+                                        'description': 'Autoconf is a system designed for managing car dealership '
+                                                       'operations, including inventory, sales, and customer data.',
+                                        'icon': 'Autoconf.svg',
+                                        'scriptSrc': ['static\\.autoconf\\.com'],
+                                        'website': 'https://autoconf.com.br'},
                         'Autoketing': {   'cats': [32],
                                           'description': 'Autoketing is a marketing automation platform.',
                                           'icon': 'Autoketing.png',
@@ -3395,6 +3630,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                           'any page or element.',
                                            'scriptSrc': [   '(?:((?:\\d+\\.)+\\d+)\\/)?(?:jquery\\.)?backstretch(?:\\.min)?\\.js\\;version:\\1'],
                                            'website': 'https://www.jquery-backstretch.com/'},
+                        'Bahooosh': {   'cats': [1],
+                                        'cookies': {'bahooosh_session': ''},
+                                        'description': 'Bahooosh is an online business management platform that '
+                                                       'integrates AI-powered site building and ecommerce CMS '
+                                                       'features.',
+                                        'icon': 'Bahooosh.svg',
+                                        'website': 'https://bahooosh.com'},
                         'Baidu Analytics (百度统计)': {   'cats': [10],
                                                       'description': 'Baidu Analytics (百度统计) is a free tool for '
                                                                      'tracking and reporting traffic data of users '
@@ -3435,6 +3677,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'BambuserLiveShopping': '', '_bambuser': ''},
                                         'scriptSrc': ['\\.bambuser\\.com/'],
                                         'website': 'https://bambuser.com'},
+                        'Banana Splash': {   'cats': [32],
+                                             'description': 'Banana Splash is a mobile lead generation system designed '
+                                                            'to help businesses attract and capture potential customer '
+                                                            'information.',
+                                             'scriptSrc': ['my\\.banana-splash\\.com/'],
+                                             'scripts': ['my\\.banana-splash\\.com'],
+                                             'website': 'https://www.banana-splash.com'},
                         'BandsInTown Events Widget': {   'cats': [5],
                                                          'description': 'Bandsintown Events Widget is a free widget '
                                                                         'which makes it simple to embed your event '
@@ -3449,6 +3698,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'BannerBoo.svg',
                                          'scriptSrc': ['\\.bannerboo\\.com/'],
                                          'website': 'https://bannerboo.com'},
+                        'Banno Banking': {   'cats': [1],
+                                             'description': 'Banno Banking is a digital banking platform designed to '
+                                                            'deliver a branded, user-friendly experience by leveraging '
+                                                            'advanced fintech tools.',
+                                             'icon': 'Banno.svg',
+                                             'js': {'banno.site': '', 'com.banno': ''},
+                                             'website': 'https://banno.com/digital-banking'},
                         'Banshee': {   'cats': [1, 18],
                                        'description': 'Banshee is a PHP website framework with a main focus on '
                                                       'security. Banshee is protected against common attacks like SQL '
@@ -3532,6 +3788,17 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                   'icon': 'Basis.png',
                                                   'scriptSrc': ['cdn01\\.basis\\.net'],
                                                   'website': 'https://basis.net/'},
+                        'Batch': {   'cats': [32],
+                                     'description': 'Batch is a web-push notifications technology provider.',
+                                     'icon': 'Batch.svg',
+                                     'js': {'batchSDK': '', 'batchSDKUIConfig': '', 'reregisterBatchPushIfNeeded': ''},
+                                     'website': 'https://batch.com'},
+                        'Batchbook': {   'cats': [53],
+                                         'description': 'Batchbook is a customer relationship management (CRM) tool '
+                                                        'designed for small businesses.',
+                                         'dom': {"iframe[src*='.batchbook.com']": {'exists': ''}},
+                                         'scriptSrc': ['\\.batchbook\\.com'],
+                                         'website': 'https://batchbook.com'},
                         'Batflat': {   'cats': [1],
                                        'description': 'Batflat is a lightweight CMS for free.',
                                        'icon': 'Batflat.svg',
@@ -3636,12 +3903,26 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Beeswax.png',
                                        'scriptSrc': ['segment\\.prod\\.bidr\\.io'],
                                        'website': 'https://www.beeswax.com/'},
+                        'Behzi': {   'cats': [51],
+                                     'description': 'Behzi is an all-in-one Iranian platform providing services such '
+                                                    'as event organization, tours, school registrations, and store '
+                                                    'discounts.',
+                                     'icon': 'Behzi.svg',
+                                     'meta': {'generator': ['^behzi$']},
+                                     'website': 'https://behzi.com'},
                         'Bench': {   'cats': [32],
                                      'description': 'Bench is a provider of omnichannel programmatic media and '
                                                     'performance marketing solutions.',
                                      'icon': 'Bench.svg',
                                      'scriptSrc': ['tag\\.benchplatform\\.com/'],
                                      'website': 'https://benchmedia.com'},
+                        'Bento': {   'cats': [32, 75],
+                                     'description': 'Bento is an email marketing and automation platform designed for '
+                                                    'startups.',
+                                     'icon': 'Bento.svg',
+                                     'js': {'bento.identify': '', 'bento_wordpress_sdk_params': ''},
+                                     'scriptSrc': ['app\\.bentonow\\.com/'],
+                                     'website': 'https://bentonow.com'},
                         'Bentobox': {   'cats': [1, 93],
                                         'description': 'Bentobox is a restaurant website platform that handles menus, '
                                                        'reservations, gift cards and more.',
@@ -3649,6 +3930,18 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'BentoAnalytics': ''},
                                         'scriptSrc': ['\\.getbento\\.com/'],
                                         'website': 'https://getbento.com'},
+                        'BerqWP': {   'cats': [87, 92],
+                                      'description': 'BerqWP is a WordPress performance optimization plugin.',
+                                      'dom': {'style[data-berqwp],script[data-berqwp]': {'exists': ''}},
+                                      'icon': 'BerqWP.png',
+                                      'website': 'https://berqwp.com/'},
+                        'Bestie': {   'cats': [73],
+                                      'description': 'Bestie is a platform that provides AI-powered post-purchase '
+                                                     'surveys for Shopify brands, automating the survey creation '
+                                                     'process.',
+                                      'icon': 'Bestie.svg',
+                                      'scripts': ['app\\.bestie\\.ai'],
+                                      'website': 'https://www.bestie.ai'},
                         'Better Cart': {   'cats': [6],
                                            'description': 'Better Cart is an ecommerce checkout powered by AI and '
                                                           'predictive machine learning models.',
@@ -3710,6 +4003,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                  'implies': ['BetterDocs'],
                                                  'scriptSrc': [   '/wp-content/plugins/betterdocs(?:-pro)?/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1'],
                                                  'website': 'https://betterdocs.co/docs/wordpress'},
+                        'Bettermode': {   'cats': [53],
+                                          'description': 'Bettermode is an all-in-one community engagement platform '
+                                                         'designed to help businesses streamline the customer '
+                                                         'experience and build better relationships.',
+                                          'icon': 'Bettermode.svg',
+                                          'scripts': ['bettermode\\.com'],
+                                          'website': 'https://bettermode.com'},
                         'Betty Blocks': {   'cats': [47, 62],
                                             'description': 'Betty Blocks is a cloud-based application development '
                                                            'solution featuring a no-code, drag-and-drop interface for '
@@ -3725,6 +4025,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'__beusablerumclient__': ''},
                                         'scriptSrc': ['\\.beusable\\.net/'],
                                         'website': 'https://www.beusable.net'},
+                        'Bevy': {   'cats': [53],
+                                    'description': 'Bevy is a platform designed to elevate communities by transforming '
+                                                   'engagement into measurable enterprise return on investment (ROI).',
+                                    'icon': 'Bevy.svg',
+                                    'js': {'_BEVY_LANGUAGE_': '', '_BEVY_SETTINGS_': '', '_BEVY_STYLES_': ''},
+                                    'website': 'https://bevy.com'},
                         'Beyable': {   'cats': [76],
                                        'cookies': {'beyable-cart': '', 'beyable-cartd': ''},
                                        'description': 'Beyable is a suite of tools that analyze website traffic to '
@@ -3789,6 +4095,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                            'icon': 'BigDataCloud-IPGeolocation.svg',
                                                            'scriptSrc': ['bigdatacloud\\.net'],
                                                            'website': 'https://www.bigdatacloud.com/packages/ip-geolocation'},
+                        'BigMarker': {   'cats': [103],
+                                         'description': 'BigMarker is a platform for hosting webinars, virtual, and '
+                                                        'hybrid events, providing tools for presentations, audience '
+                                                        'engagement, and event management in one solution.',
+                                         'dom': {"input[value*='.bigmarker.com/']": {'exists': ''}},
+                                         'icon': 'BigMarker.svg',
+                                         'scriptSrc': ['\\.bigmarker\\.com/'],
+                                         'website': 'https://www.bigmarker.com'},
                         'BigPoint': {   'cats': [38],
                                         'description': 'BigPoint is a browser game portal that offers a collection of '
                                                        'free online games.',
@@ -3827,11 +4141,22 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'Bikayi.svg',
                                       'scriptSrc': ['assets\\.bikayi\\.com/'],
                                       'website': 'https://bikayi.com'},
+                        'Bileto': {   'cats': [104],
+                                      'description': 'Bileto is an all-in-one platform for ticket sale and inspection.',
+                                      'icon': 'Bileto.svg',
+                                      'scriptSrc': ['\\.bileto\\.com/'],
+                                      'website': 'https://www.bileto.com'},
                         'Billbee': {   'cats': [99],
                                        'description': 'Billbee is an order processing and inventory management '
                                                       'solution.',
                                        'icon': 'Billbee.png',
                                        'website': 'https://www.billbee.io/'},
+                        'Billgang': {   'cats': [6],
+                                        'description': 'Billgang is a digital commerce platform built for internet '
+                                                       'entrepreneurs.',
+                                        'dom': {"link[href*='.billgang.com']": {'exists': ''}},
+                                        'icon': 'Billgang.svg',
+                                        'website': 'https://billgang.com'},
                         'Binance Pay': {   'cats': [41],
                                            'description': 'Binance Pay is a contactless, borderless, and secure '
                                                           'cryptocurrency payment technology designed by Binance.',
@@ -3846,6 +4171,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {'binderPOSBuylist': ''},
                                          'scriptSrc': ['\\.binderpos\\.com/'],
                                          'website': 'https://www.binderpos.com'},
+                        'BirdSeed': {   'cats': [52, 53],
+                                        'description': 'BirdSeed is a suite of website tools designed to enhance '
+                                                       'customer experience, enable real-time engagement, and support '
+                                                       'revenue growth.',
+                                        'icon': 'BirdSeed.svg',
+                                        'js': {'birdseed_widget_controller': ''},
+                                        'scriptSrc': ['\\.birdseed\\.io/'],
+                                        'website': 'https://birdseed.io'},
                         'Birdeye': {   'cats': [32, 5],
                                        'description': 'Birdeye is an all-in-one customer experience platform.',
                                        'icon': 'Birdeye.svg',
@@ -3912,6 +4245,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {   'API_BASE_URL_FE': '\\.bleckmann\\.com',
                                                    'apiCall': '\\.bleckmann\\.com'},
                                          'website': 'https://www.bleckmann.com'},
+                        'Blendle': {   'cats': [49],
+                                       'description': 'Blendle is a digital magazine system that allows users to '
+                                                      'access and read articles from various publications.',
+                                       'icon': 'Blendle.svg',
+                                       'js': {'asyncBlendleButtonInit': '', 'blendleButtonInit.locale': ''},
+                                       'website': 'https://www.blendle.com'},
                         'Blessing Skin': {   'cats': [7],
                                              'description': 'Blessing Skin is a plubin that brings your custom skins '
                                                             'back in offline Minecraft servers.',
@@ -3932,6 +4271,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'Blinger': '', 'blingerInit': ''},
                                        'scriptSrc': ['app\\.blinger\\.io/'],
                                        'website': 'https://blinger.io'},
+                        'Blinklink': {   'cats': [14],
+                                         'description': 'Blinklink is a platform that offers enterprises AI-curated '
+                                                        'short-form video solutions.',
+                                         'icon': 'Blinklink.svg',
+                                         'scriptSrc': ['\\.blinklink\\.com/'],
+                                         'website': 'https://blinklink.com'},
                         'Blitz': {   'cats': [92],
                                      'description': 'Blitz provides intelligent static page caching for creating '
                                                     'lightning-fast sites with Craft CMS.',
@@ -4006,6 +4351,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                'icon': 'Blotout.svg',
                                                'js': {'edgetag': '', 'edgetagProviders': ''},
                                                'website': 'https://blotout.io'},
+                        'Bludit': {   'cats': [1],
+                                      'description': 'Bludit is a flat file content management system that stores data '
+                                                     'in text files.',
+                                      'icon': 'Bludit.svg',
+                                      'meta': {'generator': ['^bludit$']},
+                                      'website': 'https://www.bludit.com'},
                         'Blue': {   'cats': [77],
                                     'description': 'Blue is a ecommerce data marketing, lead generation, real time '
                                                    'bidding and recommendation solutions.',
@@ -4484,6 +4835,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'js': {'BotPenguin': '', 'BotPenguinWindow': ''},
                                           'scriptSrc': ['cdn\\.botpenguin\\.com/'],
                                           'website': 'https://botpenguin.com'},
+                        'BotStar': {   'cats': [52],
+                                       'description': 'BotStar is a platform for creating chatbots for websites and '
+                                                      'messaging applications.',
+                                       'icon': 'BotStar.svg',
+                                       'js': {'BotStar.appId': '', 'BotStarApi': '', 'BotStarUp': ''},
+                                       'website': 'https://botstar.com'},
                         'BotUp': {   'cats': [52],
                                      'description': 'BotUp is a chatbot software that helps build your chatbot without '
                                                     'coding.',
@@ -4496,6 +4853,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'Botble-CMS.png',
                                           'implies': ['Laravel'],
                                           'website': 'https://botble.com'},
+                        'Bothive': {   'cats': [32],
+                                       'description': 'Bothive is a platform that automates repetitive tasks, enhances '
+                                                      'collaboration, reduces email reliance, and improves customer '
+                                                      'relationships by prioritizing meaningful interactions.',
+                                       'icon': 'Bothive.svg',
+                                       'js': {'Bothive.widget': ''},
+                                       'website': 'https://bothive.be'},
                         'Botmind': {   'cats': [52],
                                        'description': 'Botmind is a software that automates responses to frequently '
                                                       'asked questions.',
@@ -4503,6 +4867,29 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'botmindWidget': ''},
                                        'scriptSrc': ['\\.botmind\\.io/'],
                                        'website': 'https://www.botmind.io'},
+                        'Botpress': {   'cats': [52],
+                                        'description': 'Botpress is a conversational AI platform that empowers '
+                                                       'individuals and teams of all sizes to design, build, and '
+                                                       'deploy AI-powered chatbots for various applications.',
+                                        'icon': 'Botpress.svg',
+                                        'js': {'botpressWebChat.init': ''},
+                                        'website': 'https://botpress.com'},
+                        'Botsify': {   'cats': [52],
+                                       'description': 'Botsify is a platform that enables businesses to create '
+                                                      'chatbots without requiring any coding knowledge.',
+                                       'icon': 'Botsify.svg',
+                                       'js': {'botsify.load': '', 'setbotsifyIcon': ''},
+                                       'website': 'https://botsify.com'},
+                        'Botsonic': {   'cats': [52],
+                                        'description': 'Botsonic is a no-code, custom AI chatbot builder that enables '
+                                                       'businesses to interact with their website visitors/users '
+                                                       'through natural language conversations.',
+                                        'icon': 'Botsonic.svg',
+                                        'js': {   'Botsonic': '',
+                                                  'botsonicConfig-Botsonic': '',
+                                                  'botsonic_widget': '',
+                                                  'loaded-Botsonic': ''},
+                                        'website': 'https://botsonic.com'},
                         'Bottle': {   'cats': [93],
                                       'description': 'Bottle is an all-in-one software for meal delivery businesses, '
                                                      'enhancing operational efficiency and customer management.',
@@ -4586,6 +4973,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'scriptSrc': [   'app\\.link/_r\\?sdk=web([\\d.]+)\\;version:\\1',
                                                        'cdn\\.branch\\.io'],
                                       'website': 'https://branch.io'},
+                        'BrandBuilderAI': {   'cats': [32],
+                                              'description': 'BrandBuilderAI is an all-in-one system designed to '
+                                                             'automate marketing and lead generation processes.',
+                                              'icon': 'BrandBuilderAI.svg',
+                                              'scripts': ['\\.brandbuilderai\\.com'],
+                                              'website': 'https://brandbuilderai.com'},
                         'Brandfolder': {   'cats': [95],
                                            'description': 'Brandfolder is a cloud-based digital asset management '
                                                           'platform.',
@@ -4711,6 +5104,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'headers': {'server': '^brimble$', 'x-brimble-id': ''},
                                        'icon': 'brimble.svg',
                                        'website': 'https://brimble.io'},
+                        'Brizy': {   'cats': [51],
+                                     'description': 'Brizy is a visual website builder that allows users to create and '
+                                                    'design websites using drag-and-drop functionality without the '
+                                                    'need for coding skills.',
+                                     'icon': 'Brizy.svg',
+                                     'js': {'BrizyLibs.Flatpickr': '', 'BrizyProLibs': '', 'Brz.emit': ''},
+                                     'website': 'https://www.brizy.io'},
                         'Brizy Cloud': {   'cats': [1, 51],
                                            'description': 'Brizy Cloud is a platform for creating and managing '
                                                           'websites using an intuitive drag-and-drop editor, allowing '
@@ -4908,6 +5308,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'dom': {   "div[data-bg*='cdn.buttercms.com/'], img[src*='cdn.buttercms.com/'], link[href*='cdn.buttercms.com'], a[href*='cdn.buttercms.com/']": {   'exists': ''}},
                                          'icon': 'butter-cms.svg',
                                          'website': 'https://buttercms.com'},
+                        'ButterMove': {   'cats': [6],
+                                          'description': 'ButterMove is a platform designed to streamline the process '
+                                                         'of moving homes by offering users a simplified approach to '
+                                                         'manage tasks, schedule services, and coordinate logistics.',
+                                          'icon': 'ButterMove.svg',
+                                          'scriptSrc': ['widget\\.buttermove\\.com'],
+                                          'website': 'https://www.buttermove.com'},
                         'Buttonizer': {   'cats': [5],
                                           'description': 'Buttonizer is a widget that enables website owners to '
                                                          'incorporate custom and attention-grabbing call-to-action '
@@ -4954,6 +5361,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'Buyapowa.CanaryCheck': ''},
                                         'scriptSrc': ['cdn\\.co-buying\\.com/'],
                                         'website': 'https://www.buyapowa.com'},
+                        'Buyist': {   'cats': [6],
+                                      'description': 'Buyist is a code-less ecommerce platform designed for '
+                                                     'performance marketers.',
+                                      'icon': 'Buyist.svg',
+                                      'js': {'buyistApp.buttonService': '', 'buyistAppData': ''},
+                                      'website': 'https://buyist.com'},
                         'Buz Club': {   'cats': [53],
                                         'description': 'Buz Club is a provider of private club management software '
                                                        'featuring real-time integration.',
@@ -5031,6 +5444,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                    'App Engine.',
                                     'icon': 'CFML.png',
                                     'website': 'https://adobe.com/products/coldfusion-family.html'},
+                        'CINC': {   'cats': [32, 53],
+                                    'description': 'CINC is a lead acquisition and conversion platform for teams and '
+                                                   'top real estate agents.',
+                                    'icon': 'CINC.svg',
+                                    'js': {'CINC.AjaxApi': ''},
+                                    'website': 'https://www.cincpro.com'},
                         'CIVIC': {   'cats': [67],
                                      'description': 'Civic provides cookie control for user consent and the use of '
                                                     'cookies.',
@@ -5126,10 +5545,28 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                       'icon': 'CSSIgniter.svg',
                                                       'scriptSrc': [   '/wp-content/themes/olsen-light/.+scripts(?:\\.min)?\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1'],
                                                       'website': 'https://www.cssigniter.com/themes/olsen-light'},
+                        'CTRWOW': {   'cats': [32],
+                                      'description': 'CTRWOW is a system designed for building template funnels, '
+                                                     'offering tools for streamlining the creation and management of '
+                                                     'marketing funnels.',
+                                      'icon': 'CTRWow.svg',
+                                      'js': {   'CTR_IMG_LAZY_LOADER': '',
+                                                '_CTR_CUSTOM_DATA': '',
+                                                '_CTR_FINGERPRINTJS_TOKEN': '',
+                                                '__CTRWOW_CONFIG': '',
+                                                'ctrwowUtils': ''},
+                                      'website': 'https://www.wowsuite.ai/ctrwow.html'},
                         'CTT': {   'cats': [99],
                                    'description': 'CTT operates as the national postal service of Portugal.',
                                    'icon': 'CTT.svg',
                                    'website': 'https://www.ctt.pt'},
+                        'CUE': {   'cats': [1],
+                                   'description': 'CUE is a unified media enterprise platform tailored for news media '
+                                                  'organizations seeking efficiency and revenue growth in the media '
+                                                  'market.',
+                                   'icon': 'CUE.svg',
+                                   'scripts': ['\\.cue\\.cloud'],
+                                   'website': 'https://www.stibodx.com/'},
                         'Caast.tv': {   'cats': [5],
                                         'description': 'Caast.tv is a digital commercial animation solution integrated '
                                                        'into the ecommerce customer journey.',
@@ -5225,6 +5662,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Calenso.svg',
                                        'scriptSrc': ['\\.calenso\\.com/'],
                                        'website': 'https://calenso.com'},
+                        'Call Cap': {   'cats': [10],
+                                        'description': 'Call Cap is a tool used for tracking and monitoring phone '
+                                                       'calls.',
+                                        'js': {'Callcap.data': '', 'callcap': '', 'callcap_webmatch_callback': ''},
+                                        'website': 'https://www.marchex.com/callcap'},
                         'CallPage': {   'cats': [5, 32],
                                         'description': 'CallPage is a lead capture tool that automatically schedules '
                                                        'callbacks and meetings with potential customers, enhancing '
@@ -5291,6 +5733,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'dom': {   "link[href*='.canto.com/'], a[href*='.canto.com/'], img[src*='.canto.com/']": {   'exists': ''}},
                                      'icon': 'Canto.svg',
                                      'website': 'https://www.canto.com'},
+                        'Cantrip': {   'cats': [51],
+                                       'description': 'Cantrip is a tool that uses artificial intelligence to generate '
+                                                      'personalized websites.',
+                                       'meta': {'author': ['cantrip\\.io'], 'generator': ['^cantrip website builder$']},
+                                       'website': 'https://cantrip.io'},
                         'Canva': {   'cats': [51],
                                      'description': 'Canva is an online graphic design platform that allows users to '
                                                     'create various visual content using pre-designed templates and a '
@@ -5312,6 +5759,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'canvasjs.svg',
                                         'js': {'CanvasJS.Chart': '', 'CanvasJS.Chart.version': '^v(.+)$\\;version:\\1'},
                                         'website': 'https://canvasjs.com'},
+                        'Canvy': {   'cats': [7],
+                                     'description': 'Canvy is an online tool designed for fine art painters and poster '
+                                                    'designers to enhance the promotion and presentation of their '
+                                                    'artwork online.',
+                                     'icon': 'Canvy.svg',
+                                     'js': {   'config.apiPath': 'api\\.canvy\\.app/',
+                                               'config.cdnPath': 'api\\.canvy\\.app/'},
+                                     'website': 'https://canvy.com'},
                         'Captain Up': {   'cats': [84],
                                           'description': 'Captain Up is a service that enhances user engagement and '
                                                          'retention by utilising gamification, social, and '
@@ -5467,6 +5922,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'implies': ['Shopify'],
                                        'scriptSrc': [   '(?:shopify-cartjs/([\\d\\.]+)|assets)/rivets-cart\\.min\\.js\\;version:\\1'],
                                        'website': 'https://cartjs.org'},
+                        'CartFlows': {   'cats': [51],
+                                         'description': 'CartFlows is a sales funnel builder for WordPress.',
+                                         'icon': 'Cartflows.svg',
+                                         'js': {   'cartflows.active_checkout_cookie': '',
+                                                   'cartflows_checkout_optimized_fields': ''},
+                                         'website': 'https://cartflows.com'},
                         'CartKit': {   'cats': [32],
                                        'description': 'CartKit build apps from fuss-free multi-channel marketing '
                                                       'automation and campaigns to social proof popups and user '
@@ -5474,6 +5935,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'CartKit.svg',
                                        'scriptSrc': ['\\.cartkitcdn\\.com/'],
                                        'website': 'https://www.cartkit.com'},
+                        'CartPops': {   'cats': [6],
+                                        'description': 'CartPops is a conversion-optimized AJAX fly-out cart solution '
+                                                       'for WooCommerce that replaces the traditional cart page and is '
+                                                       'compatible with any theme.',
+                                        'icon': 'CartPops.svg',
+                                        'implies': ['WooCommerce'],
+                                        'js': {'CartPops.drawer': '', 'CartPopsConfig': ''},
+                                        'website': 'https://cartpops.com'},
                         'CartStack': {   'cats': [98],
                                          'description': 'CartStack is a SaaS solution that allows any company with an '
                                                         'ecommerce site or reservation system to increase revenue '
@@ -5496,6 +5965,18 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'Carts Guru.png',
                                           'scriptSrc': ['cdn\\.cartsguru\\.io/'],
                                           'website': 'https://www.carts.guru'},
+                        'Cartum': {   'cats': [6],
+                                      'description': 'Cartum is a platform offering essential tools for launching and '
+                                                     'managing online stores.',
+                                      'js': {'Horoshop.Widgets': ''},
+                                      'website': 'https://cartum.io'},
+                        'Carussel': {   'cats': [6],
+                                        'description': 'Carussel is a dealer web toolkit designed to streamline the '
+                                                       'online presence and digital operations of automotive '
+                                                       'dealerships.',
+                                        'icon': 'Carussel.svg',
+                                        'scriptSrc': ['\\.carussel\\.dealer\\.toolkit'],
+                                        'website': 'https://www.carussel.com'},
                         'CasaSoft': {   'cats': [32],
                                         'description': 'CasaSoft is a provider of digital solutions tailored for real '
                                                        'estate marketing needs.',
@@ -5545,6 +6026,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                        'icon': 'Catch Themes.png',
                                                        'scriptSrc': ['/wp-content/themes/fotografie(?:-pro)?/'],
                                                        'website': 'https://catchthemes.com/themes/fotografie'},
+                        'Catylist': {   'cats': [32],
+                                        'description': 'Catylist is an all-in-one platform for commercial real estate '
+                                                       'brokers, offering CRE data, reporting and marketing tools, and '
+                                                       'property listings.',
+                                        'scriptSrc': ['\\.catylist\\.com/'],
+                                        'website': 'https://cre.moodysanalytics.com/products/catylist'},
                         'Cecil': {   'cats': [57],
                                      'description': 'Cecil is a CLI application, powered by PHP, that merge plain text '
                                                     'files (written in Markdown), images and Twig templates to '
@@ -5557,6 +6044,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                         'package deliveries.',
                                          'icon': 'Celeritas.svg',
                                          'website': 'https://celeritastransporte.com'},
+                        'Cellxpert': {   'cats': [71],
+                                         'description': 'Cellxpert is a SaaS platform for affiliate and partner '
+                                                        'program management, providing tools for tracking, reporting, '
+                                                        'and optimizing performance-based marketing campaigns.',
+                                         'dom': {"link[href*='.cellxpert.com/']": {'exists': ''}},
+                                         'icon': 'Cellxpert.svg',
+                                         'scriptSrc': ['\\.cellxpert\\.com/'],
+                                         'website': 'https://www.cellxpert.com'},
                         'Celum': {   'cats': [95],
                                      'description': 'Celum is a software developer that specialises in enterprise '
                                                     'digital asset management and marketing content management '
@@ -5612,6 +6107,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {'centribot_services': ''},
                                          'scriptSrc': ['\\.centribal\\.com/'],
                                          'website': 'https://centribal.com'},
+                        'Cevoid': {   'cats': [96],
+                                      'description': 'Cevoid is an all-in-one user-generated content (UGC) platform '
+                                                     'designed for e-commerce brands.',
+                                      'icon': 'Cevoid.svg',
+                                      'js': {   'cevoid.galleries': '',
+                                                'cevoid_gallery.load': '',
+                                                'cevoid_state.setSessionCookie': ''},
+                                      'website': 'https://cevoid.com'},
                         'Chabokan': {   'cats': [62],
                                         'description': 'Chabokan is a cloud services provider, offering a wide range '
                                                        'of incorporated cloud services including Cloud Object Storage, '
@@ -5729,6 +6232,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'ChatBot.svg',
                                        'scriptSrc': ['cdn\\.chatbot\\.com/'],
                                        'website': 'https://www.chatbot.com'},
+                        'ChatFood': {   'cats': [52],
+                                        'description': 'ChatFood is a platform providing mobile ordering tailored for '
+                                                       'hospitality brands.',
+                                        'icon': 'ChatFood.svg',
+                                        'js': {'ChatFoodWidget': '', 'ChatFoodWidgetClient': ''},
+                                        'website': 'https://www.chatfood.io'},
                         'ChatGen': {   'cats': [52],
                                        'description': 'ChatGen is a hybrid chatbot platform designed to facilitate '
                                                       'communication with prospects, customers, and internal '
@@ -5738,6 +6247,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'ChatGen': '', 'loadChatgen': ''},
                                        'scriptSrc': ['\\.chatgen\\.ai/'],
                                        'website': 'https://chatgen.ai'},
+                        'ChatNode': {   'cats': [52, 53],
+                                        'description': 'ChatNode is a platform for building advanced AI chatbots that '
+                                                       'provide deep business insights, designed to enhance customer '
+                                                       'interactions through innovative technology.',
+                                        'icon': 'ChatNode.svg',
+                                        'scriptSrc': ['embed\\.chatnode\\.ai/'],
+                                        'website': 'https://www.chatnode.ai'},
                         'ChatPlus': {   'cats': [52],
                                         'description': 'ChatPlus is a provider of chat and chatbot tool with (or '
                                                        'without) AI in Japan and abroad.',
@@ -5769,18 +6285,53 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Chatango.png',
                                         'scriptSrc': ['st\\.chatango\\.com'],
                                         'website': 'https://chatango.com'},
+                        'Chatbaby': {   'cats': [52],
+                                        'description': 'Chatbaby is a service for creating custom ChatGPT chatbots '
+                                                       'tailored to website content.',
+                                        'icon': 'Chatbaby.svg',
+                                        'js': {'$$chatbaby': ''},
+                                        'scriptSrc': ['\\.chatbaby\\.co/'],
+                                        'website': 'https://chatbaby.co'},
                         'Chatbase': {   'cats': [52],
                                         'description': 'Chatbase is an AI chatbot builder, it trains ChatGPT on your '
                                                        'data and lets you add a chat widget to your website.',
                                         'icon': 'Chatbase.svg',
                                         'js': {'chatbaseConfig.chatbotId': '', 'embedChatbaseChatbot': ''},
                                         'website': 'https://www.chatbase.co'},
+                        'Chatgo': {   'cats': [52],
+                                      'description': 'Chatgo is a messenger widget designed for integration with '
+                                                     'websites and e-shops, enabling communication and engagement.',
+                                      'icon': 'Chatgo.svg',
+                                      'scriptSrc': ['\\.chatgo\\.cz'],
+                                      'website': 'https://www.chatgo.cz'},
                         'Chatify': {   'cats': [52],
                                        'description': 'Chatify is a chat solution for websites seeking to enhance '
                                                       'customer engagement.',
                                        'icon': 'Chatify.svg',
                                        'scriptSrc': ['cdn\\.chatify\\.com/'],
                                        'website': 'https://www.chatify.com'},
+                        'Chative': {   'cats': [52],
+                                       'description': 'Chative is a platform that provides live chat and chatbot '
+                                                      'solutions for real-time customer interactions.',
+                                       'icon': 'Chative.svg',
+                                       'js': {'Chative.app_id': '', 'ChativeApi': '', 'ChativeEvents': ''},
+                                       'scriptSrc': ['\\.chative\\.io/'],
+                                       'website': 'https://chative.io'},
+                        'Chatlio': {   'cats': [52],
+                                       'description': 'Chatlio is a live chat solution that integrates with Slack, '
+                                                      'enabling real-time communication and customer support directly '
+                                                      'within the Slack platform.',
+                                       'icon': 'Chatlio.svg',
+                                       'js': {'ChatlioReact': '', 'ChatlioReactDOM': ''},
+                                       'scriptSrc': ['w\\.chatlio\\.com/'],
+                                       'website': 'https://chatlio.com'},
+                        'Chatlyn': {   'cats': [52, 53],
+                                       'description': 'Chatlyn is an AI-powered customer engagement platform designed '
+                                                      'to automate client communication and optimize engagement, '
+                                                      'enhancing customer satisfaction.',
+                                       'icon': 'Chatlyn.svg',
+                                       'scriptSrc': ['app\\.chatlyn\\.com/'],
+                                       'website': 'https://chatlyn.com'},
                         'Chatra': {   'cats': [52],
                                       'description': 'Chatra is a cloud-based live chat platform aimed at small '
                                                      'businesses and ecommerce retailers.',
@@ -5796,12 +6347,40 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'js': {'chatsimpleCoPilot': ''},
                                           'scriptSrc': ['cdn\\.chatsimple\\.ai/'],
                                           'website': 'https://www.chatsimple.ai'},
+                        'Chatt': {   'cats': [41, 52, 90],
+                                     'description': 'Chatt is an all-in-one platform that provides businesses with '
+                                                    'reviews, messaging, and payment solutions.',
+                                     'icon': 'Chatt.svg',
+                                     'scripts': ['getchatt\\.com'],
+                                     'website': 'https://getchatt.com'},
+                        'Chatway': {   'cats': [52],
+                                       'description': 'Chatway is a live chat tool for websites, designed to '
+                                                      'facilitate customer engagement through real-time conversations.',
+                                       'icon': 'Chatway.svg',
+                                       'js': {'$chatway': ''},
+                                       'scriptSrc': ['cdn\\.chatway\\.app/'],
+                                       'website': 'https://chatway.app'},
                         'Chatwoot': {   'cats': [52],
                                         'description': 'Chatwoot is a customer support tool for instant messaging '
                                                        'channels.',
                                         'icon': 'Chatwoot.svg',
                                         'js': {'$chatwoot': '', 'chatwootSDK': ''},
                                         'website': 'https://www.chatwoot.com'},
+                        'Chaty': {   'cats': [52],
+                                     'description': 'Chaty is a communication tool that enables customer engagement '
+                                                    'through messaging apps like WhatsApp and Messenger.',
+                                     'icon': 'Chaty.svg',
+                                     'js': {'close_chaty': '', 'launch_chaty': ''},
+                                     'scriptSrc': ['cdn\\.chaty\\.app/'],
+                                     'website': 'https://chaty.app/'},
+                        'Chayns': {   'cats': [1],
+                                      'description': 'Chayns is a web platform that enables businesses and '
+                                                     'organizations to create customizable websites and apps, '
+                                                     'providing tools for digital communication, content management, '
+                                                     'and ecommerce integration.',
+                                      'icon': 'Chayns.svg',
+                                      'scriptSrc': ['api\\.chayns-static\\.space'],
+                                      'website': 'https://chayns.site'},
                         'Checkfront': {   'cats': [5, 72],
                                           'description': 'Checkfront is a cloud-based booking management application '
                                                          'and ecommerce platform.',
@@ -5942,10 +6521,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'circleUser': '\\;confidence:50'},
                                       'website': 'https://circle.so'},
                         'Citizen Space': {   'cats': [1],
-                                             'description': 'Next-generation engagement tools for 21st century '
-                                                            'democracy.',
+                                             'description': 'Citizen Space is an engagement platform by Delib that '
+                                                            'enhances democratic processes globally.',
                                              'dom': {"a[href='https://www.delib.net/citizen_space']": {'exists': ''}},
-                                             'icon': 'CitizenSpace.png',
+                                             'icon': 'CitizenSpace.svg',
+                                             'js': {'cs_embedded_content': ''},
                                              'scriptSrc': ['/static/vendor/dlb-admin-ui/'],
                                              'website': 'https://www.delib.net/citizen_space'},
                         'Citrix': {   'cats': [46],
@@ -5985,13 +6565,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                'scriptSrc': ['wp-content/plugins/(?:[\\w\\-]+)?civicrm(?:[\\w\\-]+)?/'],
                                                'website': 'https://wordpress.org/plugins/search/civicrm/'},
                         'CivicTheme': {   'cats': [66],
-                                          'description': 'CivicTheme is an open source, inclusive and component-based '
+                                          'description': 'CivicTheme is an open source, inclusive, and component-based '
                                                          'design system. It was created so governments and '
                                                          'corporations can rapidly assemble modern, consistent and '
                                                          'compliant digital experiences.',
-                                          'dom': {   "img[class*='civic-image']": {'exists': ''},
-                                                     "img[class*='civictheme-image']": {'exists': ''},
-                                                     "img[class*='ct-image']": {'exists': ''}},
+                                          'dom': {   "img[class~='civic-image']": {'exists': ''},
+                                                     "img[class~='civictheme-image']": {'exists': ''},
+                                                     "img[class~='ct-image']": {'exists': ''}},
                                           'icon': 'civictheme.png',
                                           'website': 'https://www.civictheme.io/'},
                         'Ckan': {   'cats': [1],
@@ -6022,6 +6602,20 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'ClarityIcons': ''},
                                        'scriptSrc': ['clr-angular(?:\\.umd)?(?:\\.min)?\\.js'],
                                        'website': 'https://clarity.design'},
+                        'ClassCreator': {   'cats': [72],
+                                            'description': 'ClassCreator is a school class reunion planning tool that '
+                                                           'helps organize events, manage guest lists, and track '
+                                                           'RSVPs, streamlining the coordination of reunions.',
+                                            'icon': 'ClassCreator.svg',
+                                            'scripts': ['www\\.classcreator\\.com/'],
+                                            'website': 'https://www.classcreator.com'},
+                        'ClassFit': {   'cats': [72],
+                                        'description': 'ClassFit is a provider of a booking and scheduling software '
+                                                       'for fitness centers.',
+                                        'icon': 'ClassFit.svg',
+                                        'scriptSrc': ['\\.classfit\\.com'],
+                                        'scripts': ['\\.classfit\\.com'],
+                                        'website': 'https://classfit.com'},
                         'Classeh': {   'cats': [21],
                                        'description': 'Classeh is a LMS that allows user to participate in webinars '
                                                       'and also use LMS options like messanger,finances,homework,quiz '
@@ -6042,6 +6636,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'Classy.clientId': ''},
                                       'scripts': ['classy\\.org'],
                                       'website': 'https://www.classy.org/'},
+                        'Clear': {   'cats': [16],
+                                     'description': 'Clear is a platform that offers secure identity verification.',
+                                     'icon': 'Clear.svg',
+                                     'js': {'ClearMe.Environments': '', 'clearMeClientID': ''},
+                                     'website': 'https://www.clearme.com'},
                         'ClearSale': {   'cats': [10],
                                          'description': 'ClearSale offers fraud management and chargeback protection '
                                                         'services.',
@@ -6055,6 +6654,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                'icon': 'Clearbit.png',
                                                'scriptSrc': ['reveal\\.clearbit\\.com/v[(0-9)]/'],
                                                'website': 'https://clearbit.com/reveal'},
+                        'Clearlink': {   'cats': [32],
+                                         'description': 'Clearlink connects brands with customers who are likely to '
+                                                        'convert and provides information on partnerships and career '
+                                                        'opportunities.',
+                                         'icon': 'Clearlink.svg',
+                                         'js': {   'mapiBaseUrl': 'mapi\\.clearlink\\.com',
+                                                   'mapiLeadEndpoint': 'mapi\\.clearlink\\.com'},
+                                         'website': 'https://www.clearlink.com'},
                         'Cleave.js': {   'cats': [59],
                                          'description': 'JavaScript library for formatting input text content when you '
                                                         'are typing.',
@@ -6087,6 +6694,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'js': {'cbCartProductSelection': ''},
                                             'scriptSrc': ['static-cf\\.cleverbridge\\.\\w+/js/shop\\.js'],
                                             'website': 'https://www.cleverbridge.com'},
+                        'Clevy': {   'cats': [53],
+                                     'description': 'Clevy is a platform that automates internal processes and queries '
+                                                    'within organizations, streamlining operations and improving '
+                                                    'efficiency.',
+                                     'icon': 'Clevy.svg',
+                                     'js': {'clevyWidget.showIframe': ''},
+                                     'website': 'https://www.clevy.io'},
                         'Click & Pledge': {   'cats': [111],
                                               'description': 'Click & Pledge is an all-in-one digital fundraising '
                                                              'platform.',
@@ -6171,6 +6785,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'clickupCanBootstrapPromise': ''},
                                        'scriptSrc': ['/app-cdn\\.clickup\\.com/'],
                                        'website': 'https://clickup.com'},
+                        'Clickaine': {   'cats': [36],
+                                         'description': 'Clickaine is a traffic ad network that helps advertisers '
+                                                        'drive targeted traffic to their websites through various '
+                                                        'digital marketing solutions, offering a platform for '
+                                                        'publishers to monetize their traffic effectively.',
+                                         'icon': 'Clickaine.svg',
+                                         'scriptSrc': ['api\\.clickaine\\.com/'],
+                                         'website': 'https://clickaine.com'},
                         'Clickbank': {   'cats': [71],
                                          'dom': {   "a[href*='pay.clickbank.net?cbfid'], img[width='1'][src*='hop.clickbank.net?affiliate']": {   'exists': ''}},
                                          'icon': 'Clickbank.svg',
@@ -6188,6 +6810,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'Clicksign.svg',
                                          'js': {'Clicksign': '', 'endpointClickSign': ''},
                                          'website': 'https://www.clicksign.com'},
+                        'Clickskeks': {   'cats': [67],
+                                          'description': 'Clickskeks is an all-in-one cookie consent management '
+                                                         'platform for businesses.',
+                                          'icon': 'Clickskeks.svg',
+                                          'js': {'Clickskeks': ''},
+                                          'website': 'https://www.clickskeks.at/'},
                         'Clicktripz': {   'cats': [36],
                                           'description': 'Clicktripz is a platform that provides innovative software '
                                                          'solutions to serve the needs of suppliers, publishers, '
@@ -6209,13 +6837,20 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'clicky': ''},
                                       'scriptSrc': ['static\\.getclicky\\.com'],
                                       'website': 'https://getclicky.com'},
+                        'Client Chat Live': {   'cats': [52],
+                                                'description': 'Client Chat Live is a tool that converts website '
+                                                               'visitors into clients through live chat functionality.',
+                                                'dom': {"link[href*='platform.clientchatlive.com/']": {'exists': ''}},
+                                                'icon': 'ClientChatLive.svg',
+                                                'scriptSrc': ['\\.clientchatlive\\.com/'],
+                                                'website': 'https://clientchatlive.com'},
                         'ClientJS': {   'cats': [59, 83],
                                         'description': 'ClientJS is a JavaScript library for generating browser '
                                                        'fingerprints, exposing all the browser data-points.',
                                         'icon': 'ClientJS.png',
                                         'js': {'ClientJS': ''},
-                                        'scriptSrc': [   '/clientjs/(?:(\\d.*?)/)?\\;version:\\1',
-                                                         '/clientjs@(\\d.*?)/\\;version:\\1'],
+                                        'scriptSrc': [   '/clientjs/([\\d.]+)/\\;version:\\1',
+                                                         '/clientjs@([\\d.]+)\\;version:\\1'],
                                         'website': 'https://clientjs.org'},
                         'ClientXCMS': {   'cats': [1],
                                           'description': 'ClientXCMS is a content management system that provides a '
@@ -6459,6 +7094,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'clutch.svg',
                                       'scriptSrc': ['//widget\\.clutch\\.co/'],
                                       'website': 'https://clutch.co/content/add-review-widget-your-website'},
+                        'CmonSite': {   'cats': [6],
+                                        'description': 'CmonSite is a French-based platform for building websites and '
+                                                       'ecommerce stores.',
+                                        'icon': 'CmonSite.svg',
+                                        'js': {'BASEURL': 'www\\.cmonsite\\.fr', 'CmonSite.CookieManagement': ''},
+                                        'website': 'https://www.cmonsite.fr'},
                         'CoConstruct': {   'cats': [19],
                                            'dom': {   "a[href*='co-construct.com/skins'], iframe[src*='co-construct.com']": {   'exists': ''}},
                                            'icon': 'CoConstruct.png',
@@ -6737,6 +7378,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                'icon': 'Commerce Server.png',
                                                'implies': ['Microsoft ASP.NET'],
                                                'website': 'https://commerceserver.net'},
+                        'Commerce Vision': {   'cats': [6],
+                                               'description': 'Commerce Vision is a provider of enterprise-level B2B '
+                                                              'and B2C ecommerce solutions integrated with ERP '
+                                                              'applications.',
+                                               'headers': {'content-security-policy': '\\.commercevision\\.com\\.au'},
+                                               'icon': 'CommerceVision.svg',
+                                               'website': 'https://www.commercevision.com.au'},
                         'Commerce.js': {   'cats': [6],
                                            'description': 'Commerce.js is an API-first ecommerce platform for '
                                                           'developers and businesses.',
@@ -6759,6 +7407,20 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                             'framework for building ecommerce sites and applications.',
                                              'icon': 'commercelayer.svg',
                                              'website': 'https://commercelayer.io'},
+                        'Commercio': {   'cats': [6],
+                                         'description': 'Commercio is a platform that allows promotional product '
+                                                        'distributors to set up fully branded company stores.',
+                                         'icon': 'Commercio.svg',
+                                         'scripts': ['(?:mycommercio|commerciostores)\\.com/'],
+                                         'website': 'https://commercio.com'},
+                        'Community': {   'cats': [2],
+                                         'description': 'Community is a platform enabling public figures, small to '
+                                                        'midsize businesses, and enterprise brands to connect '
+                                                        'instantly with their audience through large-scale '
+                                                        'conversational text messaging.',
+                                         'icon': 'Community.svg',
+                                         'scriptSrc': ['\\.community\\.com/'],
+                                         'website': 'https://www.community.com'},
                         'Community Funded': {   'cats': [111],
                                                 'description': 'Community Funded is a digital fundraising and '
                                                                'engagement platform.',
@@ -6799,6 +7461,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                                      'implies': ['Contact Form 7'],
                                                                      'scriptSrc': [   'cf7-conditional-fields(?:\\/js)?(?:\\/scripts)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1'],
                                                                      'website': 'https://wordpress.org/plugins/cf7-conditional-fields'},
+                        'Conduit': {   'cats': [47],
+                                       'description': 'Conduit is a data integration tool designed to synchronize '
+                                                      'production systems through an extensible, event-first approach '
+                                                      'with minimal dependencies for integration into existing '
+                                                      'workflows.',
+                                       'icon': 'Conduit.svg',
+                                       'scripts': ['\\.conduit\\.com/'],
+                                       'website': 'https://conduit.io'},
                         'Conekta': {   'cats': [41],
                                        'description': 'Conekta is a Mexican payment platform.',
                                        'icon': 'Conekta.svg',
@@ -6885,7 +7555,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                              'platform designed to help ecommerce.',
                                               'icon': 'ConstructorIO.png',
                                               'js': {'ConstructorioClient': '', 'constructorio': ''},
-                                              'scriptSrc': ['\\.cnstrc.com\\.com/'],
+                                              'scriptSrc': ['\\.cnstrc\\.com/'],
                                               'website': 'https://constructor.io/'},
                         'Contabo': {   'cats': [88],
                                        'description': 'Contabo is a German hosting provider, previously known by the '
@@ -6954,6 +7624,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'icon': 'ContentViews.svg',
                                             'scriptSrc': [   'content-views(?:-pro)?(?:-query-and-display-post-page)?(?:\\/public)?(?:\\/assets)?(?:\\/js)?(?:\\/cv(?:pro)?)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1'],
                                             'website': 'https://wordpress.org/plugins/content-views-query-and-display-post-page/'},
+                        'Contentder': {   'cats': [6],
+                                          'description': 'Contentder is a website development platform that integrates '
+                                                         'inbound marketing analytics to optimize site performance.',
+                                          'icon': 'Contentder.svg',
+                                          'js': {   'ArticleSetting.GetAdminHostURL': 'easybuilder\\.contentder\\.com',
+                                                    'BlogSetting.GetAdminHostURL': 'easybuilder\\.contentder\\.com'},
+                                          'website': 'https://www.contentder.com'},
                         'Contentful': {   'cats': [1],
                                           'description': 'Contentful is an API-first content management platform to '
                                                          'create, manage and publish content on any digital channel.',
@@ -6981,6 +7658,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'dom': {   "img[src*='contentstack']": {   'attributes': {   'src': '\\.contentstack\\.(?:io|com)/'}}},
                                             'icon': 'Contentstack.svg',
                                             'website': 'https://www.contentstack.com'},
+                        'ContextBar': {   'cats': [94],
+                                          'description': 'ContextBar is a tool designed to attract consistent, '
+                                                         'thematically relevant visitors to a website.',
+                                          'scriptSrc': ['\\.contextbar\\.ru/'],
+                                          'website': 'https://contextbar.ru'},
                         'Contextual Related Posts': {   'cats': [5, 87],
                                                         'description': 'Add related posts to your WordPress site with '
                                                                        'inbuilt caching.',
@@ -6999,6 +7681,20 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Control.svg',
                                        'meta': {'generator': ['cntrl\\.site']},
                                        'website': 'https://cntrl.site'},
+                        'Convead': {   'cats': [32, 53],
+                                       'description': 'Convead is a CRM marketing platform for ecommerce stores that '
+                                                      'helps collect data, segment customers, and automate marketing '
+                                                      'efforts.',
+                                       'icon': 'Convead.svg',
+                                       'js': {'ConveadSettings.app_key': '', 'convead': ''},
+                                       'website': 'https://convead.io'},
+                        'Convermax': {   'cats': [29],
+                                         'description': 'Convermax is a search solution that enhances the search '
+                                                        'experience for ecommerce website visitors by providing more '
+                                                        'accurate and relevant results.',
+                                         'icon': 'Convermax.svg',
+                                         'js': {'Convermax.addProductsHistory': ''},
+                                         'website': 'https://convermax.com'},
                         'Conversant Consent Tool': {   'cats': [67],
                                                        'description': 'Conversant Consent Tool is a free tool to gain '
                                                                       'GDPR and ePD compliant consent for digital '
@@ -7030,6 +7726,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                  'convert_temp': '\\;confidence:33'},
                                        'scriptSrc': ['\\.convertexperiments\\.com/js'],
                                        'website': 'https://www.convert.com'},
+                        'ConvertBox': {   'cats': [76],
+                                          'description': 'ConvertBox is a tool that delivers targeted on-site messages '
+                                                         'based on visitor behavior to generate more leads, sales, and '
+                                                         'customers.',
+                                          'icon': 'ConvertBox.svg',
+                                          'scriptSrc': ['cdn\\.convertbox\\.com/'],
+                                          'website': 'https://convertbox.com'},
                         'ConvertFlow': {   'cats': [10, 74],
                                            'description': 'ConvertFlow is the all-in-one conversion marketing '
                                                           'platform.',
@@ -7076,11 +7779,24 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                    'convertriParameters': ''},
                                          'scriptSrc': ['cdn\\.convertri\\.com/'],
                                          'website': 'https://www.convertri.com'},
+                        'Converzee': {   'cats': [101],
+                                         'description': 'Converzee is a digital platform created to help companies '
+                                                        'manage their human resource processes.',
+                                         'icon': 'Converzee.svg',
+                                         'scriptSrc': ['api\\.converzee\\.com/'],
+                                         'website': 'https://converzee.com'},
                         'ConveyThis': {   'cats': [89],
                                           'description': 'ConveyThis is a website translation service.',
                                           'icon': 'ConveyThis.png',
                                           'scriptSrc': ['cdn\\.conveythis\\.com'],
                                           'website': 'https://www.conveythis.com/'},
+                        'Convincely': {   'cats': [32],
+                                          'description': 'Convincely is a platform designed to rapidly launch and '
+                                                         'optimize personalized sales funnels for businesses.',
+                                          'icon': 'Convincely.svg',
+                                          'js': {'convincely3.analyticsService': ''},
+                                          'scriptSrc': ['app\\.convincely\\.com/'],
+                                          'website': 'https://www.convincely.com'},
                         'Conviva': {   'cats': [14, 103],
                                        'description': 'Conviva is a census, continuous measurement and engagement '
                                                       'platform for streaming media.',
@@ -7089,6 +7805,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                  'Conviva.Client': '',
                                                  'Conviva.Client.version': '^([0-9\\.]+)$\\;version:\\1'},
                                        'website': 'https://www.conviva.com'},
+                        'Convrrt': {   'cats': [51],
+                                       'description': 'Convrrt is a platform that offers tools for creating responsive '
+                                                      'landing pages.',
+                                       'icon': 'Convrrt.svg',
+                                       'scriptSrc': ['cdn\\.convrrt\\.com/'],
+                                       'website': 'https://www.convrrt.com'},
                         'Cookie Assistant': {   'cats': [10, 67],
                                                 'description': 'Cookie Assistant is a system designed to manage user '
                                                                'consent for cookies while providing analytics.',
@@ -7424,6 +8146,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'icon': 'Creativ.eMail.svg',
                                              'scriptSrc': ['/wp-content/plugins/creative-mail-by-constant-contact/'],
                                              'website': 'https://www.creativemail.com'},
+                        'Creoline': {   'cats': [9],
+                                        'description': 'Creoline is a provider of scalable cloud solutions and '
+                                                       'application domain services.',
+                                        'dom': {"link[href*='.cstatic.io/']": {'exists': ''}},
+                                        'icon': 'Creoline.svg',
+                                        'website': 'https://www.creoline.com'},
                         'Crikle': {   'cats': [52],
                                       'description': 'Crikle is a multichannel customer engagement software.',
                                       'icon': 'Crikle.svg',
@@ -7733,6 +8461,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'DPlayer': '', 'DPlayer.version': '([\\d\\.]+)\\;version:\\1'},
                                        'scriptSrc': ['/dplayer\\.js'],
                                        'website': 'https://dplayer.js.org'},
+                        'DSpace': {   'cats': [50],
+                                      'description': 'DSpace is a software platform for academic, non-profit, and '
+                                                     'commercial organizations to create and manage open digital '
+                                                     'repositories.',
+                                      'icon': 'DSpace.svg',
+                                      'js': {'DSpaceChoiceLookup': '', 'DSpaceChoicesSetup': ''},
+                                      'meta': {'generator': ['dspace ([\\d.]+)\\;version:\\1']},
+                                      'website': 'https://dspace.org/'},
                         'DTScout': {   'cats': [36],
                                        'description': 'DTScout is a marketing data intelligence software.',
                                        'icon': 'DTScout.png',
@@ -7838,6 +8574,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'dashly': ''},
                                       'scriptSrc': ['cdn\\.dashly\\.app/'],
                                       'website': 'https://www.dashly.io'},
+                        'DatHuis': {   'cats': [32],
+                                       'description': 'DatHuis is a platform providing marketing automation tools for '
+                                                      'real estate professionals, designed to enhance visibility and '
+                                                      'streamline operations.',
+                                       'icon': 'DatHuis.svg',
+                                       'js': {'DatHuisObject': ''},
+                                       'website': 'https://dathuis.nl'},
                         'DataDome': {   'cats': [16],
                                         'cookies': {'datadome': '', 'datadome-_zldp': '', 'datadome-_zldt': ''},
                                         'description': 'DataDome is a cybersecurity platform that specialises in bot '
@@ -7873,6 +8616,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                     'jQuery.fn.dataTable.version': '^(.+)$\\;version:\\1'},
                                           'scriptSrc': ['datatables.*\\.js'],
                                           'website': 'https://datatables.net'},
+                        'Datacrush': {   'cats': [32],
+                                         'description': 'Datacrush is a marketing automation platform.',
+                                         'icon': 'Datacrush.svg',
+                                         'scripts': ['js\\.datacrush\\.la'],
+                                         'website': 'https://www.datacrush.la'},
                         'Datadog': {   'cats': [78, 10],
                                        'description': 'Datadog is a SaaS-based monitoring and analytics platform for '
                                                       'large-scale applications and infrastructure.',
@@ -7880,12 +8628,27 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'DD_LOGS': '\\;confidence:1', 'DD_RUM': '\\;confidence:99'},
                                        'scriptSrc': ['www\\.datadoghq-browser-agent\\.com'],
                                        'website': 'https://www.datadoghq.com'},
+                        'Datalitics': {   'cats': [32],
+                                          'description': 'Datalitics is a platform designed for advanced lead '
+                                                         'tracking, offering tools to monitor, analyze, and optimize '
+                                                         'customer acquisition efforts.',
+                                          'icon': 'Datalitics.svg',
+                                          'js': {'createWPDatalitics': '', 'createWPRedirectDatalitics': ''},
+                                          'scriptSrc': ['app\\.datalitics\\.com\\.br/'],
+                                          'website': 'https://datalitics.com.br'},
                         'Datanyze': {   'cats': [10],
                                         'description': 'Datanyze is a provider of visitor tracking script, offering '
                                                        'sales intelligence and lead generation software solutions.',
                                         'icon': 'Datanyze.svg',
                                         'scriptSrc': ['\\.datanyze\\.com/'],
                                         'website': 'https://www.datanyze.com'},
+                        'Datarize': {   'cats': [32, 53],
+                                        'description': 'Datarize is a CRM marketing solution designed to streamline '
+                                                       'customer relationship management and enhance targeted '
+                                                       'marketing efforts.',
+                                        'icon': 'Datarize.svg',
+                                        'scriptSrc': ['assets\\.datarize\\.ai/'],
+                                        'website': 'https://datarize.ai'},
                         'Datascape': {   'cats': [1],
                                          'description': 'Datascape is a cloud-based solution designed to create new '
                                                         'ways for councils to work and better engage with their '
@@ -7893,6 +8656,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'dom': {"link[href*='cdn-sites.datascape.cloud']": {'exists': ''}},
                                          'icon': 'Datascape.svg',
                                          'website': 'https://datacom.com/nz/en/products/datascape'},
+                        'Dataships': {   'cats': [16],
+                                         'description': 'Dataships is a platform that ensures compliance with global '
+                                                        'data privacy regulations, helping businesses manage and '
+                                                        'protect customer data according to international standards.',
+                                         'icon': 'Dataships.svg',
+                                         'scriptSrc': ['\\.dataships\\.io/'],
+                                         'website': 'https://dataships.io'},
                         'Datatrics': {   'cats': [97],
                                          'description': 'Datatrics is a data-driven marketing platform that provides '
                                                         'businesses with advanced tools and analytics to optimise '
@@ -7928,6 +8698,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                      'x-powered-by': '(?:debian|dotdeb|(potato|woody|sarge|etch|lenny|squeeze|wheezy|jessie|stretch|buster|sid))\\;version:\\1'},
                                       'icon': 'Debian.png',
                                       'website': 'https://debian.org'},
+                        'Decap CMS': {   'cats': [1],
+                                         'description': 'Decap CMS is an open-source content management system '
+                                                        'designed to integrate with Git workflows.',
+                                         'icon': 'DecapCMS.svg',
+                                         'js': {   'DecapCms.getBackend': '',
+                                                   'DecapCmsApp.getBackend': '',
+                                                   'webpackChunkdecap_website': ''},
+                                         'website': 'https://decapcms.org'},
                         'Decibel': {   'cats': [10, 74],
                                        'description': 'Decibel is a behavioral analysis solution that helps users gain '
                                                       'actionable insights about their digital audience.',
@@ -7935,6 +8713,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'decibelInsight': '', 'decibelInsightLayer': ''},
                                        'scriptSrc': ['cdn\\.decibelinsight\\.net'],
                                        'website': 'https://decibel.com'},
+                        'Deco.cx': {   'cats': [108],
+                                       'description': 'Deco.cx is an enterprise frontend platform designed to optimize '
+                                                      'and accelerate ecommerce performance.',
+                                       'icon': 'Deco.svg',
+                                       'js': {'DECO.events': '', 'DECO_SITES_STD': ''},
+                                       'website': 'https://deco.cx'},
                         'DedeCMS': {   'cats': [1],
                                        'cpe': 'cpe:2.3:a:dedecms:dedecms:*:*:*:*:*:*:*:*',
                                        'icon': 'DedeCMS.png',
@@ -7942,6 +8726,18 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'DedeContainer': ''},
                                        'scriptSrc': ['dedeajax'],
                                        'website': 'https://dedecms.com'},
+                        'Deep Lawn': {   'cats': [32],
+                                         'description': 'Deep Lawn is a sales tool designed for lawn care and pest '
+                                                        'control companies.',
+                                         'icon': 'DeepLawn.svg',
+                                         'scriptSrc': ['api\\.deeplawn\\.com/'],
+                                         'website': 'https://deeplawn.com'},
+                        'DeepAR': {   'cats': [105],
+                                      'description': 'DeepAR is SDK that integrates AR face filters, 3D masks, '
+                                                     'effects, and background removal into websites, apps, or games.',
+                                      'dom': {"source[src*='demo.deepar.ai/']": {'exists': ''}},
+                                      'icon': 'DeepAR.svg',
+                                      'website': 'https://www.deepar.ai'},
                         'Delacon': {   'cats': [10],
                                        'description': 'Delacon provides Australian businesses with Call Tracking, Call '
                                                       'Management and Speech Analytics solutions.',
@@ -7983,12 +8779,24 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'deliverrScript': ''},
                                         'scriptSrc': ['fast-tags\\.deliverr\\.com'],
                                         'website': 'https://deliverr.com'},
+                        'Delivra': {   'cats': [32, 75],
+                                       'description': 'Delivra is a premium email marketing tracking software.',
+                                       'icon': 'Delivra.svg',
+                                       'scriptSrc': ['integration\\.delivra\\.com'],
+                                       'website': 'https://www.delivra.com'},
                         'Delm': {   'cats': [100],
                                     'description': 'Delm is a customisable and multilingual delivery date estimation '
                                                    'app for Shopify, providing shipping information.',
                                     'icon': 'Delm.svg',
                                     'scriptSrc': ['cdn\\.delm\\.io/'],
                                     'website': 'https://delm.io'},
+                        'Dema': {   'cats': [10],
+                                    'description': 'Dema is a next-generation ecommerce analytics system designed to '
+                                                   'provide insights and data-driven solutions for online businesses.',
+                                    'icon': 'Dema.svg',
+                                    'scriptSrc': ['\\.dema\\.ai'],
+                                    'scripts': ['\\.dema\\.ai'],
+                                    'website': 'https://www.dema.ai'},
                         'Demandbase': {   'cats': [10, 76],
                                           'description': 'Demandbase is a targeting and personalization platform for '
                                                          'business-to-business companies.',
@@ -8025,6 +8833,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'dom': {"link[href*='.depict.ai/']": {'exists': ''}},
                                       'icon': 'Depict.svg',
                                       'website': 'https://depict.ai'},
+                        'Deriv': {   'cats': [10],
+                                     'description': 'Deriv is an online platform that allows users to track trading '
+                                                    'activities.',
+                                     'icon': 'Deriv.svg',
+                                     'scripts': ['track\\.deriv\\.com'],
+                                     'website': 'https://deriv.com'},
                         'DeskPro': {   'cats': [1, 53],
                                        'cpe': 'cpe:2.3:a:deskpro:deskpro:*:*:*:*:*:*:*:*',
                                        'description': 'DeskPro is multi channel helpdesk software for managing '
@@ -8058,6 +8872,29 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'scriptSrc': [   'livechat\\.desku\\.io/cdn/widget\\.js',
                                                       'widget\\.desku\\.io/chat-widget\\.js'],
                                      'website': 'https://desku.io'},
+                        'Destinet': {   'cats': [51],
+                                        'description': 'Destinet is a homepage generator system designed to streamline '
+                                                       'the creation of customizable web pages.',
+                                        'headers': {'server': 'destinet'},
+                                        'js': {'DestinetMap.SetMap': ''},
+                                        'website': 'https://www.destinet.no'},
+                        'Destini': {   'cats': [6],
+                                       'description': 'Destini is a product locator solution that offers automated '
+                                                      'store-level data, advanced analytics, and customizable web and '
+                                                      'mobile applications.',
+                                       'icon': 'Destini.svg',
+                                       'js': {   'destini.init': '',
+                                                 'destiniAddProducts': '',
+                                                 'destiniDataLayer': '',
+                                                 'destiniReset': ''},
+                                       'website': 'https://destini.co/'},
+                        'Desty': {   'cats': [6],
+                                     'description': 'Desty is a platform offering product and order management '
+                                                    'services, enabling handling of inventory, orders, and related '
+                                                    'processes for businesses.',
+                                     'icon': 'Desty.svg',
+                                     'js': {'DestyBp': ''},
+                                     'website': 'https://www.desty.app'},
                         'Deta': {   'cats': [62],
                                     'description': 'Deta is a cloud platform for building and deploying apps.',
                                     'headers': {'server': '^deta$'},
@@ -8068,6 +8905,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                         'application for vulnerabilities.',
                                          'icon': 'Detectify.svg',
                                          'website': 'https://detectify.com/'},
+                        'Detectizr': {   'cats': [10],
+                                         'description': 'Detectizr is a Modernizr extension to detect device, browser, '
+                                                        'operating system and screen size.',
+                                         'js': {'Detectizr': ''},
+                                         'website': 'https://baris.aydinoglu.net/Detectizr'},
                         'Deutsche Post': {   'cats': [99],
                                              'description': 'Deutsche Post is a German multinational package delivery '
                                                             'and supply chain management company in Germany.',
@@ -8081,6 +8923,21 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'implies': ['Angular', 'React', 'Vue.js', 'jQuery'],
                                           'js': {'DevExpress._DEVEXTREME_BUNDLE_INITIALIZED': ''},
                                           'website': 'https://js.devexpress.com'},
+                        'DevRev': {   'cats': [52, 53],
+                                      'description': 'DevRev PLuG is a customer support platform offering live chat, '
+                                                     'help documentation, search functionality, an observability '
+                                                     'engine, and product announcements, all integrated within a '
+                                                     'widget similar to a support chat widget for website assistance.',
+                                      'icon': 'DevRev.svg',
+                                      'scriptSrc': ['plug-platform\\.devrev\\.ai/'],
+                                      'website': 'https://devrev.ai/plug-observability'},
+                        'Developing Azerbaijan': {   'cats': [47],
+                                                     'description': 'Developing Azerbaijan is a provider of services '
+                                                                    'including website creation, optimization, '
+                                                                    'technical support, and hosting.',
+                                                     'icon': 'DevelopingAzerbaijan.svg',
+                                                     'meta': {'author': ['developing.az']},
+                                                     'website': 'https://www.developing.az/'},
                         'Dexie.js': {   'cats': [59],
                                         'description': 'A Minimalistic Wrapper for IndexedDB.',
                                         'icon': 'Dexie.js.png',
@@ -8130,6 +8987,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'DigiFi.svg',
                                       'meta': {'generator': ['^digify$']},
                                       'website': 'https://digify.shop'},
+                        'Digioh': {   'cats': [110],
+                                      'description': 'Digioh is a lead generation and marketing company helping to '
+                                                     "convert clicks to customers known for it's email/sms sign-up "
+                                                     'units',
+                                      'icon': 'Digioh.png',
+                                      'js': {'DIGIOH_API': ''},
+                                      'website': 'https://www.digioh.com/'},
                         'Digismoothie Candy Rack': {   'cats': [100],
                                                        'description': 'Digismoothie Candy Rack is an upsell app for '
                                                                       'Shopify which allow merchants to offer custom '
@@ -8179,6 +9043,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'dom': {   "img[src^='/globalassets/digizuite/'], source[srcset^='/globalassets/digizuite/'], video[src^='/globalassets/digizuite/']": {   'exists': ''}},
                                          'icon': 'Digizuite.svg',
                                          'website': 'https://www.digizuite.com'},
+                        'Dimml': {   'cats': [47],
+                                     'description': 'Dimml is a data flow management software.',
+                                     'icon': 'Dimml.svg',
+                                     'scriptSrc': ['\\.dimml\\.io/'],
+                                     'website': 'https://www.dimml.io'},
                         'DirectAdmin': {   'cats': [9],
                                            'cpe': 'cpe:2.3:a:directadmin:directadmin:*:*:*:*:*:*:*:*',
                                            'description': 'DirectAdmin is a graphical web-based web hosting control '
@@ -8312,6 +9181,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'DocketPay': ''},
                                       'scriptSrc': ['dockethosting\\.com/'],
                                       'website': 'https://www.yourdocket.com'},
+                        'DocsBot': {   'cats': [52],
+                                       'description': 'DocsBot is an AI-powered chatbot that helps automate customer '
+                                                      'support and improve team productivity.',
+                                       'icon': 'DocsBotAI.svg',
+                                       'js': {'DocsBotAI.el': ''},
+                                       'website': 'https://docsbot.ai'},
                         'Docsify': {   'cats': [4],
                                        'description': 'Docsify is an open-source documentation generator for creating '
                                                       'user-friendly documentation websites.',
@@ -8533,6 +9408,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'dom': {"link[href*='.doubleverify.com']": {'exists': ''}},
                                             'icon': 'DoubleVerify.svg',
                                             'website': 'https://doubleverify.com'},
+                        'Dover': {   'cats': [101],
+                                     'description': 'Dover is a platform that streamlines recruiting by identifying '
+                                                    'and scheduling qualified candidates.',
+                                     'icon': 'Dover.svg',
+                                     'scripts': ['app\\.dover\\.io'],
+                                     'website': 'https://www.dover.com'},
                         'Dovetale': {   'cats': [71],
                                         'description': 'Dovetale (Acquired by Shopify) helps e-commerce stores '
                                                        'recruit, manage, & grow their sales with communities of people '
@@ -8586,6 +9467,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'js': {'drapr_data': '', 'drapr_deferLoading': ''},
                                      'scriptSrc': ['draprpubsubtest\\.firebaseapp\\.com/'],
                                      'website': 'https://www.drapr.com'},
+                        'Drata': {   'cats': [16],
+                                     'description': 'Drata is an automated site compliance system designed to '
+                                                    'streamline and manage security and privacy requirements.',
+                                     'icon': 'Drata.svg',
+                                     'js': {'webpackChunkdrata_web': ''},
+                                     'meta': {'author': ['drata inc.'], 'copyright': ['drata inc.']},
+                                     'website': 'https://drata.com'},
                         'DreamApply': {   'cats': [101, 19],
                                           'description': 'DreamApply is a specialised student application management '
                                                          'system designed with and for education institutions.',
@@ -8707,7 +9595,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                    'enables businesses and individuals to create responsive, '
                                                    'mobile-friendly websites without extensive coding knowledge.',
                                     'icon': 'Duda.svg',
-                                    'js': {   'SystemID': '^.*DIRECT.*$',
+                                    'js': {   'SystemID': '^.*(?:DIRECT|EU_PRODUCTION).*$',
                                               'd_version': '^(.*)$\\;version:\\1\\;confidence:0'},
                                     'scriptSrc': ['dd-cdn\\.multiscreensite\\.com/'],
                                     'website': 'https://www.duda.co'},
@@ -8731,6 +9619,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Duopana.svg',
                                        'scriptSrc': ['\\.beracode\\.com/'],
                                        'website': 'https://duopana.com'},
+                        'Dweet': {   'cats': [63],
+                                     'description': 'Dweet is a platform enabling data sharing across Internet of '
+                                                    'Things(IoT).',
+                                     'icon': 'Dweet.svg',
+                                     'js': {   'dweetCallback': '',
+                                               'dweet_script_loader': '',
+                                               'dweetio.dweet': '',
+                                               'dweetioThing': ''},
+                                     'website': 'https://dweet.io'},
                         'DynAd': {   'cats': [36],
                                      'description': 'DynAd is a service for advertising and dynamic content '
                                                     'optimisation.',
@@ -8897,6 +9794,21 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'headers': {'server': '^ezproxy$'},
                                        'icon': 'default.svg',
                                        'website': 'https://www.oclc.org/en/ezproxy.html'},
+                        'EarlyParrot': {   'cats': [94],
+                                           'description': 'EarlyParrot is a referral marketing platform that supports '
+                                                          'coaches, course creators, and event hosts in expanding '
+                                                          'launches, webinars, and email lists through effective '
+                                                          'referral strategies.',
+                                           'icon': 'EarlyParrot.svg',
+                                           'scripts': ['app\\.earlyparrot\\.com'],
+                                           'website': 'https://www.earlyparrot.com'},
+                        'EaselJS': {   'cats': [59],
+                                       'description': 'EaselJS is a JavaScript library designed to simplify working '
+                                                      'with the HTML5 Canvas element, making it useful for creating '
+                                                      'games, generative art, and other graphical applications.',
+                                       'icon': 'EaselJS.svg',
+                                       'scriptSrc': ['/easeljs\\.min\\.js'],
+                                       'website': 'https://createjs.com/easeljs'},
                         'Easy Accordion': {   'cats': [87],
                                               'description': 'Easy Accordion is a flexible and customisable accordion '
                                                              'and FAQs builder plugin for WordPress.',
@@ -8962,6 +9874,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'EasyGift.png',
                                         'js': {'EasyGift.nonTargetingRules': '', 'EasyGiftScriptLoaded': ''},
                                         'website': 'https://apps.shopify.com/gifter-cart-auto-include'},
+                        'EasyPolls': {   'cats': [73],
+                                         'description': 'EasyPolls is a tool that allows poll creation and sharing '
+                                                        'across websites, Facebook, Twitter, or via a direct link to '
+                                                        'the poll, enabling users to engage audiences across multiple '
+                                                        'platforms.',
+                                         'icon': 'EasyPolls.svg',
+                                         'scriptSrc': ['\\.easypolls\\.net'],
+                                         'website': 'https://easypolls.net'},
                         'EasyStore': {   'cats': [6],
                                          'description': 'EasyStore is a multi sales channel ecommerce platform.',
                                          'icon': 'EasyStore.svg',
@@ -8974,9 +9894,23 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                      'applications.',
                                       'scriptSrc': ['/jquery\\.easyui\\.min\\.js'],
                                       'website': 'https://jeasyui.com'},
+                        'EasyWebinar': {   'cats': [103],
+                                           'description': 'EasyWebinar is a webinar platform designed for marketing '
+                                                          'and growing businesses.',
+                                           'icon': 'EasyWebinar.svg',
+                                           'scriptSrc': ['\\.easywebinar\\.com/'],
+                                           'website': 'https://easywebinar.com'},
                         'Easylog': {   'cats': [99],
                                        'description': 'EasyLog is a logistics company based in Brazil.',
                                        'website': 'https://www.easylog.com.br'},
+                        'Easysize': {   'cats': [6],
+                                        'description': 'Easysize is a system that provides clothing size '
+                                                       'recommendations to enhance fit and reduce sizing errors.',
+                                        'icon': 'Easysize.svg',
+                                        'js': {   'EasySize': '',
+                                                  'EasySizeDebugEnable': '',
+                                                  'EasySizeParametersDebug': ''},
+                                        'website': 'https://www.easysize.me'},
                         'Ebasnet': {   'cats': [1],
                                        'description': 'Ebasnet is a web project creation and management platform in '
                                                       'the cloud. It allows anyone to set up an online store or '
@@ -8986,6 +9920,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'meta': {'author': ['^ebasnet web solutions$']},
                                        'scriptSrc': ['cdnebasnet\\.com/'],
                                        'website': 'https://ebasnet.com'},
+                        'Eber': {   'cats': [84],
+                                    'description': 'Eber is a consumer engagement management platform for retail, F&B, '
+                                                   'hotels, and more.',
+                                    'icon': 'Eber.svg',
+                                    'js': {'Eber': '', 'EberVars.channelId': '', 'intervalEberJQuery': ''},
+                                    'scriptSrc': ['widget\\.eber\\.co/'],
+                                    'website': 'https://eber.co'},
                         'EcForce': {   'cats': [6],
                                        'description': 'EcForce is an all-in-one ecommerce platform with all the '
                                                       'functions necessary for ecommerce, from landing-page creation '
@@ -9040,6 +9981,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'headers': {'server': '^ecd\\s\\(\\s+\\)'},
                                         'icon': 'EdgeCast.png',
                                         'website': 'https://www.edgecast.com'},
+                        'Edgemesh': {   'cats': [92],
+                                        'description': 'Edgemesh is web acceleration platform for e-commerce brands',
+                                        'icon': 'Edgemesh.png',
+                                        'js': {'edgemesh': ''},
+                                        'website': 'https://edgemesh.com/'},
                         'Edgio': {   'cats': [31, 62],
                                      'cookies': {'layer0_bucket': '', 'layer0_destination': '', 'layer0_eid': ''},
                                      'description': 'Edgio is an integrated suite of Edge services, from Delivery to '
@@ -9213,6 +10159,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'icon': 'elementskit.svg',
                                            'js': {'ElementsKit_Helper': '', 'elementskit': ''},
                                            'website': 'https://wpmet.com/plugin/elementskit'},
+                        'Elenore': {   'cats': [53],
+                                       'description': 'Elenore is an all-in-one business management software platform '
+                                                      'designed to streamline operations and support business growth.',
+                                       'icon': 'Elenore.svg',
+                                       'scripts': ['app\\.elenore\\.io'],
+                                       'website': 'https://elenore.io'},
                         'Elevar': {   'cats': [10],
                                       'description': 'Elevar is an official Shopify Plus Partner data collection and '
                                                      'marketing monitoring tool.',
@@ -9416,6 +10368,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'Ember': '', 'Ember.VERSION': '^(.+)$\\;version:\\1', 'EmberENV': ''},
                                         'scripts': ['@overview\\s+ember -[\\s\\s]+@version\\s+(.+)\\;version:\\1'],
                                         'website': 'https://emberjs.com'},
+                        'Emojicom': {   'cats': [73],
+                                        'description': 'Emojicom is a tool for collecting feedback through emojis, '
+                                                       "enabling the capture of visitors' emotions.",
+                                        'icon': 'Emojicom.svg',
+                                        'js': {   '$emojicom': '',
+                                                  'EMOJICOM_BASE_PATH': 'cdn\\.emojicom\\.io/',
+                                                  'emojicom': ''},
+                                        'website': 'https://emojicom.io'},
                         'Emotion': {   'cats': [12, 47],
                                        'description': 'Emotion is a library designed for writing CSS styles with '
                                                       'JavaScript.',
@@ -9512,6 +10472,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {'Enjin_Core_Storage_Cache': '', 'Enjin_UI': ''},
                                          'scriptSrc': ['\\.enjin\\.com/'],
                                          'website': 'https://www.enjin.com'},
+                        'Enjore': {   'cats': [1],
+                                      'description': 'Enjore is an online sports administration system designed to '
+                                                     'manage schedules, results, statistics, and news for all leagues '
+                                                     'and tournaments.',
+                                      'dom': {"link[href*='cdn.enjore.com/']": {'exists': ''}},
+                                      'icon': 'Enjore.svg',
+                                      'website': 'https://www.enjore.com'},
                         'Enkod': {   'cats': [32, 97],
                                      'description': 'Enkod is a CDP platform designed for marketing automation.',
                                      'icon': 'Enkod.svg',
@@ -9583,6 +10550,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                               'icon': 'Envo Themes.png',
                                               'scriptSrc': [   '/wp-content/themes/envo-ecommerce/.+customscript\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1'],
                                               'website': 'https://envothemes.com/free-envo-ecommerce/'},
+                        'Envoke': {   'cats': [75],
+                                      'description': 'Envoke is a CASL-compliant email marketing software designed for '
+                                                     'communications professionals in business, education, and the '
+                                                     'public sector, with a focus on security and compliance.',
+                                      'icon': 'Envoke.svg',
+                                      'scriptSrc': ['\\.envoke\\.com/'],
+                                      'website': 'https://envoke.com/'},
                         'Envoy': {   'cats': [64],
                                      'cpe': 'cpe:2.3:a:envoyproxy:envoy:*:*:*:*:*:*:*:*',
                                      'description': 'Envoy is an open-source edge and service proxy, designed for '
@@ -9689,6 +10663,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                               'icon': 'Essential Addons for Elementor.svg',
                                                               'scriptSrc': [   '/wp-content/uploads/essential-addons-elementor/'],
                                                               'website': 'https://essential-addons.com/elementor/'},
+                        'Essential Blocks': {   'cats': [87],
+                                                'description': 'Essential Blocks is a Gutenberg Blocks page builder '
+                                                               'plugin that adds extra functionality to the WordPress '
+                                                               'Block Editor.',
+                                                'dom': {   'link#essential-blocks-frontend-style-css': {'exists': ''},
+                                                           "link[href*='/wp-content/uploads/eb-style/']": {   'exists': ''}},
+                                                'html': ['<div[^>]+class=["\']wp-block-essential-blocks-*'],
+                                                'icon': 'essential-blocks.png',
+                                                'website': 'https://essential-blocks.com'},
                         'Essential JS 2': {   'cats': [12, 59],
                                               'html': [   '<[^>]+ class ?= ?"(?:e-control|[^"]+ e-control)(?: )[^"]* '
                                                           'e-lib\\b'],
@@ -9712,6 +10695,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'icon': 'EtailSystems.svg',
                                              'js': {'EtailAlert': '', 'EtailEncodePersText': ''},
                                              'website': 'https://www.etailsystems.com'},
+                        'Etermio': {   'cats': [72],
+                                       'description': 'Etermio is an automated system for online appointment '
+                                                      'scheduling.',
+                                       'icon': 'Etermio.svg',
+                                       'js': {'$eTermio': '', 'eTermio_autoOpenWindow': '', 'etermio_handler': ''},
+                                       'website': 'https://www.etermio.com'},
                         'Etherpad': {   'cats': [24],
                                         'cpe': 'cpe:2.3:a:etherpad:etherpad:*:*:*:*:*:*:*:*',
                                         'description': 'Etherpad is an open-source, web-based collaborative real-time '
@@ -9767,6 +10756,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Everflow.png',
                                         'scriptSrc': ['everflow\\.js'],
                                         'website': 'https://www.everflow.io'},
+                        'Everviz': {   'cats': [10],
+                                       'description': 'Everviz is an online tool for creating interactive charts and '
+                                                      'maps, enabling data visualization with customizable features.',
+                                       'icon': 'Everviz.svg',
+                                       'js': {'everviz.beforePrint': ''},
+                                       'scriptSrc': ['app\\.everviz\\.com/'],
+                                       'website': 'https://www.everviz.com'},
                         'EveryAction': {   'cats': [111],
                                            'description': 'EveryAction provides fundraising software, donor management '
                                                           'software, and CRM software to nonprofit organisations.',
@@ -9796,6 +10792,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'Evolok.svg',
                                       'js': {'evo_client': '', 'evo_endpoint': ''},
                                       'website': 'https://www.evolok.com'},
+                        'Evolve Media': {   'cats': [1],
+                                            'description': 'Evolve Media is a publishing platform that offers '
+                                                           'contextual environments for partners to connect and engage '
+                                                           'with millions of loyal readers through passionate writing '
+                                                           'and artful storytelling.',
+                                            'icon': 'EvolveMedia.svg',
+                                            'js': {'EvolveGtagId': '', 'EvolveMediaMainSettings': ''},
+                                            'website': 'https://www.evolvemediallc.com'},
                         'Evvnt': {   'cats': [72, 104],
                                      'description': 'Evvnt is a digital events marketing and management platform.',
                                      'dom': {"script[data-source*='evvnt']": {'exists': ''}},
@@ -9839,6 +10843,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                    'exitintelConfig': ''},
                                          'scriptSrc': ['(?:get.)?exitintel\\.com'],
                                          'website': 'https://exitintelligence.com'},
+                        'Exo Platform': {   'cats': [19],
+                                            'description': 'Exo Platform is a social-collaboration software designed '
+                                                           'for enterprises.',
+                                            'icon': 'ExoPlatform.svg',
+                                            'js': {'eXo.core': ''},
+                                            'website': 'https://www.exoplatform.com'},
                         'ExoClick': {   'cats': [36],
                                         'description': 'ExoClick is a Barcelona-based online advertising company, '
                                                        'which provides online advertising services to both advertisers '
@@ -10017,6 +11027,20 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                           'icon': 'FAST Search for SharePoint.png',
                                                           'implies': ['Microsoft ASP.NET', 'Microsoft SharePoint'],
                                                           'website': 'https://sharepoint.microsoft.com/en-us/product/capabilities/search/Pages/Fast-Search.aspx'},
+                        'FC2 Analyzer': {   'cats': [10],
+                                            'description': 'FC2 Analyzer is a platform designed to track and analyze '
+                                                           'affiliate system performance, providing insights into '
+                                                           'traffic, conversions, and revenue metrics.',
+                                            'icon': 'FC2Analyzer.svg',
+                                            'scriptSrc': ['\\.fc2\\.com/'],
+                                            'website': 'https://fc2.com'},
+                        'FMG Suite': {   'cats': [32],
+                                         'description': 'FMG Suite is an automated content marketing system for '
+                                                        'financial advisors.',
+                                         'icon': 'FMGSuite.svg',
+                                         'js': {'FMG.EbookBGType': '', 'fmgjQuery.Animation': ''},
+                                         'meta': {'generator': ['^fmg suite$']},
+                                         'website': 'https://fmgsuite.com'},
                         'FUDforum': {   'cats': [2],
                                         'cpe': 'cpe:2.3:a:fudforum:fudforum:*:*:*:*:*:*:*:*',
                                         'description': 'FUDforum is a discussion forum software with support for '
@@ -10068,6 +11092,17 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                               'scriptSrc': [   'connect\\.facebook.\\w+/signals/config/\\d+\\?v=([\\d\\.]+)\\;version:\\1',
                                                                'connect\\.facebook\\.\\w+/.+/fbevents\\.js'],
                                               'website': 'https://facebook.com'},
+                        'Facebook Pixel Advanced Matching': {   'cats': [42],
+                                                                'description': 'Facebook Pixel Advanced Matching is a '
+                                                                               'feature that allows the optimization '
+                                                                               'of Meta ads by sending hashed customer '
+                                                                               'information with Meta Pixel events, '
+                                                                               'aiding in improved conversion '
+                                                                               'attribution and broader audience '
+                                                                               'reach.',
+                                                                'icon': 'Meta.svg',
+                                                                'implies': ['Facebook Pixel'],
+                                                                'website': 'https://www.facebook.com/business/help/611774685654668?id=1205376682832142'},
                         'Facil-iti': {   'cats': [68],
                                          'description': 'Facil-iti is a web accessibility overlay which provides '
                                                         'support for some people with disabilities and seniors.',
@@ -10105,6 +11140,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                   'icon': 'FameThemes.svg',
                                                   'js': {'Screenr.autoplay': '', 'Screenr_Plus': ''},
                                                   'website': 'https://www.famethemes.com/themes/screenr'},
+                        'Famewall': {   'cats': [90],
+                                        'description': 'Famewall is a tool that converts social media mentions into '
+                                                       'visually appealing testimonials and automates the process of '
+                                                       'collecting them from customers using a custom collection '
+                                                       'feature.',
+                                        'icon': 'Famewall.svg',
+                                        'scriptSrc': ['embed\\.famewall\\.io/'],
+                                        'website': 'https://famewall.io'},
                         'FancyBox': {   'cats': [59],
                                         'description': 'FancyBox is a tool for displaying images, html content and '
                                                        "multi-media in a Mac-style 'lightbox' that floats overtop of "
@@ -10125,6 +11168,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'fanplayr.platform.version': '^([\\d\\.]+)$\\;version:\\1'},
                                         'scriptSrc': ['cdn\\.fanplayr\\.com/.+/([\\d\\.]+)\\;version:\\1'],
                                         'website': 'https://fanplayr.com'},
+                        'FarCry': {   'cats': [18],
+                                      'cookies': {'farcrydevicetype': ''},
+                                      'description': 'FarCry is a web application framework that helps CFML developers '
+                                                     'build tailor-made content solutions.',
+                                      'icon': 'FarCry.svg',
+                                      'js': {'farcryForgotPassword': '', 'farcryLogin': ''},
+                                      'website': 'https://www.farcrycore.org'},
                         'FaraPy': {   'cats': [1],
                                       'html': ['<!-- powered by farapy.'],
                                       'icon': 'FaraPy.png',
@@ -10158,10 +11208,18 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                         'California.',
                                          'icon': 'FastComet.png',
                                          'website': 'https://www.fastcomet.com'},
+                        'FastPixel': {   'cats': [23, 87],
+                                         'description': 'FastPixel is a web performance and security service that '
+                                                        'provides caching, a content delivery network, web application '
+                                                        'firewall, and image optimization.',
+                                         'html': ['<link[^>]+href="https://cdn\\.fastpixel\\.io'],
+                                         'icon': 'FastPixel.svg',
+                                         'website': 'https://fastpixel.io/'},
                         'FastSpring': {   'cats': [6, 41],
                                           'description': 'FastSpring is a digital ecommerce platform that helps '
                                                          'software and SaaS companies manage payments, subscriptions, '
                                                          'tax compliance, and fraud prevention globally.',
+                                          'dom': {"form[action*='sites.fastspring.com']": {'exists': ''}},
                                           'html': [   '<a [^>]*href="https?://sites\\.fastspring\\.com',
                                                       '<form [^>]*action="https?://sites\\.fastspring\\.com'],
                                           'icon': 'FastSpring.svg',
@@ -10287,6 +11345,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'icon': 'feedback-fish.svg',
                                              'scriptSrc': ['^https://feedback\\.fish/ff\\.js'],
                                              'website': 'https://feedback.fish'},
+                        'FeederNinja': {   'cats': [5],
+                                           'description': 'FeederNinja is a tool that allows users to create '
+                                                          'customizable RSS and social media feed widgets for '
+                                                          'embedding on websites.',
+                                           'scriptSrc': ['\\.feederninja\\.com/'],
+                                           'website': 'https://www.feederninja.com'},
                         'Feefo': {   'cats': [90],
                                      'description': 'Feefo is a cloud-based consumer review and rating management '
                                                     'software.',
@@ -10324,6 +11388,21 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                         'implies': ['Fera', 'Shopify'],
                                                         'js': {   'feraJsUrl': 'cdn\\.fera\\.ai/js/fera\\.js.+\\.myshopify\\.com'},
                                                         'website': 'https://apps.shopify.com/fera'},
+                        'FiboSearch': {   'cats': [29],
+                                          'description': 'FiboSearch is a WooCommerce product search plugin, formerly '
+                                                         'known as AJAX Search.',
+                                          'icon': 'FiboSearch.svg',
+                                          'js': {'dgwt_wcas.ajax_search_endpoint': ''},
+                                          'website': 'https://fibosearch.com'},
+                        'Filamentphp': {   'cats': [47],
+                                           'description': 'Filamentphp is a set of full-stack components designed to '
+                                                          'serve as a foundational starting point for developing '
+                                                          'applications.',
+                                           'icon': 'Filament.svg',
+                                           'js': {   'FilamentNotification': '',
+                                                     'filamentData': '',
+                                                     'webpackChunkfilament': ''},
+                                           'website': 'https://filamentphp.com'},
                         'FilePond': {   'cats': [59],
                                         'description': 'FilePond is a JavaScript library for file uploads.',
                                         'icon': 'filepond.svg',
@@ -10711,6 +11790,21 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'Flowplayer.svg',
                                           'js': {'flowplayer': '', 'flowplayer.version': '([\\d\\.]+)\\;version:\\1'},
                                           'website': 'https://flowplayer.com'},
+                        'Fluid Player': {   'cats': [14],
+                                            'description': 'Fluid Player is an open-source HTML5 video player.',
+                                            'icon': 'FluidPlayer.svg',
+                                            'js': {'fluidPlayer': '', 'webpackChunkfluid_player': ''},
+                                            'scriptSrc': ['cdn\\.fluidplayer\\.com'],
+                                            'website': 'https://www.fluidplayer.com'},
+                        'Flurry Analytics': {   'cats': [10],
+                                                'cpe': 'cpe:2.3:a:flurry:flurry-analytics-android:*:*:*:*:*:*:*:*',
+                                                'description': 'Flurry Analytics is a tool that provides basic '
+                                                               'insights into user behavior and app performance, with '
+                                                               'the option to set up advanced analytics for a deeper '
+                                                               'understanding of complex user interactions and events.',
+                                                'icon': 'Flurry.svg',
+                                                'scriptSrc': ['cdn\\.flurry\\.com/'],
+                                                'website': 'https://www.flurry.com'},
                         'Flutter': {   'cats': [66],
                                        'description': 'Flutter is an open source framework by Google for building '
                                                       'beautiful, natively compiled, multi-platform applications from '
@@ -10776,6 +11870,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Flyspray.png',
                                         'implies': ['PHP'],
                                         'website': 'https://flyspray.org'},
+                        'Flyvi': {   'cats': [66],
+                                     'description': 'Flyvi is a platform that generates visually engaging graphics '
+                                                    'optimized for social media.',
+                                     'icon': 'Flyvi.svg',
+                                     'scriptSrc': ['widget\\.flyvi\\.io/'],
+                                     'website': 'https://flyvi.io'},
                         'Flywheel': {   'cats': [62, 88],
                                         'headers': {   'x-fw-hash': '',
                                                        'x-fw-serve': '',
@@ -10836,6 +11936,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                      'icon': 'FooPlugins.svg',
                                                      'js': {'FooGallery': ''},
                                                      'website': 'https://fooplugins.com/foogallery-wordpress-gallery-plugin'},
+                        'FooTable': {   'cats': [59],
+                                        'description': 'FooTable is a jQuery plugin that converts HTML tables into '
+                                                       'expandable responsive tables.',
+                                        'icon': 'FooPlugins.svg',
+                                        'js': {'$FOOTABLE.init': '', 'footable.plugins': ''},
+                                        'website': 'https://fooplugins.github.io/FooTable/index.html'},
                         'Food-Ordering.co.uk': {   'cats': [6, 93],
                                                    'description': 'Food-Ordering.co.uk is a multi-lingual food '
                                                                   'ordering system for several hospitality scenarios '
@@ -11029,7 +12135,6 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'description': 'Fourthwall helps to create and launch a branded website.',
                                           'icon': 'Fourthwall.svg',
                                           'js': {'FourthwallAnalytics': '', 'fourthwallTheme': ''},
-                                          'meta': {'version': ['^(.+)$\\;version:\\1\\;confidence:0']},
                                           'scriptSrc': ['\\.fourthwall\\.com'],
                                           'website': 'https://fourthwall.com/'},
                         'FoxPush': {   'cats': [5],
@@ -11045,16 +12150,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'foxyio.svg',
                                        'scriptSrc': ['cdn\\.foxycart\\.com'],
                                        'website': 'https://www.foxy.io'},
-                        'Framer Sites': {   'cats': [51],
+                        'Framer Sites': {   'cats': [1, 51],
                                             'description': 'Framer is a no-code web design platform for designing and '
                                                            'publishing responsive websites.',
                                             'headers': {'server': '^framer/'},
                                             'icon': 'Framer Sites.svg',
                                             'implies': ['React'],
-                                            'js': {   'Framer': '',
-                                                      'Framer.Animatable': '',
-                                                      'Framer.version': '([\\d\\.]+)\\;version:\\1\\;confidence:0',
-                                                      '__framer_importFromPackage': ''},
+                                            'js': {'__framer_importFromPackage': ''},
                                             'meta': {'generator': ['^framer']},
                                             'scriptSrc': ['framerusercontent\\.com'],
                                             'website': 'https://www.framer.com'},
@@ -11066,6 +12168,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'dom': {"link[href*='/wp-content/plugins/frames-plugin/']": {'exists': ''}},
                                       'icon': 'Frames.svg',
                                       'website': 'https://getframes.io'},
+                        'Framework7': {   'cats': [26],
+                                          'description': 'Framework7 is a mobile HTML framework designed for creating '
+                                                         'iOS and Android applications with a native-like user '
+                                                         'experience.',
+                                          'icon': 'Framework7.svg',
+                                          'js': {'Framework7.Component': ''},
+                                          'website': 'https://framework7.io'},
                         'France Express': {   'cats': [99],
                                               'description': 'France Express is a delivery service based in France.',
                                               'icon': 'France Express.svg',
@@ -11120,6 +12229,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'implies': ['Microsoft ASP.NET'],
                                            'js': {'FTB_API': '', 'FTB_AddEvent': ''},
                                            'website': 'https://freetextbox.com'},
+                        'Freemius': {   'cats': [6],
+                                        'description': 'Freemius is a managed ecommerce engine designed for selling '
+                                                       'WordPress plugins.',
+                                        'icon': 'Freemius.svg',
+                                        'scriptSrc': ['checkout\\.freemius\\.com/'],
+                                        'website': 'https://freemius.com'},
                         'Freespee': {   'cats': [10],
                                         'icon': 'Freespee.svg',
                                         'scriptSrc': ['analytics\\.freespee\\.com/js/external/fs\\.(?:min\\.)?js'],
@@ -11153,6 +12268,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'Fresh.svg',
                                      'implies': ['Deno', 'Preact'],
                                      'website': 'https://fresh.deno.dev'},
+                        'Fresh Relevance': {   'cats': [76],
+                                               'description': 'Fresh Relevance is a personalization platform designed '
+                                                              'to create cross-channel experiences, enabling '
+                                                              'businesses to deliver customized customer interactions.',
+                                               'dom': {"link[href*='am.freshrelevance.com']": {'exists': ''}},
+                                               'icon': 'FreshRelevance.svg',
+                                               'website': 'https://www.freshrelevance.com'},
                         'Fresha': {   'cats': [72],
                                       'description': 'Fresha is a leading marketplace enabling consumers to discover, '
                                                      'book, and pay for local beauty and wellness services.',
@@ -11364,6 +12486,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'Funnelish.svg',
                                          'js': {'funnelish': ''},
                                          'website': 'https://funnelish.com'},
+                        'Funnelytics': {   'cats': [32],
+                                           'description': 'Funnelytics is a tool designed to increase lead and '
+                                                          'customer conversions by optimizing marketing funnels for '
+                                                          'better performance and results.',
+                                           'icon': 'Funnelytics.svg',
+                                           'scriptSrc': ['cdn\\.funnelytics\\.io/'],
+                                           'website': 'https://funnelytics.io'},
                         'Funraise': {   'cats': [111],
                                         'description': 'Funraise is a nonprofit fundraising platform that enables '
                                                        'organisations to build fundraising websites as well as manage '
@@ -11537,6 +12666,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'GbSdk.settings.shop': '', 'gbReferralCodeInput': ''},
                                         'scriptSrc': ['assets\\.gameball\\.co/'],
                                         'website': 'https://www.gameball.co'},
+                        'Gastronaut': {   'cats': [93],
+                                          'description': 'Gastronaut is a reservation system designed to automate the '
+                                                         'booking process, streamlining operations to enhance sales '
+                                                         'efficiency.',
+                                          'icon': 'Gastronaut.svg',
+                                          'scriptSrc': ['api\\.gastronaut\\.ai/'],
+                                          'website': 'https://get.gastronaut.ai'},
                         'Gator': {   'cats': [10],
                                      'description': 'Gator is a platform that enables realtime user data collection, '
                                                     'profiling and aggregation.',
@@ -11629,11 +12765,22 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                         'implies': ['GeneratePress'],
                                                         'scriptSrc': [   '/wp-content/plugins/gp-premium/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1'],
                                                         'website': 'https://docs.generatepress.com/article/installing-gp-premium/'},
+                        'Genesis blocks': {   'cats': [87],
+                                              'description': 'Premium block library & block editor enhancements from '
+                                                             'StudioPress.',
+                                              'dom': {   "link[href*='/wp-content/plugins/atomic-blocks']": {   'exists': ''},
+                                                         "link[href*='/wp-content/plugins/genesis-blocks']": {   'exists': ''}},
+                                              'html': ['<div[^>]+class=["\']wp-block-atomic-blocks-*'],
+                                              'icon': 'genesis-blocks.png',
+                                              'scriptSrc': ['/wp-content/themes/genesis-blocks/lib/js/'],
+                                              'website': 'https://www.studiopress.com/genesis-blocks/'},
                         'Genesis theme': {   'cats': [80],
                                              'description': 'Genesis theme is a WordPress theme that has been '
                                                             'developed using the Genesis Framework from Studiopress.',
+                                             'dom': {   "body[class*='genesis-breadcrumbs-hidden']": {'exists': ''},
+                                                        "body[class*='genesis-title-hidden']": {'exists': ''},
+                                                        "body[class*='theme-genesis']": {'exists': ''}},
                                              'icon': 'Genesis theme.svg',
-                                             'js': {'genesisBlocksShare': '', 'genesis_responsive_menu': ''},
                                              'scriptSrc': ['/wp-content/themes/genesis/lib/js/'],
                                              'website': 'https://www.studiopress.com/themes/genesis'},
                         'Genesys Chat': {   'cats': [52],
@@ -11664,6 +12811,17 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'Geniee.png',
                                       'scriptSrc': ['\\.gsspcln\\.jp/'],
                                       'website': 'https://geniee.co.jp'},
+                        'Geniee Chat': {   'cats': [52],
+                                           'description': 'Geniee Chat is a chat-based web customer service platform.',
+                                           'icon': 'GenieeChat.svg',
+                                           'js': {'GenooCSS.add': ''},
+                                           'scripts': ['\\.chamo-chat\\.com/'],
+                                           'website': 'https://chamo-chat.com'},
+                        'Genoo': {   'cats': [32],
+                                     'description': 'Genoo is a provider of marketing automation and online marketing '
+                                                    'tools.',
+                                     'icon': 'Genoo.svg',
+                                     'website': 'https://genoo.com'},
                         'Gentoo': {   'cats': [28],
                                       'cpe': 'cpe:2.3:o:gentoo:linux:*:*:*:*:*:*:*:*',
                                       'description': 'Gentoo is a free operating system based on Linux.',
@@ -11688,6 +12846,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                 'icon': 'Get Satisfaction.png',
                                                 'js': {'GSFN': ''},
                                                 'website': 'https://getsatisfaction.com/corp/'},
+                        'GetAuto': {   'cats': [6],
+                                       'description': 'GetAuto is a platform offering an inventory of used cars '
+                                                      'available for purchase.',
+                                       'dom': {"link[href*='cdn.getauto.com/']": {'exists': ''}},
+                                       'icon': 'GetAuto.svg',
+                                       'website': 'https://getauto.com'},
                         'GetButton': {   'cats': [5, 52],
                                          'description': 'The chat button by GetButton takes website visitor directly '
                                                         'to the messaging app such as Facebook Messenger or WhatsApp '
@@ -11718,6 +12882,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'js': {   'gmas_base_url': "'\\.getmeashop\\.com",
                                                     'search_api_base_uri': 'search\\.getmeashop\\.com'},
                                           'website': 'https://www.getmeashop.com'},
+                        'GetMoreStudents': {   'cats': [32],
+                                               'description': 'GetMoreStudents is a platform that supports dance '
+                                                              'studio owners in increasing class enrollment and '
+                                                              'boosting profits through marketing automation.',
+                                               'scripts': ['app\\.getmorestudents\\.net'],
+                                               'website': 'https://getmorestudents.net'},
                         'GetResponse': {   'cats': [32, 75],
                                            'description': 'GetResponse is an email marketing app that allows you to '
                                                           'create a mailing list and capture data onto it.',
@@ -12190,7 +13360,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'description': 'GoMage is a Magento development company with 10 years of '
                                                      'experience.',
                                       'icon': 'GoMage.svg',
-                                      'implies': ['Magento', 'PWA'],
+                                      'implies': ['Magento\\;version:2', 'PWA'],
                                       'js': {   'GomageNavigation': '',
                                                 'GomageNavigationClass': '',
                                                 'gomageSpinnerModal': '',
@@ -12203,6 +13373,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                      '& Delivery industry.',
                                       'icon': 'GoPrep.svg',
                                       'website': 'https://goprep.com'},
+                        'GoSquared': {   'cats': [10],
+                                         'description': 'GoSquared is a web analytics platform positioned as an '
+                                                        'alternative to Google Analytics.',
+                                         'icon': 'GoSquared.svg',
+                                         'js': {'GoSquared': ''},
+                                         'scripts': ['gosquared\\.js'],
+                                         'website': 'https://www.gosquared.com'},
                         'GoStats': {   'cats': [10],
                                        'icon': 'GoStats.png',
                                        'js': {'_goStatsRun': '', '_go_track_src': '', 'go_msie': ''},
@@ -12282,6 +13459,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'Goober.svg',
                                       'js': {'goober': '', 'gooberGlobal': '', 'gooberPrefixer': ''},
                                       'website': 'https://goober.js.org'},
+                        'GoodEshop': {   'cats': [6],
+                                         'description': 'GoodEshop is an online ecommerce management tool.',
+                                         'icon': 'GoodEshop.svg',
+                                         'scripts': ['api\\.goodeshop\\.sk'],
+                                         'website': 'https://goodeshop.sk'},
                         'Google AdSense': {   'cats': [36],
                                               'description': 'Google AdSense is a program run by Google through which '
                                                              'website publishers serve advertisements that are '
@@ -12544,6 +13726,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Gorgias.png',
                                        'js': {'gorgiasChat': ''},
                                        'website': 'https://www.gorgias.com/'},
+                        'Goshly': {   'cats': [6],
+                                      'description': 'Goshly is a platform that builds responsive websites for both '
+                                                     'desktop and mobile, offering features like ecommerce integration '
+                                                     'and shopping cart functionality.',
+                                      'icon': 'Goshly.svg',
+                                      'scriptSrc': ['\\.goshlyanalytics\\.com/'],
+                                      'website': 'https://www.goshly.com'},
                         'GotiPath': {   'cats': [31],
                                         'description': 'GotiPath is a content delivery network (CDN) provider that is '
                                                        'associated with telecom giant Telekom Malaysia Berhad.',
@@ -12630,6 +13819,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'grapheneGetInfScrollBtnLbl': '', 'grapheneJS.templateUrl': ''},
                                         'scriptSrc': [   '/wp-content/themes/graphene(?:-plus)?/.+graphene\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1'],
                                         'website': 'https://www.graphene-theme.com/graphene-theme'},
+                        'Graphly': {   'cats': [10],
+                                       'description': 'Graphly is a visual reporting and business intelligence '
+                                                      'platform.',
+                                       'icon': 'Graphly.svg',
+                                       'js': {'GraphlyTracking': ''},
+                                       'website': 'https://graphly.io'},
                         'Grasp': {   'cats': [52],
                                      'description': 'Grasp is a customer support software company that offers a '
                                                     'cloud-based helpdesk and live chat solution for businesses of all '
@@ -12656,6 +13851,23 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'Gravitec': '', 'gravitecWebpackJsonp': ''},
                                         'scriptSrc': ['(?:cdn|id)\\.gravitec\\.(?:media|net)'],
                                         'website': 'https://gravitec.net'},
+                        'Gravito': {   'cats': [97],
+                                       'cookies': {'gravitosync': ''},
+                                       'description': 'Gravito is a service that enables centralized consumer consent '
+                                                      'and the collection of observed data from multiple digital '
+                                                      'touchpoints, securely integrating it with personal data.',
+                                       'icon': 'Gravito.svg',
+                                       'js': {'gravito.init': '', 'gravitoCMP': ''},
+                                       'website': 'https://www.gravito.net'},
+                        'Gravity': {   'cats': [52],
+                                       'description': 'Gravity is a live chat solution designed to facilitate '
+                                                      'real-time communication for businesses.',
+                                       'icon': 'Gravity.svg',
+                                       'js': {   'gravi_api.chatMode': '',
+                                                 'gravi_init': '',
+                                                 'gravi_version': '^([\\d\\.]+[a-z]?)$\\;version:\\1'},
+                                       'scriptSrc': ['\\.gravi\\.org/'],
+                                       'website': 'https://gravi.org'},
                         'Gravity Forms': {   'cats': [87, 110],
                                              'html': [   '<div class=(?:"|\')[^>]*gform_body',
                                                          '<div class=(?:"|\')[^>]*gform_wrapper',
@@ -12789,6 +14001,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'icon': 'Guestonline.svg',
                                            'scriptSrc': ['ib\\.guestonline\\.\\w+'],
                                            'website': 'https://www.guestonline.io'},
+                        'Guesty': {   'cats': [93],
+                                      'cookies': {'guesty-muid': '', 'guesty-utms': ''},
+                                      'description': 'Guesty is a cloud-based platform, designed exclusively for '
+                                                     'Airbnb and vacation rental managers.',
+                                      'dom': {"script[id*='guesty-js-extra']": {'exists': ''}},
+                                      'icon': 'Guesty.svg',
+                                      'website': 'https://www.guesty.com/'},
                         'Guidap': {   'cats': [104],
                                       'description': 'Guidap is a platform enabling online activity sales, '
                                                      'streamlining booking, scheduling, and payment collection '
@@ -12841,6 +14060,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'implies': ['WordPress Block Editor'],
                                          'scriptSrc': ['/wp-content/plugins/gutenberg/'],
                                          'website': 'https://github.com/WordPress/gutenberg'},
+                        'Guuru': {   'cats': [94],
+                                     'description': 'Guuru is a platform that connects shoppers with customers who '
+                                                    'share their enthusiasm for specific products or services.',
+                                     'icon': 'Guuru.svg',
+                                     'js': {'Guuru': '', 'guuru.init': ''},
+                                     'website': 'https://www.guuru.com'},
                         'H2O': {   'cats': [22],
                                    'cookies': {'h2o_casper': ''},
                                    'description': 'H2O is a fast and secure HTTP/2 server written in C by Kazuho Oku.',
@@ -12935,6 +14160,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                     'implies': ['Java'],
                                     'meta': {'generator': ['halo ([\\d.]+)?\\;version:\\1']},
                                     'website': 'https://halo.run'},
+                        'Haloscan': {   'cats': [11],
+                                        'description': 'Haloscan is a tool that enables blogs to incorporate '
+                                                       'trackbacks and comments, allowing users to engage with blog '
+                                                       'content through discussions and feedback.',
+                                        'icon': 'Haloscan.svg',
+                                        'scriptSrc': ['www\\.haloscan\\.com/'],
+                                        'website': 'https://www.haloscan.com'},
                         'Hamechio': {   'cats': [18],
                                         'description': 'Hamechio is a web application framework.',
                                         'icon': 'Hamechio.svg',
@@ -12971,6 +14203,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'HandTalk': ''},
                                         'scriptSrc': ['api\\.handtalk\\.me'],
                                         'website': 'https://www.handtalk.me/'},
+                        'Hanko': {   'cats': [16],
+                                     'description': 'Hanko is a passwordless authentication solution offering secure '
+                                                    'login integration.',
+                                     'icon': 'Hanko.svg',
+                                     'js': {'_hankoStyle': ''},
+                                     'website': 'https://www.hanko.io'},
                         'Hansel': {   'cats': [58],
                                       'description': 'Hansel is a B2B enterprise software that deploys real-time '
                                                      'Nudges to drive feature adoption and address user drop-offs, at '
@@ -13008,6 +14246,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                   'js': {'HappyFoxChatObject': ''},
                                                   'scriptSrc': ['\\.happyfoxchat\\.com/'],
                                                   'website': 'https://www.happyfox.com/live-chat'},
+                        'HappySync': {   'cats': [32],
+                                         'description': 'HappySync is a Korean-developed tool designed for marketing '
+                                                        'automation and conversion optimization.',
+                                         'icon': 'HappySync.svg',
+                                         'scriptSrc': ['api\\.happysync\\.io/'],
+                                         'website': 'https://www.happysync.io'},
                         'Haptik': {   'cats': [52],
                                       'description': 'Haptik is an Indian enterprise conversational AI platform '
                                                      'founded in August 2013, and acquired by Reliance Industries '
@@ -13109,6 +14353,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                          'icon': 'Heartland Payment Systems.svg',
                                                          'scriptSrc': ['\\.heartlandportico\\.com'],
                                                          'website': 'https://www.heartlandpaymentsystems.com'},
+                        'Heeet': {   'cats': [10, 32],
+                                     'description': 'Heeet is a lead tracking and marketing analytics tool.',
+                                     'icon': 'Heeet.svg',
+                                     'js': {   'heeet': '',
+                                               'heeetJourneyParams': '',
+                                               'heeetParams': '',
+                                               'heeetSaveJourney': ''},
+                                     'website': 'https://www.heeet.io'},
                         'Helhost': {   'cats': [88],
                                        'description': 'Helhost is a web hosting provider and internet domain registrar '
                                                       'from Democratic Republic of Congo.',
@@ -13131,6 +14383,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                               'icon': 'HelixUltimate.svg',
                                               'implies': ['Joomla'],
                                               'website': 'https://www.joomshaper.com/joomla-templates/helixultimate'},
+                        'HelixPay': {   'cats': [104],
+                                        'description': 'HelixPay is an event ticketing platform providing online '
+                                                       'payment integration, digital tickets, and customizable event '
+                                                       'websites for large-scale events.',
+                                        'icon': 'HelixPay.svg',
+                                        'js': {'HELIXPAY.PAGE': ''},
+                                        'website': 'https://helixpay.ph'},
                         'Helixo UFE': {   'cats': [100],
                                           'description': 'Helixo UFE is a lightweight Shopify upsell sales funnel app.',
                                           'icon': 'Helixo.svg',
@@ -13267,6 +14526,16 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                            'js': {'hextom_usb': '', 'ht_usb.isLoaded': ''},
                                                            'scriptSrc': ['\\.hextom\\.com/js/ultimatesalesboost\\.js'],
                                                            'website': 'https://hextom.com/case_study/ultimate-sales-boost'},
+                        'HeyLight': {   'cats': [91],
+                                        'description': 'HeyLight is a BNPL system allowing instalment payments for '
+                                                       'online purchases.',
+                                        'dom': {   'div#heidipay-container, div[data-heidipay], div#pagolight-pro-dialog, iframe#heidipay-iframe-product-description-pagolight, style#heyLightFonts': {   'exists': ''}},
+                                        'icon': 'HeyLight.svg',
+                                        'js': {   'closePagodilModal': '',
+                                                  'openPagodilModal': '',
+                                                  'pagodilLang': '',
+                                                  'pagodilSprintf': ''},
+                                        'website': 'https://heylight.com/it/it'},
                         'HeySummit': {   'cats': [103],
                                          'description': 'HeySummit is a platform facilitating the organization of '
                                                         'virtual summits.',
@@ -13370,6 +14639,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'Highcharts.svg',
                                          'scriptSrc': ['highstock[.-]?([\\d\\.]*\\d).*\\.js\\;version:\\1'],
                                          'website': 'https://highcharts.com/products/highstock'},
+                        'HikaShop': {   'cats': [6],
+                                        'description': 'HikaShop is a Joomla extension for managing shop content, '
+                                                       'handling price management, and customizing store views with an '
+                                                       'intuitive interface.',
+                                        'icon': 'HikaShop.svg',
+                                        'js': {'hikashop': '', 'hikashopCheckField': ''},
+                                        'scripts': ['com_hikashop'],
+                                        'website': 'https://www.hikashop.com'},
                         'HikeOrders': {   'cats': [68],
                                           'description': 'HikeOrders is a web accessibility overlay that claims to '
                                                          'make your site disability friendly.',
@@ -13440,6 +14717,19 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'scriptSrc': [   '([\\d.]+)/hogan(?:\\.min)?\\.js\\;version:\\1',
                                                          'hogan-[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1'],
                                         'website': 'https://twitter.github.io/hogan.js/'},
+                        'Holduix CMS': {   'cats': [1],
+                                           'description': 'Holduix CMS is a lightweight content management solution '
+                                                          'designed to offer developers and end users a customizable '
+                                                          'experience.',
+                                           'icon': 'HolduixCMS.svg',
+                                           'js': {'HolduixConfig.baseURL': ''},
+                                           'meta': {'author': ['^holduix$']},
+                                           'website': 'https://www.holduix.dev'},
+                        'HollerBox': {   'cats': [87],
+                                         'description': 'HollerBox is a lead generation popup tool for WordPress.',
+                                         'icon': 'HollerBox.svg',
+                                         'js': {'HollerBox.active': ''},
+                                         'website': 'https://hollerwp.com'},
                         'HomHero': {   'cats': [93],
                                        'description': 'Homhero is a platform that offers a range of tools and services '
                                                       'to help vacation rental owners manage their properties and '
@@ -13468,6 +14758,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                     'headers': {'x-powered-by': 'hono'},
                                     'icon': 'Hono.png',
                                     'website': 'https://hono.dev'},
+                        'Horoshop': {   'cats': [6],
+                                        'description': 'Horoshop is an all-in-one platform designed to support '
+                                                       'launching and managing online stores tailored for businesses '
+                                                       'in  Ukraine.',
+                                        'js': {   'Horoshop.Widgets': '',
+                                                  'horoshopReCaptcha': '',
+                                                  'webpackChunkHoroshop': ''},
+                                        'website': 'https://horoshop.ua'},
                         'HostEurope': {   'cats': [88],
                                           'description': 'HostEurope is a European website hosting, email and domain '
                                                          'name registrar company headquartered Hayes, West London.',
@@ -13659,6 +14957,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                   'icon': 'Huberway.svg',
                                                   'scriptSrc': ['analytics\\.huberway\\.com/pixel/'],
                                                   'website': 'https://www.huberway.com/analytics-software'},
+                        'Hubtiger': {   'cats': [53, 101],
+                                        'description': 'Hubtiger offers rental and workshop management software '
+                                                       'solutions to help businesses elevate their operations and '
+                                                       'efficiency.',
+                                        'icon': 'Hubtiger.svg',
+                                        'meta': {'author': ['^hubtiger$']},
+                                        'website': 'https://hubtiger.com'},
                         'Huckabuy': {   'cats': [54],
                                         'description': "Huckabuy is a software product utilising Google's dynamic "
                                                        'rendering and structured data initiatives to enhance organic '
@@ -13727,6 +15032,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                         'implies': ['Shopify'],
                                                         'js': {'hulkappsProductReview': '', 'hulkappsReviews': ''},
                                                         'website': 'https://www.hulkapps.com/products/product-reviews-shopify'},
+                        'Hull': {   'cats': [97],
+                                    'description': 'Hull is a platform that collects, unifies, enriches product, '
+                                                   'marketing, and sales data, then synchronizes it across various '
+                                                   'tools.',
+                                    'icon': 'Hull.svg',
+                                    'js': {'Hull._initialized': '', 'Hull.js._initialized': '', 'HullShopify': ''},
+                                    'website': 'https://www.hull.io'},
                         'Human Presence': {   'cats': [16],
                                               'description': 'Human Presence is a bot detection and spam protection '
                                                              'software for WordPress and Shopify.',
@@ -13784,11 +15096,26 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Hydrogen.svg',
                                         'implies': ['React', 'Shopify', 'Vite'],
                                         'website': 'https://hydrogen.shopify.dev'},
+                        'Hypercloudhost': {   'cats': [88],
+                                              'description': 'Hypercloudhost is a hosting service solution in '
+                                                             'Indonesia offering anti-DDoS protection and '
+                                                             'high-performance cloud hosting.',
+                                              'icon': 'Hypercloudhost.svg',
+                                              'meta': {'generator': ['^hypercloudhost$']},
+                                              'website': 'https://hypercloudhost.com'},
                         'Hypercorn': {   'cats': [22],
                                          'headers': {'server': 'hypercorn'},
                                          'icon': 'hypercorn.png',
                                          'implies': ['Python'],
                                          'website': 'https://pgjones.gitlab.io/hypercorn/'},
+                        'Hyperia': {   'cats': [32, 71],
+                                       'description': 'Hyperia is a tool designed for lead generation and affiliate '
+                                                      'marketing.',
+                                       'icon': 'Hyperia.svg',
+                                       'js': {   '_config.base_url': '\\.hyperia\\.sk',
+                                                 '_config.socket_url': '\\.hyperia\\.sk',
+                                                 '_config.tracker_url': '\\.hyperia\\.sk'},
+                                       'website': 'https://www.hyperia.sk'},
                         'Hyperspeed': {   'cats': [92, 100],
                                           'description': 'Hyperspeed is the most advanced speed booster for Shopify.',
                                           'icon': 'Hyperspeed.png',
@@ -13815,14 +15142,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'Hyros.svg',
                                      'scriptSrc': ['/v1/lst/universal-script\\?ph\\='],
                                      'website': 'https://hyros.com'},
-                        'Hyva Themes': {   'cats': [108],
+                        'Hyva Themes': {   'cats': [6, 108],
                                            'description': 'Hyva Themes is a performance-optimised theme for Magento 2 '
                                                           'which eliminated the third-party libraries and having only '
                                                           'two dependencies Alpine.js and Tailwind CSS.',
                                            'headers': {'x-built-with': '^hyva themes$'},
                                            'icon': 'Hyva Themes.svg',
-                                           'implies': ['Alpine.js', 'Magento', 'Tailwind CSS'],
-                                           'website': 'https://hyva.io'},
+                                           'implies': ['Alpine.js', 'Magento\\;version:2', 'Tailwind CSS'],
+                                           'js': {'hyva': ''},
+                                           'website': 'https://www.hyva.io/hyva-theme-license.html'},
                         'IBM Coremetrics': {   'cats': [10],
                                                'icon': 'IBM.svg',
                                                'scriptSrc': ['cmdatatagutils\\.js'],
@@ -13964,6 +15292,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'dom': {   "link[href*='.iconscout.com/'], img[src*='.iconscout.com/']": {   'exists': ''}},
                                          'icon': 'IconScout.svg',
                                          'website': 'https://iconscout.com'},
+                        'Iconosquare': {   'cats': [10],
+                                           'description': 'Iconosquare is an all-in-one social media management '
+                                                          'platform that facilitates the lives of SMMs with multiple '
+                                                          'profiles to manage.',
+                                           'dom': {"iframe[src*='iconosquare.com/']": {'exists': ''}},
+                                           'icon': 'Iconosquare.svg',
+                                           'scripts': ['\\.iconosquare\\.com'],
+                                           'website': 'https://www.iconosquare.com'},
                         'Ideasoft': {   'cats': [6],
                                         'description': 'Ideasoft is a Turkish software company providing web-based '
                                                        'software solutions, software design, ecommerce solutions, and '
@@ -13981,6 +15317,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'icon': 'idosellshop.png',
                                             'js': {'IAI_Ajax': ''},
                                             'website': 'https://www.idosell.com'},
+                        'Ifdo': {   'cats': [32, 86],
+                                    'description': 'Ifdo is a marketing and segmentation tool ',
+                                    'icon': 'Ifdo.svg',
+                                    'js': {   '_NBIFDOBODYINNERHTML': '',
+                                              '_NBIFDOHEADCSSFILE': '',
+                                              '_NBIFDOHEADINNERHTML': ''},
+                                    'website': 'https://ifdo.co.kr/'},
                         'Ignition': {   'cats': [55],
                                         'description': 'Ignition is an all-in-one platform streamlining proposals, '
                                                        'billing, payments, and workflows for accounting and '
@@ -13996,12 +15339,26 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                     'implies': ['GraphQL', 'MongoDB', 'Next.js'],
                                     'js': {'IkasEvents.subscribe': ''},
                                     'website': 'https://ikas.com'},
+                        'Ilias': {   'cats': [21],
+                                     'description': 'Ilias is an open source learning management system.',
+                                     'icon': 'Ilias.svg',
+                                     'js': {'il.Accordion': '', 'ilAccordionsInits': '', 'ilTagging': ''},
+                                     'website': 'https://www.ilias.de'},
                         'Iluria': {   'cats': [6, 63],
                                       'description': 'Iluria is a hosted ecommerce platform from Brazil.',
                                       'icon': 'Iluria.png',
                                       'js': {'Iluria': '', 'iluriaShowPagination': ''},
                                       'scriptSrc': ['template-assets\\.iluria\\.com/commons/'],
                                       'website': 'https://www.iluria.com.br'},
+                        'ImBox': {   'cats': [52],
+                                     'description': 'Imbox is a live chat platform that includes co-browsing features.',
+                                     'icon': 'Imbox.svg',
+                                     'js': {   '__IMBOX_GLOBAL__': '',
+                                               '__IMBOX_INITIALIZED__': '',
+                                               '_imbox': '',
+                                               'imboxBuilt': '',
+                                               'imboxManager': ''},
+                                     'website': 'https://imbox.se'},
                         'Image Placeholders': {   'cats': [87, 92],
                                                   'description': 'Performance plugin from the WordPress Performance '
                                                                  'Team, which determines and stores the dominant color '
@@ -14037,6 +15394,20 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'dom': {   "link[href*='.imgeng.in/'], img[src*='.imgeng.in/'], img[data-src*='.imgeng.in/'], source[srcset*='.imgeng.in/']": {   'exists': ''}},
                                            'icon': 'ImageEngine.svg',
                                            'website': 'https://imageengine.io'},
+                        'ImageKit': {   'cats': [31, 95],
+                                        'description': 'ImageKit is a real-time image and video transformation, '
+                                                       'optimization, and delivery service with built-in digital asset '
+                                                       'management, powered by a global CDN.',
+                                        'dom': {   "img[src*='.imagekit.io/'], img[data-src*='.imagekit.io/'], source[src*='.imagekit.io/'], source[data-src*='.imagekit.io/']": {   'exists': ''}},
+                                        'headers': {'x-server': 'imagekit\\.io'},
+                                        'icon': 'ImageKit.svg',
+                                        'website': 'https://imagekit.io/'},
+                        'Imagekit': {   'cats': [7],
+                                        'description': 'ImageKit is an image optimisation and transformation server '
+                                                       'for web and mobile app developers.',
+                                        'dom': {"link[href*='ik.imagekit.io/']": {'exists': ''}},
+                                        'icon': 'ImageKit.svg',
+                                        'website': 'https://imagekit.io/'},
                         'Imagely NextGEN Gallery': {   'cats': [87, 7],
                                                        'description': 'NextGEN Gallery is a WordPress gallery plugin '
                                                                       'maintained by Imagely.',
@@ -14056,6 +15427,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'dom': {   "img[src*='.imgix.net/'], img[data-src*='.imgix.net/'], img[srcset*='.imgix.net/'], source[src*='.imgix.net/'], source[data-src*='.imgix.net/']": {   'exists': ''}},
                                      'icon': 'Imgix.svg',
                                      'website': 'https://imgix.com/'},
+                        'Immerss': {   'cats': [6],
+                                       'description': 'Immerss is a platform that offers 1-to-1 Digital Clienteling, '
+                                                      'allowing customers to connect with businesses in real time via '
+                                                      'dynamic video, chat, and messaging for a personalized shopping '
+                                                      'experience.',
+                                       'icon': 'Immerss.svg',
+                                       'js': {'Immerss.service_id': ''},
+                                       'scriptSrc': ['\\.immerss\\.live/'],
+                                       'website': 'https://www.immerss.live'},
                         'Immutable.js': {   'cats': [59],
                                             'icon': 'Immutable.js.png',
                                             'js': {'Immutable': '', 'Immutable.version': '^(.+)$\\;version:\\1'},
@@ -14444,15 +15824,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                                                            '([\\d.]+))?\\;version:\\1'},
                                                                   'icon': 'Intel Active Management Technology.png',
                                                                   'website': 'https://intel.com'},
-                        'Intelligems': {   'cats': [74],
-                                           'description': 'Intelligems is a tool that facilitates profit optimization '
-                                                          'for ecommerce businesses by allowing easy testing of '
-                                                          'prices, discounts, and shipping rates with the aim of '
-                                                          'maximizing margins.',
-                                           'icon': 'Intelligems.svg',
-                                           'js': {'webpackChunk_intelligems_shopify_plugin': ''},
-                                           'scriptSrc': ['cdn\\.intelligems\\.io/[\\w]+\\.js'],
-                                           'website': 'https://intelligems.io'},
+                        'Intelligems': {   'cats': [74, 76, 100],
+                                           'cookies': {'ig-location': ''},
+                                           'description': 'Intelligems is an experimentation platform that helps '
+                                                          'developers build and run A/B tests on websites.',
+                                           'icon': 'Intelligems.png',
+                                           'implies': ['Shopify'],
+                                           'scriptSrc': ['cdn\\.intelligems\\.io'],
+                                           'website': 'https://www.intelligems.io/'},
                         'Intellimize': {   'cats': [74, 76],
                                            'description': 'Intellimize is a platform that utilizes machine learning to '
                                                           'optimize website experiences and increase conversions in '
@@ -14534,6 +15913,17 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'Intershop.png',
                                          'scriptSrc': ['(?:is-bin|intershop)'],
                                          'website': 'https://intershop.com'},
+                        'Intice': {   'cats': [32],
+                                      'description': 'Intice is a lead conversion tool designed for the automotive '
+                                                     'industry, streamlining customer engagement and improving the '
+                                                     'conversion process from inquiries to sales.',
+                                      'icon': 'Intice.svg',
+                                      'js': {   'intice': '',
+                                                'inticeAllEvents': '',
+                                                'inticeIMP': '',
+                                                'inticeLeadmakerAnalytics': ''},
+                                      'scriptSrc': ['tools\\.inticeinc\\.com'],
+                                      'website': 'https://intice.com'},
                         'Invenio': {   'cats': [50],
                                        'cookies': {'inveniosession': ''},
                                        'description': 'Invenio is an open-source software framework for large-scale '
@@ -14559,6 +15949,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'InvApp': '\\;confidence:50', 'invTagManagerParams': ''},
                                       'scriptSrc': ['scripts/_app/inv(?:\\w+)\\.js\\?v=(.+)$\\;version:\\1'],
                                       'website': 'https://www.inveon.com'},
+                        'Invision Community': {   'cats': [1],
+                                                  'description': 'Invision Community is a scalable and customizable '
+                                                                 'platform designed to build and grow online '
+                                                                 'communities.',
+                                                  'icon': 'InvisionCommunity.svg',
+                                                  'scriptSrc': ['\\.invisioncic\\.com/'],
+                                                  'website': 'https://invisioncommunity.com'},
                         'Invision Power Board': {   'cats': [2],
                                                     'cookies': {'ipbwwlmodpids': '', 'ipbwwlsession_id': ''},
                                                     'description': 'Invision Power Board is a commercial Internet '
@@ -14569,6 +15966,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                     'implies': ['MySQL', 'PHP'],
                                                     'js': {'IPBoard': '', 'ipb_var': '', 'ipsSettings': ''},
                                                     'scriptSrc': ['jscripts/ips_'],
+                                                    'scripts': ['ipb_url_filter_option'],
                                                     'website': 'https://invisioncommunity.com'},
                         'Invitario': {   'cats': [104],
                                          'description': 'Invitario is an event marketing platform that provides a '
@@ -14596,6 +15994,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'dom': {   "link[href*='/ionicons.min.css'], link[href*='/ionicons.css']": {   'exists': ''}},
                                         'icon': 'Ionicons.svg',
                                         'website': 'https://ionicons.com'},
+                        'Iress': {   'cats': [55],
+                                     'description': 'Iress is a platform that provides software solutions for the '
+                                                    'financial services industry.',
+                                     'icon': 'Iress.svg',
+                                     'js': {'IRESSWebToolbox': ''},
+                                     'website': 'https://www.iress.com'},
                         'IrisLMS': {   'cats': [21],
                                        'description': 'IrisLMS comprehensive education management system, in order to '
                                                       'support e-learning and provide suitable conditions for holding '
@@ -14767,13 +16171,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                     'js': {'JADE.components': ''},
                                     'website': 'https://jade-lang.com'},
                         'Jadu': {   'cats': [1],
-                                    'description': 'The Jadu Digital Platform provides the foundation of accessible, '
-                                                   'responsive and award-winning Websites, Forms, CRM and Portal '
-                                                   'solutions.',
-                                    'dom': {"a[href*='www.jadu.net']": {'exists': ''}},
-                                    'headers': {'node': 'jadu-web-1'},
-                                    'icon': 'jadu.png',
-                                    'website': 'https://www.jadu.net/'},
+                                    'description': 'Jadu is a commercial Digital Experience Platform focused on '
+                                                   'customer self-service with accessibility at the core. Websites, '
+                                                   'Forms, CRM and Case Management written in PHP with integrations to '
+                                                   'many enterprise systems.',
+                                    'dom': {'footer.site-footer': {'text': 'Designed and powered by Jadu'}},
+                                    'headers': {'node': '^jadu-web-.'},
+                                    'icon': 'Jadu.png',
+                                    'website': 'https://www.jadu.net'},
                         'Jahia DX': {   'cats': [1, 47],
                                         'html': ['<script id="staticassetaggregatedjavascrip'],
                                         'icon': 'JahiaDX.svg',
@@ -14852,6 +16257,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'js': {'webpackJsonpget-jenny': ''},
                                      'scriptSrc': ['\\.getjenny\\.com/'],
                                      'website': 'https://www.getjenny.com'},
+                        'JetEngine': {   'cats': [87],
+                                         'description': 'JetEngine is a content plugin for WordPress that allows users '
+                                                        'to create custom post types, taxonomies, and meta boxes, '
+                                                        'offering flexibility in building complex websites without '
+                                                        'requiring coding skills.',
+                                         'icon': 'JetEngine.svg',
+                                         'scriptSrc': ['/wp-content/plugins/jet-engine/'],
+                                         'website': 'https://crocoblock.com/plugins/jetengine'},
                         'Jetpack': {   'cats': [87],
                                        'description': 'Jetpack is a popular WordPress plugin created by Automattic, '
                                                       'the people behind WordPress.com.',
@@ -15167,6 +16580,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'KQS.store.png',
                                          'js': {'kqs_box': '\\;confidence:50', 'kqs_off': '\\;confidence:50'},
                                          'website': 'https://www.kqs.pl'},
+                        'KUKUI': {   'cats': [32],
+                                     'description': 'KUKUI is an all-in-one solution designed to enhance '
+                                                    'profitability, streamline lead management, and boost customer '
+                                                    'engagement for shop marketing.',
+                                     'icon': 'KUKUI.svg',
+                                     'scriptSrc': ['\\.kukui\\.com/'],
+                                     'website': 'https://www.kukui.com'},
                         'KaTeX': {   'cats': [25],
                                      'description': 'KaTeX is a cross-browser JavaScript library that displays '
                                                     'mathematical notation in web browsers.',
@@ -15286,6 +16706,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'js': {'karma.vars.version': '(.+)\\;version:\\1'},
                                      'scriptSrc': ['karma\\.mdpcdn\\.com'],
                                      'website': 'https://karma-runner.github.io'},
+                        'Karoo Chat': {   'cats': [52],
+                                          'description': 'Karoo Chat is a platform that combines human and automated '
+                                                         'customer service, offering online live chat for customer '
+                                                         'support.',
+                                          'js': {'_kwp.host': 'widget\\.karoo\\.com\\.br'},
+                                          'website': 'https://karoo.com.br'},
                         'Karte': {   'cats': [74, 76],
                                      'description': 'Karte is a customer engagement and marketing automation platform '
                                                     'that enables businesses to understand their customers, deliver '
@@ -15331,6 +16757,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'icon': 'keen-slider.svg',
                                            'js': {'KeenSlider': ''},
                                            'website': 'https://keen-slider.io'},
+                        'Keepeek': {   'cats': [7, 95],
+                                       'description': 'Keepeek is a digital asset management and photo library '
+                                                      'solutions provider.',
+                                       'icon': 'Keepeek.svg',
+                                       'js': {'keepeekScrollToName': ''},
+                                       'website': 'https://www.keepeek.com'},
                         'KelonCloud': {   'cats': [31],
                                           'description': 'KelonCloud offers a variety of cloud-based services, such as '
                                                          'CDN, DDoS mitigation, cloud security, streaming, cloud '
@@ -15350,6 +16782,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'implies': ['jQuery'],
                                         'js': {'kendo': '', 'kendo.version': '^(.+)$\\;version:\\1'},
                                         'website': 'https://www.telerik.com/kendo-ui'},
+                        'Kenlo': {   'cats': [6],
+                                     'description': 'Kenlo is a real estate system from Brazil offering houses, '
+                                                    'apartments, and more for sale.',
+                                     'dom': {   "div[class*='logo-kenlo__default'] > span[class*='logo-kenlo__text'] ": {   'exists': ''}},
+                                     'icon': 'Kenlo.svg',
+                                     'website': 'https://www.kenlo.com.br'},
                         'Kentico CMS': {   'cats': [1],
                                            'cookies': {'cmscookielevel': '', 'cmspreferredculture': ''},
                                            'cpe': 'cpe:2.3:a:kentico:kentico_cms:*:*:*:*:*:*:*:*',
@@ -15478,6 +16916,8 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'scriptSrc': ['kinetic(?:-v?([\\d.]+))?(?:\\.min)?\\.js\\;version:\\1'],
                                          'website': 'https://github.com/ericdrowell/KineticJS/'},
                         'Kinsta': {   'cats': [62, 88],
+                                      'description': 'Kinsta is a leading managed WordPress hosting provider, '
+                                                     'prioritizing speed and security.',
                                       'headers': {'x-kinsta-cache': ''},
                                       'icon': 'kinsta.svg',
                                       'implies': ['WordPress'],
@@ -15579,16 +17019,36 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'scriptSrc': ['klasha-integration\\.js'],
                                       'website': 'https://www.klasha.com/'},
                         'Klaviyo': {   'cats': [32],
-                                       'description': 'Klaviyo is an email marketing platform for online businesses.',
+                                       'description': 'Klaviyo is an email and SMS marketing platform for online '
+                                                      'businesses.',
                                        'icon': 'Klaviyo.svg',
                                        'js': {'KlaviyoSubscribe': '', 'klaviyo': ''},
                                        'scriptSrc': ['klaviyo\\.com'],
                                        'website': 'https://www.klaviyo.com/'},
+                        'Klaviyo Customer Hub': {   'cats': [19],
+                                                    'description': 'Klaviyo Customer Hub gives customers a unified '
+                                                                   'signed-in experience to track orders, manage '
+                                                                   'returns, and get help',
+                                                    'dom': {'div#k-hub': {'exists': ''}},
+                                                    'icon': 'Klaviyo.svg',
+                                                    'js': {'customerHub': ''},
+                                                    'website': 'https://www.klaviyo.com/products/customer-experience-hub'},
+                        'Klaviyo Data Platform': {   'cats': [97],
+                                                     'description': "Klaviyo Data Platform is Klaviyo's CDP offering.",
+                                                     'icon': 'Klaviyo.svg',
+                                                     'scriptSrc': [   'static-tracking\\.klaviyo\\.com/onsite/js/web_personalization'],
+                                                     'website': 'https://www.klaviyo.com/solutions/customer-data-platform'},
+                        'Klaviyo Forms': {   'cats': [110],
+                                             'description': 'Klaviyo Forms are used to capture Email and SMS sign-ups',
+                                             'dom': {'div.klaviyo-form': {'exists': ''}},
+                                             'icon': 'Klaviyo.svg',
+                                             'website': 'https://www.klaviyo.com/features/web-forms'},
                         'Klaviyo Reviews': {   'cats': [90],
-                                               'description': 'Klaviyo is an email marketing platform for online '
-                                                              'businesses.',
+                                               'description': "Klaviyo reviews is Klaviyo's customer reivews offering "
+                                                              'for Shopify and WooCommerce platforms',
+                                               'dom': {'div#klaviyo-product-reviews-wrapper': {'exists': ''}},
                                                'icon': 'Klaviyo.svg',
-                                               'js': {'klaviyoModulesObject.loadedModules': 'reviews'},
+                                               'scriptSrc': ['static\\.klaviyo\\.com/onsite/js/vendors~reviews'],
                                                'website': 'https://www.klaviyo.com/product-reviews'},
                         'Kleeja': {   'cats': [1],
                                       'description': 'Kleeja is a PHP-based solution for managing file upload services '
@@ -15596,6 +17056,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'Kleeja.svg',
                                       'js': {'update_kleeja_captcha': ''},
                                       'website': 'https://kleeja.net'},
+                        'Kleer': {   'cats': [1],
+                                     'description': 'Kleer is a cloud-based platform that allows dentists to design '
+                                                    'and manage their own membership plans, offering them directly to '
+                                                    'uninsured patients.',
+                                     'icon': 'Kleer.svg',
+                                     'scriptSrc': ['member\\.kleer\\.com/'],
+                                     'website': 'https://www.kleer.com'},
                         'Klevu': {   'cats': [29],
                                      'description': 'Klevu is a highly advanced AI-Powered search solution for '
                                                     'ecommerce platforms.',
@@ -15629,6 +17096,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Klickly.svg',
                                        'scriptSrc': [   'analytics\\.klickly\\.com/pixel\\.js\\?v=([\\d\\.]+)\\;version:\\1'],
                                        'website': 'https://www.klickly.com'},
+                        'Klip': {   'cats': [100],
+                                    'description': 'Klip is a tool for creating product page coupons designed to '
+                                                   'enhance customer engagement, boost conversions, and improve '
+                                                   'retention.',
+                                    'icon': 'Klip.svg',
+                                    'js': {'KLIP_APP_DATA.ATCPath': ''},
+                                    'website': 'https://klipcoupons.com'},
                         'Klook': {   'cats': [71],
                                      'description': 'Klook is a travel affiliate system designed to connect users with '
                                                     'various travel services and experiences.',
@@ -15758,6 +17232,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'Konduto': '', 'getKondutoID': ''},
                                        'scriptSrc': ['\\.k-analytix\\.com'],
                                        'website': 'https://www.konduto.com'},
+                        'Konfidency Reviews': {   'cats': [90],
+                                                  'description': 'Konfidency Reviews is a platform that builds trust, '
+                                                                 'boosts organic traffic, and supports purchasing '
+                                                                 'decisions by providing reviews from customers who '
+                                                                 'are familiar with the products.',
+                                                  'icon': 'KonfidencyReviews.svg',
+                                                  'js': {'konfidencyCustomer': '', 'konfidencyLoader': ''},
+                                                  'website': 'https://www.konfidency.com.br'},
                         'Kong': {   'cats': [64],
                                     'description': 'Kong is an open-source API gateway and platform that acts as '
                                                    'middleware between compute clients and the API-centric '
@@ -15852,6 +17334,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'implies': ['Svelte'],
                                         'js': {'Kudos.apiServer': 'api\\.kudobuzz\\.com'},
                                         'website': 'https://kudobuzz.com/'},
+                        'Kueez': {   'cats': [36],
+                                     'description': 'Kueez is a platform offering data-driven solutions tailored for '
+                                                    'publishers to enhance advertising strategies.',
+                                     'icon': 'Kueez.svg',
+                                     'scriptSrc': ['\\.kueez\\.net/'],
+                                     'website': 'https://weare.kueez.com'},
                         'KueskiPay': {   'cats': [41, 91],
                                          'description': 'KueskiPay is a buy-now-pay-later solution.',
                                          'icon': 'KueskiPay.svg',
@@ -15859,6 +17347,21 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {'kueskypushhead': ''},
                                          'scriptSrc': ['cdn\\.kueskipay\\.com'],
                                          'website': 'https://kueskipay.com/'},
+                        'Kuroco': {   'cats': [47],
+                                      'description': 'Kuroco is an API-centric platform that enables developers to '
+                                                     'create customizable APIs, manage content, and leverage a CDN for '
+                                                     'fast content delivery across various devices.',
+                                      'headers': {'x-kuroco-edge-log': '', 'x-rcms-hash': ''},
+                                      'icon': 'Kuroco.svg',
+                                      'website': 'https://kuroco.app'},
+                        'KuronekoServer CDN': {   'cats': [31],
+                                                  'description': 'KuronekoServer CDN is a distributed content delivery '
+                                                                 'network utilizing VPS and Cloudflare to enhance '
+                                                                 'performance and reliability.',
+                                                  'dom': {"link[href*='cdn.krnk.org/']": {'exists': ''}},
+                                                  'icon': 'KuronekoServerCDN.svg',
+                                                  'scripts': ['cdn\\.krnk\\.org/'],
+                                                  'website': 'https://cdn.krnk.org'},
                         'Kustomer': {   'cats': [52, 53],
                                         'description': 'Kustomer is a CRM platform.',
                                         'icon': 'Kustomer.svg',
@@ -15870,6 +17373,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'Kwai.png',
                                           'js': {'KwaiAnalyticsObject': '', 'kwaiq': ''},
                                           'website': 'https://www.kwai.com'},
+                        'LEADIN': {   'cats': [10],
+                                      'description': 'LEADIN is a tool that provides insights into individuals who '
+                                                     "fill out forms on a site, utilizing Hubspot's market-leading CRM "
+                                                     'for implementation.',
+                                      'icon': 'LEADIN.svg',
+                                      'scriptSrc': ['js\\.leadin\\.com'],
+                                      'website': 'https://leadin.com'},
                         'LEPTON': {   'cats': [1],
                                       'cpe': 'cpe:2.3:a:lepton-cms:lepton:*:*:*:*:*:*:*:*',
                                       'icon': 'LEPTON.png',
@@ -15907,6 +17417,17 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                    'icon': 'LOU.png',
                                    'scriptSrc': ['cdn\\.louassist\\.com*'],
                                    'website': 'https://www.louassist.com'},
+                        'LPQV': {   'cats': [6],
+                                    'description': 'LPQV is an online store that offers integrated landing pages, '
+                                                   'streamlining the entire operation in one place.',
+                                    'icon': 'LPQV.svg',
+                                    'js': {'LPQV.page': '', 'LPQV_VARS_RPL': ''},
+                                    'website': 'https://www.lpqv.com.br/'},
+                        'LTheme': {   'cats': [80],
+                                      'description': 'LTheme is a provider of Joomla and WordPress themes.',
+                                      'dom': {"script[id*='ltheme-custom-js']": {'exists': ''}},
+                                      'icon': 'LTheme.svg',
+                                      'website': 'https://ltheme.com'},
                         'Ladipage': {   'cats': [51],
                                         'description': 'Ladipage is a landing page designing platform that helps '
                                                        'businesses to promote sales by advertising their products and '
@@ -15990,6 +17511,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'js': {'DDC.WS.state': '', 'launchDarkly': ''},
                                             'scriptSrc': ['(?:\\.|\\-)launchdarkly(?:\\.com/|\\-sdk\\.)'],
                                             'website': 'https://launchdarkly.com'},
+                        'LaunchNotes': {   'cats': [85],
+                                           'description': 'LaunchNotes is a platform that aligns teams with product '
+                                                          'development and release pipelines while keeping users '
+                                                          'informed and engaged with product updates.',
+                                           'icon': 'LaunchNotes.svg',
+                                           'scriptSrc': ['\\.launchnotes\\.com/'],
+                                           'website': 'https://launchnotes.com'},
                         'Launchrock': {   'cats': [51, 75],
                                           'description': 'Launchrock is an online tool designed to help capture email '
                                                          'addresses and create online product launching events.',
@@ -16112,6 +17640,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'LeadSlide.svg',
                                          'scriptSrc': ['leadslide\\.com/'],
                                          'website': 'https://v1.leadslide.com'},
+                        'Leadbit': {   'cats': [36],
+                                       'description': 'Leadbit is an offer-based ad system designed to target users '
+                                                      'with specific ads based on their engagement and preferences.',
+                                       'dom': {"form[action*='wapi.leadbit.com/']": {'exists': ''}},
+                                       'icon': 'Leadbit.svg',
+                                       'scriptSrc': ['\\.leadbit\\.com/'],
+                                       'website': 'https://leadbit.com'},
                         'Leadfeeder': {   'cats': [10],
                                           'description': 'Leadfeeder is a B2B visitor identification software that '
                                                          'tracks and identifies companies that visit your website.',
@@ -16159,6 +17694,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                   'neurolead.elChatbot': '',
                                                   'neuroleadLanguage': ''},
                                         'website': 'https://leadster.com.br'},
+                        'Leadtex': {   'cats': [52],
+                                       'description': 'Leadtex is a software solution focused on the development of '
+                                                      'chatbots.',
+                                       'icon': 'Leadteh.svg',
+                                       'scriptSrc': ['app\\.leadteh\\.ru/'],
+                                       'website': 'https://leadteh.ru'},
                         'Leaflet': {   'cats': [35],
                                        'description': 'Leaflet is the open-source JavaScript library for '
                                                       'mobile-friendly interactive maps.',
@@ -16174,6 +17715,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                 'implies': ['Shopify'],
                                                 'scriptSrc': ['scripts\\.leaflet\\.co/'],
                                                 'website': 'https://join.leaflet.co'},
+                        'LeanData': {   'cats': [53],
+                                        'description': 'LeanData is a platform that enhances demand management by '
+                                                       'providing lead-to-account matching and intelligent lead '
+                                                       'routing.',
+                                        'icon': 'LeanData.svg',
+                                        'js': {'LDBookItPopup': '', 'LDBookItV2': '', 'LDCalendaring': ''},
+                                        'website': 'https://www.leandata.com'},
                         'Leanplum': {   'cats': [32, 74],
                                         'description': 'Leanplum is a multi-channel messaging and campaign '
                                                        'orchestration platform.',
@@ -16188,6 +17736,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'dom': {   "link[href*='/wp-content/plugins/sfwd-lms/']": {   'attributes': {   'href': '/wp-content/plugins/sfwd-lms/.+\\.css(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1'}}},
                                          'icon': 'LearnDash.svg',
                                          'website': 'https://www.learndash.com'},
+                        'LearnUpon': {   'cats': [21],
+                                         'cookies': {'_learnupon_session': ''},
+                                         'description': 'LearnUpon is a learning management system (LMS) that helps '
+                                                        'businesses enhance employee development by streamlining the '
+                                                        'delivery, management, and tracking of training programs.',
+                                         'icon': 'LearnUpon.svg',
+                                         'website': 'https://www.learnupon.com/'},
                         'LearnWorlds': {   'cats': [21],
                                            'description': 'LearnWorlds is a powerful yet lightweight, user-friendly, '
                                                           'white-labeled cloud-based LMS ideal for versatile employee '
@@ -16196,6 +17751,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'js': {'LWClient.ebooks': '', 'LWSettings.deactive_components': ''},
                                            'scriptSrc': ['cdn\\.mycourse\\.app/v([\\d\\.]+)/\\;version:\\1'],
                                            'website': 'https://www.learnworlds.com'},
+                        'LearnyBox': {   'cats': [21],
+                                         'description': 'LearnyBox is an all-in-one platform that enables users to '
+                                                        'launch, manage, and sell training courses.',
+                                         'icon': 'LearnyBox.svg',
+                                         'js': {'ExecuteActionLearnyMail': ''},
+                                         'scripts': ['learnybox\\.com'],
+                                         'website': 'https://learnybox.com'},
                         'Leaseweb': {   'cats': [63, 88],
                                         'description': 'Leaseweb is an Infrastructure-as-a-Service (IaaS) provider '
                                                        'offering dedicated servers, CDN, cloud hosting and hybrid '
@@ -16391,6 +17953,27 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                'icon': 'Lightspeed.svg',
                                                'scriptSrc': ['http://assets\\.webshopapp\\.com'],
                                                'website': 'https://www.lightspeedhq.com/products/ecommerce/'},
+                        'Ligna': {   'cats': [53],
+                                     'description': 'Ligna is a sales, marketing, and enablement platform offering '
+                                                    'features to close clients, manage content, oversee projects, and '
+                                                    'track details, providing an all-in-one solution for business '
+                                                    'operations.',
+                                     'icon': 'Ligna.svg',
+                                     'scriptSrc': ['\\.ligna\\.io/'],
+                                     'website': 'https://www.ligna.io'},
+                        'Liine': {   'cats': [53],
+                                     'description': 'Liine is an all-in-one platform for monitoring, optimizing, and '
+                                                    'incentivizing the management of new patient calls.',
+                                     'icon': 'Liine.svg',
+                                     'js': {'Liine.addURLChangeListener': ''},
+                                     'website': 'https://www.liine.com'},
+                        'Lily': {   'cats': [84],
+                                    'description': 'Lily is a BigCommerce app that rewards customers with loyalty '
+                                                   'points for making purchases, signing up, following or sharing on '
+                                                   'social media, and more.',
+                                    'icon': 'Lily.svg',
+                                    'js': {'lilyCustomerId': '', 'lilyHash': '', 'lilyPl': ''},
+                                    'website': 'https://www.getlily.io'},
                         'Lime Talk': {   'cats': [52],
                                          'description': 'Lime Talk is a real-time customer messaging platform designed '
                                                         'for businesses to engage with website visitors and customers '
@@ -16439,6 +18022,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                              'dom': {'link#llar-login-page-styles-css': {'exists': ''}},
                                                              'icon': 'Limit Login Attempts Reloaded.png',
                                                              'website': 'https://www.limitloginattempts.com'},
+                        'Linda': {   'cats': [32],
+                                     'description': 'Linda is a provider of local marketing software designed for '
+                                                    'businesses to enhance online marketing, generate leads, and '
+                                                    'increase revenue.',
+                                     'icon': 'Linda.svg',
+                                     'scriptSrc': ['gb-widget\\.linda\\.co'],
+                                     'website': 'https://linda.co'},
                         'Linen': {   'cats': [2],
                                      'description': 'Linen is a real-time chat platform built for communities.',
                                      'icon': 'Linen.svg',
@@ -16598,6 +18188,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'LiveAgent.png',
                                          'js': {'LiveAgent': ''},
                                          'website': 'https://www.liveagent.com'},
+                        'LiveBy': {   'cats': [10],
+                                      'description': 'LiveBy is a home discovery system designed to provide users with '
+                                                     'detailed insights into properties, neighborhoods, and local '
+                                                     'amenities, enabling informed decision-making when selecting a '
+                                                     'new residence.',
+                                      'icon': 'LiveBy.svg',
+                                      'js': {'liveby.autoInitialize': ''},
+                                      'website': 'https://liveby.com'},
                         'LiveCanvas': {   'cats': [87, 51],
                                           'description': 'LiveCanvas is a Bootstrap 5 WordPress page builder.',
                                           'icon': 'LiveCanvas.svg',
@@ -16671,6 +18269,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                               'implies': ['PHP'],
                                               'js': {'LIVESTREET_SECURITY_KEY': ''},
                                               'website': 'https://livestreetcms.com'},
+                        'LiveTex': {   'cats': [52],
+                                       'description': 'LiveTex is a universal chat platform that provides digital '
+                                                      'communication solutions, allowing businesses to interact with '
+                                                      'clients across various digital channels.',
+                                       'icon': 'LiveTex.svg',
+                                       'js': {'liveTex': '', 'liveTexID': '', 'liveTex_object': ''},
+                                       'website': 'https://livetex.ru'},
                         'LiveZilla': {   'cats': [52],
                                          'description': 'LiveZilla is a web-based live support platform.',
                                          'dom': {'#lz_overlay_chat': {'exists': ''}},
@@ -16798,7 +18403,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'description': 'Lodgify is a platform facilitating vacation rentals and '
                                                       'bookings.',
                                        'icon': 'Lodgify.svg',
-                                       'scriptSrc': ['websites-static\\.lodgify\\.com/'],
+                                       'scriptSrc': ['\\.lodgify\\.com/'],
                                        'website': 'https://www.lodgify.com'},
                         'LogRocket': {   'cats': [10],
                                          'description': 'LogRocket is a logging and session replay platform that helps '
@@ -17009,6 +18614,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                     'implies': ['Deno'],
                                     'meta': {'generator': ['^lume\\sv([\\d\\.]+)$\\;version:\\1']},
                                     'website': 'https://lume.land'},
+                        'Lumino': {   'cats': [10],
+                                      'description': 'Lumino is a data platform that helps Shopify brands optimize '
+                                                     'marketing, conversions, and user experience by leveraging data.',
+                                      'icon': 'Lumino.svg',
+                                      'scripts': ['api\\.getlumino\\.ai'],
+                                      'website': 'https://getlumino.ai'},
                         'Lumio': {   'cats': [10],
                                      'description': 'Lumio is a tool that identifies and tracks visitors to your '
                                                     'website, providing insights into user activity and behaviour.',
@@ -17053,6 +18664,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'lunr': ''},
                                        'scriptSrc': [   '(?:((?:\\d+\\.)+\\d+)\\/)?lunr(?:-store)?(?:-en)?(?:\\.min)?\\.js'],
                                        'website': 'https://lunrjs.com/'},
+                        'Luveedu Cloud': {   'cats': [88],
+                                             'description': 'Luveedu Cloud is a domain and web hosting platform.',
+                                             'icon': 'LuveeduCloud.svg',
+                                             'scriptSrc': ['cdn\\.luveedu\\.com/'],
+                                             'website': 'https://cloud.luveedu.com'},
                         'Lychee': {   'cats': [7],
                                       'description': 'Lychee is a photo-management tool designed to operate on your '
                                                      'server or web-space.',
@@ -17192,6 +18808,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                   'and international shipping services.',
                                    'icon': 'MRW.png',
                                    'website': 'https://www.mrw.es'},
+                        'MSAAQ': {   'cats': [6],
+                                     'description': 'MSAAQ is a platform that allows users to create, sell, and manage '
+                                                    'their products or services from a single location.',
+                                     'icon': 'MSAAQ.svg',
+                                     'meta': {'generator': ['msaaq\\.com']},
+                                     'website': 'https://msaaq.com'},
                         'MSHOP': {   'cats': [6],
                                      'description': 'MSHOP is an all-in-one ecommerce platform.',
                                      'icon': 'MSHOP.png',
@@ -17245,11 +18867,26 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                'icon': 'MadCap Software.svg',
                                                'js': {'MadCap.Accessibility': '', 'MadCap.DEBUG': ''},
                                                'website': 'https://www.madcapsoftware.com'},
+                        'MadKudu': {   'cats': [32],
+                                       'description': 'MadKudu is a platform that enhances sales and marketing systems '
+                                                      'by providing actionable predictive analytics, enabling '
+                                                      'businesses to optimize strategies with data-driven insights.',
+                                       'dom': {"link[href*='cdn.madkudu.com']": {'exists': ''}},
+                                       'icon': 'MadKudu.svg',
+                                       'scriptSrc': ['cdn\\.madkudu\\.com'],
+                                       'website': 'https://www.madkudu.com'},
                         'Magazord': {   'cats': [6],
                                         'description': 'Magazord is an all-in-one ecommerce platform.',
                                         'icon': 'Magazord.svg',
                                         'meta': {'web-author': ['^magazord$']},
                                         'website': 'https://www.magazord.com.br'},
+                        'MageMail': {   'cats': [75],
+                                        'description': 'MageMail is a triggered email application for Magento that '
+                                                       'helps online retailers enhance customer engagement and '
+                                                       'increase revenue.',
+                                        'icon': 'MageMail.svg',
+                                        'js': {'Mage.Cookies': '', 'MageMailData.capture_email': '', 'MageRewards': ''},
+                                        'website': 'https://magemail.co'},
                         'MageWorx Search Autocomplete': {   'cats': [29],
                                                             'description': 'MageWorx Search Autocomplete extension '
                                                                            'offers an AJAX-based popup window that '
@@ -17285,6 +18922,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'implies': ['Laravel', 'Livewire'],
                                         'js': {'Magewire.connection-author': '', 'magewire': ''},
                                         'website': 'https://github.com/magewirephp/magewire'},
+                        'Magic UI': {   'cats': [66],
+                                        'description': 'Magic UI is a UI library featuring open-source animated '
+                                                       'components built with React, TypeScript, Tailwind CSS, and '
+                                                       'Framer Motion.',
+                                        'dom': {   "a[href*='magicui.design'] > video[src*='cdn.magicui.design']": {   'exists': ''},
+                                                   "iframe[src*='.magicui.design']": {'exists': ''}},
+                                        'icon': 'MagicUI.svg',
+                                        'website': 'https://magicui.design/'},
                         'Magisto': {   'cats': [14],
                                        'description': 'Magisto is a video management solution designed to help '
                                                       'marketing professionals, agencies, and businesses of all sizes.',
@@ -17481,6 +19126,16 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'icon': 'MakeShopKorea.png',
                                              'js': {'Makeshop': '', 'MakeshopLogUniqueId': ''},
                                              'website': 'https://www.makeshop.co.kr'},
+                        'Maker': {   'cats': [6],
+                                     'description': 'Maker is a platform that enables the creation, management, and '
+                                                    'optimization of ecommerce content without requiring coding '
+                                                    'knowledge.',
+                                     'icon': 'Maker.svg',
+                                     'js': {   'MakerEmbeds.run': '',
+                                               'MakerEnhance': '',
+                                               'MakerEnhanceEmbed': '',
+                                               'MakerExperiment': ''},
+                                     'website': 'https://www.maker.co'},
                         'Malomo': {   'cats': [107],
                                       'description': 'Malomo is a cloud-based shipment tracking solution that helps '
                                                      'small to midsize eCommerce businesses provide customers with '
@@ -17676,6 +19331,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'markerConfig': ''},
                                       'scriptSrc': ['edge\\.marker\\.io'],
                                       'website': 'https://marker.io'},
+                        'MarketHero': {   'cats': [32],
+                                          'description': 'Market Hero is a platform that automates ROI calculations '
+                                                         'for ecommerce businesses, streamlining financial performance '
+                                                         'tracking and providing data-driven insights.',
+                                          'icon': 'MarketHero.svg',
+                                          'scripts': ['tracking\\.markethero\\.io'],
+                                          'website': 'https://markethero.io'},
                         'MarketPlan': {   'cats': [10, 32],
                                           'description': 'MarketPlan is a platform that integrates campaign mapping, '
                                                          'simulation, collaboration, and smart analytics, all in one '
@@ -17737,6 +19399,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'MarsX.svg',
                                      'scriptSrc': ['analytic-api\\.marsx\\.dev/'],
                                      'website': 'https://www.marsx.dev'},
+                        'Marsello': {   'cats': [84],
+                                        'cookies': {'marselloexitpopup': ''},
+                                        'description': 'Marsello is an omnichannel loyalty platform that integrates '
+                                                       'with sales channels, enhancing customer engagement and '
+                                                       'retention by providing a unified experience across various '
+                                                       'points of sale.',
+                                        'icon': 'Marsello.svg',
+                                        'scripts': ['app\\.marsello\\.com'],
+                                        'website': 'https://www.marsello.com'},
                         'Massflow': {   'cats': [10],
                                         'description': 'Massflow is a platform offering analytics for businesses, '
                                                        'providing tools to evaluate performance, identify trends, and '
@@ -17766,6 +19437,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'dom': {   "[aria-labelledby='pi-mastercard'], [aria-labelledby='pi-master']": {   'exists': ''}},
                                           'icon': 'Mastercard.svg',
                                           'website': 'https://www.mastercard.com'},
+                        'Masteriyo': {   'cats': [21],
+                                         'description': 'Masteriyo is a course creation and monetization tool for '
+                                                        'WordPress.',
+                                         'dom': {"style[id*='masteriyo-public-inline-css']": {'exists': ''}},
+                                         'icon': 'Masteriyo.svg',
+                                         'js': {'_MASTERIYO_WISHLIST_ADDON_': ''},
+                                         'website': 'https://masteriyo.com'},
                         'MasterkinG32 Framework': {   'cats': [18],
                                                       'description': 'MasterkinG32 framework.',
                                                       'headers': {'x-powered-framework': 'masterking(?:)'},
@@ -17784,6 +19462,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Matajer.png',
                                        'scriptSrc': ['cdn\\.mapp\\.sa/'],
                                        'website': 'https://mapp.sa'},
+                        'Matchi': {   'cats': [72],
+                                      'description': 'Matchi is a platform for racket sports enthusiasts to search, '
+                                                     'book, and play tennis, badminton, table tennis, squash, or '
+                                                     'padel.',
+                                      'icon': 'Matchi.svg',
+                                      'scriptSrc': ['\\.matchi\\.com/'],
+                                      'website': 'https://www.matchi.se'},
                         'Material Design Lite': {   'cats': [66],
                                                     'description': 'Material Design Lite is a library of components '
                                                                    'for web developers.',
@@ -17868,6 +19553,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'MauticFormValidations': '', 'MauticSDK': '', 'MauticTrackingObject': ''},
                                       'scriptSrc': ['[^a-z]mtc.*\\.js'],
                                       'website': 'https://www.mautic.org/'},
+                        'Mava': {   'cats': [52],
+                                    'description': 'Mava is an AI-driven customer support platform that scales '
+                                                   'customer support and success by connecting to private, group, and '
+                                                   'community channels.',
+                                    'icon': 'Mava.svg',
+                                    'js': {'Mava.identify': '', 'MavaWebChatToggle': ''},
+                                    'website': 'https://www.mava.app'},
                         'Mavo': {   'cats': [59],
                                     'description': 'Mavo is a JavaScript library that enables web developers to turn '
                                                    'regular HTML into reactive web applications without the need for '
@@ -17913,6 +19605,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'implies': ['MySQL', 'PHP'],
                                              'meta': {'author': ['^maxencedev$']},
                                              'website': 'https://cms.maxencedev.fr'},
+                        'Mazrica': {   'cats': [53],
+                                       'description': 'Mazrica is a sales support tool that leverages organizational '
+                                                      'knowledge, using AI algorithms to analyze accumulated sales '
+                                                      'data and evaluate success and failure cases.',
+                                       'icon': 'Mazrica.svg',
+                                       'scriptSrc': ['\\.mazrica\\.com/'],
+                                       'website': 'https://mazrica.com'},
                         'Measured': {   'cats': [10],
                                         'description': 'Measured is an analytics platform to measure efficiency of '
                                                        'marketing channels.',
@@ -17978,6 +19677,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'scriptSrc': ['medium\\.com'],
                                       'website': 'https://medium.com'},
                         'Medusajs': {   'cats': [6],
+                                        'cookies': {'medusa.sid': ''},
                                         'description': 'Medusa is an open-source ecommerce platform that enables users '
                                                        'to create online stores.',
                                         'dom': {   "div.content-container > a[href*='www.medusajs.com'], a[href*='mailto:hello@medusajs.com']": {   'exists': ''}},
@@ -17993,6 +19693,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                  'icon': 'Meeting Scheduler.png',
                                                  'scriptSrc': ['bookmenow\\.info/(?:runtime|main).+\\.js'],
                                                  'website': 'https://bookmenow.info'},
+                        'Meetup Express': {   'cats': [72],
+                                              'cookies': {'meetup_express_quick_appointment_session': ''},
+                                              'description': 'Meetup Express is an appointment scheduling system '
+                                                             'designed to simplify booking and managing meetings.',
+                                              'icon': 'MeetupExpress.svg',
+                                              'website': 'https://meetupexpress.com'},
                         'Megagroup CMS.S3': {   'cats': [1],
                                                 'description': 'Megagroup CMS.S3 management system is provided not as '
                                                                'a “boxed product”, but as a separate service, that is, '
@@ -18056,6 +19762,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'Mendix.svg',
                                       'js': {'CKEditorForMendix': '', 'mendix': ''},
                                       'website': 'https://www.mendix.com'},
+                        'Mentad': {   'cats': [32],
+                                      'description': 'Mentad is a predictive marketing platform to acquire new '
+                                                     'customers.',
+                                      'js': {'mentad_website_id': ''},
+                                      'scripts': ['mentad_website_id'],
+                                      'website': 'https://www.mentad.com'},
                         'Mention Me': {   'cats': [94],
                                           'description': 'Mention Me is a referral marketing platform for '
                                                          'conversion-obsessed ecommerce brands.',
@@ -18081,6 +19793,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'icon': 'Mercado Shops.svg',
                                              'scriptSrc': ['frontend-assets/mshops-web-home/vendor'],
                                              'website': 'https://www.mercadoshops.com'},
+                        'Mercer': {   'cats': [101],
+                                      'description': 'Mercer is a platform that supports companies in transforming '
+                                                     'talent, health, retirement, and investment strategies to enhance '
+                                                     'overall performance and outcomes.',
+                                      'icon': 'Mercer.svg',
+                                      'scriptSrc': ['career-analytics\\.mercer\\.com/'],
+                                      'website': 'https://www.mercer.com'},
                         'Merit': {   'cats': [32],
                                      'description': 'Merit is a platform tailored for higher education marketing.',
                                      'icon': 'Merit.svg',
@@ -18176,12 +19895,19 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Mezereon.svg',
                                         'scriptSrc': ['app\\.mezereon\\.net'],
                                         'website': 'https://www.mezereon.com'},
-                        'Mginex': {   'cats': [108],
+                        'Mginex': {   'cats': [6],
                                       'description': 'Mginex is an online store website creation platform.',
                                       'icon': 'Mginex.svg',
                                       'meta': {'description': ['mginex']},
                                       'scriptSrc': ['api\\.mginex\\.com/'],
                                       'website': 'https://mginex.com'},
+                        'Miappi': {   'cats': [96],
+                                      'description': 'Miappi is a user-generated content platform designed to build '
+                                                     'trust and boost sales for brands.',
+                                      'dom': {"script[data-src*='web.miappi.com']": {'exists': ''}},
+                                      'icon': 'Miappi.svg',
+                                      'scriptSrc': ['web\\.miappi\\.com/'],
+                                      'website': 'https://miappi.com'},
                         'MichiJS': {   'cats': [47],
                                        'description': 'MichiJS is a library enabling the creation of web components '
                                                       'using TSX.',
@@ -18452,6 +20178,20 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Mintlify.svg',
                                         'js': {   '__NEXT_DATA__.props.pageProps.favicons.browserconfig': 'mintlify\\..+\\.amazonaws\\.com'},
                                         'website': 'https://mintlify.com'},
+                        'Mintox': {   'cats': [53],
+                                      'description': 'Mintox is a business software designed to streamline operations '
+                                                     'and enhance efficiency.',
+                                      'icon': 'Mintox.svg',
+                                      'js': {'MintoxJS': '', 'mintoxPaging': '', 'mintoxTrim': ''},
+                                      'meta': {'author': ['^mintox']},
+                                      'website': 'https://www.mintox.com'},
+                        'Mirador': {   'cats': [95],
+                                       'description': 'Mirador is a platform designed to enhance customer acquisition, '
+                                                      'streamline digital loan applications, and enable intelligent '
+                                                      'product routing and digitization.',
+                                       'icon': 'Mirador.svg',
+                                       'scriptSrc': ['\\.miradorfin\\.com'],
+                                       'website': 'https://www.miradortech.com'},
                         'Mirai': {   'cats': [53],
                                      'description': 'Mirai is a hotel management system.',
                                      'icon': 'Mirai.svg',
@@ -18463,6 +20203,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                    'recommendation, and marketing.',
                                     'icon': 'Miso.svg',
                                     'website': 'https://miso.ai'},
+                        'MissionSuite': {   'cats': [32, 53],
+                                            'description': 'Mission Suite is an all-in-one marketing software solution '
+                                                           'which combines CRM, email marketing, marketing automation, '
+                                                           'and inbound marketing tools.',
+                                            'icon': 'MissionSuite.svg',
+                                            'scriptSrc': ['app\\.themissionsuite\\.com'],
+                                            'scripts': ['app\\.themissionsuite\\.com'],
+                                            'website': 'https://www.themissionsuite.com'},
                         'Misskey': {   'cats': [2],
                                        'description': 'Misskey is a distributed microblogging platform.',
                                        'html': ['<!-- thank you for using misskey! @syuilo -->'],
@@ -18643,6 +20391,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                                 'been initialized with a different share scope',
                                                                 'data-webpack\\;confidence:50'],
                                                  'website': 'https://webpack.js.org/concepts/module-federation/'},
+                        'Modulify': {   'cats': [51],
+                                        'description': 'Modulify is a platform that enables the creation and '
+                                                       'deployment of scalable websites.',
+                                        'dom': {"html[data-wf-domain^='mdlfy-']": {'exists': ''}},
+                                        'icon': 'Modulify.svg',
+                                        'website': 'https://modulify.ai'},
                         'Moguta.CMS': {   'cats': [1, 6],
                                           'html': ['<link[^>]+href=["\'][^"]+mg-(?:core|plugins|templates)/'],
                                           'icon': 'Moguta.CMS.png',
@@ -18670,6 +20424,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'icon': 'Mojolicious.png',
                                            'implies': ['Perl'],
                                            'website': 'https://mojolicio.us'},
+                        'Mokini': {   'cats': [32],
+                                      'description': 'Mokini is a marketing automation platform designed for ecommerce '
+                                                     'businesses with customizable templates, user segmentation, and '
+                                                     'scheduling.',
+                                      'icon': 'Mokini.svg',
+                                      'js': {'mokiniSettings': ''},
+                                      'website': 'https://www.mokini.com'},
                         'Mokka': {   'cats': [41, 91],
                                      'description': 'Mokka is a Buy Now Pay Later solution that connects target '
                                                     'customer acquisition and settlement costs through marketing and '
@@ -18677,6 +20438,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'Mokka.svg',
                                      'scriptSrc': ['revoiframe\\.js'],
                                      'website': 'https://mokka.ro'},
+                        'Molin AI': {   'cats': [53],
+                                        'description': 'Molin AI is a multilingual tool that reduces support volume by '
+                                                       '70%, recommends relevant products to shoppers, and uses '
+                                                       'up-to-date information from client websites to enhance store '
+                                                       'revenue.',
+                                        'icon': 'MolinAI.svg',
+                                        'js': {'__INIT_MOLIN_SHOP_AI': '', '__INIT_MOLIN_SHOP_AI_OPTIONS': ''},
+                                        'scriptSrc': ['\\.molin\\.ai/'],
+                                        'website': 'https://molin.ai'},
                         'Mollie': {   'cats': [41],
                                       'description': 'Mollie is a payment provider for Belgium and the Netherlands, '
                                                      'offering payment methods such as credit card, iDEAL, '
@@ -18810,6 +20580,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'_monoTracker': ''},
                                         'scriptSrc': ['monotracker(?:\\.min)?\\.js'],
                                         'website': 'https://www.mono.net/en'},
+                        'Monocle': {   'cats': [32],
+                                       'description': 'Monocle is an AI-powered platform that optimizes incentives to '
+                                                      'boost profits while maintaining brand equity and margins.',
+                                       'icon': 'Monocle.svg',
+                                       'js': {'monocle.config': '', 'monocle_popup_id_variants': ''},
+                                       'scriptSrc': ['\\.usemonocle\\.com/'],
+                                       'website': 'https://www.usemonocle.com'},
                         'Monsido': {   'cats': [10, 67, 68],
                                        'description': 'Monsido provides a website management platform that automates '
                                                       'processes, ensures regulatory compliance, improves '
@@ -18859,6 +20636,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                   'icon': 'Moove.svg',
                                                   'js': {'moove_frontend_gdpr_scripts': ''},
                                                   'website': 'https://www.mooveagency.com/wordpress/gdpr-cookie-compliance-plugin'},
+                        'Moovin': {   'cats': [6],
+                                      'description': 'Moovin is an ecommerce platform.',
+                                      'icon': 'Moovin.svg',
+                                      'scriptSrc': ['\\.moovin\\.(com|store)'],
+                                      'website': 'https://moovin.com.br'},
                         'Mopinion': {   'cats': [13],
                                         'description': 'Mopinion is an all-in-one user feedback platform that helps '
                                                        'digital enterprises listen, understand, and act across all '
@@ -18910,6 +20692,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'implies': ['AngularJS', 'PHP', 'jQuery'],
                                        'scriptSrc': ['/mt-includes/js/website(?:assets)?\\.(?:min)?\\.js'],
                                        'website': 'https://motocms.com'},
+                        'Mottle': {   'cats': [52],
+                                      'description': 'Mottle is a custom chatbot creation tool that allows users to '
+                                                     'build expressive ChatGPT-like chatbots using their own data.',
+                                      'dom': {"link[href*='embed.mottle.com/']": {'exists': ''}},
+                                      'icon': 'Mottle.svg',
+                                      'js': {'Mottle': ''},
+                                      'website': 'https://mottle.com'},
                         'Mottor': {   'cats': [51],
                                       'description': 'Mottor is a no-code tool for creating websites, online stores, '
                                                      'landing pages, and more.',
@@ -18945,6 +20734,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Moveo.AI.svg',
                                         'js': {'MoveoAI': ''},
                                         'website': 'https://moveo.ai'},
+                        'MoverBase': {   'cats': [19],
+                                         'description': 'MoverBase is a software solution that includes features '
+                                                        'designed to support the management of a moving company.',
+                                         'icon': 'MoverBase.svg',
+                                         'scriptSrc': ['lead\\.moverbase\\.com/'],
+                                         'website': 'https://www.moverbase.com'},
                         'Moxie': {   'cats': [5, 68],
                                      'description': 'Pollyfills for XHR2 and File API',
                                      'scriptSrc': ['moxie(?:\\.min)?\\.js(?:\\?ver=([\\d.]+))?\\;version:\\1'],
@@ -18962,6 +20757,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {'mudWindow': ''},
                                          'scriptSrc': ['_content/mudblazor/mudblazor\\.min\\.js'],
                                          'website': 'https://mudblazor.com/'},
+                        'Mul-Pay': {   'cats': [41],
+                                       'description': 'Mul-Pay is a payment gateway platform from Japan.',
+                                       'js': {'Multipayment.config': ''},
+                                       'scriptSrc': ['static\\.mul-pay\\.jp/'],
+                                       'website': 'https://static.mul-pay.jp'},
                         'Mulberry': {   'cats': [5],
                                         'description': 'Mulberry is a developer of personalised product protection '
                                                        'solutions used to help brands unlock additional revenue.',
@@ -19088,6 +20888,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'icon': 'Myhkw player.png',
                                             'js': {'myhk_player_songid': '', 'myhkplayerlist': ''},
                                             'website': 'https://myhkw.cn'},
+                        'Myli': {   'cats': [90],
+                                    'description': 'Myli is a platform enhancing customer experience, streamlining '
+                                                   'reputation management, and facilitating consumer acquisition.',
+                                    'icon': 'Myli.svg',
+                                    'js': {'myli_push.geolocate': ''},
+                                    'scriptSrc': ['cdn-app\\.myli\\.io/'],
+                                    'website': 'https://www.myli.io'},
                         'Mynetcap': {   'cats': [1],
                                         'icon': 'Mynetcap.png',
                                         'meta': {'generator': ['mynetcap']},
@@ -19307,6 +21114,18 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                 'implies': ['Shopify'],
                                                 'scriptSrc': ['cdn\\.neatab\\.com/'],
                                                 'website': 'https://neatab.com'},
+                        'Nebula Sites': {   'cats': [51, 88],
+                                            'description': 'Nebula Sites is a platform that allows users to create, '
+                                                           'host, and manage websites.',
+                                            'dom': {"link[ns^='Nebula Sites']": {'exists': ''}},
+                                            'icon': 'NebulaSites.svg',
+                                            'website': 'https://nebulasites.org'},
+                        'Neexa': {   'cats': [52],
+                                     'description': 'Neexa is an AI-powered inquiry and sales agent designed to handle '
+                                                    'customer queries.',
+                                     'icon': 'NeexaAI.svg',
+                                     'js': {'neexa_xgmx_cc_wpq_ms': ''},
+                                     'website': 'https://neexa.ai'},
                         'Nelio Testing': {   'cats': [74],
                                              'cookies': {'nabuniqueviews': ''},
                                              'cpe': 'cpe:2.3:a:neliosoftware:nelio_ab_testing:*:*:*:*:*:*:*:*',
@@ -19436,6 +21255,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'New Relic.svg',
                                          'js': {'NREUM': '', 'newrelic': ''},
                                          'website': 'https://newrelic.com'},
+                        'New UI': {   'cats': [66],
+                                      'description': 'New UI is a framework designed for developing user interfaces '
+                                                     'for SaaS applications and websites.',
+                                      'icon': 'NewUI.svg',
+                                      'scripts': ['data-new-ui-theme'],
+                                      'website': 'https://new-ui.com/'},
                         'NewStore': {   'cats': [19],
                                         'description': 'NewStore is the only integrated platform offering omnichannel '
                                                        'solutions for stores and consumers.',
@@ -19602,6 +21427,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'headers': {'server': '^nexuspipe.com'},
                                          'icon': 'NexusPIPE.png',
                                          'website': 'https://nexuspipe.com'},
+                        'Nexxt': {   'cats': [101],
+                                     'description': 'Nexxt is a job finder-based system designed to help users search '
+                                                    'for employment opportunities by matching skills and preferences '
+                                                    'with job listings across various industries.',
+                                     'icon': 'Nexxt.svg',
+                                     'js': {'_bydWto.host': '\\.nexxt\\.com'},
+                                     'scriptSrc': ['\\.nexxt\\.com/'],
+                                     'website': 'https://www.nexxt.com'},
                         'Nginx': {   'cats': [22, 64],
                                      'cpe': 'cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*',
                                      'description': 'Nginx is a web server that can also be used as a reverse proxy, '
@@ -19640,6 +21473,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                     'icon': 'Nift.png',
                                     'js': {'NiftAnalytics': '', 'NiftJS': ''},
                                     'website': 'https://www.gonift.com'},
+                        'Nimbata': {   'cats': [10],
+                                       'description': 'Nimbata is a call tracking and conversion attribution platform '
+                                                      'designed to help marketing professionals, teams, and agencies '
+                                                      'make informed decisions to improve campaign performance.',
+                                       'icon': 'Nimbata.svg',
+                                       'scriptSrc': ['\\.dni\\.nimbata\\.com/'],
+                                       'website': 'https://www.nimbata.com'},
                         'Ninja Forms': {   'cats': [87, 110],
                                            'description': 'Ninja Forms is the WordPress form builder.',
                                            'dom': {"link[href*='/wp-content/plugins/ninja-forms/']": {'exists': ''}},
@@ -19775,6 +21615,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                 'js': {'Stackla': '', 'stacklaWidgetJsonp': ''},
                                                 'scriptSrc': ['\\.stackla\\.com/'],
                                                 'website': 'https://www.nosto.com/products/visual-ugc/'},
+                        'Nostra': {   'cats': [92],
+                                      'description': 'Nostra is a web performance optimisation solution.',
+                                      'icon': 'Nostra.png',
+                                      'js': {'Nostra': '', 'NostraEventManager': ''},
+                                      'website': 'https://www.nostra.ai/'},
                         'Notie': {   'cats': [59],
                                      'description': 'Notie is a notification, input, and selection suite for '
                                                     'javascript, with no dependencies.',
@@ -19801,6 +21646,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'Notix.svg',
                                      'scriptSrc': ['notix\\.io/ent'],
                                      'website': 'https://notix.co'},
+                        'Novel': {   'cats': [6],
+                                     'description': 'Novel is a platform that allows users to drop NFTs and set up '
+                                                    'token-gated products, content, and discounts within minutes.',
+                                     'icon': 'Novel.svg',
+                                     'js': {   '__NOVEL_STOREFRONT_SCRIPT_HAS_RUN__': '',
+                                               '__novel_cache__': '',
+                                               'fetchNovelSession': '',
+                                               'fetchNovelStorefrontData': ''},
+                                     'website': 'https://www.novel.com'},
                         'Nrdevo': {   'cats': [1],
                                       'description': 'Nrdevo is a subscription-based software that allows anyone to '
                                                      'set up a website, online store, and more.',
@@ -19838,6 +21692,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'nuqliumObject': ''},
                                        'scriptSrc': ['\\.nuqlium\\.com/api'],
                                        'website': 'https://www.nuqlium.com'},
+                        'Nurture Boss': {   'cats': [32],
+                                            'description': 'Nurture Boss is an AI platform for engaging with prospects '
+                                                           'and residents, automating the leasing process from lead to '
+                                                           'renewal.',
+                                            'icon': 'NurtureBoss.svg',
+                                            'scriptSrc': ['widget\\.nurtureboss\\.io/'],
+                                            'website': 'https://nurtureboss.io'},
                         'Nuvemshop': {   'cats': [6],
                                          'description': 'Nuvemshop is a website builder with customizable layouts, '
                                                         'product, shipping and payment management, marketing tools and '
@@ -19846,6 +21707,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'Nuvemshop.svg',
                                          'js': {'LS.store.url': '^.+nuvem.com.br$', 'nuvemShopIdProduct': ''},
                                          'website': 'https://www.nuvemshop.com.br'},
+                        'Nuxt UI': {   'cats': [66],
+                                       'description': 'Nuxt UI is a customizable UI library designed for Nuxt.',
+                                       'dom': {"style[id*='nuxt-ui-']": {'exists': ''}},
+                                       'icon': 'Nuxt.js.svg',
+                                       'website': 'https://ui.nuxt.com'},
                         'Nuxt.js': {   'cats': [12, 18, 22, 57],
                                        'description': 'Nuxt is a Vue framework for developing modern web applications.',
                                        'html': ['<div [^>]*id="__nuxt"', '<script [^>]*>window\\.__nuxt__'],
@@ -19924,6 +21790,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                                'icon': 'OXID eShop.svg',
                                                                'implies': ['PHP'],
                                                                'website': 'https://exchange.oxid-esales.com/OXID-Products/OXID-eShop/OXID-eShop-Professional-Edition-6-Professional-Edition-6-Stable-PE-6-0-x.html'},
+                        'Oat++': {   'cats': [18],
+                                     'description': 'Oat++ is an open source C++ Web Framework.',
+                                     'headers': {'server': '^oatpp/?([\\d.]+)?\\;version:\\1'},
+                                     'icon': 'Oat.svg',
+                                     'website': 'https://oatpp.io'},
                         'Obsidian Incentivize': {   'cats': [100],
                                                     'description': 'Obsidian Incentivize is designed to increase your '
                                                                    'average order size through in-cart upsells, cross '
@@ -20046,6 +21917,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Oculizm.svg',
                                        'scriptSrc': ['app\\.oculizm\\.com/'],
                                        'website': 'https://oculizm.com'},
+                        'Oddcast': {   'cats': [32],
+                                       'description': 'Oddcast is a platform that develops customized video and '
+                                                      'avatar-based marketing products tailored for small and '
+                                                      'medium-sized businesses and consumers.',
+                                       'icon': 'Oddcast.svg',
+                                       'js': {'ODDCAST_HTTP_SERVER': '', 'OddcastDomain': ''},
+                                       'scriptSrc': ['\\.oddcast\\.com/'],
+                                       'website': 'https://oddcast.com'},
                         'Oddle': {   'cats': [93],
                                      'cookies': {'enableoddlepass': ''},
                                      'description': 'Oddle is an online ordering system designed to streamline '
@@ -20100,6 +21979,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'Okendo.svg',
                                       'implies': ['Shopify'],
                                       'js': {   'okeReviewsWidgetOnInit': '',
+                                                'okeWidgetApi': '',
                                                 'okeWidgetControlInit': '',
                                                 'okendoReviews': ''},
                                       'website': 'https://www.okendo.io'},
@@ -20130,6 +22010,18 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'js': {'olark': '', 'olarkUserData': ''},
                                      'scriptSrc': ['\\.olark\\.com/'],
                                      'website': 'https://www.olark.com/'},
+                        'Oleoshop': {   'cats': [6],
+                                        'description': 'Oleoshop is a platform that enables businesses to create and '
+                                                       'manage their own online stores.',
+                                        'icon': 'Oleoshop.svg',
+                                        'meta': {'generator': ['oleoshop\\.com']},
+                                        'website': 'https://www.oleoshop.com'},
+                        'Omeda': {   'cats': [86, 97],
+                                     'description': 'Omeda is a platform that enables the creation of new products by '
+                                                    'starting with accurate audience segmentation and targeting.',
+                                     'icon': 'Omeda.svg',
+                                     'scriptSrc': ['olytics\\.omeda\\.com/'],
+                                     'website': 'https://www.omeda.com'},
                         'Omeka': {   'cats': [1],
                                      'cpe': 'cpe:2.3:a:omeka:omeka:*:*:*:*:*:*:*:*',
                                      'description': 'Omeka is a free Content Management System (CMS) used by archives, '
@@ -20172,6 +22064,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'js': {'_omni': ''},
                                            'scriptSrc': ['cdn\\.omniconvert\\.com'],
                                            'website': 'https://www.omniconvert.com'},
+                        'Omnikick': {   'cats': [32],
+                                        'description': 'Omnikick is a platform designed to help businesses engage, '
+                                                       'convert, and grow their customer base through targeted digital '
+                                                       'marketing strategies.',
+                                        'icon': 'Omnikick.svg',
+                                        'js': {'omniKick.ready': ''},
+                                        'website': 'https://www.omnikick.com'},
                         'Omnisend': {   'cats': [32, 75],
                                         'cookies': {'omnisendsessionid': ''},
                                         'description': 'Omnisend is an ecommerce marketing automation platform that '
@@ -20310,6 +22209,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'js': {'Onlim': '', 'OnlimChatbot': ''},
                                      'scriptSrc': ['app\\.onlim\\.com/'],
                                      'website': 'https://onlim.com'},
+                        'Onsen UI': {   'cats': [26],
+                                        'description': 'Onsen UI is an open-source HTML5 hybrid app framework offering '
+                                                       'mobile UI components for PhoneGap and Cordova development.',
+                                        'icon': 'OnsenUI.svg',
+                                        'scriptSrc': ['(/.*onsen.*min\\.js|.*angular-onsenui\\.min\\.js)'],
+                                        'website': 'https://onsen.io'},
                         'Ookla Speedtest Custom': {   'cats': [5],
                                                       'description': 'Speedtest Custom is a robust and accurate '
                                                                      'testing solution that is HTML5-based, Flash-free '
@@ -20460,6 +22365,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'OpenNemas.png',
                                          'meta': {'generator': ['opennemas']},
                                          'website': 'https://www.opennemas.com'},
+                        'OpenPanel': {   'cats': [10],
+                                         'description': 'OpenPanel is an open-source analytics library that enables '
+                                                        'developers to track and analyze user behavior, providing '
+                                                        'real-time insights and data visualization for improved '
+                                                        'decision-making across various platforms.',
+                                         'icon': 'OpenPanel.svg',
+                                         'js': {'openpanel.api': ''},
+                                         'scriptSrc': ['//openpanel\\.dev/'],
+                                         'website': 'https://openpanel.dev'},
                         'OpenPay': {   'cats': [41, 91],
                                        'description': 'Openpay is an innovative online and in-store payment solution '
                                                       'enabling you to purchase now and pay later, with no interest.',
@@ -20546,6 +22460,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'scriptSrc': [   'https?://[^/]*\\.openx\\.net',
                                                       'https?://[^/]*\\.servedbyopenx\\.com'],
                                      'website': 'https://openx.com'},
+                        'Opentracker': {   'cats': [10],
+                                           'description': 'Opentracker is a real-time analytics tool that tracks '
+                                                          'website traffic, user behavior, and engagement.',
+                                           'icon': 'Opentracker.svg',
+                                           'scriptSrc': ['script\\.opentracker\\.net'],
+                                           'website': 'https://www.opentracker.net'},
                         'OperateBeyond': {   'cats': [53],
                                              'description': 'OperateBeyond is a software development company that '
                                                             'offers website design, automated inventory management, '
@@ -20906,17 +22826,35 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'js': {'AP3_WIDGETS_PREFIX': ''},
                                      'website': 'https://ortto.com'},
                         'Osano': {   'cats': [67],
-                                     'description': 'Osano is a data privacy platform that helps your website become '
-                                                    'compliant with laws such as GDPR and CCPA.',
+                                     'description': 'Osano is a data privacy platform that helps your website comply '
+                                                    'with regulations such as GDPR and CCPA.',
                                      'icon': 'Osano.svg',
-                                     'js': {'Osano': ''},
-                                     'scriptSrc': ['cmp\\.osano\\.com/'],
+                                     'js': {'Osano': '', 'Osano.cm.cmpVersion': '(.+)\\;version:\\1'},
+                                     'scriptSrc': [   'ajax/libs/cookieconsent2?/([\\d\\.]+)/cookieconsent.min.js\\;version:\\1',
+                                                      'cmp\\.osano\\.com/',
+                                                      'npm/cookieconsent@(\\d)/build/cookieconsent.min.js\\;version:\\1'],
                                      'website': 'https://www.osano.com'},
                         'Osterreichische Post': {   'cats': [99],
                                                     'description': 'Österreichische Post is an Austrian logistics and '
                                                                    'postal services provider.',
                                                     'icon': 'Post AG.svg',
                                                     'website': 'https://www.post.at'},
+                        'Otter Blocks': {   'cats': [87],
+                                            'description': 'Otter blocks is a Gutenberg Blocks page builder plugin '
+                                                           'that adds extra functionality to the WordPress Block '
+                                                           'Editor.',
+                                            'dom': {"link[href*='/wp-content/plugins/otter-blocks']": {'exists': ''}},
+                                            'html': ['<div[^>]+class=["\']wp-block-themeisle-blocks-*'],
+                                            'icon': 'otter-blocks.png',
+                                            'website': 'https://wordpress.org/plugins/otter-blocks/'},
+                        'OtterText': {   'cats': [32],
+                                         'cookies': {'otter_text_session': ''},
+                                         'description': 'OtterText is a platform offering SMS marketing and automation '
+                                                        'solutions designed to enhance communication and streamline '
+                                                        'marketing campaigns.',
+                                         'icon': 'OtterText.svg',
+                                         'scriptSrc': ['app\\.ottertext\\.com'],
+                                         'website': 'https://ottertext.com'},
                         'OutSystems': {   'cats': [47],
                                           'description': 'OutSystems is a low-code platform which provides tools for '
                                                          'companies to develop, deploy and manage omnichannel '
@@ -20955,6 +22893,17 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                'implies': ['Microsoft ASP.NET'],
                                                'js': {'IsOwaPremiumBrowser': ''},
                                                'website': 'https://help.outlook.com'},
+                        'Ova': {   'cats': [51],
+                                   'description': 'Ova is a website builder platform from Australia.',
+                                   'icon': 'Ova.svg',
+                                   'js': {'cffOptions.placeholder': '\\.ova\\.net\\.au/', 'cffOptions.resized_url': ''},
+                                   'website': 'https://ova.net.au'},
+                        'Overblog': {   'cats': [11],
+                                        'description': 'Overblog is a French blog platform that enables users to '
+                                                       'create and share content.',
+                                        'icon': 'OverBlog.svg',
+                                        'scriptSrc': ['\\.over-blog-kiwi\\.com/'],
+                                        'website': 'https://www.over-blog.com'},
                         'Ownpage': {   'cats': [76],
                                        'description': 'Ownpage is a technology services provider that enables '
                                                       'publishers to personalize their newsletters, websites, and '
@@ -21252,6 +23201,17 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                         'manner.',
                                          'icon': 'PandaCSS.svg',
                                          'website': 'https://panda-css.com/'},
+                        'Pandectes': {   'cats': [67, 100],
+                                         'cookies': {'_pandectes_gdpr': ''},
+                                         'description': 'Pandectes is a cloud-based data privacy management compliance '
+                                                        'platform for Shopify stores, ensuring compliance with GDPR, '
+                                                        'CCPA/CPRA, VCDPA, APPI, PIPEDA, and PDPA regulations.',
+                                         'icon': 'pandectes.svg',
+                                         'implies': ['Shopify'],
+                                         'scriptSrc': [   'gdpr-privacy-policy-assets\\.s3-us-west-2\\.amazonaws\\.com/',
+                                                          'pandectes-core\\.js',
+                                                          's3\\.us-west-2\\.amazonaws\\.com/gdpr-privacy-policy-assets/'],
+                                         'website': 'https://pandectes.io'},
                         'Pandectes GDPR Compliance': {   'cats': [67],
                                                          'description': 'Pandectes GDPR Compliance is a solution for '
                                                                         'Shopify stores, ensuring compliance with '
@@ -21395,6 +23355,26 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Passage.svg',
                                        'scriptSrc': ['\\.1password\\.com/'],
                                        'website': 'https://passage.1password.com'},
+                        'Passle': {   'cats': [32],
+                                      'description': 'Passle is a digital marketing platform designed to help '
+                                                     'professionals create and share expert-led content.',
+                                      'icon': 'Passle.svg',
+                                      'js': {   'Passel.API': '',
+                                                'PassleEnvironmentConfig': '',
+                                                'PassleEvents': '',
+                                                'PassleFunctions': ''},
+                                      'website': 'https://home.passle.net'},
+                        'Passport.js': {   'cats': [69],
+                                           'description': 'Passport.js is an authentication middleware for Node.js, '
+                                                          'supporting various strategies to enable user authentication '
+                                                          'in web applications.',
+                                           'icon': 'Passport.svg',
+                                           'implies': ['Node.js'],
+                                           'js': {   'Passport.Core': '',
+                                                     'Passport.Core.VERSION': '([\\d.]+)\\;version:\\1',
+                                                     'PassportHandler': '',
+                                                     '_passport_html': ''},
+                                           'website': 'https://www.passportjs.org'},
                         'PathFactory': {   'cats': [32],
                                            'description': 'PathFactory is a platform utilizing AI to align content '
                                                           'with revenue generation.',
@@ -21577,6 +23557,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Paysera.svg',
                                        'scriptSrc': ['\\.paysera\\.com/'],
                                        'website': 'https://www.paysera.com'},
+                        'Pear Commerce': {   'cats': [6],
+                                             'description': 'Pear Commerce is a next-gen retail ecommerce platform '
+                                                            'connecting CPGs to retailers by transforming shoppable '
+                                                            'tools into actionable marketing insights.',
+                                             'icon': 'PearCommerce.svg',
+                                             'js': {   'PEAR_WIDGET_CONFIG': '',
+                                                       'PEAR_WIDGET_CONFIG.version': '^([\\d\\.]+)$\\;version:\\1',
+                                                       'PEAR_WIDGET_CONFIGS.default': ''},
+                                             'website': 'https://www.pearcommerce.com'},
                         'PebblePost': {   'cats': [77],
                                           'description': 'PebblePost provides marketers a way to transform recent '
                                                          'online data into intelligent direct mail programs that '
@@ -21584,12 +23573,23 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'PebblePost.svg',
                                           'scriptSrc': ['cdn\\.pbbl\\.co/'],
                                           'website': 'https://www.pebblepost.com'},
+                        'Peddle': {   'cats': [6],
+                                      'description': 'Peddle is a platform offering instant cash offers for cars, '
+                                                     'streamlining the selling process.',
+                                      'icon': 'Peddle.svg',
+                                      'js': {'PeddlePublisherEmbed': '', 'PeddlePublisherEmbedConfig': ''},
+                                      'website': 'https://www.peddle.com'},
                         'Peek': {   'cats': [5, 72],
                                     'description': 'Peek is a online booking system for tour and activity providers.',
                                     'icon': 'Peek.svg',
                                     'js': {'Peek': '', 'PeekJsApi': '', '_peekConfig': ''},
                                     'scriptSrc': ['js\\.peek\\.\\w+'],
                                     'website': 'https://www.peek.com/'},
+                        'Peel': {   'cats': [6],
+                                    'description': 'Peel is an open source shopping cart system.',
+                                    'icon': 'Peel.svg',
+                                    'meta': {'generator': ['www\\.peel-shopping\\.com']},
+                                    'website': 'https://www.peel.fr'},
                         'PeerBoard': {   'cats': [2],
                                          'description': 'PeerBoard is a plug-and-play community solution, which helps '
                                                         'groups, clubs, startups, marketplaces and businesses create '
@@ -21607,6 +23607,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'PeerTube.svg',
                                         'meta': {'og:platform': ['^peertube$']},
                                         'website': 'https://joinpeertube.org/'},
+                        'Peerius': {   'cats': [76],
+                                       'description': 'Peerius is a platform that analyzes individual visitor behavior '
+                                                      'on websites to optimize the checkout process.',
+                                       'js': {'PeeriusCallbacks': ''},
+                                       'scriptSrc': ['\\.peerius\\.com/'],
+                                       'website': 'https://www.peerius.com'},
                         'Pegboard7': {   'cats': [1],
                                          'description': 'Pegboard7 is an online digital platform that covers '
                                                         'ecommerce, marketing, and enterprise WCMS software for medium '
@@ -21618,11 +23624,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'scriptSrc': ['/pegboard\\.min\\.js'],
                                          'website': 'https://pegboardsoftware.com.au/'},
                         'Peity': {   'cats': [59],
-                                     'description': "Peity is a simple jQuery plugin that converts an element's "
-                                                    'content into a simple mini svg pie, line or bar chart.',
+                                     'description': "Peity is a jQuery plugin that converts an element's content into "
+                                                    'a simple mini svg pie, line or bar chart.',
                                      'js': {'peity': ''},
-                                     'scriptSrc': [   'peity(?:-demo)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1'],
-                                     'website': 'https://github.com/benpickles/peity'},
+                                     'scriptSrc': [   '(?:jquery\\.)?peity(?:-demo)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1'],
+                                     'website': 'https://benpickles.github.io/peity/'},
                         'Pelican': {   'cats': [57],
                                        'html': [   'powered by <a href="[^>]+getpelican\\.com',
                                                    'powered by <a href="https?://pelican\\.notmyidea\\.org'],
@@ -21797,6 +23803,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'Phaser.png',
                                       'js': {'Phaser': '', 'Phaser.VERSION': '^(.+)$\\;version:\\1'},
                                       'website': 'https://phaser.io'},
+                        'Phenom': {   'cats': [101],
+                                      'description': 'Phenom is a talent relationship marketing platform.',
+                                      'icon': 'Phenom.svg',
+                                      'scriptSrc': ['cdn\\.phenompeople\\.com/'],
+                                      'website': 'https://www.phenom.com'},
                         'Phenomic': {   'cats': [57],
                                         'description': 'Phenomic is a modular website compiler.',
                                         'html': ['<[^>]+id="phenomic(?:root)?"'],
@@ -21822,6 +23833,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'implies': ['Node.js', 'React', 'Webpack'],
                                        'meta': {'generator': ['^phoenix']},
                                        'website': 'https://github.com/Sazito/phoenix/'},
+                        'Phoenix Cart': {   'cats': [6],
+                                            'cookies': {'ceid': ''},
+                                            'description': 'Phoenix Cart is an open source software that allows users '
+                                                           'to set up an online store and sell their products.',
+                                            'icon': 'PhoenixCart.svg',
+                                            'website': 'https://phoenixcart.org'},
                         'Phoenix Framework': {   'cats': [18],
                                                  'description': 'Phoenix Framework is an open-source web application '
                                                                 'framework built using the Elixir programming '
@@ -21919,6 +23936,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                                                 '?([\\d.]+)?\\;version:\\1'},
                                                  'icon': 'Phusion Passenger.png',
                                                  'website': 'https://phusionpassenger.com'},
+                        'PiAds': {   'cats': [32],
+                                     'description': 'PiAds is a marketing system designed to enhance the efficiency of '
+                                                    'advertising campaigns through targeted strategies and data-driven '
+                                                    'insights.',
+                                     'icon': 'PiAds.svg',
+                                     'scriptSrc': ['api\\.piads\\.vn/'],
+                                     'website': 'https://piads.vn'},
                         'Piano': {   'cats': [76],
                                      'description': 'Piano is a enterprise SaaS company which specializing in advanced '
                                                     'media business processes and ecommerce optimisation.',
@@ -21942,6 +23966,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'js': {'pickystory.overrideStore': ''},
                                           'scriptSrc': ['cdn\\.pickystory\\.com/'],
                                           'website': 'https://pickystory.com'},
+                        'Pickzen': {   'cats': [29],
+                                       'description': 'Pickzen is an AI-powered tool designed for conversational '
+                                                      'search.',
+                                       'icon': 'Pickzen.svg',
+                                       'js': {'pickzen.server': '', 'pickzenLoaded': '', 'pickzenonActivation': ''},
+                                       'website': 'https://www.pickzen.com'},
                         'Pico': {   'cats': [53],
                                     'icon': 'pico.svg',
                                     'js': {'Pico': ''},
@@ -22188,6 +24218,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'PlannitCallTracking': ''},
                                        'scriptSrc': ['\\.plannit\\.io/'],
                                        'website': 'https://plannit.io'},
+                        'Planzer': {   'cats': [107],
+                                       'description': 'Planzer is a provider of transport and warehouse logistics '
+                                                      'services, specializing in efficient and reliable solutions for '
+                                                      'supply chain management across various industries.',
+                                       'icon': 'Planzer.svg',
+                                       'scriptSrc': ['/wp-content/plugins/planzer-jobs/'],
+                                       'website': 'https://www.planzer.ch'},
                         'Plasmic': {   'cats': [51],
                                        'description': 'Plasmic is a visual, no-code headless page/content builder for '
                                                       'any website or codebase.',
@@ -22215,6 +24252,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'icon': 'Platforma LP.png',
                                             'scriptSrc': ['\\.lpcdn\\.site/'],
                                             'website': 'https://platformalp.ru'},
+                        'Platformly': {   'cats': [32],
+                                          'description': 'Platformly is a tool that provides intelligent marketing '
+                                                         'automation for online businesses.',
+                                          'icon': 'Platformly.svg',
+                                          'scriptSrc': ['www\\.platform\\.ly/'],
+                                          'website': 'https://www.platformly.com'},
                         'PlatinMarket': {   'cats': [6],
                                             'description': 'PlatinMarket is an ecommerce platform that provides '
                                                            'solutions for online businesses to create and manage their '
@@ -22223,6 +24266,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'js': {'PlatinMarket': ''},
                                             'scriptSrc': ['//platincdn\\.com/'],
                                             'website': 'https://www.platinmarket.com'},
+                        'Plattar': {   'cats': [105],
+                                       'description': 'Plattar is a 3D and augmented reality platform for businesses '
+                                                      'that facilitates product customization to help retailers '
+                                                      'increase sales and reduce returns.',
+                                       'icon': 'Plattar.svg',
+                                       'js': {'PlattarARAdapter': ''},
+                                       'website': 'https://www.plattar.com'},
                         'Platter': {   'cats': [108],
                                        'description': 'Platter is a platform that provides integrated themes and apps '
                                                       'for Shopify stores, allowing for efficient customization.',
@@ -22270,6 +24320,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'Plezi.svg',
                                      'scriptSrc': ['api\\.plezi\\.co'],
                                      'website': 'https://www.plezi.co'},
+                        'Pliek': {   'cats': [32],
+                                     'description': 'Pliek is a system that provides live sales notifications, '
+                                                    'enabling real-time updates on purchase activities.',
+                                     'js': {'pliekConfig.key': ''},
+                                     'website': 'https://pliek.io'},
                         'Pligg': {   'cats': [1],
                                      'cpe': 'cpe:2.3:a:pligg:pligg_cms:*:*:*:*:*:*:*:*',
                                      'html': ['<span[^>]+id="xvotes-0'],
@@ -22348,6 +24403,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Podigee.svg',
                                        'js': {'podigeePodcastPlayers': ''},
                                        'website': 'https://www.podigee.com'},
+                        'Podio': {   'cats': [53],
+                                     'description': 'Podio is a customizable social work platform for collaboration '
+                                                    'with co-workers and clients, enabling task management and '
+                                                    'communication.',
+                                     'icon': 'Podio.svg',
+                                     'js': {'_podioWebForm': ''},
+                                     'scriptSrc': ['//podio\\.com/'],
+                                     'website': 'https://www.podio.com'},
                         'Podium': {   'cats': [5, 52],
                                       'description': 'Podium is a customer communication platform for businesses who '
                                                      'interact with customers on a local level.',
@@ -22374,6 +24437,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Pojo.me.png',
                                        'js': {'PojoA11yOptions': ''},
                                        'website': 'https://pojo.me/plugins/accessibility/'},
+                        'Poll Maker': {   'cats': [90],
+                                          'description': 'Poll Maker is a system designed to create and manage online '
+                                                         'polls, allowing users to gather opinions, feedback, or '
+                                                         'votes.',
+                                          'icon': 'PollMaker.svg',
+                                          'scriptSrc': ['scripts\\.poll-maker\\.com/'],
+                                          'website': 'https://www.poll-maker.com'},
                         'Poloriz': {   'cats': [76],
                                        'description': "Poloriz's technology automatically creates a personalised, "
                                                       'full-screen, mobile-first, cross-selling user experience for '
@@ -22434,6 +24504,19 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'scriptSrc': [   '/popper(?:\\.min)?\\.js(?:/([0-9.]+))?\\;version:\\1',
                                                        'popperjs(?:/|-)core(?:@|-)([\\d\\.]+)\\;version:\\1'],
                                       'website': 'https://popper.js.org'},
+                        'Poppins': {   'cats': [32],
+                                       'description': 'Poppins is a tool that enables notifications on websites, '
+                                                      'ranging from video alerts to informational popups.',
+                                       'icon': 'Poppins.svg',
+                                       'scriptSrc': ['//poppins\\.so/'],
+                                       'website': 'https://poppins.so'},
+                        'Poptin': {   'cats': [32],
+                                      'description': 'Poptin is a platform designed to engage visitors and coverts '
+                                                     'them into leads, subscribers and sales.',
+                                      'icon': 'Poptin.svg',
+                                      'js': {'poptinAfterPageLoad': ''},
+                                      'scriptSrc': ['cdn\\.popt\\.in/'],
+                                      'website': 'https://www.poptin.com'},
                         'PopularFX': {   'cats': [80],
                                          'description': 'PopularFX is a fully customizable responsive WordPress theme. '
                                                         'It comes with drag and drop page builder.',
@@ -22491,6 +24574,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'dom': {"img[alt*='postnl' i], img[src*='postnl' i]": {'exists': ''}},
                                       'icon': 'PostNL.svg',
                                       'website': 'https://postnl.post'},
+                        'Postach': {   'cats': [11],
+                                       'description': 'Postach is a blogging platform integrated with Evernote, '
+                                                      'allowing users to create and manage blog posts directly from '
+                                                      'their Evernote account.',
+                                       'icon': 'Postach.svg',
+                                       'scriptSrc': ['\\.postach\\.io/'],
+                                       'website': 'https://postach.io'},
                         'Poste Italiane': {   'cats': [99],
                                               'description': 'Poste Italiane is the Italian postal service provider.',
                                               'icon': 'Poste Italiane.svg',
@@ -22545,6 +24635,23 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'potions.version': '([\\d\\.]+)\\;version:\\1'},
                                        'scriptSrc': ['\\.get-potions\\.com/'],
                                        'website': 'https://get-potions.com'},
+                        'Powa': {   'cats': [31],
+                                    'description': 'Powa is a site speed plugin for WordPress that operates its own '
+                                                   'Content Delivery Network (CDN) to enhance website performance and '
+                                                   'reduce loading times.',
+                                    'icon': 'Powa.svg',
+                                    'js': {   'powaHealthCheck': '',
+                                              'powaInitAssets': '',
+                                              'powaOnLoadJs': '',
+                                              'powaSyncLoadScripts': ''},
+                                    'website': 'https://powa.com'},
+                        'Power CRM': {   'cats': [53],
+                                         'description': 'Power CRM is a platform tailored for vehicle protection '
+                                                        'associations, offering support to meet operational needs.',
+                                         'icon': 'PowerCRM.svg',
+                                         'js': {'PowerCRM.init': ''},
+                                         'scriptSrc': ['\\.powercrm\\.com\\.br'],
+                                         'website': 'https://site.powercrm.com.br'},
                         'PowerReviews': {   'cats': [90],
                                             'description': 'Powerreviews is a provider of UGC solutions like ratings '
                                                            'and reviews.',
@@ -22588,6 +24695,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'meta': {'author': ['^powster$']},
                                        'scriptSrc': ['tracking\\.powster\\.com/'],
                                        'website': 'https://powster.com'},
+                        'Practo': {   'cats': [72],
+                                      'description': 'Practo is an appointment system designed for health '
+                                                     'practitioners to manage and schedule patient appointments.',
+                                      'icon': 'Practo.svg',
+                                      'scriptSrc': ['\\.practo\\.com/'],
+                                      'website': 'https://www.practo.com'},
                         'Praedium': {   'cats': [53],
                                         'cookies': {'site_praedium_session': ''},
                                         'dom': {"link[href*='.praedium.com.br/']": {'exists': ''}},
@@ -22676,6 +24789,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'pressable.svg',
                                          'implies': ['WordPress'],
                                          'website': 'https://pressable.com'},
+                        'Pressero': {   'cats': [6],
+                                        'description': 'Pressero is a web-to-print storefront platform that allows '
+                                                       'businesses to offer customizable print products, manage '
+                                                       'orders, and streamline the printing process through an online '
+                                                       'interface.',
+                                        'icon': 'Pressero.svg',
+                                        'meta': {'generator': ['^pressero$']},
+                                        'website': 'https://www.aleyant.com/pressero'},
                         'PrestaShop': {   'cats': [6, 1],
                                           'cookies': {'prestashop': ''},
                                           'cpe': 'cpe:2.3:a:prestashop:prestashop:*:*:*:*:*:*:*:*',
@@ -22705,6 +24826,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                        'prestoPlayer': '',
                                                        'prestoPlayer.proVersion': '^(.+)$\\;version:\\1'},
                                              'website': 'https://prestoplayer.com'},
+                        'Pretty Damn Quick': {   'cats': [74, 100],
+                                                 'description': 'Pretty Damn Quick is a Shopify app for eCommerce '
+                                                                'brands to deliver personalized checkout experiences.',
+                                                 'icon': 'PrettyDamnQuick.png',
+                                                 'js': {'initPDQscript': ''},
+                                                 'scriptSrc': ['pdq-scripts\\.pdqprod\\.link'],
+                                                 'website': 'https://www.prettydamnquick.com/'},
                         'Pretty Links': {   'cats': [87, 71],
                                             'description': 'Pretty Links is a WordPress plugin URL shortener, link '
                                                            'cloaker, branded link, and QR code generator.',
@@ -22718,6 +24846,20 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'js': {'PriceSpider.version': '(.+)\\;version:\\1'},
                                            'scriptSrc': ['cdn\\.pricespider\\.com/'],
                                            'website': 'https://www.pricespider.com'},
+                        'Prima Software': {   'cats': [6],
+                                              'description': 'Prime Software is an ecommerce platform designed for the '
+                                                             'office supplies market.',
+                                              'icon': 'PrimaSoftware.svg',
+                                              'js': {'prima.address': '', 'prima_module_load': ''},
+                                              'meta': {'dcterms.publisher': ['^prima software ltd$']},
+                                              'website': 'https://www.primasoftware.co.uk'},
+                        'Prime AI': {   'cats': [105],
+                                        'description': 'Prime AI is a platform that uses AI-powered technology to '
+                                                       "match customers' body shapes with garment SKU specifications, "
+                                                       'helping them choose the best-fitting clothing size.',
+                                        'icon': 'PrimeAI.svg',
+                                        'scriptSrc': ['\\.primeai\\.co\\.uk'],
+                                        'website': 'https://www.primeai.co.uk'},
                         'PrimeGate': {   'cats': [10],
                                          'description': 'PrimeGate is an end-to-end Russian analytics system offering '
                                                         'a unified platform for businesses.',
@@ -22829,6 +24971,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'Procurios.svg',
                                          'meta': {'generator': ['^procurios$']},
                                          'website': 'https://www.procurios.com'},
+                        'ProdPad': {   'cats': [53],
+                                       'description': 'ProdPad is a product management software platform enabling '
+                                                      'teams to gather ideas, set priorities, and create adaptable '
+                                                      'product roadmaps.',
+                                       'icon': 'ProdPad.svg',
+                                       'scriptSrc': ['\\.prodpad\\.com/'],
+                                       'website': 'https://www.prodpad.com'},
                         'Product Hunt': {   'cats': [19],
                                             'description': 'Product Hunt is a community-based website that allows '
                                                            'makers and marketers to launch their products or services '
@@ -22931,6 +25080,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'Prommt': ''},
                                       'scriptSrc': ['app\\.prommt\\.com/'],
                                       'website': 'https://www.prommt.com'},
+                        'Promo AI': {   'cats': [32],
+                                        'description': 'Promo AI is a tool that generates, schedules, and publishes '
+                                                       'professional videos across platforms, designed to support '
+                                                       'business marketing efforts.',
+                                        'icon': 'Promo.svg',
+                                        'scriptSrc': ['ak04-promo-cdn\\.slidely\\.com'],
+                                        'website': 'https://promo.com'},
                         'PromoBuilding': {   'cats': [51],
                                              'cookies': {'promobuilding_session': ''},
                                              'description': 'PromoBuilding is a subscription-based website builder for '
@@ -22942,6 +25098,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                        'promoIsOver': '\\;confidence:25',
                                                        'promoStart': '\\;confidence:25'},
                                              'website': 'https://promobuilding.ru'},
+                        'Property Shell': {   'cats': [53],
+                                              'description': 'Property Shell is a real estate CRM solution to manage, '
+                                                             'develop, and drive the selling of residential and '
+                                                             'commercial property, and more.',
+                                              'icon': 'PropertyShell.svg',
+                                              'scriptSrc': ['api\\.propertyshell\\.com'],
+                                              'scripts': ['api\\.propertyshell\\.com'],
+                                              'website': 'https://propertyshell.com'},
                         'Proton Mail': {   'cats': [30],
                                            'description': 'Proton Mail is the world’s largest secure email service '
                                                           'with over 70 million users. Available on Web, iOS, Android, '
@@ -23042,6 +25206,16 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'PubMatic.svg',
                                         'scriptSrc': ['https?://[^/]*\\.pubmatic\\.com'],
                                         'website': 'https://www.pubmatic.com/'},
+                        'PubNub': {   'cats': [60],
+                                      'description': 'PubNub is a platform that operates the Data Stream Network, '
+                                                     'enabling the connection, delivery, and control of data and logic '
+                                                     'to support real-time applications at a global scale.',
+                                      'icon': 'PubNub.svg',
+                                      'js': {   'PubNub': '',
+                                                'PubNubCenter': '',
+                                                'PubNubOccupancy': '',
+                                                'PubNubPayload': ''},
+                                      'website': 'https://www.pubnub.com'},
                         'PubSubJS': {   'cats': [59],
                                         'description': 'PubSubJS is a topic-based publish/subscribe library written in '
                                                        'JavaScript.',
@@ -23055,6 +25229,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'__pub_tech_cmp_config': ''},
                                        'scriptSrc': ['pubtech-cmp-v(.+?)(?:-esm)?\\.js;version:\\1'],
                                        'website': 'https://www.pubtech.ai/'},
+                        'Pubble': {   'cats': [52],
+                                      'description': 'Pubble is a messaging platform that simplifies how teams '
+                                                     'interact with their customers.',
+                                      'icon': 'Pubble.svg',
+                                      'js': {'Pubble.Pubble': '', 'pubble_proActiveChat': '', 'pubblebot': ''},
+                                      'scriptSrc': ['cdn\\.pubble\\.io/'],
+                                      'website': 'https://www.pubble.io'},
                         'Public CMS': {   'cats': [1],
                                           'cookies': {'publiccms_user': ''},
                                           'headers': {'x-powered-publiccms': '^(.+)$\\;version:\\1'},
@@ -23068,6 +25249,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'Publii.png',
                                       'js': {'publiiThemeMenuConfig': ''},
                                       'website': 'https://getpublii.com'},
+                        'PublishPress Blocks': {   'cats': [87],
+                                                   'description': 'PublishPress Blocks is a Gutenberg Blocks page '
+                                                                  'builder plugin that adds extra functionality to the '
+                                                                  'WordPress Block Editor.',
+                                                   'dom': {   "link[href*='/wp-content/plugins/advanced-gutenberg/assets/css/blocks.css?ver=([\\d\\.]+))?\\;version:\\1']": {   'exists': ''}},
+                                                   'html': ['<div[^>]+class=["\']wp-block-advgb-*'],
+                                                   'icon': 'publishpress-blocks.png',
+                                                   'website': 'https://publishpress.com/blocks/'},
                         'Publishrr': {   'cats': [1],
                                          'description': 'Publishrr is a custom web CMS designed for newspapers, '
                                                         'magazines, TV channels, and radio channels.',
@@ -23093,6 +25282,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Pubstack.svg',
                                         'scriptSrc': ['\\.pubstack\\.io/'],
                                         'website': 'https://www.pubstack.io'},
+                        'Pulse CMS': {   'cats': [1],
+                                         'description': 'Pulse CMS is a content management system built with PHP that '
+                                                        'uses flat files instead of a database, offering a platform '
+                                                        'for managing web content without requiring extensive server '
+                                                        'resources or technical expertise.',
+                                         'icon': 'Pulse.svg',
+                                         'implies': ['PHP'],
+                                         'scriptSrc': ['/pulsecms/.*?/tracker\\.php'],
+                                         'website': 'https://pulsecms.com'},
                         'Pulse Secure': {   'cats': [46],
                                             'cookies': {'dssignin': ''},
                                             'cpe': 'cpe:2.3:a:pulsesecure:pulse_connect_secure:*:*:*:*:*:*:*:*',
@@ -23136,6 +25334,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'PushAdReady': ''},
                                       'scriptSrc': ['\\.push-ad\\.com/'],
                                       'website': 'https://push-ad.com/en/home-page'},
+                        'PushAlert': {   'cats': [32],
+                                         'description': 'PushAlert is a multi-channel platform that offers push '
+                                                        'notifications and onsite messaging to enhance customer '
+                                                        'engagement.',
+                                         'icon': 'PushAlert.svg',
+                                         'js': {'pushalert_manifest_file': ''},
+                                         'scriptSrc': ['cdn\\.pushalert\\.co/'],
+                                         'website': 'https://pushalert.co'},
                         'PushDaddy Whatsapp Chat': {   'cats': [100, 98],
                                                        'description': 'Whatsapp Chat is an live chat and abondoned '
                                                                       'cart solution built by PushDaddy.',
@@ -23176,6 +25382,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'PushPushGo.svg',
                                           'scriptSrc': ['\\.pushpushgo\\.com/'],
                                           'website': 'https://pushpushgo.com'},
+                        'PushWoosh': {   'cats': [2],
+                                         'description': 'PushWoosh is a messaging system that supports push '
+                                                        'notifications and in-app messages.',
+                                         'icon': 'PushWoosh.svg',
+                                         'js': {'Pushwoosh': ''},
+                                         'website': 'https://www.pushwoosh.com'},
                         'Pushify': {   'cats': [32],
                                        'description': 'Pushify is a service that delivers push notifications for major '
                                                       'desktop and mobile browsers.',
@@ -23247,6 +25459,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                               'icon': 'PythonAnywhere.svg',
                                               'implies': ['Python'],
                                               'website': 'https://www.pythonanywhere.com'},
+                        'Q1Media': {   'cats': [36],
+                                       'description': 'Q1Media is a platform that facilitates the creation, demand, '
+                                                      'and supply of digital advertising.',
+                                       'icon': 'Q1Media.svg',
+                                       'scriptSrc': ['//q1mediahydraplatform\\.com/'],
+                                       'website': 'https://www.q1media.com'},
                         'Q4': {   'cats': [53],
                                   'description': 'Q4 is a SaaS platform that provides communication and intelligence '
                                                  'solutions to investor relations professionals.',
@@ -23259,6 +25477,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                  'icon': 'Q4.png',
                                                  'scriptSrc': [   'widgets\\.q4app\\.com/widgets/q4\\.cookiemonster\\.([\\d\\.]+)\\.min\\.js\\;version:\\1'],
                                                  'website': 'https://q4mobile.github.io/q4widgets-jquery-ui/doc_html/q4.cookieMonster.html'},
+                        'QForm': {   'cats': [110],
+                                     'description': 'QForm is a tool for designing and managing customizable forms for '
+                                                    'data collection and processing.',
+                                     'icon': 'QForm.svg',
+                                     'scriptSrc': ['cdn\\.qform(?:24\\.com|\\.io)/'],
+                                     'website': 'https://qform.io'},
                         'QUIC.cloud': {   'cats': [92, 23, 31],
                                           'description': 'QUIC.cloud is a content delivery network (CDN) and '
                                                          'optimisation service that uses the QUIC protocol, a '
@@ -23302,6 +25526,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'QonnexQS': '', 'QonnexQSloader': ''},
                                       'scriptSrc': ['\\.qonnex\\.nl/'],
                                       'website': 'https://www.qonnex.nl'},
+                        'Qooqie': {   'cats': [10],
+                                      'description': 'Qooqie is a call tracking tool designed to monitor and analyze '
+                                                     'inbound phone calls.',
+                                      'icon': 'Qooqie.svg',
+                                      'scriptSrc': ['api\\.qooqie\\.com'],
+                                      'website': 'https://qooqie.com'},
                         'Qstomizer': {   'cats': [76],
                                          'description': 'Qstomizer app is the app for Shopify and Woocomerce that '
                                                         'allows you to add a visual custom product designer to your '
@@ -23325,6 +25555,17 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {'QualifiedObject': '^qualified$'},
                                          'scriptSrc': ['\\.qualified\\.com/'],
                                          'website': 'https://www.qualified.com'},
+                        'Qualitelis': {   'cats': [90],
+                                          'description': 'Qualitelis is a hotel guest review system designed to '
+                                                         'collect, manage, and analyze feedback, helping hospitality '
+                                                         'providers improve services by addressing customer '
+                                                         'experiences and satisfaction levels.',
+                                          'icon': 'Qualitelis.svg',
+                                          'js': {   'InitWidgetQualitelis': '',
+                                                    'resizeWidgetQualitelis': '',
+                                                    'showHideWidgetQualitelis': '',
+                                                    'widgetQualitelisFixed': ''},
+                                          'website': 'https://www.qualitelis.septeo.com'},
                         'Qualtrics': {   'cats': [73],
                                          'description': 'Qualtrics is an cloud-based platform for creating and '
                                                         'distributing web-based surveys.',
@@ -23332,6 +25573,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {'QSI.ClientSideTargeting': ''},
                                          'scriptSrc': ['\\.qualtrics\\.com/'],
                                          'website': 'https://www.qualtrics.com'},
+                        'Quant': {   'cats': [1],
+                                     'description': 'Quant is a Japanese content and creator management system '
+                                                    'designed to organize, manage, and distribute digital content.',
+                                     'icon': 'Quant.svg',
+                                     'scriptSrc': ['\\.quant\\.jp/'],
+                                     'website': 'https://pf.quant.page'},
                         'Quanta': {   'cats': [78, 10],
                                       'cookies': {'_qta_rum': ''},
                                       'description': 'Quanta is web performance management solution. Quanta offers the '
@@ -23364,6 +25611,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                               'icon': 'Quantummetric.png',
                                               'scriptSrc': ['cdn\\.quantummetric\\.com'],
                                               'website': 'https://www.quantummetric.com/'},
+                        'Quarto': {   'cats': [57],
+                                      'description': 'Quarto is an open-source technical publishing system.',
+                                      'icon': 'Quarto.svg',
+                                      'js': {   'quartoOpenSearch': '',
+                                                'quartoToggleHeadroom': '',
+                                                'quartoToggleReader': ''},
+                                      'meta': {'generator': ['^quarto-([\\d\\.]+)$\\;version:\\1']},
+                                      'website': 'https://quarto.org'},
                         'Quasar': {   'cats': [12],
                                       'description': 'Quasar is an open-source Vue.js based framework.',
                                       'dom': {   'div#q-app': {'attributes': {'id': '\\;confidence:50'}},
@@ -23409,6 +25664,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                   'queueit_clientside_config': ''},
                                         'scriptSrc': ['\\.queue-it\\.net/'],
                                         'website': 'https://queue-it.com'},
+                        'Quform': {   'cats': [110],
+                                      'description': 'Quform is a WordPress plugin designed for building and managing '
+                                                     'forms.',
+                                      'icon': 'Quform.svg',
+                                      'js': {'Quform.captchaRefreshFormQueue': '', 'QuformRecaptchaLoaded': ''},
+                                      'website': 'https://www.quform.com'},
                         'Quick.CMS': {   'cats': [1],
                                          'cpe': 'cpe:2.3:a:opensolution:quick.cms:*:*:*:*:*:*:*:*',
                                          'html': ['<a href="[^>]+opensolution\\.org/">cms by'],
@@ -23421,6 +25682,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'Quick.Cart.png',
                                           'meta': {'generator': ['quick\\.cart(?: v([\\d.]+))?\\;version:\\1']},
                                           'website': 'https://opensolution.org'},
+                        'QuickCEP': {   'cats': [52],
+                                        'description': 'QuickCEP is an AI-powered chatbot solution to improve business '
+                                                       'conversions, sales, and customer satisfaction through '
+                                                       'automated interactions.',
+                                        'icon': 'QuickCEP.svg',
+                                        'scriptSrc': ['\\.quickcep\\.com/'],
+                                        'scripts': ['\\.quickcep\\.com'],
+                                        'website': 'https://www.quickcep.com'},
                         'QuickSell': {   'cats': [6],
                                          'description': 'QuickSell is a sales acceleration platform helping businesses '
                                                         'transform conversations to conversions by leveraging personal '
@@ -23498,6 +25767,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'dom': {"link[href*='cdn.qukasoft.com/']": {'exists': ''}},
                                         'icon': 'Qukasoft.svg',
                                         'website': 'https://www.qukasoft.com'},
+                        'Qumra': {   'cats': [6],
+                                     'description': 'Qumra is a platform that enables users to create ecommerce '
+                                                    'websites without requiring any programming knowledge.',
+                                     'icon': 'Qumra.svg',
+                                     'js': {'Qumra.cart': '', '__qumra__': ''},
+                                     'website': 'https://www.qumra.cloud'},
                         'Quoli': {   'cats': [100, 90],
                                      'description': 'Quoli is a Shopify app designed to help merchants collect and '
                                                     'showcase social proof, incorporating product reviews, '
@@ -23506,6 +25781,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'Quoli.png',
                                      'scriptSrc': ['\\.quoli\\.io/'],
                                      'website': 'https://quoli.io'},
+                        'Quon': {   'cats': [36],
+                                    'description': 'Quon is a platform that provides control over website advertising '
+                                                   'and sales, integrating an end-to-end analytics system to optimize '
+                                                   'advertising management.',
+                                    'scriptSrc': ['counter\\.quon\\.ru/'],
+                                    'website': 'https://www.quon.ru'},
                         'Quora Pixel': {   'cats': [10],
                                            'description': 'Quora Pixel is a tool that is placed in your website code '
                                                           'to track traffic and conversions.',
@@ -23513,6 +25794,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'js': {'qp.qp': ''},
                                            'scriptSrc': ['\\.quora\\.com/'],
                                            'website': 'https://quoraadsupport.zendesk.com/hc/en-us/categories/115001573928-Pixels-Tracking'},
+                        'Quotemedia': {   'cats': [10],
+                                          'description': 'Quotemedia is a provider of stock market data and research '
+                                                         'solutions for online brokerages, clearing firms, banks, '
+                                                         'media portals, public companies, and financial service '
+                                                         'corporations.',
+                                          'icon': 'QuoteMedia.svg',
+                                          'scriptSrc': ['qmod\\.quotemedia\\.com/'],
+                                          'website': 'https://quotemedia.com'},
                         'Qwik': {   'cats': [18],
                                     'description': 'Qwik is designed for the fastest possible page load time, by '
                                                    'delivering pure HTML with near 0 JavaScript.',
@@ -23574,6 +25863,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'description': 'REG.RU is a web hosting provider and internet domain registrar.',
                                       'icon': 'REG.RU.svg',
                                       'website': 'https://www.reg.ru'},
+                        'RMZ': {   'cats': [6],
+                                   'description': 'RMZ is a platform that allows users to create a store with features '
+                                                  'including payment processing, management tools, and access to '
+                                                  'statistics.',
+                                   'icon': 'RMZ.svg',
+                                   'scriptSrc': ['assets\\.rmz\\.gg/'],
+                                   'website': 'https://rmz.gg'},
                         'RND': {   'cats': [6],
                                    'description': 'RND is a software technology used for companies to set up ecommerce '
                                                   'infrastructure.',
@@ -23597,6 +25893,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'headers': {'x-powered-by': 'rx-web'},
                                              'icon': 'RXWeb.svg',
                                              'website': 'https://developers.rokitax.co.uk/projects/rxweb'},
+                        'Raaft': {   'cats': [97],
+                                     'description': 'Raaft is a tool designed to help SaaS companies lower customer '
+                                                    'churn and gather feedback from users who choose to cancel their '
+                                                    'subscriptions.',
+                                     'icon': 'Raaft.svg',
+                                     'js': {'RAAFT_APP_ID': '', 'raaft': ''},
+                                     'website': 'https://raaft.io'},
                         'RabbitLoader': {   'cats': [23],
                                             'description': 'RabbitLoader is a plugin designed to enhance PageSpeed '
                                                            'Insights Score by addressing Core Web Vitals issues '
@@ -23654,6 +25957,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                       'scalable infrastructure.',
                                        'headers': {'server': '^railway$'},
                                        'icon': 'Railway.svg',
+                                       'scripts': ['railway\\.app'],
                                        'website': 'https://railway.app'},
                         'Rain': {   'cats': [6],
                                     'description': 'Rain is a cloud-based point of sale (POS) system for small to '
@@ -23685,6 +25989,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Raisely.svg',
                                        'js': {'RaiselyComponents': '', '__raiselyDebug': '', 'wpRaisely': ''},
                                        'website': 'https://raisely.com'},
+                        'Rake': {   'cats': [52],
+                                    'description': 'Rake is a messaging platform and conversion optimization solution '
+                                                   'designed for communication between customers, visitors, and '
+                                                   'co-workers.',
+                                    'icon': 'Rake.svg',
+                                    'scriptSrc': ['widget\\.rake\\.ai/'],
+                                    'website': 'https://www.rake.ai'},
                         'Raku-uru Cart': {   'cats': [6],
                                              'description': 'Raku-uru Cart is an all-in-one ecommerce platform from '
                                                             'Japan.',
@@ -23710,6 +26021,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'Ramda.png',
                                      'scriptSrc': ['ramda.*\\.js'],
                                      'website': 'https://ramdajs.com'},
+                        'Ramper': {   'cats': [32],
+                                      'description': 'Ramper is a B2B marketing and sales platform designed to '
+                                                     'streamline business operations.',
+                                      'icon': 'Ramper.svg',
+                                      'js': {   'LaharApp.criacao_elementos': '',
+                                                'PopupLahar.create': '',
+                                                'SourceLahar.init': '',
+                                                'TrackingLahar.create': ''},
+                                      'website': 'https://ramper.com.br'},
                         'RankMath SEO': {   'cats': [87, 54],
                                             'description': 'RankMath SEO is a search engine optimisation plugin for '
                                                            'WordPress.',
@@ -23755,6 +26075,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'scriptSrc': [   'api\\.raptorsmartadvisor\\.com',
                                                        'msecnd\\.net/script/raptor-([\\d.]+)\\.js\\;version:\\1'],
                                       'website': 'https://raptorsmartadvisor.com'},
+                        'Rasayel': {   'cats': [2],
+                                       'description': 'Rasayel is a customer communication platform that helps '
+                                                      'businesses sell to and support their customers over WhatsApp '
+                                                      'and other social messaging channels.',
+                                       'icon': 'Rasayel.svg',
+                                       'js': {   'RasayelOmniWidget': '',
+                                                 'RasayelWabaWidget': '',
+                                                 'RasayelWhatsAppWidget': ''},
+                                       'website': 'https://www.rasayel.io'},
                         'Raspbian': {   'cats': [28],
                                         'description': 'Raspbian is a free operating system for the Raspberry Pi '
                                                        'hardware.',
@@ -23948,6 +26277,22 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Readymag.svg',
                                         'meta': {'generator': ['^readymag$']},
                                         'website': 'https://readymag.com'},
+                        'Reaktion': {   'cats': [6],
+                                        'description': 'Reaktion is a provider of ecommerce solutions designed to help '
+                                                       'businesses enhance their online profits.',
+                                        'icon': 'Reaktion.svg',
+                                        'js': {'reaktionLock': ''},
+                                        'scripts': ['api\\.reaktion\\.com'],
+                                        'website': 'https://reaktion.com'},
+                        'RealNex MarketPlace': {   'cats': [6],
+                                                   'description': 'RealNex Marketplace is a platform for buying, '
+                                                                  'selling, leasing, and transacting in commercial '
+                                                                  'real estate, offering advanced search tools, alerts '
+                                                                  'for new listings, and automated matching based on '
+                                                                  'user-defined criteria.',
+                                                   'icon': 'RealNex.svg',
+                                                   'js': {'NEX_MAP_ID': ''},
+                                                   'website': 'https://realnex.com'},
                         'Really Simple CAPTCHA': {   'cats': [87],
                                                      'description': 'Really Simple CAPTCHA does not work alone and is '
                                                                     'intended to work with other plugins. It is '
@@ -24038,6 +26383,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'implies': ['Shopify'],
                                         'scriptSrc': ['app\\.recomify\\.com/'],
                                         'website': 'https://www.recomify.com'},
+                        'Recop': {   'cats': [101],
+                                     'description': 'Recop is a recruitment optimization system from Japan.',
+                                     'icon': 'Recop.svg',
+                                     'js': {'$recop.Event': ''},
+                                     'website': 'https://recop.jp'},
                         'RecoverMyCart': {   'cats': [76, 100],
                                              'description': 'RecoverMyCart is a Shopify app for abandoned basket '
                                                             'recovery.',
@@ -24110,6 +26460,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'Reddit.svg',
                                           'scriptSrc': ['www\\.redditstatic\\.com'],
                                           'website': 'https://advertising.reddithelp.com/'},
+                        'Redicom': {   'cats': [6],
+                                       'description': 'Redicom is a Portuguese-based platform specializing in premium '
+                                                      'ecommerce solutions.',
+                                       'icon': 'Redicom.svg',
+                                       'meta': {'generator': ['^redicom prolepse$']},
+                                       'website': 'https://www.redicom.pt'},
                         'Redis': {   'cats': [34],
                                      'cpe': 'cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*',
                                      'description': 'Redis is an in-memory data structure project implementing a '
@@ -24124,6 +26480,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                   'icon': 'RedisObjectCache.svg',
                                                   'implies': ['Redis', 'WordPress'],
                                                   'website': 'https://wprediscache.com'},
+                        'Reditus': {   'cats': [71],
+                                       'description': 'Reditus is a partner management tool for B2B SaaS companies.',
+                                       'icon': 'Reditus.svg',
+                                       'scriptSrc': ['\\.getreditus\\.com/'],
+                                       'website': 'https://www.getreditus.com'},
                         'Redmine': {   'cats': [13],
                                        'cookies': {'_redmine_session': ''},
                                        'cpe': 'cpe:2.3:a:redmine:redmine:*:*:*:*:*:*:*:*',
@@ -24222,6 +26583,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'js': {'RFK_DEPLOY_TIME': '', 'RfkParams': ''},
                                           'scriptSrc': ['\\.cloudfront\\.net/js/reflektion\\.js'],
                                           'website': 'https://reflektion.com'},
+                        'Reform': {   'cats': [110],
+                                      'description': 'Reform is a conversion-focused form builder designed to optimize '
+                                                     'data collection.',
+                                      'icon': 'Reform.svg',
+                                      'js': {'Reform': '', 'ReformHandlers': ''},
+                                      'website': 'https://www.reform.app'},
                         'Refundid': {   'cats': [102],
                                         'description': 'Refundid provides ecommerce customers instant refunds for '
                                                        'their online returns.',
@@ -24239,10 +26606,24 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'icon': 'Reinvigorate.png',
                                             'js': {'reinvigorate': ''},
                                             'website': 'https://www.reinvigorate.net'},
+                        'Rela': {   'cats': [32],
+                                    'description': 'Rela is a set of property marketing tools for real estate '
+                                                   'professionals to enhance listings, attract potential buyers, and '
+                                                   'streamline the sales process.',
+                                    'icon': 'Rela.svg',
+                                    'js': {'relaAjaxLink': '', 'relaAjaxPost': ''},
+                                    'website': 'https://www.relahq.com'},
                         'Relais Colis': {   'cats': [99],
                                             'description': 'Relais Colis is a French parcel delivery network.',
                                             'icon': 'Relais Colis.png',
                                             'website': 'https://www.relaiscolis.com'},
+                        'Relap': {   'cats': [36],
+                                     'description': 'Relap is an advertising effectiveness system that focuses on '
+                                                    'optimizing content recommendations and increasing user '
+                                                    'engagement.',
+                                     'icon': 'Relap.svg',
+                                     'scriptSrc': ['//relap\\.io/v([\\d]+)/relap\\.js\\;version:\\1'],
+                                     'website': 'https://relap.io'},
                         'Relewise': {   'cats': [76],
                                         'description': 'Relewise is a platform that uses personalisation technology to '
                                                        'provide customised online experiences through personalised '
@@ -24367,6 +26748,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'wpJsonpResengoReservationWidget': ''},
                                        'scriptSrc': ['www\\.resengo\\.\\w+'],
                                        'website': 'https://wwc.resengo.com'},
+                        'Reserva INK': {   'cats': [6],
+                                           'description': 'Reserva INK is a platform that enables users to sell '
+                                                          'personalized t-shirts without the need for stock, offering '
+                                                          'nationwide delivery and a professional online store for '
+                                                          'easy management of orders and sales.',
+                                           'icon': 'ReservaINK.svg',
+                                           'scripts': ['www\\.reserva\\.ink'],
+                                           'website': 'https://reserva.ink'},
                         'Reserve In-Store': {   'cats': [100, 93],
                                                 'description': 'Reserve In-Store app will allow customers to reserve '
                                                                'an item in your store online to come to pick it up or '
@@ -24410,6 +26799,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'RespondIO.svg',
                                           'js': {'$__respond': '', '$respond': ''},
                                           'website': 'https://www.respond.io'},
+                        'Responsa': {   'cats': [52],
+                                        'description': 'Responsa is a conversational AI platform designed to increase '
+                                                       'sales and reduce operational costs by automating customer '
+                                                       'interactions and streamlining communication processes.',
+                                        'icon': 'Responsa.svg',
+                                        'scripts': ['//goresponsa\\.com/'],
+                                        'website': 'https://responsa.ai'},
                         'Responsive Lightbox & Gallery': {   'cats': [87, 7],
                                                              'description': 'Responsive Lightbox & Gallery plugin is a '
                                                                             'lightweight WordPress gallery plugin by '
@@ -24457,11 +26853,18 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                        'rrPartnerId': '\\;confidence:25'},
                                              'scriptSrc': ['cdn\\.retailrocket\\.net'],
                                              'website': 'https://retailrocket.net'},
+                        'Retain': {   'cats': [52],
+                                      'description': 'Retain is an online conversation system developed in Iran '
+                                                     'designed to facilitate digital communication.',
+                                      'scriptSrc': ['\\.retain\\.ir/'],
+                                      'website': 'https://retain.ir'},
                         'Retention.com': {   'cats': [100, 36],
                                              'description': "Retention.com's identity resolution software helps "
                                                             'Shopify merchants recover lost shoppers.',
                                              'icon': 'Retention.com.svg',
-                                             'js': {'addedToCartRetentionButton': '', 'viewedProductRetention': ''},
+                                             'js': {   'B2BRetention': '',
+                                                       'addedToCartRetentionButton': '',
+                                                       'viewedProductRetention': ''},
                                              'website': 'https://retention.com'},
                         'Retina.js': {   'cats': [59],
                                          'description': 'Retina.js is an open-source script designed to facilitate the '
@@ -24479,6 +26882,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'RETOOL_PAGE_SUSPEND_DETECTED': ''},
                                       'scriptSrc': [   'retool(?:-edge)?(?:\\.com)?(?:\\/embed)?\\/?(?:runtime)?~?(?:app)?(?:custom-components)?(?:\\.\\w{0,20})?\\.js'],
                                       'website': 'https://retool.com'},
+                        'Retrina Builder': {   'cats': [51],
+                                               'description': 'Retrina Builder is a drag-and-drop page builder for '
+                                                              'OpenCart that enables website creation without '
+                                                              'requiring coding skills.',
+                                               'dom': {   "link[href*='/retrina-builder.min.css']": {'exists': ''},
+                                                          "link[href*='/retrina_builder_custom.css']": {'exists': ''}},
+                                               'icon': 'RetrinaBuilder.svg',
+                                               'website': 'https://retrina.com/ronixa-product'},
                         'Return Prime': {   'cats': [100, 102],
                                             'description': 'Return Prime is an application to manage returns for '
                                                            'Shopify stores.',
@@ -24513,6 +26924,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                  'icon': 'ReunionMarketing.svg',
                                                  'js': {'reunionMarketingApiDomain': ''},
                                                  'website': 'https://reunionmarketing.com'},
+                        'RevBid': {   'cats': [36],
+                                      'description': 'RevBid is a header bidding platform designed for publishers to '
+                                                     'optimize ad revenue.',
+                                      'icon': 'RevBid.svg',
+                                      'scriptSrc': ['\\.revbid\\.net/'],
+                                      'website': 'https://revbid.net'},
                         'RevContent': {   'cats': [36, 5],
                                           'description': 'RevContent is a monetization and recommendation engine that '
                                                          'connects advertisers to highly engaged audiences on the '
@@ -24588,6 +27005,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'icon': 'ReviewForest.svg',
                                             'scriptSrc': ['\\.reviewforest\\.org/'],
                                             'website': 'https://reviewforest.org/'},
+                        'ReviewPro': {   'cats': [90],
+                                         'description': 'ReviewPro is a hotel guest review system designed to collect '
+                                                        'and analyze guest feedback.',
+                                         'icon': 'ReviewPro.svg',
+                                         'scriptSrc': ['sapi\\.reviewpro\\.com/'],
+                                         'website': 'https://reviewpro.shijigroup.com'},
                         'ReviewRail': {   'cats': [90],
                                           'description': 'ReviewRail is an online review system designed to collect, '
                                                          'manage, and display customer feedback.',
@@ -24644,6 +27067,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {'Rewardful': ''},
                                          'scriptSrc': ['r\\.wdfl\\.co'],
                                          'website': 'https://www.getrewardful.com/'},
+                        'Rewix': {   'cats': [6],
+                                     'description': 'Rewix is a B2B ecommerce platform that offers flexible and secure '
+                                                    'solutions to increase sales through data-driven tools.',
+                                     'icon': 'Rewix.svg',
+                                     'js': {'Rewix.trackUpdateCart': ''},
+                                     'website': 'https://www.rewixecommerce.com'},
                         'Rezdy': {   'cats': [5, 72],
                                      'description': 'Rezdy is an online booking software for tours and attractions.',
                                      'icon': 'Rezdy.svg',
@@ -24706,6 +27135,27 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'RightJS.png',
                                        'js': {'RightJS': ''},
                                        'website': 'https://github.com/rightjs'},
+                        'RightMessage': {   'cats': [76],
+                                            'description': 'RightMessage is a real-time content personalization tool.',
+                                            'icon': 'RightMessage.svg',
+                                            'scriptSrc': ['tag\\.rightmessage\\.com/'],
+                                            'website': 'https://rightmessage.com'},
+                        'Ringba': {   'cats': [10],
+                                      'description': 'Ringba is a platform that offers call tracking solutions to '
+                                                     'businesses, pay-per-call networks, brokers, agencies, and '
+                                                     'performance marketers of all sizes.',
+                                      'icon': 'Ringba.svg',
+                                      'js': {'ringba.release': '', 'ringba_known_numbers': ''},
+                                      'website': 'https://www.ringba.com'},
+                        'Ringostat': {   'cats': [32],
+                                         'description': 'Ringostat is an AI-powered platform designed for business '
+                                                        'phone systems and marketing performance.',
+                                         'icon': 'Ringostat.svg',
+                                         'js': {   'ringostatAPI': '',
+                                                   'ringostatAnalytics': '',
+                                                   'ringostatRestartSubstitution': ''},
+                                         'scriptSrc': ['script\\.ringostat\\.com/'],
+                                         'website': 'https://ringostat.com'},
                         'Rinsed': {   'cats': [53],
                                       'description': 'Rinsed is a customer relationship management software tailored '
                                                      'for the car wash industry.',
@@ -24754,6 +27204,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'implies': ['PHP', 'SQLite\\;confidence:80'],
                                        'meta': {'generator': ['^ritecms(?: (.+))?\\;version:\\1']},
                                        'website': 'https://ritecms.com'},
+                        'RiteKit': {   'cats': [32],
+                                       'description': 'RiteKit is a tool that enhances social media engagement by '
+                                                      'optimizing calls-to-action (CTAs), generating relevant '
+                                                      'hashtags, and integrating with social media management systems '
+                                                      'to streamline content distribution and audience interaction.',
+                                       'dom': {"iframe[src*='cdn.ritekit.com/']": {'exists': ''}},
+                                       'icon': 'RiteKit.svg',
+                                       'website': 'https://ritekit.com'},
                         'Rive': {   'cats': [25],
                                     'description': 'Rive is a real-time interactive design and animation tool.',
                                     'icon': 'Rive.svg',
@@ -24779,6 +27237,26 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                'robin_settings': '',
                                                'robin_storage_settings': ''},
                                      'website': 'https://www.robinhq.com'},
+                        'RobixCM Generator': {   'cats': [19],
+                                                 'description': 'RobixCM Generator is a service specializing in '
+                                                                'designing, developing, updating, and managing '
+                                                                'websites and online services.',
+                                                 'icon': 'Robixcm.png',
+                                                 'meta': {'robixcm': ['robixcm']},
+                                                 'website': 'https://robixcm.ir'},
+                        'Robly': {   'cats': [32, 75],
+                                     'description': 'Robly is an email marketing platform designed to simplify '
+                                                    'campaign creation and management for businesses.',
+                                     'dom': {"form[action*='list.robly.com/']": {'exists': ''}},
+                                     'icon': 'Robly.svg',
+                                     'website': 'https://www.robly.com'},
+                        'Robofy': {   'cats': [52],
+                                      'description': 'Robofy is a platform providing AI chatbots for websites, '
+                                                     'enabling the creation of custom ChatGPT models trained on '
+                                                     'user-specific content.',
+                                      'icon': 'Robofy.svg',
+                                      'scriptSrc': ['\\.robofy\\.ai/'],
+                                      'website': 'https://www.robofy.ai'},
                         'Rock Content': {   'cats': [96],
                                             'description': 'Rock Content is a content marketing platform. It provides '
                                                            'tools and resources for creating, distributing, and '
@@ -24794,6 +27272,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'implies': ['IIS', 'Microsoft ASP.NET', 'Windows Server'],
                                        'meta': {'generator': ['^rock v([0-9.]+)\\;version:\\1']},
                                        'website': 'https://www.rockrms.com'},
+                        'Rockee': {   'cats': [90],
+                                      'description': 'Rockee is a content feedback and performance platform that '
+                                                     'provides insights into audience perceptions of content.',
+                                      'icon': 'Rockee.svg',
+                                      'scriptSrc': ['app\\.rockee\\.io/'],
+                                      'website': 'https://rockee.io'},
                         'Rockerbox': {   'cats': [32],
                                          'description': 'Rockerbox is a provider of multi-touch attribution software.',
                                          'icon': 'Rockerbox.png',
@@ -24925,6 +27409,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                     'headers': {'server': '(?:mongrel|ruby(?:/([\\d\\.]+))?)\\;version:\\1'},
                                     'icon': 'Ruby.png',
                                     'website': 'https://ruby-lang.org'},
+                        'Ruby Chat': {   'cats': [52],
+                                         'description': 'Ruby Chat is a service offering live virtual receptionists '
+                                                        'and live chat to assist businesses in managing customer '
+                                                        'interactions and inquiries in real-time.',
+                                         'icon': 'RubyChat.svg',
+                                         'js': {'rubyChatLoading': ''},
+                                         'scriptSrc': ['chatwidget\\.ruby\\.com/'],
+                                         'website': 'https://www.ruby.com/solutions/live-chat'},
                         'Ruby Receptionists': {   'cats': [5],
                                                   'description': 'Ruby Receptionists is a Portland, Oregon based '
                                                                  'virtual answering service for small businesses.',
@@ -24959,7 +27451,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                      'to view and play Flash content on modern web browsers without '
                                                      'requiring the original Adobe Flash Player.',
                                       'icon': 'Ruffle.svg',
-                                      'js': {'RufflePlayer': ''},
+                                      'js': {'RufflePlayer.config': ''},
                                       'website': 'https://ruffle.rs'},
                         'Rumble': {   'cats': [14],
                                       'description': 'Rumble is a Canadian video-streaming platform that presents '
@@ -24994,6 +27486,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'js': {'ryviu_global_settings': ''},
                                      'scriptSrc': ['cdn\\.ryviu\\.com'],
                                      'website': 'https://www.ryviu.com/'},
+                        'S&P Global Mobility': {   'cats': [10],
+                                                   'description': 'S&P Global Mobility, formerly Dataium is a platform '
+                                                                  'that analyzes online automotive shopping behavior.',
+                                                   'icon': 'S&PGlobalMobility.svg',
+                                                   'scriptSrc': ['vcu\\.collserve\\.com'],
+                                                   'website': 'https://www.spglobal.com/mobility/en/index.html'},
                         'S-COREpion': {   'cats': [1],
                                           'description': 'S-COREpion is a PHP and MySQL-based content management '
                                                          'system (CMS) used for creating and managing websites and web '
@@ -25055,6 +27553,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'SEMRUSH': ''},
                                        'scriptSrc': ['www\\.semrush\\.com'],
                                        'website': 'https://www.semrush.com'},
+                        'SEO Manager': {   'cats': [29],
+                                           'description': 'SEO Manager is a platform that optimizes Shopify websites '
+                                                          'to enhance search engine visibility and improve organic '
+                                                          'traffic.',
+                                           'icon': 'SEOManager.svg',
+                                           'scripts': ['\\.seomanager\\.com/'],
+                                           'website': 'https://venntov.com/pages/seo-manager'},
                         'SEOAnt': {   'cats': [54],
                                       'description': 'SEOAnt is a SEO customization service that provides professional '
                                                      'improvement suggestions, aimed at enhancing Google rankings and '
@@ -25062,6 +27567,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'SEOAnt.svg',
                                       'js': {'BlackUrlArray_SEOAnt': '', 'SEOAnt_toConsumableArray': ''},
                                       'website': 'https://www.seoant.com'},
+                        'SEOPress': {   'cats': [54],
+                                        'description': 'SEOPress is a WordPress plugin for SEO.',
+                                        'icon': 'SEOPress.svg',
+                                        'scriptSrc': ['/wp-content/themes/seopress/'],
+                                        'website': 'https://www.seopress.org'},
                         'SEOmatic': {   'cats': [54],
                                         'description': 'SEOmatic facilitates modern SEO best practices & '
                                                        'implementation for Craft CMS 3.',
@@ -25111,6 +27621,19 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'SOBI 2.png',
                                       'implies': ['Joomla'],
                                       'website': 'https://www.sigsiu.net/sobi2.html'},
+                        'SOPlanning': {   'cats': [13],
+                                          'description': 'SOPlanning is an online project management software that '
+                                                         'enhances team visibility and facilitates task coordination '
+                                                         'through a centralized platform.',
+                                          'icon': 'SOPlanning.svg',
+                                          'meta': {'email': ['^support@soplanning\\.org$']},
+                                          'website': 'https://www.soplanning.org/en/'},
+                        'SOTA CRM': {   'cats': [53],
+                                        'description': 'SOTA CRM is a software solution designed to help businesses '
+                                                       'manage customer relationships and related data.',
+                                        'icon': 'SOTACRM.svg',
+                                        'scripts': ['app\\.sotacrm\\.com'],
+                                        'website': 'https://sotacrm.com'},
                         'SPDY': {   'cats': [19],
                                     'headers': {'x-firefox-spdy': '\\d\\.\\d'},
                                     'icon': 'SPDY.png',
@@ -25130,6 +27653,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                      'servers to allow NTLM or Kerberos authentication.',
                                       'headers': {'www-authenticate': '^negotiate'},
                                       'website': 'https://tools.ietf.org/html/rfc4559'},
+                        'SPREAD': {   'cats': [32],
+                                      'description': 'SPREAD is a platform offering tailored marketing campaigns '
+                                                     'designed to enhance ecommerce engagement and performance.',
+                                      'icon': 'SPREAD.svg',
+                                      'js': {'loadSpreadTracker': ''},
+                                      'website': 'https://www.spreadfamily.fr'},
                         'SQL Buddy': {   'cats': [3],
                                          'description': 'SQL Buddy is an open-source web-based application written in '
                                                         'PHP to handle the administration of MySQL and SQLite with the '
@@ -25229,6 +27758,18 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'implies': ['Vue.js'],
                                      'meta': {'generator': ['^saber v([\\d.]+)$\\;version:\\1']},
                                      'website': 'https://saber.land/'},
+                        'SafeBuy': {   'cats': [90],
+                                       'description': 'SafeBuy is a platform that reviews consumer feedback, verifies '
+                                                      'site links, ensures data privacy, and checks legal compliance '
+                                                      'to generate a reliable Universal Rating for customers.',
+                                       'dom': {   "a[href*='www.safebuy.org.uk'] > img[src*='.safebuy.org.uk']": {   'exists': ''}},
+                                       'icon': 'SafeBuy.svg',
+                                       'website': 'https://www.safebuy.org.uk'},
+                        'Saffire': {   'cats': [1, 104],
+                                       'description': 'Saffire is a ticketing and CMS system.',
+                                       'icon': 'Saffire.svg',
+                                       'js': {'saffire.angular': ''},
+                                       'website': 'https://www.saffire.com'},
                         'Sails.js': {   'cats': [18],
                                         'cookies': {'sails.sid': ''},
                                         'headers': {'x-powered-by': '^sails(?:$|[^a-z0-9])'},
@@ -25276,6 +27817,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {   '__NEXT_DATA__.runtimeConfig.SALEOR': '',
                                                 '___NEXT_DATA__.runtimeConfig.SALEOR': ''},
                                       'website': 'https://saleor.io'},
+                        'SalesCandy': {   'cats': [53],
+                                          'description': 'SalesCandy is a sales performance improvement solution '
+                                                         'designed to optimize sales team efficiency through automated '
+                                                         'lead distribution, real-time tracking, and actionable '
+                                                         'insights.',
+                                          'icon': 'SalesCandy.svg',
+                                          'scriptSrc': ['\\.salescandy\\.com/'],
+                                          'scripts': ['\\.salescandy\\.com/'],
+                                          'website': 'https://www.salescandy.com'},
                         'SalesFire': {   'cats': [76, 29],
                                          'description': 'SalesFire is a SaaS company specialising in conversion rate '
                                                         'optimisation, intelligent personalisation and on-site search '
@@ -25426,6 +27976,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                     'implies': ['PHP', 'Svelte'],
                                     'meta': {'application-name': ['^saly\\sb2b\\splatform$']},
                                     'website': 'https://saly.pl'},
+                        'Samsung Food': {   'cats': [76],
+                                            'description': 'Samsung Food is an all-in-one app for recipe saving, meal '
+                                                           'planning, grocery shopping, and recipe sharing.',
+                                            'icon': 'SamsungFood.svg',
+                                            'js': {'WhiskLoading': '', 'whisk-jsp.push': '', 'whisk.analytics': ''},
+                                            'website': 'https://samsungfood.com'},
                         'Sana Commerce': {   'cats': [6],
                                              'description': 'Sana Commerce is an ecommerce platform for SAP and '
                                                             'Microsoft Dynamics.',
@@ -25502,11 +28058,23 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                     'js': {'CLERK_CONFIG.endpointUrl': '\\.satu\\.kz/'},
                                     'scriptSrc': ['my\\.satu\\.kz/.*/v([\\d\\.]+)/bare\\.js\\;version:\\1'],
                                     'website': 'https://satu.kz'},
+                        'SavvyCal': {   'cats': [72],
+                                        'description': 'SavvyCal is a meeting scheduling tool.',
+                                        'icon': 'SavvyCal.svg',
+                                        'js': {'SavvyCal': ''},
+                                        'website': 'https://savvycal.com'},
                         'Sazito': {   'cats': [6],
                                       'icon': 'Sazito.svg',
                                       'js': {'Sazito': ''},
                                       'meta': {'generator': ['^sazito']},
                                       'website': 'https://sazito.com'},
+                        'SberCRM': {   'cats': [53],
+                                       'description': 'SberCRM is a customer relationship management system designed '
+                                                      'to help businesses manage leads, track customer interactions, '
+                                                      'and convert prospects into sales.',
+                                       'icon': 'SberCRM.svg',
+                                       'scripts': ['\\.macro\\.sbercrm\\.com'],
+                                       'website': 'https://sbercrm.com'},
                         'Scala': {   'cats': [27],
                                      'description': 'Scala is a general-purpose programming language providing support '
                                                     'for both object-oriented programming and functional programming.',
@@ -25540,7 +28108,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                         'developed in React.',
                                          'dom': {"link[href^='/static/frontend/scandipwa/']": {'exists': ''}},
                                          'icon': 'ScandiPWA.png',
-                                         'implies': ['Magento', 'PWA', 'React'],
+                                         'implies': ['Magento\\;version:2', 'PWA', 'React'],
                                          'website': 'https://scandipwa.com'},
                         'Schedule Engine': {   'cats': [52],
                                                'description': 'Schedule Engine is a customer support solution built '
@@ -25584,6 +28152,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'dom': {   "iframe[src*='.scoop.it/'], a[href*='.scoop.it/'][target='_blank']": {   'exists': ''}},
                                         'icon': 'Scoop.it.svg',
                                         'website': 'https://www.scoop.it'},
+                        'ScoreApp': {   'cats': [32],
+                                        'description': 'ScoreApp is a quiz marketing platform designed for lead '
+                                                       'generation and customer engagement.',
+                                        'icon': 'ScoreApp.svg',
+                                        'scriptSrc': ['static\\.scoreapp\\.com'],
+                                        'website': 'https://www.scoreapp.com'},
                         'Scorpion': {   'cats': [1],
                                         'description': 'Scorpion is a marketing and technology provider.',
                                         'html': ['<[^>]+id="hsscorpion'],
@@ -25597,6 +28171,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'scriptSrc': [   '(?:((?:\\d+\\.)+\\d+)\\/)?screenfull(?:\\.min)?\\.js\\;version:\\1',
                                                               'screenfull(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1'],
                                              'website': 'https://sindresorhus.com/screenfull/'},
+                        'Screets': {   'cats': [52],
+                                       'description': 'Screets is a chat widget compatible with WordPress, HTML, and '
+                                                      'PHP websites.',
+                                       'icon': 'Screets.svg',
+                                       'js': {'screetsxi.appid': ''},
+                                       'website': 'https://screets.com'},
                         'Scrivito': {   'cats': [1],
                                         'description': 'Scrivito is a decoupled/headless enterprise web CMS.',
                                         'icon': 'Scrivito.svg',
@@ -25686,6 +28266,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'js': {'SearchSpring': '', 'SearchSpringConf': '', 'SearchSpringInit': ''},
                                             'scriptSrc': ['cdn\\.searchspring\\.net'],
                                             'website': 'https://searchspring.com'},
+                        'Seated': {   'cats': [104],
+                                      'description': 'Seated is a platform offering a ticketing system for live events '
+                                                     'and live streams.',
+                                      'icon': 'Seated.svg',
+                                      'scriptSrc': ['widget\\.seated\\.com/'],
+                                      'website': 'https://www.seated.com'},
                         'Secomapp': {   'cats': [100],
                                         'description': 'Secomapp is a trusted Shopify Expert providing services '
                                                        'through Shopify Apps.',
@@ -25769,7 +28355,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                        'icon': 'Segment.svg',
                                                        'js': {'consentManager.version': '([\\d.]+)\\;version:\\1'},
                                                        'scriptSrc': [   '@segment/consent-manager@([\\d.]+)\\;version:\\1'],
-                                                       'website': 'https://segment.com/blog/how-to-build-consent-management-into-your-site-in-less-than-a-week'},
+                                                       'website': 'https://segment.com/'},
                         'Segment Consent Manager ': {   'cats': [67],
                                                         'description': ' Segment Consent Manager is a tool that '
                                                                        'automates the process of requesting consent '
@@ -25788,7 +28374,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'js': {'segmentstream.VERSION': '(.+)\\;version:\\1'},
                                              'scriptSrc': ['cdn\\.segmentstream\\.com'],
                                              'website': 'https://segmentstream.com'},
-                        'Segmentify': {   'cats': [97, 76],
+                        'Segmentify': {   'cats': [29, 97, 76],
                                           'description': 'Segmentify is an ecommerce personalisation platform.',
                                           'icon': 'Segmentify.svg',
                                           'js': {'SegmentifyIntegration': '', 'SegmentifyTrackingObject': ''},
@@ -25886,6 +28472,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'SellsySnippet': ''},
                                       'scriptSrc': ['\\.sellsy\\.com/'],
                                       'website': 'https://go.sellsy.com'},
+                        'Sellwild': {   'cats': [6],
+                                        'description': 'Sellwild is a marketplace platform designed to connect buyers '
+                                                       'and sellers.',
+                                        'icon': 'Sellwild.svg',
+                                        'scriptSrc': ['\\.sellwild\\.com/'],
+                                        'website': 'https://sellwild.com'},
                         'Selly': {   'cats': [6],
                                      'description': 'Selly is an ecommerce platform for selling digital goods.',
                                      'icon': 'Selly.svg',
@@ -25955,6 +28547,22 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'_Sendlane': ''},
                                         'scriptSrc': ['sendlane\\.com/scripts/pusher\\.js'],
                                         'website': 'https://www.sendlane.com/'},
+                        'Senja': {   'cats': [90],
+                                     'description': 'Senja is a platform that enables the collection, management, and '
+                                                    'sharing of social proof to grow businesses.',
+                                     'icon': 'Senja.svg',
+                                     'js': {'SenjaAffiliatePoweredBy': '', 'SenjaBuilderInitialized': ''},
+                                     'scriptSrc': ['\\.senja\\.io/'],
+                                     'website': 'https://senja.io'},
+                        'Sensai Metrics': {   'cats': [10],
+                                              'description': 'Sensai Metrics is a SAAS platform that analyzes '
+                                                             'ecommerce stores using various data science models to '
+                                                             'provide customers with actionable insights, predictions, '
+                                                             'and recommendations aimed at scaling their revenue.',
+                                              'icon': 'SensaiMetrics.svg',
+                                              'js': {'sensai.extensions': '', 'sensaiTracker.extensions': ''},
+                                              'scriptSrc': ['\\.sensaimetrics\\.io/'],
+                                              'website': 'https://sensaimetrics.io'},
                         'Sensors Data': {   'cats': [10],
                                             'cookies': {'sensorsdata2015jssdkcross': '', 'sensorsdata2015session': ''},
                                             'icon': 'Sensors Data.svg',
@@ -25962,6 +28570,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                       'sensorsdata_app_js_bridge_call_js': ''},
                                             'scriptSrc': ['sensorsdata'],
                                             'website': 'https://www.sensorsdata.cn'},
+                        'Sentifi': {   'cats': [10],
+                                       'description': 'Sentifi is a platform that leverages crowd-based financial '
+                                                      'intelligence to analyze and provide insights into market '
+                                                      'trends, helping users make informed decisions based on '
+                                                      'collective data.',
+                                       'icon': 'Sentifi.svg',
+                                       'scriptSrc': ['cdn-pub\\.sentifi\\.com/'],
+                                       'website': 'https://sentifi.com'},
                         'Sentry': {   'cats': [13],
                                       'description': 'Sentry is an open-source platform for workflow productivity, '
                                                      'aggregating errors from across the stack in real time.',
@@ -26049,6 +28665,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'setmorePopup': ''},
                                        'scriptSrc': ['/setmore-appointments/script/', 'my\\.setmore\\.\\w+/'],
                                        'website': 'https://www.setmore.com'},
+                        'Setrics': {   'cats': [10, 32],
+                                       'description': 'Setrics is an omni-channel marketing and analysis platform that '
+                                                      'enables businesses to track and optimize customer interactions '
+                                                      'across multiple channels.',
+                                       'js': {'setrics_tracking.track_goal': ''},
+                                       'scriptSrc': ['app\\.setrics\\.com/'],
+                                       'website': 'https://setrics.com'},
                         'Setrow': {   'cats': [32],
                                       'description': 'Setrow is a platform offering integrated digital marketing '
                                                      'tools, including email and SMS marketing, push notifications, '
@@ -26143,6 +28766,21 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                'js': {'_pa': ''},
                                                'scriptSrc': ['\\.perfectaudience\\.com'],
                                                'website': 'https://sharpspring.com/ads'},
+                        'Sharpay': {   'cats': [94],
+                                       'description': 'Sharpay is a share button that integrates with blockchain '
+                                                      'technology, enabling decentralized sharing and tracking of '
+                                                      'content across multiple platforms.',
+                                       'icon': 'Sharpay.svg',
+                                       'js': {'gaSharpay': '', 'sharpayAPI.append': ''},
+                                       'scriptSrc': ['app\\.sharpay\\.io/'],
+                                       'website': 'https://sharpay.io'},
+                        'Sharper MMS': {   'cats': [19],
+                                           'description': 'Sharper MMS is a provider of marina management services, '
+                                                          'focusing on operations and maintenance for marina '
+                                                          'facilities.',
+                                           'icon': 'SharperMMS.svg',
+                                           'scripts': ['api\\.sharpermms\\.com'],
+                                           'website': 'https://sharpermms.com'},
                         'SheerID': {   'cats': [19],
                                        'description': 'SheerID is a highly specialised solution offering online '
                                                       'verification support for retailers, marketers and service '
@@ -26239,6 +28877,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'ShippyPro.png',
                                          'js': {'ShippyProReturnForm': ''},
                                          'website': 'https://www.shippypro.com'},
+                        'Shipup': {   'cats': [99],
+                                      'description': 'Shipup is a system that enables users to track shipping '
+                                                     'packages, providing real-time updates on delivery status and '
+                                                     'location.',
+                                      'icon': 'Shipup.svg',
+                                      'js': {'ShipupETA': ''},
+                                      'scriptSrc': ['\\.shipup\\.co/'],
+                                      'scripts': ['shipup\\.co'],
+                                      'website': 'https://www.shipup.co'},
                         'Shoefitr.io': {   'cats': [76],
                                            'description': 'Shoefitr.io is data-based shoe size advice service where we '
                                                           'measure the length, width, ball, and instep.',
@@ -26248,6 +28895,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                         'Shoelace': {   'cats': [66],
                                         'description': 'Shoelace is an open-source, framework-agnostic component for '
                                                        'building accessible web applications.',
+                                        'dom': {   'html[data-shoelace-version]': {   'attributes': {   'data-shoelace-version': '^([\\d.]+)$\\;version:\\1'}}},
                                         'icon': 'Shoelace.svg',
                                         'scriptSrc': ['/npm/@shoelace-style/shoelace@([\\d.]+)\\;version:\\1'],
                                         'website': 'https://shoelace.style'},
@@ -26342,12 +28990,23 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'ShopSite.svg',
                                         'meta': {'generator': ['^shopsite pro (\\d+\\.\\d+)\\;version:\\1']},
                                         'website': 'https://www.shopsite.com'},
+                        'ShopVOX': {   'cats': [6],
+                                       'description': 'ShopVOX is a web-based platform for custom fabricators.',
+                                       'icon': 'ShopVOX.svg',
+                                       'scripts': ['api\\.shopvox\\.com/'],
+                                       'website': 'https://shopvox.com'},
                         'ShopWired': {   'cats': [6],
                                          'description': 'ShopWired is a UK based, fully hosted ecommerce platform that '
                                                         'is focused on the UK market.',
                                          'icon': 'ShopWired.svg',
                                          'scriptSrc': ['\\.amazonaws\\.com/shopwired-theme-assets/'],
                                          'website': 'https://www.shopwired.co.uk'},
+                        'ShopX': {   'cats': [6],
+                                     'description': 'ShopX is an ecommerce platform built for hyperlocal businesses to '
+                                                    'sell online.',
+                                     'icon': 'ShopX.svg',
+                                     'scripts': ['shopx-unique-identifier'],
+                                     'website': 'https://shopx.store'},
                         'Shopaholic': {   'cats': [6],
                                           'cookies': {'shopaholic_cart_id': ''},
                                           'description': 'Shopaholic is an open-source ecosystem of plugins and themes '
@@ -26475,6 +29134,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'dom': {   "img[src*='cdn.shopistrystage.com/'],link[imagesrcset*='cdn.shopistrystage.com/']": {   'exists': ''}},
                                          'icon': 'Shopistry.png',
                                          'website': 'https://www.shopistry.com/'},
+                        'Shopix': {   'cats': [6],
+                                      'description': 'Shopix is a visual search tool for ecommerce that allows users '
+                                                     'to find products by uploading images.',
+                                      'icon': 'Shopix.svg',
+                                      'js': {'shopixAnalytics': ''},
+                                      'scriptSrc': ['\\.shopixai\\.com/'],
+                                      'website': 'https://shopixai.com'},
                         'Shoplazza': {   'cats': [6],
                                          'cookies': {'shoplazza_source': ''},
                                          'description': 'Shoplazza is a SaaS ecommerce platform.',
@@ -26493,6 +29159,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'SHOPLOAJAX': ''},
                                       'scriptSrc': ['cdn\\.shoplo\\.\\w+/'],
                                       'website': 'https://www.shoplo.com'},
+                        'Shopmaker': {   'cats': [6],
+                                         'description': 'Shopmaker is a platform designed for creating adult shops to '
+                                                        'sell videos and images.',
+                                         'icon': 'Shopmaker.svg',
+                                         'meta': {'author': ['^shopmaker$']},
+                                         'website': 'https://www.shopmaker.com'},
                         'Shopmatic': {   'cats': [6],
                                          'description': 'Shopmatic is an ecommerce website builder.',
                                          'icon': 'Shopmatic.svg',
@@ -26508,6 +29180,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {'ShoppableApi': ''},
                                          'scriptSrc': ['api\\.shoppable\\.com/'],
                                          'website': 'https://about.shoppable.com'},
+                        'ShopperApproved': {   'cats': [90],
+                                               'description': 'ShopperApproved is a platform that enhances eCommerce '
+                                                              'traffic, sales, and conversions by leveraging trust '
+                                                              'signals, user-generated content, and social proof.',
+                                               'icon': 'ShopperApproved.svg',
+                                               'scriptSrc': ['\\.shopperapproved\\.com/'],
+                                               'website': 'https://www.shopperapproved.com'},
                         'Shoppiko': {   'cats': [6],
                                         'description': 'Shoppiko is an ecommerce platform solution in India, which '
                                                        'provides ecommerce website or ecommerce mobile application.',
@@ -26549,6 +29228,21 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'js': {'ShopRenter.customer': ''},
                                           'scriptSrc': ['\\.cdn\\.shoprenter\\.hu/'],
                                           'website': 'https://www.shoprenter.hu'},
+                        'Shoprocket': {   'cats': [6],
+                                          'description': 'Shoprocket is a solution that integrates ecommerce '
+                                                         'functionality into existing websites, enabling businesses to '
+                                                         'sell products online without requiring a complete site '
+                                                         'overhaul.',
+                                          'icon': 'Shoprocket.svg',
+                                          'js': {'Shoprocket': ''},
+                                          'website': 'https://shoprocket.io'},
+                        'Shoproller': {   'cats': [6],
+                                          'description': 'Shoproller is a website builder that offers integrated '
+                                                         'ecommerce features, enabling users to create and manage '
+                                                         'online stores.',
+                                          'icon': 'ShopRoller.svg',
+                                          'meta': {'generator': ['shoproller\\.com']},
+                                          'website': 'https://www.shoproller.ee'},
                         'Shoprunner': {   'cats': [107, 102],
                                           'description': 'ShopRunner is a service offering consumers free two-day '
                                                          'shipping and returns on online orders placed with certain '
@@ -26577,6 +29271,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'shopthru_add_to_cart': ''},
                                         'scriptSrc': ['app\\.shopthru\\.xyz/'],
                                         'website': 'https://www.shopthru.xyz'},
+                        'Shoptrader': {   'cats': [6],
+                                          'description': 'Shoptrader is a Dutch-based shopping site solution that '
+                                                         'provides a platform for creating and managing online stores.',
+                                          'dom': {"link[href*='cdn.shoptrader.com/']": {'exists': ''}},
+                                          'icon': 'Shoptrader.svg',
+                                          'website': 'https://www.shoptrader.nl'},
                         'Shopware': {   'cats': [6],
                                         'cpe': 'cpe:2.3:a:shopware:shopware:*:*:*:*:*:*:*:*',
                                         'description': 'Shopware is an enterprise-level ecommerce platform.',
@@ -26615,6 +29315,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'implies': ['Shopify'],
                                        'scriptSrc': ['//shortly\\.shop/'],
                                        'website': 'https://apps.shopify.com/shortly'},
+                        'ShoutCMS': {   'cats': [1],
+                                        'description': 'ShoutCMS is a web content management system (CMS) that allows '
+                                                       'users to build and manage websites.',
+                                        'icon': 'ShoutCMS.svg',
+                                        'js': {'Shout.addHeaderButton': ''},
+                                        'meta': {'generator': ['shoutcms']},
+                                        'website': 'https://shoutcms.com'},
                         'ShoutOut': {   'cats': [71],
                                         'description': 'ShoutOut is a multi-level marketing SaaS solution that allows '
                                                        'tracking of affiliates.',
@@ -26661,6 +29368,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'scriptSrc': [   '(?:((?:\\d+\\.)+\\d+)\\/jquery\\.)?signal[rr](?:-)?(?:\\.min)?\\.js\\;version:\\1',
                                                         '(?:jquery\\.)?signal[rr](?:-((?:\\d+\\.)+\\d+))?(?:\\.min)?\\.js\\;version:\\1'],
                                        'website': 'https://dotnet.microsoft.com/es-es/apps/aspnet/signalr'},
+                        'Signalayer': {   'cats': [32],
+                                          'description': 'Signalayer is a provider of digital marketing solutions '
+                                                         'designed to support brands and agencies in enhancing their '
+                                                         'online presence.',
+                                          'icon': 'Signalayer.svg',
+                                          'js': {'Signalayer.API': '', 'signalayerApiKey': ''},
+                                          'website': 'https://signalayer.com'},
                         'Signifyd': {   'cats': [10, 16],
                                         'description': 'Signifyd is a provider of an enterprise-grade fraud technology '
                                                        'solution for ecommerce stores.',
@@ -26668,6 +29382,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'SIGNIFYD_GLOBAL': ''},
                                         'scriptSrc': ['\\.signifyd\\.com'],
                                         'website': 'https://www.signifyd.com'},
+                        'Silex': {   'cats': [51],
+                                     'description': 'Silex is an open-source web-based website builder that allows '
+                                                    'users to create websites without writing code.',
+                                     'icon': 'Silex.svg',
+                                     'js': {'silex.getCurrentPage': ''},
+                                     'meta': {'generator': ['^silex v([\\d.]+)\\;version:\\1']},
+                                     'website': 'https://www.silex.me'},
                         'Silverstripe': {   'cats': [1],
                                             'description': 'Silverstripe CMS is a free and open source Content '
                                                            'Management System and Framework for creating and '
@@ -26681,6 +29402,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'headers': {'powered': 'simbel'},
                                       'icon': 'simbel.svg',
                                       'website': 'https://simbel.com.ar/'},
+                        'Simbla': {   'cats': [53],
+                                      'description': 'Simbla is an AI-powered CRM platform.',
+                                      'icon': 'Simbla.svg',
+                                      'js': {'Simbla': '', 'createSimblaObj': '', 'isSimblaObject': ''},
+                                      'website': 'https://www.simbla.com'},
                         'Simla': {   'cats': [52, 53],
                                      'description': 'Simla is a multi-agent, all-in-one solution for businesses '
                                                     'selling products and services through WhatsApp, Facebook, '
@@ -27084,6 +29810,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                  'implies': ['Sitepark IES'],
                                                  'meta': {   'generator': [   '^infosite\\s([\\d\\.]+)\\s-\\ssitepark\\sinformation\\senterprise\\sserver$\\;version:\\1']},
                                                  'website': 'https://www.sitepark.com/mittelstand/content-management-system/index.php'},
+                        'Siter': {   'cats': [51],
+                                     'description': 'Siter is a responsive, no-code site builder that uses a '
+                                                    'drag-and-drop interface for creating websites without the need '
+                                                    'for programming skills.',
+                                     'icon': 'Siter.svg',
+                                     'js': {'readySiterPage': '', 'renderSiterPage': ''},
+                                     'website': 'https://siter.io'},
                         'Sitevision CMS': {   'cats': [1],
                                               'cookies': {'sitevisionltm': ''},
                                               'description': 'Sitevision CMS is a platform for web publishing that '
@@ -27095,6 +29828,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                                'sitevision/system-resource/(?:[\\w\\d]+)/js/docready-min\\.js\\;confidence:25',
                                                                'sitevision/system-resource/(?:[\\w\\d]+)/webapps/webapp_sdk-min\\.js\\;confidence:50'],
                                               'website': 'https://www.sitevision.se'},
+                        'Sitoo': {   'cats': [6],
+                                     'description': 'Sitoo is a POS and Unified Commerce Platform for global '
+                                                    'retailers.',
+                                     'icon': 'Sitoo.svg',
+                                     'js': {'SitooOnLoad': ''},
+                                     'meta': {'generator': ['www\\.sitoo\\.com']},
+                                     'website': 'https://sitoo.com'},
                         'Sivuviidakko': {   'cats': [1],
                                             'icon': 'Sivuviidakko.png',
                                             'meta': {'generator': ['sivuviidakko']},
@@ -27112,6 +29852,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Sizebay.svg',
                                        'js': {'Sizebay': '', 'SizebayParams': ''},
                                        'website': 'https://sizebay.com'},
+                        'Sizekick': {   'cats': [6],
+                                        'description': 'Sizekick is a platform that uses artificial intelligence and '
+                                                       'precise body measurements to minimize size-related returns and '
+                                                       'increase conversion rates for online retailers.',
+                                        'icon': 'Sizekick.svg',
+                                        'scriptSrc': ['widget\\.sizekick\\.io/'],
+                                        'website': 'https://www.sizekick.io'},
                         'Sizmek': {   'cats': [36],
                                       'html': [   '(?:<a [^>]*href="[^/]*//[^/]*serving-sys\\.com/|<img '
                                                   '[^>]*src="[^/]*//[^/]*serving-sys\\.com/)'],
@@ -27132,6 +29879,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'Skedify.Plugin.version': '^(.+)$\\;version:\\1'},
                                        'scriptSrc': ['plugin\\.skedify\\.io'],
                                        'website': 'https://calendly.com/'},
+                        'Skeep': {   'cats': [76],
+                                     'description': 'Skeep is a tool that uses automated Generative AI quizzes to '
+                                                    'guide visitors to suitable products, helping boost conversions '
+                                                    'without requiring any setup.',
+                                     'icon': 'Skeep.svg',
+                                     'js': {'skeep': ''},
+                                     'website': 'https://www.skeep.io'},
                         'Skilldo': {   'cats': [1],
                                        'description': 'Skilldo is a content management system written in PHP and '
                                                       'paired with a MySQL or MariaDB database.',
@@ -27163,6 +29917,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                     'implies': ['Shopify'],
                                     'scriptSrc': ['cdn\\.skio\\.com/'],
                                     'website': 'https://skio.com'},
+                        'Skitter': {   'cats': [59],
+                                       'description': 'Skitter is a jQuery-based slider system.',
+                                       'icon': 'Skitter.svg',
+                                       'scriptSrc': ['/jquery\\.skitter\\.min\\.js'],
+                                       'website': 'https://skitter-slider.net'},
                         'Skolengo': {   'cats': [1, 21],
                                         'description': 'Skolengo is an Education Management Software developed by '
                                                        'Kosmos Education.',
@@ -27185,6 +29944,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'L.CONTINUE_SHOPPING': ''},
                                         'meta': {'generator': ['sky-shop']},
                                         'website': 'https://sky-shop.pl'},
+                        'SkyGlue': {   'cats': [10],
+                                       'description': 'SkyGlue is a tool that automatically tracks every user action '
+                                                      'on a website, providing insights into user behavior, their '
+                                                      'needs, and the reasons for drop-off.',
+                                       'icon': 'SkyGlue.svg',
+                                       'scriptSrc': ['dc\\.skyglue\\.com/'],
+                                       'website': 'https://www.skyglue.com'},
                         'SkyVerge': {   'cats': [41],
                                         'description': 'SkyVerge  is a company which develop extension tools for '
                                                        'WooCommerce stores.',
@@ -27271,6 +30037,8 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                  'icon': 'Slider Revolution.svg',
                                                  'js': {   'RS_MODULES.main.version': '^Slider '
                                                                                       'Revolution\\s([\\d\\.]+)$\\;version:\\1',
+                                                           'SR7.version': '^Slider '
+                                                                          'Revolution\\s([\\d\\.]+)$\\;version:\\1',
                                                            'revapi1': '',
                                                            'revapi2': '',
                                                            'revapi3': '',
@@ -27306,6 +30074,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'implies': ['jQuery'],
                                          'scriptSrc': ['slimbox2\\.js'],
                                          'website': 'https://www.digitalia.be/software/slimbox2'},
+                        'Slingshot': {   'cats': [10],
+                                         'description': 'Slingshot is a platform that integrates real-time analytics '
+                                                        'with project management and collaboration tools to support '
+                                                        'data-driven decision-making.',
+                                         'icon': 'Slingshot.svg',
+                                         'scriptSrc': ['app\\.getslingshot\\.com/'],
+                                         'website': 'https://getslingshot.com'},
                         'Slotti': {   'cats': [72],
                                       'description': 'Slotti is a cloud-based appointment booking and checkout system '
                                                      'tailored for service companies.',
@@ -27479,6 +30254,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'SnapWidget.svg',
                                           'scriptSrc': ['snapwidget\\.com/'],
                                           'website': 'https://snapwidget.com'},
+                        'Snapps': {   'cats': [51, 88],
+                                      'description': 'Snapps is a platform designed to host and build websites.',
+                                      'icon': 'Snapps.svg',
+                                      'scripts': ['//snappsapi\\.com/'],
+                                      'website': 'https://www.snapps.ai'},
                         'Snipcart': {   'cats': [6],
                                         'cookies': {'snipcart-cart': ''},
                                         'description': 'Snipcart is a shopping cart platform that can be integrated '
@@ -27488,6 +30268,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Snipcart.svg',
                                         'scriptSrc': [   'https://cdn\\.snipcart\\.com/themes/v([\\w.]+)/default/snipcart\\.js\\;version:\\1'],
                                         'website': 'https://snipcart.com'},
+                        'SniperCRM': {   'cats': [53],
+                                         'description': 'SniperCRM is a platform designed to automate, manage, and '
+                                                        'scale ecommerce operations.',
+                                         'icon': 'SniperCRM.svg',
+                                         'scriptSrc': ['app\\.snipercrm\\.io/'],
+                                         'website': 'https://snipercrm.io'},
                         'SniperFast': {   'cats': [29],
                                           'description': 'SniperFast is instant search system for ecommerce sites.',
                                           'icon': 'SniperFast.png',
@@ -27616,6 +30402,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'Soisy.png',
                                      'scriptSrc': ['cdn\\.soisy\\.it/'],
                                      'website': 'https://www.soisy.it'},
+                        'Soldsie': {   'cats': [6],
+                                       'description': 'Soldsie is a social commerce platform that allows customers to '
+                                                      'purchase products through comments on social media platforms '
+                                                      'such as Facebook, Instagram, and Pinterest.',
+                                       'icon': 'Soldsie.svg',
+                                       'scriptSrc': ['lib\\.soldsie\\.com/'],
+                                       'website': 'https://soldsie.com'},
                         'SolidJS': {   'cats': [12],
                                        'description': 'SolidJS is a purely reactive library. It was designed from the '
                                                       "ground up with a reactive core. It's influenced by reactive "
@@ -27687,6 +30480,26 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'Solvvy': ''},
                                       'scriptSrc': ['cdn\\.solvvy\\.com/'],
                                       'website': 'https://solvvy.com/'},
+                        'Sonar': {   'cats': [53],
+                                     'description': 'Sonar is a fully integrated system offering loan origination and '
+                                                    'point-of-sale solutions, combined with customer relationship '
+                                                    'management capabilities.',
+                                     'icon': 'Sonar.svg',
+                                     'js': {'SonarChatWidget.display': '', 'mySonar.ajaxProtocol': ''},
+                                     'website': 'https://sendsonar.com'},
+                        'SonarQube': {   'cats': [47],
+                                         'description': 'SonarQube is an open-source platform for the continuous '
+                                                        'inspection of code quality to perform automatic reviews with '
+                                                        'static analysis of code to detect bugs, code smells, and '
+                                                        'security vulnerabilities on 20+ programming languages.',
+                                         'html': [   '<link href="/css/sonar\\.css\\?v=([\\d.]+)\\;version:\\1',
+                                                     '<title>sonarqube</title>'],
+                                         'icon': 'SonarQube.svg',
+                                         'implies': ['Java'],
+                                         'js': {'SonarMeasures': '', 'SonarRequest': ''},
+                                         'meta': {'application-name': ['^sonarqube$']},
+                                         'scriptSrc': ['^/js/bundles/sonar\\.js?v=([\\d.]+)$\\;version:\\1'],
+                                         'website': 'https://www.sonarqube.org/'},
                         'SonarQubes': {   'cats': [47],
                                           'description': 'SonarQube is an open-source platform for the continuous '
                                                          'inspection of code quality to perform automatic reviews with '
@@ -27713,6 +30526,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'js': {'sessionStorage.firmName': 'soocommerce'},
                                            'meta': {'author': ['soocommerce']},
                                            'website': 'https://soocommerce.com/'},
+                        'Sophi': {   'cats': [32],
+                                     'description': 'Sophi is a suite of AI-powered optimization, prediction, and '
+                                                    'automation solutions designed to unlock content value and drive '
+                                                    'business transformation.',
+                                     'icon': 'Sophi.svg',
+                                     'js': {'SOPHIDATA.settings': '', 'sophi.settings': '', 'sophiSegments': ''},
+                                     'website': 'https://www.mathereconomics.com/sophi-start'},
                         'Sortable': {   'cats': [36],
                                         'description': 'Sortable is a broad-spectrum platform that helps publishers '
                                                        'unify demand partners, data, and tools.',
@@ -27819,6 +30639,16 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                      'icon': 'Spatie.svg',
                                                      'implies': ['Laravel', 'Tailwind CSS'],
                                                      'website': 'https://github.com/spatie/laravel-support-bubble'},
+                        'SpeakPipe': {   'cats': [52],
+                                         'description': 'SpeakPipe is a tool that lets websites receive voice messages '
+                                                        'from visitors, making it easier for users to leave feedback, '
+                                                        'testimonials, or contact the site owner directly.',
+                                         'icon': 'SpeakPipe.svg',
+                                         'js': {   '_speakpipe_dialog_loaded': '',
+                                                   '_speakpipe_open_reply_dialog': '',
+                                                   '_speakpipe_open_reply_dialog_by_token': '',
+                                                   '_speakpipe_open_widget': ''},
+                                         'website': 'https://www.speakpipe.com'},
                         'Spectra': {   'cats': [87],
                                        'description': 'Spectra is a WordPress plugin that provides a collection of new '
                                                       'and enhanced blocks for the WordPress Block editor.',
@@ -27880,13 +30710,28 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'Speedimize.svg',
                                           'scriptSrc': ['cdn\\.shopify\\.com/.+/assets/speedimize\\.js'],
                                           'website': 'https://speedimize.io'},
+                        'SpeedyCache': {   'cats': [87, 23],
+                                           'description': 'SpeedyCache is a WordPress plugin for optimizing page load '
+                                                          'times and caching efficiency.',
+                                           'dom': {"link[href*='/wp-content/cache/speedycache/']": {'exists': ''}},
+                                           'headers': {'x-speedycache-source': ''},
+                                           'icon': 'SpeedyCache.svg',
+                                           'js': {'speedycachell': ''},
+                                           'website': 'https://speedycache.com'},
                         'Spektrix': {   'cats': [53],
                                         'description': 'Spektrix is a cloud-based ticketing, marketing, and '
                                                        'fundraising CRM system putting audience insight at your '
                                                        'fingertips.',
                                         'icon': 'Spektrix.svg',
-                                        'scriptSrc': [   'spektrix(?:\\.com)?(?:_nb)?\\/(?:stable)?(?:libraries)?\\/(?:before-after)?(?:script)?(?:spektrix)?-?(?:web)?(?:component)?s?-?(?:basket-summary)?(?:donate)?(?:gift-vouchers)?(?:loader)?(?:login-status)?(?:memberships)?(?:merchandise)?(?:-es2015)?\\.js(?:\\?ver?=((?:\\d+\\.)+\\d+))?\\;version:\\1'],
+                                        'scriptSrc': ['\\.spektrix\\.com/'],
                                         'website': 'https://www.spektrix.com'},
+                        'Spexo Addons': {   'cats': [87],
+                                            'description': 'Spexo Addons is a tool offering essential features for '
+                                                           'Elementor, enhancing website design and functionality in a '
+                                                           'single solution.',
+                                            'icon': 'SpexoAddons.svg',
+                                            'scriptSrc': ['/wp-content/plugins/sastra-essential-addons-for-elementor/'],
+                                            'website': 'https://spexoaddons.com/'},
                         'Sphinx': {   'cats': [4],
                                       'description': 'Sphinx is a tool that makes it easy to create documentation.',
                                       'html': [   'created using <a '
@@ -27990,6 +30835,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'headers': {'server': 'splunkd'},
                                        'icon': 'Splunk.svg',
                                        'website': 'https://splunk.com'},
+                        'Splutter AI': {   'cats': [52],
+                                           'description': 'Splutter AI is a platform that enables the creation of AI '
+                                                          'chatbots for websites.',
+                                           'icon': 'SplutterAI.svg',
+                                           'js': {'embeddedChatbotConfig.domain': '//splutter\\.ai'},
+                                           'website': 'https://www.splutter.ai'},
                         'Spoki': {   'cats': [53],
                                      'description': 'Spoki is a WhatsApp conversational platform designed to provide '
                                                     'marketing, sales, and customer support.',
@@ -28064,6 +30915,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'Spotzi': ''},
                                       'meta': {'author': ['^spotzi$']},
                                       'website': 'https://www.spotzi.com'},
+                        'Spreadr': {   'cats': [6],
+                                       'description': 'Spreadr is a tool that imports complementary products from '
+                                                      'Amazon into an online store.',
+                                       'icon': 'Spreadr.svg',
+                                       'js': {'spreadrCode': '', 'spreadrmsieversion': ''},
+                                       'website': 'https://spreadr.co'},
                         'Spree': {   'cats': [6],
                                      'html': [   '(?:<link[^>]*/assets/store/all-[a-z\\d]{32}\\.css[^>]+>|<script>\\s*spree\\.(?:routes|translations|api_key))'],
                                      'icon': 'Spree.png',
@@ -28335,6 +31192,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Stackify.svg',
                                         'scriptSrc': ['\\.stackify\\.com/'],
                                         'website': 'https://stackify.com'},
+                        'Staffbase': {   'cats': [101],
+                                         'description': 'Staffbase is an internal communications platform provider.',
+                                         'icon': 'Staffbase.svg',
+                                         'js': {   'staffbase': '',
+                                                   'staffbaseIconFontVersion': '',
+                                                   'webpackChunkStaffbase': ''},
+                                         'scriptSrc': ['\\.staffbasestatic\\.com/'],
+                                         'website': 'https://staffbase.com'},
                         'Stage Try': {   'cats': [91],
                                          'description': 'Stage Try is an end-to-end ecommerce platform amplifying AOV '
                                                         'and conversions of online stores.',
@@ -28365,6 +31230,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Starlet.png',
                                        'implies': ['Perl'],
                                        'website': 'https://metacpan.org/pod/Starlet'},
+                        'Starlight': {   'cats': [4],
+                                         'description': 'Starlight is a tool for creating documentation websites using '
+                                                        'Astro.',
+                                         'icon': 'Starlight.svg',
+                                         'js': {'StarlightThemeProvider.updatePickers': ''},
+                                         'meta': {'generator': ['^starlight v([\\d.]+)$\\;version:\\1']},
+                                         'website': 'https://starlight.astro.build'},
                         'Statamic': {   'cats': [1],
                                         'cpe': 'cpe:2.3:a:statamic:statamic:*:*:*:*:*:laravel:*:*',
                                         'description': 'Statamic is an open-source and self-hosted content management '
@@ -28450,6 +31322,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'SteelHouse.png',
                                           'scriptSrc': [   '\\.steelhousemedia\\.com/(?:spx\\?dxver=([\\d.]+))?\\;version:\\1'],
                                           'website': 'https://steelhouse.com'},
+                        'Stellantis': {   'cats': [1],
+                                          'description': 'Stellantis is a global automaker and provider of mobility '
+                                                         'solutions.',
+                                          'icon': 'Stellantis.svg',
+                                          'js': {   'stellantis_d2_library': '',
+                                                    'stellantis_whitelabel_library': '',
+                                                    'webpackChunkstellantis_d2_library': ''},
+                                          'website': 'https://www.stellantis.com'},
                         'Stellar.js': {   'cats': [59],
                                           'description': 'Stellar.js is a JavaScript library and jQuery plugin '
                                                          'specifically designed to deliver parallax scrolling effects '
@@ -28622,12 +31502,20 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'strattic-icon.png',
                                         'implies': ['WordPress'],
                                         'website': 'https://www.strattic.com/'},
+                        'Strava': {   'cats': [10],
+                                      'description': 'Strava is a platform that tracks club statistics.',
+                                      'icon': 'Strava.svg',
+                                      'scripts': ['www\\.strava\\.com'],
+                                      'website': 'https://www.strava.com'},
                         'Streamlit': {   'cats': [18],
-                                         'cookies': {'_streamlit_csrf': '', 'streamlit_session': ''},
+                                         'cookies': {   '_streamlit_csrf': '',
+                                                        '_streamlit_xsrf': '',
+                                                        'streamlit_session': ''},
                                          'description': 'Streamlit is an open-source Python framework enabling data '
                                                         'scientists and AI/ML engineers to create data applications '
                                                         'with minimal coding requirements.',
                                          'icon': 'Streamlit.svg',
+                                         'js': {'streamlitDebug': '', 'webpackChunk_streamlit_app': ''},
                                          'website': 'https://streamlit.io'},
                         'Streamoid': {   'cats': [76],
                                          'description': 'Streamoid is a fashion AI optimization and personalization '
@@ -28672,6 +31560,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'StrutFit.svg',
                                         'js': {'rerenderStrutfit': ''},
                                         'website': 'https://www.strut.fit'},
+                        'Styla': {   'cats': [6],
+                                     'description': 'Styla is a content commerce suite that automatically designs '
+                                                    'content and integrates shopping features, enhancing customer '
+                                                    'engagement and driving sales.',
+                                     'icon': 'Styla.svg',
+                                     'js': {'styla.init': ''},
+                                     'website': 'https://www.styla.com'},
                         'Stylitics': {   'cats': [32],
                                          'description': 'Stylitics is a cloud-based SaaS platform for retailers to '
                                                         'automate and distribute visual content at scale.',
@@ -28738,6 +31633,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'headers': {'x-sucuri-cache:': '', 'x-sucuri-id': ''},
                                       'icon': 'sucuri.svg',
                                       'website': 'https://sucuri.net/'},
+                        'Sugar': {   'cats': [59],
+                                     'description': 'Sugar is a Javascript utility library for working with native '
+                                                    'objects.',
+                                     'icon': 'Sugar.svg',
+                                     'js': {'SUGAR.AutoComplete': ''},
+                                     'scriptSrc': ['/sugar/([\\d\\.]+)/release/sugar\\.min\\.js\\;version:\\1'],
+                                     'website': 'https://sugarjs.com'},
                         'SugarJS': {   'cats': [59],
                                        'description': 'SugarJS is a JavaScript library that simplifies working with '
                                                       'native JavaScript objects, enhancing productivity and code '
@@ -28745,6 +31647,29 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'SugarJS.svg',
                                        'scriptSrc': [   'sugar\\/?((?:\\d+\\.)+\\d+)?(?:\\/sugar(?:-full)?)?(?:\\.min)?\\.js\\;version:\\1'],
                                        'website': 'https://sugarjs.com/'},
+                        'SugarWOD': {   'cats': [1],
+                                        'description': 'SugarWOD is a workout software for coaches and everyday '
+                                                       'athletes.',
+                                        'icon': 'SugarWOD.svg',
+                                        'js': {'SugarWOD.activeTracks': '', 'SugarWODUtil.addAnimation': ''},
+                                        'website': 'https://www.sugarwod.com'},
+                        'Sugester': {   'cats': [52, 53],
+                                        'description': 'Sugester is a platform that combines CRM, helpdesk, and '
+                                                       'project management features, offering an all-in-one solution '
+                                                       'for small and medium-sized businesses.',
+                                        'icon': 'Sugester.svg',
+                                        'js': {'SUGESTER.ACCOUNT_ID': '', 'sugesterChatOptions': ''},
+                                        'scriptSrc': ['\\.sugester\\.pl/'],
+                                        'website': 'https://sugester.pl'},
+                        'SuiteCRM': {   'cats': [53],
+                                        'cookies': {'scrmsessid': ''},
+                                        'description': 'SuiteCRM is an open-source alternative to proprietary software '
+                                                       'such as Salesforce and Dynamics, offering customer '
+                                                       'relationship management features.',
+                                        'dom': {"link[href*='dist/themes/suite8/']": {'exists': ''}},
+                                        'icon': 'SuiteCRM.svg',
+                                        'scriptSrc': ['themes/suitep/js/'],
+                                        'website': 'https://suitecrm.com'},
                         'Suiteshare': {   'cats': [52],
                                           'description': 'Suiteshare powers conversational shopping experiences.',
                                           'icon': 'Suiteshare.png',
@@ -28758,6 +31683,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                     'implies': ['Symfony'],
                                     'js': {'SULU_CONFIG.suluVersion': '^([\\d\\.]+)$\\;version:\\1'},
                                     'website': 'https://sulu.io'},
+                        'SumUp': {   'cats': [41],
+                                     'description': 'SumUp is a provider of payment acceptance solutions.',
+                                     'icon': 'SumUp.svg',
+                                     'js': {'SumUpCard.debug': '', 'SumUpPayment.debug': ''},
+                                     'website': 'https://www.sumup.com'},
                         'SummerCart': {   'cats': [6],
                                           'description': 'SummerCart is an ecommerce platform written in PHP.',
                                           'dom': {   'link': {   'attributes': {   'href': 'com\\.summercart\\.\\;confidence:100'}}},
@@ -28797,6 +31727,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'Suncel.svg',
                                       'js': {'__NEXT_DATA__.props.pageProps.suncel': ''},
                                       'website': 'https://suncel.io'},
+                        'Sunshop': {   'cats': [6],
+                                       'description': 'Sunshop is an ecommerce software that provides tools for online '
+                                                      'store setup and administration.',
+                                       'icon': 'Sunshop.svg',
+                                       'meta': {'generator': ['www\\.sunshop\\.com']},
+                                       'website': 'https://www.sunshop.com'},
                         'Supabase': {   'cats': [47],
                                         'description': 'Supabase is an open-source platform that offers a Postgres '
                                                        'database, Authentication, APIs, Edge Functions, Realtime '
@@ -28820,6 +31756,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                 'icon': 'Super Socializer.png',
                                                 'scriptSrc': [   'plugins/super-socializer/.+?ver=([\\d.]+)\\;version:\\1'],
                                                 'website': 'https://super-socializer-wordpress.heateor.com'},
+                        'SuperHote': {   'cats': [72],
+                                         'description': 'SuperHote is a hotel management software designed to '
+                                                        'streamline hotel bookings, reservations, and other management '
+                                                        'tasks.',
+                                         'icon': 'SuperHote.svg',
+                                         'scripts': ['app\\.superhote\\.com'],
+                                         'website': 'https://www.superhote.com'},
                         'SuperLemon app': {   'cats': [100],
                                               'description': 'SuperLemon app is an all-in-one WhatsApp plugin for '
                                                              'Shopify stores.',
@@ -28835,6 +31778,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'implies': ['PWA', 'WordPress'],
                                         'js': {'superpwa_sw': ''},
                                         'website': 'https://superpwa.com'},
+                        'Superblog': {   'cats': [11],
+                                         'description': 'Superblog is a blogging platform that automatically manages '
+                                                        'SEO audits, page speed optimization, sudden traffic spikes, '
+                                                        'and reader experience.',
+                                         'dom': {"link[href*='superblog.supercdn.cloud/']": {'exists': ''}},
+                                         'icon': 'Superblog.svg',
+                                         'website': 'https://superblog.ai'},
                         'Superchat': {   'cats': [52, 53],
                                          'description': 'Superchat is an all-in-one messaging software that helps '
                                                         'businesses build loyal customer relationships, send and '
@@ -28874,6 +31824,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'Surge.svg',
                                      'scriptSrc': ['surge\\.sh(?:\\/[-\\w]{0,40})?\\.js'],
                                      'website': 'https://surge.sh'},
+                        'Survale': {   'cats': [101],
+                                       'description': 'Survale is an employer satisfaction platform.',
+                                       'icon': 'Survale.svg',
+                                       'js': {   'survale.add_event': '',
+                                                 'survale_custom': '',
+                                                 'survale_obj': '',
+                                                 'survale_site_ids': ''},
+                                       'website': 'https://survale.com'},
                         'Survicate': {   'cats': [73],
                                          'description': 'Survicate is an all-in-one customer feedback tool that allows '
                                                         'you collect feedback.',
@@ -28932,6 +31890,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Swat.svg',
                                        'scriptSrc': ['\\.swat\\.io/'],
                                        'website': 'https://swat.io'},
+                        'Sweet Analytics': {   'cats': [10],
+                                               'description': 'Sweet Analytics is a platform that consolidates '
+                                                              'ecommerce sales and marketing data into a single '
+                                                              'location for streamlined analysis.',
+                                               'icon': 'SweetAnalytics.svg',
+                                               'js': {'sweet.acceptCookies': ''},
+                                               'website': 'https://sweetanalytics.com'},
                         'SweetAlert': {   'cats': [59],
                                           'description': 'SweetAlert is a JavaScript library that provides alternative '
                                                          'alert and modal dialog boxes for web applications, with '
@@ -29039,6 +32004,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'implies': ['Symfony'],
                                       'scriptSrc': ['syliusgtmenhancedecommerceplugin', 'syliusshop/script\\.js'],
                                       'website': 'https://sylius.com'},
+                        'Symbolset': {   'cats': [17],
+                                         'description': 'Symbolset is a tool that converts words into icons by '
+                                                        'utilizing font technology, enabling visual representation of '
+                                                        'text-based content for various applications.',
+                                         'icon': 'Symbolset.svg',
+                                         'scriptSrc': ['cdn\\.symbolset\\.com/'],
+                                         'website': 'https://symbolset.com'},
                         'Symfony': {   'cats': [18],
                                        'cookies': {'sf_redirect': ''},
                                        'cpe': 'cpe:2.3:a:sensiolabs:symfony:*:*:*:*:*:*:*:*',
@@ -29056,6 +32028,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'implies': ['Perl'],
                                      'meta': {'generator': ['^sympa$']},
                                      'website': 'https://www.sympa.org/'},
+                        'Syncee': {   'cats': [6],
+                                      'description': 'Syncee is a global B2B dropshipping and wholesale platform where '
+                                                     'retailers can find millions of products from local suppliers, '
+                                                     'and can enjoy automated solutions.',
+                                      'icon': 'Syncee.svg',
+                                      'js': {'syncee_globals_supplier': ''},
+                                      'website': 'https://syncee.co'},
                         'Syncfusion': {   'cats': [59],
                                           'description': 'Syncfusion is a JavaScript UI controls library that includes '
                                                          'a wide range of UI components in a single package.',
@@ -29064,6 +32043,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'js': {'Syncfusion': ''},
                                           'scriptSrc': [   'syncfusion(?:\\.com)?(?:\\/ej\\d)?(?:-[base|input|buttons|lists|calendars]+)?(?:\\/dist)?(?:\\/global)?(?:\\/ej\\d)?(?:-[base|input|buttons|lists|calendars]+)?(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1'],
                                           'website': 'https://www.syncfusion.com'},
+                        'Synctrack': {   'cats': [6],
+                                         'description': 'Synctrack is a platform that helps merchants improve the '
+                                                        'shopping experience and post-sale processes, including '
+                                                        'payment syncing and delivery tracking, to enhance revenue and '
+                                                        'customer loyalty.',
+                                         'icon': 'Synctrack.svg',
+                                         'scriptSrc': ['apps\\.synctrack\\.io/'],
+                                         'website': 'https://synctrack.io'},
                         'Syndeca': {   'cats': [10, 76],
                                        'description': 'Syndeca is a visual commerce platform that allows brands to '
                                                       'quickly create engaging, actionable campaigns.',
@@ -29100,6 +32087,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'Systeme.io.svg',
                                           'scriptSrc': ['//systeme\\.io/'],
                                           'website': 'https://systeme.io'},
+                        'Systems Accel': {   'cats': [32],
+                                             'description': 'Systems Accel is an all-in-one platform designed to '
+                                                            'automate processes and boost sales for coaches, '
+                                                            'consultants, and service providers.',
+                                             'icon': 'SystemsAccel.svg',
+                                             'scripts': ['app\\.systemsaccel\\.com'],
+                                             'website': 'https://systemsaccel.com'},
                         'Syte': {   'cats': [76, 29],
                                     'description': 'Syte is a provider of visual AI technology that aims to improve '
                                                    "retailers' site navigation, product discovery, and user experience "
@@ -29172,6 +32166,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'THRON.png',
                                      'js': {'THRONPlayer': '', 'thronHlsJs': ''},
                                      'website': 'https://www.thron.com'},
+                        'TIEIT': {   'cats': [32, 53],
+                                     'description': 'TIEIT is an all-in-one platform offering integrated tools for '
+                                                    'sales, marketing, customer service, billing, subscriptions, and '
+                                                    'scheduling, designed to streamline business operations in a '
+                                                    'unified solution.',
+                                     'icon': 'TIEIT.svg',
+                                     'scripts': ['app\\.tieit\\.io'],
+                                     'website': 'https://www.tieit.ai'},
                         'TITANPush': {   'cats': [32],
                                          'description': 'TITANPush is a platform offering tools that assist brands in '
                                                         'increasing sales through their websites and improving '
@@ -29341,6 +32343,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Tagshop.svg',
                                        'scriptSrc': ['\\.taggshop\\.io/'],
                                        'website': 'https://tagshop.ai/'},
+                        'Tagtoo': {   'cats': [36],
+                                      'description': 'Tagtoo is an ad platform that provides businesses with digital '
+                                                     'advertising solutions, specializing in targeted display and '
+                                                     'programmatic ads to help brands reach their audience more across '
+                                                     'various online channels.',
+                                      'icon': 'Tagtoo.svg',
+                                      'js': {'tagtoo_advertiser_id': '', 'tagtoo_ga': '', 'tagtoo_s': ''},
+                                      'website': 'https://tagtoo.com'},
                         'Taiga': {   'cats': [13],
                                      'icon': 'Taiga.png',
                                      'implies': ['AngularJS', 'Django'],
@@ -29365,6 +32375,24 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'TakeDrop.png',
                                         'js': {'webpackJsonptakedrop-react': ''},
                                         'website': 'https://takedrop.pl'},
+                        'Talex': {   'cats': [6],
+                                     'description': 'Talex is a Swedish ecommerce platform.',
+                                     'icon': 'Talex.svg',
+                                     'meta': {'author': ['talex webshop,']},
+                                     'website': 'https://www.talex.se'},
+                        'Talk-Me': {   'cats': [52],
+                                       'description': 'Talk-Me is a chat system designed to enhance sales growth by '
+                                                      'facilitating customer communication, offering a range of tools '
+                                                      'to help businesses find new clients through their websites.',
+                                       'icon': 'TalkMe.svg',
+                                       'js': {'MeTalk': '', 'TalkMe': '', 'TalkMeIsInitialized': '', 'TalkMeSetup': ''},
+                                       'website': 'https://talk-me.ru'},
+                        'TalkJS': {   'cats': [52],
+                                      'description': 'TalkJS is a platform that enables user-to-user messaging within '
+                                                     'marketplaces or platforms.',
+                                      'icon': 'TalkJS.svg',
+                                      'js': {'Talk.v': '^(.+)$\\;version:\\1', '_talkjs_locales': ''},
+                                      'website': 'https://talkjs.com'},
                         'Talkable': {   'cats': [74, 84, 94],
                                         'description': 'Talkable is a cloud-based referral marketing system that '
                                                        'assists medium to large businesses with campaign creation and '
@@ -29443,8 +32471,8 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                       'directly with Shopify.',
                                        'dom': {"a[href*='tapcart.app'][target='_blank']": {'exists': ''}},
                                        'icon': 'Tapcart.svg',
-                                       'js': {'tapcartwebBanner': ''},
-                                       'scriptSrc': ['cdn\\.tapcart\\.com/'],
+                                       'js': {'Tapcart': '', 'tapcartParams': '', 'tapcartwebBanner': ''},
+                                       'scriptSrc': ['\\.tapcart\\.com/'],
                                        'website': 'https://tapcart.com'},
                         'Tapfiliate': {   'cats': [71],
                                           'description': 'Tapfiliate is a cloud-based affiliate marketing software '
@@ -29460,6 +32488,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'icon': 'Target2Sell.png',
                                            'scriptSrc': ['static\\.target2sell\\.com'],
                                            'website': 'https://www.target2sell.com/'},
+                        'TargetBay': {   'cats': [6, 32],
+                                         'description': 'TargetBay is an all-in-one ecommerce marketing platform.',
+                                         'icon': 'TargetBay.svg',
+                                         'scriptSrc': ['app\\.targetbay\\.com'],
+                                         'website': 'https://targetbay.com'},
                         'Tars': {   'cats': [52],
                                     'description': 'Tars is a platform for creating chatbots without programming '
                                                    'knowledge.',
@@ -29589,6 +32622,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'implies': ['MySQL', 'PHP', 'Sass'],
                                      'scripts': ['\\.tebexlogin'],
                                      'website': 'https://www.tebex.io'},
+                        'TechTarget': {   'cats': [4],
+                                          'description': 'TechTarget is a resource providing technology professionals '
+                                                         'and buyers with the technical information required to '
+                                                         'perform in their roles.',
+                                          'icon': 'TechTarget.svg',
+                                          'js': {'loadTechTarget': '', 'techtargetic.client': ''},
+                                          'scriptSrc': ['\\.techtarget\\.com/'],
+                                          'website': 'https://www.techtarget.com'},
                         'Teeinblue': {   'cats': [76],
                                          'description': 'Teeinblue is a personalization tool tailored for '
                                                         'print-on-demand merchants using Shopify.',
@@ -29596,6 +32637,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {'TEEINBLUE_LOADED': '', 'teeinblue': '', 'teeinblueShop': ''},
                                          'scriptSrc': ['sdk\\.teeinblue\\.com'],
                                          'website': 'https://teeinblue.com'},
+                        'Tekion': {   'cats': [6],
+                                      'description': 'Tekion is an end-to-end cloud automotive platform.',
+                                      'icon': 'Tekion.svg',
+                                      'scripts': ['\\.tekioncloud\\.com'],
+                                      'website': 'https://tekion.com'},
                         'TeleportHQ': {   'cats': [51],
                                           'description': 'TeleportHQ is a front-end development platform featuring a '
                                                          'visual builder and headless content modeling capabilities.',
@@ -29630,6 +32676,19 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                        'icon': 'TencentWaterproofWall.png',
                                                        'scriptSrc': ['/tcaptcha\\.js', 'captcha\\.qq\\.com/.*'],
                                                        'website': 'https://007.qq.com/'},
+                        'Tend': {   'cats': [10],
+                                    'description': 'Tend is a conversion optimization tool designed to analyze visitor '
+                                                   'behavior and identify areas of interaction on websites.',
+                                    'icon': 'Tend.svg',
+                                    'js': {'tend.event': '', 'tendKey': ''},
+                                    'website': 'https://tend.io'},
+                        'Tendenci': {   'cats': [1],
+                                        'description': 'Tendenci is a platform that provides resources for managing '
+                                                       'and organizing website content without requiring knowledge of '
+                                                       'HTML or complex programming tools.',
+                                        'icon': 'Tendenci.svg',
+                                        'meta': {'generator': ['^tendenci$']},
+                                        'website': 'https://www.tendenci.com'},
                         'Tender Support': {   'cats': [53],
                                               'description': 'Tender Support is a customer service software offering '
                                                              'essential tools to enhance customer support.',
@@ -29643,6 +32702,27 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'headers': {'server': 'tengine'},
                                        'icon': 'Tengine.png',
                                        'website': 'https://tengine.taobao.org'},
+                        'TerMed': {   'cats': [72],
+                                      'description': 'TerMed is a platform that simplifies online booking of medical '
+                                                     'appointments.',
+                                      'icon': 'TerMed.svg',
+                                      'scriptSrc': ['api\\.termed\\.de'],
+                                      'scripts': ['api\\.termed\\.de'],
+                                      'website': 'https://www.termed.de'},
+                        'Terminalfour': {   'cats': [1],
+                                            'description': 'Terminalfour is a digital engagement and web content '
+                                                           'management platform for higher education.',
+                                            'icon': 'Terminalfour.svg',
+                                            'meta': {'generator': ['terminalfour']},
+                                            'website': 'https://www.terminalfour.com'},
+                        'Terminus': {   'cats': [32],
+                                        'description': 'Terminus is a platform that helps identify target audiences, '
+                                                       'deliver relevant messages across multiple channels, integrate '
+                                                       'sales teams throughout the revenue process, and measure '
+                                                       'performance across all activities.',
+                                        'icon': 'Terminus.svg',
+                                        'scriptSrc': ['\\.terminus\\.services/'],
+                                        'website': 'https://terminus.com'},
                         'Termly': {   'cats': [67],
                                       'description': 'Termly provides free website policy resources and web-based '
                                                      'policy creation software.',
@@ -29674,12 +32754,32 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'js': {'applyTestFreaks': '', 'testFreaks': ''},
                                           'scriptSrc': ['\\.testfreaks\\.com/'],
                                           'website': 'https://www.testfreaks.com'},
+                        'Testflow': {   'cats': [16],
+                                        'description': 'Testflow is a platform that digitizes manual workflows for '
+                                                       'test centers while ensuring secure patient data management in '
+                                                       'compliance with data protection regulations.',
+                                        'icon': 'Testflow.svg',
+                                        'scripts': ['app\\.testflow\\.eu'],
+                                        'website': 'https://testflow.eu'},
+                        'Testimonial Robot': {   'cats': [90],
+                                                 'description': 'Testimonial Robot is a testimonials and customer '
+                                                                'review platform.',
+                                                 'icon': 'TestimonialRobot.svg',
+                                                 'scriptSrc': ['www\\.testimonialrobot\\.com/'],
+                                                 'website': 'https://testimonialrobot.com'},
                         'Texthelp': {   'cats': [68],
                                         'description': 'TextHelp is a literacy, accessibility and dyslexia software '
                                                        'developer for people with reading and writing difficulties.',
                                         'icon': 'Texthelp.svg',
                                         'scriptSrc': ['browsealoud\\.com/.*/browsealoud\\.js'],
                                         'website': 'https://www.texthelp.com/en-gb/products/browsealoud/'},
+                        'Textline': {   'cats': [53],
+                                        'description': 'Textline is a business texting platform designed for customer '
+                                                       'support, sales, marketing, and logistics teams to streamline '
+                                                       'communication and improve workflow efficiency.',
+                                        'icon': 'Textline.svg',
+                                        'scriptSrc': ['\\.textline\\.com/'],
+                                        'website': 'https://www.textline.com'},
                         'Textpattern CMS': {   'cats': [1],
                                                'icon': 'Textpattern CMS.png',
                                                'implies': ['MySQL', 'PHP'],
@@ -29738,6 +32838,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                   'js': {'thn.data.version': '([\\d\\.]+)\\;version:\\1'},
                                                   'scriptSrc': ['\\.thehotelsnetwork\\.com/'],
                                                   'website': 'https://thehotelsnetwork.com'},
+                        'The Monetyzer': {   'cats': [36],
+                                             'description': 'The Monetyzer is a global advertising platform for '
+                                                            'publishers.',
+                                             'icon': 'TheMonetyzer.svg',
+                                             'scriptSrc': ['\\.themoneytizer\\.com/'],
+                                             'website': 'https://www.themoneytizer.com'},
                         'The SEO Framework': {   'cats': [54, 87],
                                                  'description': 'The SEO Framework is the only WordPress plugin that '
                                                                 'can intelligently generate critical SEO meta tags by '
@@ -30055,6 +33161,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'icon': 'ThinkingChat.svg',
                                              'scriptSrc': ['\\.thinkingchat\\.com/'],
                                              'website': 'https://thinkingchat.com'},
+                        'Thor-Media': {   'cats': [36],
+                                          'description': 'Thor-Media is a Russian-based affiliate advertising system '
+                                                         'that connects advertisers with affiliates for '
+                                                         'performance-based marketing campaigns.',
+                                          'scriptSrc': ['t\\.thor-media\\.ru/'],
+                                          'website': 'https://thor-media.ru'},
                         'ThreatMetrix': {   'cats': [16, 83],
                                             'description': 'LexisNexis ThreatMetrix is an enterprise solution for '
                                                            "online risk and fraud protection ('digital identity "
@@ -30079,6 +33191,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Threekit.svg',
                                         'js': {'threekit.configuratorForm': '', 'threekitAR': '', 'threekitPlayer': ''},
                                         'website': 'https://www.threekit.com'},
+                        'Thrinacia': {   'cats': [111],
+                                         'description': 'Thrinacia is a scalable Enterprise SaaS crowdfunding engine '
+                                                        'that enables the operation of custom white-labeled '
+                                                        'crowdfunding websites.',
+                                         'icon': 'Thrinacia.svg',
+                                         'scriptSrc': ['\\.thrinacia\\.com/'],
+                                         'website': 'https://www.thrinacia.com'},
                         'Thrive Apprentice': {   'cats': [87, 21],
                                                  'description': 'Thrive Apprentice is a WordPress plugin for creating '
                                                                 'online courses and also a membership plugin.',
@@ -30169,6 +33288,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'icon': 'Tiiny Host.png',
                                           'scriptSrc': ['(?://|\\.)tiiny\\.(?:host|site)/'],
                                           'website': 'https://tiiny.host'},
+                        'TikShop': {   'cats': [100],
+                                       'description': 'TikShop is a tool that integrates TikTok accounts with Shopify '
+                                                      'stores, allowing for the creation of shoppable feeds to '
+                                                      'facilitate quicker product promotion and sales directly through '
+                                                      'TikTok.',
+                                       'icon': 'TikShop.svg',
+                                       'scriptSrc': ['app\\.tikshop\\.co/'],
+                                       'website': 'https://tikshop.co'},
                         'TikTok Pixel': {   'cats': [10],
                                             'dom': {"script[data-hid='tiktok']": {'attributes': {'data-hid': ''}}},
                                             'icon': 'TikTok.svg',
@@ -30296,6 +33423,21 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'Titan.png',
                                      'js': {'titan': '', 'titanEnabled': ''},
                                      'website': 'https://titan360.com'},
+                        'Tix': {   'cats': [104],
+                                   'description': 'Tix is a system designed for managing event tickets, allowing users '
+                                                  'to organize, distribute, and track tickets.',
+                                   'icon': 'Tix.svg',
+                                   'scripts': ['\\.secure-tix\\.com/'],
+                                   'website': 'https://www.tix.com'},
+                        'TogetherJS': {   'cats': [59],
+                                          'description': 'TogetherJS is an open-source JavaScript library by Mozilla '
+                                                         'that integrates collaboration tools and features into '
+                                                         'websites.',
+                                          'icon': 'TogetherJS.svg',
+                                          'js': {   'TogetherJS': '',
+                                                    'TogetherJSConfig_cloneClicks': '',
+                                                    'TogetherJSConfig_toolName': ''},
+                                          'website': 'https://togetherjs.com'},
                         'Tolt': {   'cats': [71],
                                     'description': 'Tolt is an affiliate marketing software designed for SaaS '
                                                    'startups.',
@@ -30314,6 +33456,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'js': {'AjaxShoppingCart': ''},
                                           'meta': {'generator': ['tomatocart']},
                                           'website': 'https://tomatocart.com'},
+                        'Tomi.ai': {   'cats': [32],
+                                       'description': 'Tomi.ai is a predictive marketing platform.',
+                                       'icon': 'Tomi.svg',
+                                       'js': {'tomi.track': ''},
+                                       'website': 'https://tomi.ai'},
                         'Tomis': {   'cats': [32],
                                      'description': 'Tomis is a digital marketing tour operator, specialising in '
                                                     'promoting travel services through online channels.',
@@ -30322,6 +33469,32 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'js': {'TOMIS': ''},
                                      'scriptSrc': ['tomis-bot\\.firebaseapp\\.com/'],
                                      'website': 'https://tomis.tech'},
+                        'Tontine': {   'cats': [74],
+                                       'description': 'Tontine is an A/B price testing platform built specifically for '
+                                                      'high-growth Shopify merchants focused on optimizing their '
+                                                      'profit margins.',
+                                       'icon': 'Tontine.svg',
+                                       'js': {'TontineApp.tontineAnalytics': ''},
+                                       'website': 'https://www.tontine.ai'},
+                        'Toolbx': {   'cats': [6],
+                                      'description': 'Toolbx is a platform that helps independent building suppliers '
+                                                     'streamline payments, simplify accounts receivable, grow online '
+                                                     'sales, and enhance customer experience.',
+                                      'icon': 'Toolbx.svg',
+                                      'js': {'toolbxPixel': ''},
+                                      'website': 'https://www.toolbx.com/'},
+                        'Tooltip': {   'cats': [52],
+                                       'description': 'Tooltip is a web-based in-app messaging suite designed to '
+                                                      'enhance user engagement and communication within applications.',
+                                       'icon': 'Tooltip.svg',
+                                       'scriptSrc': ['cdn\\.tooltip\\.io/'],
+                                       'website': 'https://tooltip.io'},
+                        'Top Producer': {   'cats': [53],
+                                            'description': 'Top Producer is an all-in-one business management '
+                                                           'platform, tailored for real estate as a CRM solution.',
+                                            'icon': 'TopProducer.svg',
+                                            'scriptSrc': ['static\\.topproducerwebsite\\.com/'],
+                                            'website': 'https://www.topproducer.com'},
                         'TornadoServer': {   'cats': [22],
                                              'headers': {'server': 'tornadoserver(?:/([\\d.]+))?\\;version:\\1'},
                                              'icon': 'TornadoServer.png',
@@ -30381,6 +33554,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'TrackJs': '', 'trackJs': ''},
                                        'scriptSrc': ['cdn\\.trackjs\\.com'],
                                        'website': 'https://trackjs.com'},
+                        'Trackboxx': {   'cats': [10],
+                                         'description': 'Trackboxx is a GDPR-compliant web analysis tool that operates '
+                                                        'without using cookies, providing data privacy while offering '
+                                                        'detailed website insights.',
+                                         'icon': 'Trackboxx.svg',
+                                         'js': {'trackboxx': ''},
+                                         'scriptSrc': ['cdn\\.trackboxx\\.info'],
+                                         'website': 'https://trackboxx.com'},
                         'Trackify X': {   'cats': [100, 10],
                                           'description': 'Trackify X is a pixel engine that helps merchants backup '
                                                          'their pixel data and manage multiple pixels.',
@@ -30388,6 +33569,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'implies': ['Shopify'],
                                           'scriptSrc': ['trackifyx\\.redretarget\\.com/'],
                                           'website': 'https://trackifyapp.com'},
+                        'TradePending': {   'cats': [6],
+                                            'description': 'TradePending, formerly known as SnapCell, is a software '
+                                                           'platform for automotive digital retailing, offering car '
+                                                           'dealers tools to enhance rapport, increase sales, drive '
+                                                           'upsell, and improve customer satisfaction through reliable '
+                                                           'and straightforward video marketing.',
+                                            'js': {'TradePendingPlugin': ''},
+                                            'scriptSrc': ['\\.tradepending\\.com'],
+                                            'website': 'https://tradepending.com'},
                         'Tradedoubler': {   'cats': [71],
                                             'description': 'Tradedoubler is a global affiliate marketing network.',
                                             'dom': {   "a[href*='clk.tradedoubler.com/click']": {'text': ''},
@@ -30419,6 +33609,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'icon': 'TrafficStars.png',
                                             'scriptSrc': ['\\.tsyndicate\\.com/'],
                                             'website': 'https://trafficstars.com'},
+                        'Trak': {   'cats': [10],
+                                    'description': 'Trak is a customer analytics platform designed for startups.',
+                                    'icon': 'Trak.svg',
+                                    'js': {'trak.custom_event': ''},
+                                    'website': 'https://www.trak.io'},
                         'Transcend': {   'cats': [67],
                                          'description': 'Transcend is data privacy management compliance platform.',
                                          'icon': 'Transcend.svg',
@@ -30450,6 +33645,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                    'icon': 'GTranslate.svg',
                                                    'scriptSrc': [   '/wp-content/plugins/google-language-translator/.+scripts\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1'],
                                                    'website': 'https://gtranslate.io'},
+                        'TranslatePress': {   'cats': [87],
+                                              'description': 'TranslatePress is a WordPress plugin that simplifies '
+                                                             'website translation, enabling multilingual functionality '
+                                                             'to enhance global traffic.',
+                                              'icon': 'TranslatePress.svg',
+                                              'js': {   'trp_el': '',
+                                                        'trp_ls_shortcode_width': '',
+                                                        'trp_ls_shortcodes': ''},
+                                              'website': 'https://translatepress.com'},
                         'Transmart': {   'cats': [99],
                                          'description': 'Transmart is a shipping company in Turkey.',
                                          'website': 'https://transmartshipping.com'},
@@ -30474,6 +33678,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'js': {'Treasure.version': '(.+)\\;version:\\1'},
                                              'scriptSrc': ['cdn\\.treasuredata\\.com/'],
                                              'website': 'https://www.treasuredata.com'},
+                        'Tremor': {   'cats': [59],
+                                      'description': 'Tremor is an open-source library for building charts and '
+                                                     'dashboards using React components, designed on top of Tailwind '
+                                                     'CSS.',
+                                      'dom': {   "div[tremor-id*='tremor-raw'], div[class*='text-tremor-']": {   'exists': ''}},
+                                      'icon': 'Tremor.svg',
+                                      'website': 'https://tremor.so'},
                         'Trendemon': {   'cats': [76],
                                          'description': 'Trendemon is a web personalization and account-based '
                                                         'orchestration solution.',
@@ -30521,6 +33732,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                           'dom': {"iframe[src*='.3lift.com']": {'attributes': {'src': ''}}},
                                           'icon': 'TripleLift.png',
                                           'website': 'https://triplelift.com'},
+                        'Triptease': {   'cats': [93],
+                                         'description': 'Triptease is a SaaS that provides digital tools that create '
+                                                        'better experiences and relationships between hotels and '
+                                                        'guests.',
+                                         'icon': 'Triptease.svg',
+                                         'scriptSrc': ['\\.triptease\\.io/'],
+                                         'website': 'https://www.triptease.com'},
                         'Tritac Katana Commerce': {   'cats': [6],
                                                       'description': "Katana Commerce is Tritac's B2B and B2C "
                                                                      'ecommerce platform.',
@@ -30550,6 +33768,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                                'x-yerdle-app-name': ''},
                                                 'icon': 'trove.png',
                                                 'website': 'https://trove.co'},
+                        'Trovit': {   'cats': [10],
+                                      'description': 'Trovit is a platform that provides analytics on homes, cars, and '
+                                                     'jobs.',
+                                      'icon': 'Trovit.svg',
+                                      'js': {'TrovitAnalyticsObject': ''},
+                                      'website': 'https://www.trovit.com'},
                         'TruValidate': {   'cats': [16, 83],
                                            'description': 'TransUnion TruValidate (previously '
                                                           'ReputationShield/IDVision from iovation) is an online risk '
@@ -30583,6 +33807,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                 '$Trumba.version': '([\\d\\.]+)\\;version:\\1',
                                                 'Trumba': ''},
                                       'website': 'https://www.trumba.com'},
+                        'Trumpia': {   'cats': [32],
+                                       'cookies': {'trumpiareferer': ''},
+                                       'description': 'Trumpia is a marketing platform that supports multiple '
+                                                      'channels, including mobile, email, social media, voice, and '
+                                                      'chat marketing.',
+                                       'icon': 'Trumpia.svg',
+                                       'scriptSrc': ['\\.trumpia\\.com/'],
+                                       'website': 'https://www.trumpia.com'},
                         'Trunkrs': {   'cats': [99],
                                        'description': 'Trunkrs is a Dutch parcel delivery service.',
                                        'icon': 'Trunkrs.svg',
@@ -30594,6 +33826,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'TrustArc.svg',
                                         'scriptSrc': ['consent\\.trustarc\\.com'],
                                         'website': 'https://trustarc.com'},
+                        'TrustPulse': {   'cats': [32],
+                                          'description': 'TrustPulse is a marketing tool that enables marketers to '
+                                                         'drive more conversions and sales by leveraging the power of '
+                                                         'social proof and fear of missing out.',
+                                          'dom': {"link[href*='.trstplse.com']": {'exists': ''}},
+                                          'icon': 'TrustPulse.svg',
+                                          'scriptSrc': ['\\.trstplse\\.com/'],
+                                          'website': 'https://trustpulse.com'},
                         'TrustYou': {   'cats': [5],
                                         'description': 'TrustYou is guest feedback and hotel reputation software '
                                                        'company located in Germany.',
@@ -30699,6 +33939,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'turf.feature': '', 'turf.point': '', 'turf.random': ''},
                                       'scriptSrc': ['(turf@[\\d.]+)?/?turf\\.min\\.js'],
                                       'website': 'https://turfjs.org/'},
+                        'Tutor LMS': {   'cats': [21],
+                                         'description': 'Tutor LMS is an all-in-one learning management system.',
+                                         'icon': 'TutorLMS.svg',
+                                         'js': {'tutorElementorData': '', 'tutor_prevent_copy': ''},
+                                         'website': 'https://tutorlms.com'},
                         'Twenty Eleven': {   'cats': [80],
                                              'description': 'Twenty Eleven is the default WordPress theme for 2011.',
                                              'dom': {"link[href*='/wp-content/themes/twentyeleven/']": {'exists': ''}},
@@ -30764,6 +34009,20 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'js': {'twentytwenty': ''},
                                              'scriptSrc': ['/wp-content/themes/twentytwenty/'],
                                              'website': 'https://wordpress.org/themes/twentytwenty'},
+                        'Twenty Twenty-Five': {   'cats': [80],
+                                                  'description': 'Twenty Twenty-Five is the default WordPress theme '
+                                                                 'for 2025.',
+                                                  'dom': {   "link[href*='/wp-content/themes/twentytwentyfive/']": {   'exists': ''}},
+                                                  'icon': 'WordPress.svg',
+                                                  'scriptSrc': ['/wp-content/themes/twentytwentyfive/'],
+                                                  'website': 'https://wordpress.org/themes/twentytwentyfive'},
+                        'Twenty Twenty-Four': {   'cats': [80],
+                                                  'description': 'Twenty Twenty-Four is the default WordPress theme '
+                                                                 'for 2024.',
+                                                  'dom': {   "link[href*='/wp-content/themes/twentytwentyfour/']": {   'exists': ''}},
+                                                  'icon': 'WordPress.svg',
+                                                  'scriptSrc': ['/wp-content/themes/twentytwentyfour/'],
+                                                  'website': 'https://wordpress.org/themes/twentytwentyfour'},
                         'Twenty Twenty-One': {   'cats': [80],
                                                  'description': 'Twenty Twenty-One is the default WordPress theme for '
                                                                 '2021.',
@@ -30904,6 +34163,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                        'typewriter-style animations with ease.',
                                         'scriptSrc': [   'typed(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1'],
                                         'website': 'https://mattboldt.com/demos/typed-js/'},
+                        'Typeflo': {   'cats': [50],
+                                       'description': 'Typeflo is a platform that simplifies blogging by allowing '
+                                                      'users to create websites directly from Google Docs, offering '
+                                                      'features such as analytics, custom domains, and theme '
+                                                      'customization.',
+                                       'icon': 'Typeflo.svg',
+                                       'scriptSrc': ['analytics\\.typeflo\\.io/'],
+                                       'website': 'https://typeflo.io'},
                         'Typeform': {   'cats': [73],
                                         'description': 'Typeform is a Spanish online software as a service (SaaS) '
                                                        'company that specialises in online form building and online '
@@ -30956,6 +34223,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'js': {   'UgcCreativeReview': '',
                                                       'ugcReview.prototype._display_item_count': ''},
                                             'website': 'https://ugc-creative.com/'},
+                        'UI Avenue': {   'cats': [10, 91],
+                                         'description': 'UI Avenue is a data tracking and analytics software for '
+                                                        'Shopify.',
+                                         'icon': 'UIAvenue.svg',
+                                         'scripts': ['analytics\\.uiavenue\\.ca'],
+                                         'website': 'https://www.uiavenue.ca'},
                         'UIKit': {   'cats': [66],
                                      'description': 'UIKit is the framework used for developing iOS applications.',
                                      'html': ['<[^>]+class="[^"]*(?:uk-container|uk-section)'],
@@ -30972,6 +34245,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                      'in Manchester, UK.',
                                       'icon': 'UKFast.png',
                                       'website': 'https://www.ukfast.co.uk'},
+                        'UMAI': {   'cats': [10],
+                                    'description': 'UMAI is an analytics-based software using state-of-the-art '
+                                                   'technology to improve the experiences & performance for '
+                                                   'hospitality based businesses and their guests.',
+                                    'icon': 'UMAI.svg',
+                                    'js': {'umaiWidget.config': ''},
+                                    'website': 'https://www.umai.io'},
                         'UMI.CMS': {   'cats': [1],
                                        'headers': {'x-generated-by': 'umi\\.cms'},
                                        'icon': 'UMI.CMS.png',
@@ -31205,6 +34485,19 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                 'icon': 'Unicorn Platform.svg',
                                                 'js': {'unicornplatform': ''},
                                                 'website': 'https://unicornplatform.com'},
+                        'Unilog': {   'cats': [6],
+                                      'description': 'Unilog is a cloud-based ecommerce platform, designed '
+                                                     'specifically for B2B businesses.',
+                                      'js': {'Unilog': ''},
+                                      'scriptSrc': ['\\.unilogcorp\\.com/'],
+                                      'website': 'https://unilogcorp.com'},
+                        'Unito Hub': {   'cats': [97],
+                                         'description': 'Unito Hub is a unified data platform that integrates and '
+                                                        'consolidates data from multiple sources.',
+                                         'icon': 'UnitoHub.svg',
+                                         'js': {'Unito': '', 'Unito.app_version': '^(.+)$\\;version:\\1'},
+                                         'scriptSrc': ['/unito\\.min\\.js'],
+                                         'website': 'https://unitohub.com'},
                         'Unless': {   'cats': [53],
                                       'description': 'Unless is an AI-driven solution to enhance customer success.',
                                       'dom': {'script[data-unless]': {'exists': ''}},
@@ -31247,6 +34540,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Unstack.svg',
                                        'scriptSrc': ['cdn\\.unstack\\.com/'],
                                        'website': 'https://www.unstack.com'},
+                        'UpScale Systems': {   'cats': [32],
+                                               'description': 'UpScale Systems is an all-in-one platform to enhance '
+                                                              'local businesses.',
+                                               'icon': 'UpScale.svg',
+                                               'meta': {'title': ['^upscale$']},
+                                               'scripts': ['app\\.upscale-systems\\.com'],
+                                               'website': 'https://upscale-systems.com'},
                         'UpSellit': {   'cats': [98],
                                         'description': 'UpSellit is a performance based lead and cart abandonment '
                                                        'recovery solutions.',
@@ -31279,6 +34579,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'upgates': ''},
                                        'meta': {'web_author': ['^upgates$']},
                                        'website': 'https://www.upgates.com'},
+                        'Uplisting': {   'cats': [93],
+                                         'description': 'Uplisting is a property management system for Vacation Rental '
+                                                        'owners, operators and managers.',
+                                         'headers': {'server': 'uplisting'},
+                                         'icon': 'Uplisting.svg',
+                                         'website': 'https://www.uplisting.io'},
                         'Uploadcare': {   'cats': [31],
                                           'description': 'Uploadcare is a complete file handling platform for online '
                                                          'business. Receive files from you users via File Uploader or '
@@ -31314,6 +34620,20 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'Upscope': '', 'Upscope._version': '^(.+)$\\;version:\\1'},
                                        'scriptSrc': ['js\\.upscope\\.io/'],
                                        'website': 'https://upscope.com'},
+                        'Upscribe': {   'cats': [75],
+                                        'description': 'Upscribe is a platform offering tools to create newsletter '
+                                                       'signup forms.',
+                                        'icon': 'Upscribe.svg',
+                                        'js': {'Upscribe.c': ''},
+                                        'website': 'https://upscribe.net'},
+                        'UpsellPlus': {   'cats': [6],
+                                          'description': 'Upsell is an app that provides checkout upsells, '
+                                                         'post-purchase pages, and customization options to improve '
+                                                         'sales and customer experience.',
+                                          'icon': 'UpsellPlus.svg',
+                                          'js': {'upsellplusapp': ''},
+                                          'scripts': ['app\\.upsellplus\\.com'],
+                                          'website': 'https://www.upsellplus.com'},
                         'Upserve': {   'cats': [93],
                                        'description': 'Upserve is a restaurant management solution featuring an '
                                                       'Android or iOS-based point-of-sale system, online ordering, '
@@ -31323,6 +34643,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Upserve.svg',
                                        'scriptSrc': ['app\\.upserve\\.com/'],
                                        'website': 'https://onlineordering.upserve.com'},
+                        'Upsy': {   'cats': [76],
+                                    'description': 'Upsy is a platform that provides personalized product '
+                                                   'recommendations for ecommerce stores.',
+                                    'icon': 'Upsy.svg',
+                                    'js': {'_upsyAbTest': '', 'parseUpsyQuery': '', 'upsy_sdk.getCookie': ''},
+                                    'website': 'https://upsyshopping.com'},
                         'Uptain': {   'cats': [98],
                                       'description': 'Uptain is a software solution designed to reduce shopping cart '
                                                      'abandonment in ecommerce by utilizing AI-based tools like '
@@ -31526,6 +34852,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'vaptcha': ''},
                                        'scriptSrc': ['\\.vaptcha\\.com/v([\\d\\.]+)\\.js\\;version:\\1'],
                                        'website': 'https://en.vaptcha.com'},
+                        'VB Media': {   'cats': [6],
+                                        'cookies': {'_vbm_session': ''},
+                                        'description': 'VB Media is an ecommerce platform designed for selling print '
+                                                       'products online.',
+                                        'icon': 'VBMedia.svg',
+                                        'website': 'https://vb.media'},
                         'VDX.tv': {   'cats': [36],
                                       'description': 'VDX.tv (formerly Exponential) is a global advertising technology '
                                                      'company that is transforming the way brands connect with '
@@ -31677,6 +35009,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                       'x-varnish-hostname': ''},
                                        'icon': 'Varnish.svg',
                                        'website': 'https://www.varnish-cache.org'},
+                        'Vaven': {   'cats': [32, 36],
+                                     'description': 'Vaven is a platform that allows users to create and display Ad '
+                                                    'widgets on websites, enabling the development of a personalized '
+                                                    'Ad network with precise targeting capabilities.',
+                                     'icon': 'Vaven.svg',
+                                     'scriptSrc': ['widget\\.vaven\\.co/'],
+                                     'website': 'https://vaven.co'},
                         'Ve Global': {   'cats': [10],
                                          'description': 'Ve Global, formerly known as Ve Interactive, is a global '
                                                         'technology company that provides ecommerce businesses with a '
@@ -31697,6 +35036,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'icon': 'Vello.svg',
                                      'scriptSrc': ['static\\.vello\\.fi/'],
                                      'website': 'https://www.vello.fi'},
+                        'Vendaecia': {   'cats': [6],
+                                         'description': 'Vendaecia is a platform designed for setting up online stores '
+                                                        'or selling products through various marketplaces, providing '
+                                                        'tools to manage the entire sales process.',
+                                         'dom': {"base[href*='.vendaeciaexpress.com.br']": {'exists': ''}},
+                                         'icon': 'Vendaecia.svg',
+                                         'scriptSrc': ['\\.vendaecia\\.com/'],
+                                         'website': 'https://www.vendaecia.com.br'},
                         'Vendio': {   'cats': [6],
                                       'description': 'Vendio is an ecommerce software facilitating selling across '
                                                      'platforms like eBay, Amazon, and Etsy.',
@@ -31722,6 +35069,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'dom': {   "[aria-labelledby='pi-venmo'], [data-venmo-supported='true']": {   'exists': ''}},
                                      'icon': 'Venmo.svg',
                                      'website': 'https://venmo.com'},
+                        'VentasxMayor': {   'cats': [6],
+                                            'description': 'VentasxMayor is an ecommerce platform designed for '
+                                                           'wholesalers, brands, distributors, and importers to '
+                                                           'streamline and increase wholesale sales.',
+                                            'icon': 'VentasxMayor.svg',
+                                            'scriptSrc': ['bunny-cdn\\.ventasxmayor\\.com/'],
+                                            'website': 'https://ventasxmayor.com'},
                         'VentraIP': {   'cats': [88],
                                         'description': 'VentraIP is the largest privately owned web host and domain '
                                                        'name registrar in Australia.',
@@ -31748,6 +35102,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'js': {'venyooProxyScript': ''},
                                       'scriptSrc': ['\\.venyoo\\.ru/'],
                                       'website': 'https://venew.io'},
+                        'Veonr': {   'cats': [10],
+                                     'description': 'Veonr is an analytics and tracking suite designed for business '
+                                                    'websites, offering tools to monitor site activities and optimize '
+                                                    'conversions.',
+                                     'icon': 'Veonr.svg',
+                                     'scripts': ['\\.fsb\\.veonr\\.com'],
+                                     'website': 'https://veonr.com'},
                         'Veoxa': {   'cats': [36],
                                      'html': ['<img [^>]*src="[^"]+tracking\\.veoxa\\.com'],
                                      'icon': 'Veoxa.png',
@@ -31761,6 +35122,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'Vepaar.svg',
                                       'scriptSrc': ['analytics\\.vepaar\\.com/'],
                                       'website': 'https://vepaar.com'},
+                        'VeraSafe': {   'cats': [67],
+                                        'description': 'VeraSafe is a privacy compliance system designed to help '
+                                                       'organizations adhere to global data protection regulations and '
+                                                       'maintain compliance with privacy laws.',
+                                        'icon': 'VeraSafe.svg',
+                                        'scriptSrc': ['www\\.verasafe\\.com/'],
+                                        'website': 'https://verasafe.com'},
                         'Vercel': {   'cats': [62],
                                       'description': 'Vercel is a cloud platform for static frontends and serverless '
                                                      'functions.',
@@ -31775,6 +35143,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                 'js': {'va': ''},
                                                 'scriptSrc': ['/_vercel/insights/script\\.js', '/va/script\\.js'],
                                                 'website': 'https://vercel.com/analytics'},
+                        'Vercel Speed Insights': {   'cats': [10],
+                                                     'description': 'Vercel Speed Insights provides you with a '
+                                                                    "detailed view of your website's performance "
+                                                                    'metrics, based on Core Web Vitals.',
+                                                     'dom': {   "script[data-sdkn='@vercel/speed-insights/next']": {   'attributes': {   'data-sdkv': '^(.+)$\\;version:\\1'}}},
+                                                     'icon': 'vercel.svg',
+                                                     'js': {'si': ''},
+                                                     'scriptSrc': ['/_vercel/speed-insights/script\\.js'],
+                                                     'website': 'https://vercel.com/docs/speed-insights'},
                         'Vergic': {   'cats': [52],
                                       'description': 'Vergic is a platform facilitating real-time online engagement '
                                                      'between site owners, customer service agents, and individual '
@@ -31923,6 +35300,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                   'viafoura.bootstrap': '',
                                                   'viafoura.core': ''},
                                         'website': 'https://viafoura.com'},
+                        'Vicomi': {   'cats': [10],
+                                      'description': 'Vicomi is a tool that provides insights into audience reactions '
+                                                     'to content.',
+                                      'scriptSrc': ['assets-prod\\.vicomi\\.com/'],
+                                      'website': 'https://www.vicomi.com/emotion-analytics-for-brands-and-agencies'},
                         'Vidazoo': {   'cats': [36],
                                        'description': 'Vidazoo is a video content and yield management platform.',
                                        'icon': 'Vidazoo.svg',
@@ -31961,6 +35343,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'VideolyWidget': ''},
                                        'scriptSrc': ['api\\.videoly\\.co/'],
                                        'website': 'https://videoly.co'},
+                        'Vidjet': {   'cats': [14],
+                                      'description': 'Vidjet is a shoppable-video platform designed for modern '
+                                                     'ecommerce stores, allowing videos to be embedded on websites and '
+                                                     'triggered based on visitor actions.',
+                                      'icon': 'Vidjet.svg',
+                                      'js': {'Vidjet.init': ''},
+                                      'scripts': ['app-api\\.vidjet\\.io'],
+                                      'website': 'https://www.vidjet.com'},
                         'Vidora': {   'cats': [10],
                                       'description': 'Vidora is a real-time machine learning platform which focuses on '
                                                      'consumer data.',
@@ -32011,6 +35401,16 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'implies': ['Vimeo'],
                                          'js': {'VHX.config': '', '_vhx': ''},
                                          'website': 'https://vimeo.com/ott'},
+                        'Vimos': {   'cats': [32],
+                                     'description': 'Vimos is a marketing SaaS specializing in marketing automation.',
+                                     'icon': 'Vimos.svg',
+                                     'scriptSrc': ['widget\\.vimos\\.io/'],
+                                     'website': 'https://vimos.io'},
+                        'Vincere': {   'cats': [101],
+                                       'description': 'Vincere is an all-in-one software for recruitment agencies.',
+                                       'dom': {"link[href*='static.vincere-digital.io/']": {'exists': ''}},
+                                       'icon': 'Vincere.svg',
+                                       'website': 'https://www.vincere.io'},
                         'Vintcer': {   'cats': [51],
                                        'description': 'Vintcer is a drag-and-drop website builder that includes a '
                                                       'built-in page manager, hosting, and email services.',
@@ -32114,6 +35514,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                 'ViselyCartProductIds': '',
                                                 'ViselyPage': ''},
                                       'website': 'https://visely.io'},
+                        'VisiOpt': {   'cats': [74],
+                                       'description': 'Visiopt™ is a powerful yet easy to use AI-driven Optimization '
+                                                      'System that enables you to manufacture your perfect customer at '
+                                                      'scale like a well oiled machine.',
+                                       'icon': 'visiopt.png',
+                                       'js': {'visiopt_code': ''},
+                                       'scriptSrc': ['visiopt\\.com'],
+                                       'website': 'https://visiopt.com'},
                         'Visible Privacy': {   'cats': [67],
                                                'description': 'Visible Privacy is a privacy-focused Consent Management '
                                                               'Platform compatible with major CMS and ecommerce '
@@ -32131,6 +35539,18 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                       'VisitorChat_Init': '',
                                                       'VisitorChat_clearStore': ''},
                                             'website': 'https://visitor.chat'},
+                        'VisitorVille': {   'cats': [10],
+                                            'description': 'VisitorVille is a tool that visualizes website visitors as '
+                                                           'a SimCity-like map, providing an interactive way to '
+                                                           'analyze traffic and user behavior.',
+                                            'scriptSrc': ['www\\.visitorville\\.com/'],
+                                            'website': 'http://visitorville.com'},
+                        'Viskan': {   'cats': [6],
+                                      'description': 'Viskan is a scalable platform designed to support ecommerce '
+                                                     'growth.',
+                                      'icon': 'Viskan.svg',
+                                      'scriptSrc': ['\\.viskan\\.com/'],
+                                      'website': 'https://www.viskan.com/fi-fi'},
                         'Visual Composer': {   'cats': [51],
                                                'description': 'Visual Composer is an all-in-one web design tool for '
                                                               'anyone who uses WordPress.',
@@ -32217,6 +35637,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'dom': {   "iframe[src*='embed.vntana.com/'], iframe[nitro-lazy-src*='embed.vntana.com/']": {   'exists': ''}},
                                       'icon': 'Vntana.png',
                                       'website': 'https://www.vntana.com'},
+                        'VocalReferences': {   'cats': [90],
+                                               'description': 'VocalReferences is a platform offering testimonial, '
+                                                              'review, and rating tools designed to help online '
+                                                              'businesses collect and display customer feedback.',
+                                               'icon': 'VocalReferences.svg',
+                                               'scripts': ['widgets\\.vocalreferences\\.com'],
+                                               'website': 'https://www.vocalreferences.com'},
                         'Voltn': {   'cats': [32],
                                      'description': 'Voltn is a marketing technology services provider.',
                                      'dom': {"link[href*='//pixel.voltn.com']": {'exists': ''}},
@@ -32260,6 +35687,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Voracio.svg',
                                        'js': {'voracio': ''},
                                        'website': 'https://www.voracio.co.uk'},
+                        'Vouched': {   'cats': [69],
+                                       'description': 'Vouched is a platform designed to support identity verification '
+                                                      'across various industries.',
+                                       'icon': 'Vouched.svg',
+                                       'js': {'Vouched': ''},
+                                       'website': 'https://www.vouched.id'},
                         'Vouchley': {   'cats': [90],
                                         'description': 'Vouchley is a review platform designed for freelancers, '
                                                        'allowing them to receive and showcase client reviews to build '
@@ -32772,6 +36205,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'wazimo.png',
                                       'js': {'wz.mmConfig.buildVersion': ''},
                                       'website': 'https://wazimo.com'},
+                        'WeBlocks': {   'cats': [12],
+                                        'description': 'WeBlocks is an educational platform for creating custom '
+                                                       'JavaScript and Webflow projects using Blocks.',
+                                        'icon': 'WeBlocks.svg',
+                                        'scriptSrc': ['//weblocks\\.io/'],
+                                        'website': 'https://www.weblocks.com'},
                         'WeTravel': {   'cats': [104],
                                         'description': 'WeTravel is a platform providing booking and payment solutions '
                                                        'tailored for travel companies.',
@@ -32801,6 +36240,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Weaverse.svg',
                                         'js': {'__weaverses': ''},
                                         'website': 'https://weaverse.io'},
+                        'Web CEO': {   'cats': [10, 32, 54],
+                                       'description': 'Web CEO is an all-in-one platform offering tools for SEO, '
+                                                      'digital marketing, and performance analytics.',
+                                       'icon': 'WebCEO.svg',
+                                       'meta': {'application-name': ['^webceo$']},
+                                       'scriptSrc': ['\\.webceo\\.com/'],
+                                       'website': 'https://www.webceo.com'},
                         'Web Font Loader': {   'cats': [59],
                                                'description': 'WebFont Loader is a versatile JavaScript library that '
                                                               'provides enhanced control and flexibility in managing '
@@ -32920,6 +36366,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'js': {'wnd.$system': ''},
                                        'meta': {'generator': ['^webnode(?:\\s([\\d.]+))?$\\;version:\\1']},
                                        'website': 'https://www.webnode.com'},
+                        'WebQnA': {   'cats': [52, 53],
+                                      'description': 'WebQnA is a platform that offers generative AI chatbots for '
+                                                     'businesses to enhance customer interactions and support.',
+                                      'icon': 'WebQnA.svg',
+                                      'js': {'webqna': ''},
+                                      'website': 'https://webqna.ai'},
                         'WebRTC': {   'cats': [19],
                                       'description': 'WebRTC is an open-source project that enables real-time voice, '
                                                      'text and video communications capabilities between web browsers '
@@ -33041,6 +36493,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'js': {'webim': '', 'webim.version': '^(.+)$\\;version:\\1'},
                                      'scriptSrc': ['\\.webim\\.ru/'],
                                      'website': 'https://webim.ru'},
+                        'Webinaris': {   'cats': [32],
+                                         'description': 'Webinaris is a platform that automates customer acquisition, '
+                                                        'allowing businesses to attract more customers with '
+                                                        'significantly reduced effort.',
+                                         'icon': 'Webinaris.svg',
+                                         'scripts': ['webinaris_load'],
+                                         'website': 'https://www.webinaris.com'},
                         'Webix': {   'cats': [12],
                                      'icon': 'Webix.png',
                                      'js': {'webix': ''},
@@ -33102,6 +36561,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'WebPushr.notificationCard': '', 'webpushr_display_button': ''},
                                         'scripts': ['cdn\\.webpushr\\.com/app\\.min\\.js'],
                                         'website': 'https://www.webpushr.com'},
+                        'Webready': {   'cats': [51],
+                                        'description': 'Webready is a platform that enables users to create custom '
+                                                       'vacation rental websites.',
+                                        'icon': 'Webready.svg',
+                                        'js': {'Webready': ''},
+                                        'website': 'https://usewebready.com'},
                         'Webriti Busiprof': {   'cats': [80],
                                                 'description': 'Busiprof is a fully responsive and translation-ready '
                                                                'WordPress theme by Webriti.',
@@ -33192,7 +36657,7 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                                     'highest compatibility with 3rd party extensions.',
                                                      'dom': {'body.theme-pearl': {'exists': ''}},
                                                      'icon': 'WeltPixel.svg',
-                                                     'implies': ['Magento'],
+                                                     'implies': ['Magento\\;version:2'],
                                                      'js': {'Pearl': ''},
                                                      'website': 'https://www.weltpixel.com/magento-2-theme-pearl'},
                         'Wepay': {   'cats': [41],
@@ -33231,6 +36696,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'Wheelio.png',
                                        'scriptSrc': ['wheelioapp\\.azureedge\\.net'],
                                        'website': 'https://wheelio-app.com/'},
+                        'Wheely Sales': {   'cats': [32],
+                                            'description': 'Wheely Sales is a tool that boosts email opt-in rates '
+                                                           'using a gamified exit intent popup designed to engage '
+                                                           'users as they leave a website.',
+                                            'icon': 'WheelSales.svg',
+                                            'scriptSrc': ['cdn\\.wheelysales\\.com/'],
+                                            'website': 'https://wheelysales.com'},
                         'Whistl': {   'cats': [99],
                                       'description': 'Whistl is a postal delivery company operating in the United '
                                                      'Kingdom.',
@@ -33378,6 +36850,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'icon': 'WiserNotify.svg',
                                            'js': {'wiser': ''},
                                            'website': 'https://wisernotify.com'},
+                        'Wisetracker': {   'cats': [10, 32],
+                                           'description': 'Wisetracker is a behavioral analytics and marketing '
+                                                          'automation tool.',
+                                           'icon': 'Wisetracker.svg',
+                                           'js': {   'DOP_SDK_CONF.adClkEndPoint': '\\.analytics\\.wisetracker\\.co\\.kr',
+                                                     'DOT_ADCLK_ENDPOINT': '\\.analytics\\.wisetracker\\.co\\.kr'},
+                                           'scripts': ['\\.wisetracker\\.co\\.kr'],
+                                           'website': 'https://www.wisetracker.co.kr'},
                         'Wishlist King': {   'cats': [100],
                                              'description': 'Wishlist King is a Shopify app which helps you to add '
                                                             'your favorite products or share the wishlist with your '
@@ -33580,12 +37060,27 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'js': {'woostifyConditionScrolling': '', 'woostify_woocommerce_general': ''},
                                         'scriptSrc': ['/wp-content/themes/woostify/'],
                                         'website': 'https://woostify.com'},
+                        'Wootric': {   'cats': [97],
+                                       'description': 'Wootric is a customer feedback platform designed to enhance '
+                                                      'customer experience management for digital applications and B2B '
+                                                      'SaaS.',
+                                       'icon': 'Wootric.svg',
+                                       'scriptSrc': ['\\.wootric\\.com'],
+                                       'scripts': ['\\.wootric\\.com'],
+                                       'website': 'https://www.wootric.com'},
                         'WoowUp': {   'cats': [53],
                                       'description': 'WoowUp is a tool of CRM and predictive marketing.',
                                       'icon': 'WoowUp.png',
                                       'js': {'WU._trackProductVTEXField': ''},
                                       'scriptSrc': ['assets-cdn\\.woowup\\.com/'],
                                       'website': 'https://www.woowup.com'},
+                        'Word of Mouth': {   'cats': [90],
+                                             'description': 'Word of Mouth is a feedback platform that allows users to '
+                                                            'compare reviews and ratings for various services and '
+                                                            'businesses.',
+                                             'icon': 'WOMO.svg',
+                                             'scriptSrc': ['www\\.womo\\.com\\.au/'],
+                                             'website': 'https://www.wordofmouth.com.au'},
                         'WordAds': {   'cats': [36],
                                        'description': 'WordAds is an advertising platform run by Automatic that allows '
                                                       'bloggers and website owners to place advertisements on their '
@@ -33954,6 +37449,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                       'internet-related services.',
                                        'icon': 'Xserver.png',
                                        'website': 'https://www.xserver.ne.jp'},
+                        'Xsolla': {   'cats': [41],
+                                      'description': 'Xsolla is a video game business system offering payment '
+                                                     'solutions and store management.',
+                                      'icon': 'Xsolla.svg',
+                                      'scriptSrc': ['\\.xsolla\\.(com|net)'],
+                                      'website': 'https://xsolla.com'},
                         'Xtime': {   'cats': [72],
                                      'description': 'Xtime is a company that provides automotive service scheduling '
                                                     'and management solutions primarily for car dealerships and '
@@ -34025,6 +37526,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                     'html': ['powered by <a href="[^>]+yabbforum'],
                                     'icon': 'YaBB.png',
                                     'website': 'https://www.yabbforum.com'},
+                        'YachtSys': {   'cats': [72],
+                                        'description': 'YachtSys is a booking management system.',
+                                        'icon': 'YachtSys.svg',
+                                        'scriptSrc': ['apps\\.yachtsys\\.com/'],
+                                        'website': 'https://www.yachtsys.com'},
                         'Yahoo Advertising': {   'cats': [36, 77],
                                                  'description': 'Yahoo Advertising includes a comprehensive suite of '
                                                                 'web, mobile, and video ad products across native, '
@@ -34407,6 +37913,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'implies': ['Debian'],
                                         'scriptSrc': ['/ynh_portal\\.js'],
                                         'website': 'https://yunohost.org'},
+                        'Yupop': {   'cats': [6],
+                                     'description': 'Yupop is a platform that enables users to create an online store, '
+                                                    'requiring no monthly subscription and only charging fees when '
+                                                    'sales are made.',
+                                     'icon': 'Yupop.svg',
+                                     'scripts': ['\\.yupopstorecdn\\.com'],
+                                     'website': 'https://yupop.com'},
                         'ZK': {   'cats': [18],
                                   'html': ['<!-- zk [.\\d\\s]+-->'],
                                   'icon': 'ZK.png',
@@ -34469,6 +37982,10 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                      'js': {'zakraFrontend': '', 'zakraNavHelper.dimension': ''},
                                      'scriptSrc': ['/wp-content/themes/zakra/'],
                                      'website': 'https://zakratheme.com'},
+                        'Zammit': {   'cats': [6],
+                                      'description': 'Zammit is an ecommerce platform based in Egypt.',
+                                      'scripts': ['merchants\\.zammit\\.shop/'],
+                                      'website': 'https://www.zammit.shop'},
                         'Zanox': {   'cats': [36],
                                      'html': ['<img [^>]*src="[^"]+ad\\.zanox\\.com'],
                                      'icon': 'Zanox.png',
@@ -34509,6 +38026,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                            'js': {'zenplanner': ''},
                                            'scriptSrc': ['\\.zenplanner\\.com/'],
                                            'website': 'https://zenplanner.com'},
+                        'Zenbooker': {   'cats': [72],
+                                         'description': 'Zenbooker is a system that enables users to book appointments '
+                                                        'or reservations online.',
+                                         'icon': 'Zenbooker.svg',
+                                         'js': {'Zenbooker.BadgeWidget': ''},
+                                         'website': 'https://zenbooker.com'},
                         'Zenchef': {   'cats': [93],
                                        'description': 'Zenchef is a restaurant management software solution that '
                                                       'simplifies the customer restaurant experience.',
@@ -34556,6 +38079,28 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'icon': 'Zenfolio.png',
                                         'js': {'Zenfolio': ''},
                                         'website': 'https://zenfolio.com'},
+                        'Zenrez': {   'cats': [32],
+                                      'description': 'Zenrez is a provider of sales and marketing software designed '
+                                                     'for boutique fitness studios, with a focus on revenue '
+                                                     'management.',
+                                      'icon': 'Zenrez.svg',
+                                      'scriptSrc': ['widget\\.zenrez\\.com/'],
+                                      'website': 'https://zenrez.com'},
+                        'Zentap': {   'cats': [10],
+                                      'description': 'Zentap is a real estate marketing platform designed to create '
+                                                     'and manage marketing campaigns, track leads, and measure '
+                                                     'results.',
+                                      'icon': 'Zentap.svg',
+                                      'meta': {'generator': ['zentap']},
+                                      'website': 'https://zentap.com'},
+                        'Zenzzen': {   'cats': [6],
+                                       'description': 'Zenzzen is an ecommerce platform enabling businesses to build '
+                                                      'fully customizable online stores under their own brand, '
+                                                      'providing flexibility in managing products, processing '
+                                                      'payments, and enhancing the customer experience.',
+                                       'dom': {"span[class*='zenzzen-store']": {'exists': ''}},
+                                       'icon': 'Zenzzen.svg',
+                                       'website': 'https://zenzzen.com'},
                         'Zeotap': {   'cats': [97],
                                       'description': 'Zeotap is a customer intelligence platform that helps brands '
                                                      'better understand their customers and predict behaviors.',
@@ -34574,6 +38119,13 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'icon': 'ZestMoney.png',
                                          'js': {'ZestMoneyWidget': '', 'zestBind': '', 'zestMerchant': ''},
                                          'website': 'https://www.zestmoney.in'},
+                        'Zeta Producer': {   'cats': [51],
+                                             'cpe': 'cpe:2.3:a:zeta-producer:zeta_producer:*:*:*:*:*:*:*:*',
+                                             'description': 'Zeta Producer is a professional homepage builder for '
+                                                            'Windows that enables users to create websites.',
+                                             'icon': 'ZetaProducer.svg',
+                                             'meta': {'generator': ['^zeta producer ([\\d\\.]+)\\;version:\\1']},
+                                             'website': 'https://www.zeta-producer.com'},
                         'Zeus Technology': {   'cats': [36],
                                                'description': 'Zeus Technology is a media monetisation platform that '
                                                               'levels the playing field for publishers and advertisers '
@@ -34582,6 +38134,20 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                'js': {   'zeus.version': 'v([\\d\\.]+)\\;version:\\1',
                                                          'zeusAdUnitPath': ''},
                                                'website': 'https://www.zeustechnology.com'},
+                        'Zevi': {   'cats': [29],
+                                    'cookies': {'zevi-_zldt': ''},
+                                    'description': 'Zevi is an AI-powered site search and discovery platform designed '
+                                                   'to enhance product discovery.',
+                                    'icon': 'Zevi.svg',
+                                    'scriptSrc': ['\\.zevi\\.ai/'],
+                                    'website': 'https://www.zevi.ai'},
+                        'Ziadah': {   'cats': [6, 32],
+                                      'description': 'Ziadah is a specialist in enhancing ecommerce sales by '
+                                                     'increasing Average Order Value (AOV) through strategic inbound '
+                                                     'marketing, focusing on cross-selling and upselling techniques.',
+                                      'icon': 'Ziadah.svg',
+                                      'scriptSrc': ['\\.ziadah\\.app/'],
+                                      'website': 'https://www.ziadah.app'},
                         'Zid': {   'cats': [6],
                                    'cookies': {'zid_catalog_session': ''},
                                    'description': 'Zid is an ecommerce SaaS that allows merchants to build and manage '
@@ -34705,6 +38271,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                               'js': {'$pagesense': '', 'pagesense': ''},
                                               'scriptSrc': ['\\.pagesense\\.(?:cn|io)?'],
                                               'website': 'https://www.zoho.com/pagesense/'},
+                        'Zoho Sites': {   'cats': [51],
+                                          'description': 'Zoho Sites is an all-in-one platform designed to help '
+                                                         'businesses create websites.',
+                                          'icon': 'Zoho.svg',
+                                          'meta': {'generator': ['^zoho sites ([\\d\\.]+)\\;version:\\1']},
+                                          'website': 'https://www.zoho.com/sites/'},
                         'Zoko': {   'cats': [52],
                                     'description': 'Zoko is an all-in-one system that leverages the WhatsApp API to '
                                                    'help you do business, on WhatsApp',
@@ -34884,6 +38456,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                              'js': {'actionheroClient': ''},
                                              'scriptSrc': ['actionheroclient\\.js'],
                                              'website': 'https://www.actionherojs.com'},
+                        'adCAPTCHA': {   'cats': [16],
+                                         'description': 'adCAPTCHA is a security tool that integrates marketing and '
+                                                        'user experience to block bots while enhancing brand '
+                                                        'visibility, using dynamic content for varied challenges '
+                                                        'without collecting user data.',
+                                         'icon': 'adCAPTCHA.svg',
+                                         'js': {'adCAPTCHA': '', 'adcaptcha_vars': ''},
+                                         'website': 'https://adcaptcha.com'},
                         'amCharts': {   'cats': [25],
                                         'description': 'amCharts is a JavaScript-based interactive charts and maps '
                                                        'programming library and tool.',
@@ -35163,6 +38743,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                       'icon': 'ePages.svg',
                                       'js': {'epages': ''},
                                       'website': 'https://www.epages.com/'},
+                        'ePublishing': {   'cats': [54, 96],
+                                           'description': 'ePublishing is a media tech stack that enhances revenue, '
+                                                          'productivity, and engagement through AI-powered solutions, '
+                                                          'SEO dominance, and audience integration.',
+                                           'icon': 'ePublishing.svg',
+                                           'js': {   'Ellington.Admin': '',
+                                                     'EllingtonMap': '',
+                                                     'EllingtonPlateLoader.cache': ''},
+                                           'website': 'https://www.epublishing.com'},
                         'eRate': {   'cats': [36],
                                      'description': 'eRate is a provider of digital advertising tools and inventory '
                                                     'within global ad networks.',
@@ -35218,6 +38807,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                    'Ebisu.FontChanger.map.L': '',
                                                    'ebisu_conv': ''},
                                          'website': 'https://www.ebisumart.com'},
+                        'ecbeing': {   'cats': [6],
+                                       'description': 'Ecbeing is a platform designed for building ecommerce sites, '
+                                                      'tailored for medium-sized and large companies.',
+                                       'icon': 'Ecbeing.svg',
+                                       'scripts': ['www\\.ecbeing\\.net'],
+                                       'website': 'https://www.ecbeing.net'},
                         'ef.js': {   'cats': [12],
                                      'icon': 'ef.js.svg',
                                      'js': {'ef.version': '^(.+)$\\;version:\\1', 'efCore': ''},
@@ -35371,6 +38966,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'iAdvize.svg',
                                        'scriptSrc': ['\\.iadvize\\.com/'],
                                        'website': 'https://www.iadvize.com'},
+                        'iCIMS': {   'cats': [101],
+                                     'description': 'iCIMS is a talent acquisition and internal mobility platform that '
+                                                    'delivers solutions to build, retain, and scale your workforce.',
+                                     'icon': 'iCIMS.svg',
+                                     'scripts': ['icims\\.com'],
+                                     'website': 'https://www.icims.com'},
                         'iEXExchanger': {   'cats': [1],
                                             'cookies': {'iexexchanger_session': ''},
                                             'icon': 'iEXExchanger.png',
@@ -35396,6 +38997,12 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'implies': ['PHP', 'PrestaShop'],
                                        'meta': {'designer': ['ipresta']},
                                        'website': 'https://ipresta.ir'},
+                        'iSET': {   'cats': [6],
+                                    'description': 'iSET is an ecommerce platform providing tools to start, grow, and '
+                                                   'scale online stores.',
+                                    'icon': 'iSET.svg',
+                                    'scripts': ['cdn\\.iset\\.io/'],
+                                    'website': 'https://www.iset.com.br'},
                         'iScripts': {   'cats': [1],
                                         'description': 'iScripts is a multi product CMS system based on PHP.',
                                         'icon': 'iScripts.svg',
@@ -35602,6 +39209,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'implies': ['jQuery'],
                                             'scriptSrc': [   'jquery-modal/([\\d\\.]+)/jquery\\.modal\\.min\\.js\\;version:\\1'],
                                             'website': 'https://jquerymodal.com'},
+                        'jQuery Popup Overlay': {   'cats': [59],
+                                                    'description': 'jQuery Popup Overlay is a responsive overlay which '
+                                                                   'lets you create modal windows, tooltips, and more.',
+                                                    'scriptSrc': [   '(\\d+\\.\\d+\\.\\d+)/jquery\\.popupoverlay\\.js\\;version:\\1'],
+                                                    'website': 'https://www.npmjs.com/package/jquery-popup-overlay'},
                         'jQuery Sparklines': {   'cats': [25],
                                                  'description': 'jQuery Sparklines is a plugin that generates '
                                                                 'sparklines (small inline charts) directly in the '
@@ -35750,6 +39362,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                         'dom': {"img[src*='.microcms-assets.io/']": {'exists': ''}},
                                         'icon': 'microCMS.svg',
                                         'website': 'https://microcms.io'},
+                        'miniCal': {   'cats': [1],
+                                       'description': 'miniCal is an open-source property management system.',
+                                       'icon': 'miniCal.svg',
+                                       'js': {'miniCal.projectUrl': 'app\\.minical\\.io'},
+                                       'website': 'https://www.minical.io'},
                         'mini_httpd': {   'cats': [22],
                                           'headers': {'server': 'mini_httpd(?:/([\\d.]+))?\\;version:\\1'},
                                           'icon': 'mini_httpd.png',
@@ -35897,6 +39514,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                                         '_ishopevents_url': '/ishop-api/events/',
                                                         'iShop.config.baseUrl': ''},
                                               'website': 'https://www.novomind.com/en/shopsystem/novomind-ishop-software'},
+                        'oXyShop': {   'cats': [6],
+                                       'description': 'oXyShop is a platform for creating and managing online stores.',
+                                       'icon': 'OxyShop.svg',
+                                       'meta': {'web_author': ['^oxyshop$']},
+                                       'website': 'https://www.oxyshop.cz'},
                         'ocStore': {   'cats': [6],
                                        'description': 'ocStore is an online store based on Opencart and open-source.',
                                        'html': ['<!--[^>]+ocstore(?:\\s([\\d\\.a-z]+))?\\;version:\\1'],
@@ -36219,6 +39841,15 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                        'icon': 'spin.js.png',
                                        'scriptSrc': ['spin(?:\\.min)?\\.js(?:\\?ver=([\\d.]+))?\\;version:\\1'],
                                        'website': 'https://spin.js.org/'},
+                        'starti.app': {   'cats': [26],
+                                          'description': 'starti.app is a subscription-based platform that converts '
+                                                         'websites into mobile applications.',
+                                          'icon': 'StartiApp.svg',
+                                          'js': {   'startiapp.App': '',
+                                                    'startiappAlternateIcons': '',
+                                                    'startiappApp': '',
+                                                    'startiappUser': ''},
+                                          'website': 'https://starti.app'},
                         'stores.jp': {   'cats': [6],
                                          'description': 'stores.jp is an ecommerce platform which allows users to '
                                                         'create their own ecommerce website.',
@@ -36349,6 +39980,11 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                          'js': {'vBulletin': ''},
                                          'meta': {'generator': ['vbulletin ?([\\d.]+)?\\;version:\\1']},
                                          'website': 'https://www.vbulletin.com'},
+                        'vChat': {   'cats': [52],
+                                     'description': 'vChat is a chat solution in Vietnam.',
+                                     'icon': 'vChat.svg',
+                                     'js': {'__vnpDefault.url': 'core\\.vchat\\.vn'},
+                                     'website': 'https://vchat.vn'},
                         'vcita': {   'cats': [53, 72],
                                      'description': 'vcita is an all-in-one customer service and business management '
                                                     'software designed for service providers.',
@@ -36362,6 +39998,14 @@ TECHNOLOGIES_DATA = {   'categories': {   '1': {'groups': [3], 'name': 'CMS', 'p
                                             'implies': ['PHP'],
                                             'meta': {'designer': ['vibecommerce'], 'generator': ['vibecommerce']},
                                             'website': 'https://vibecommerce.com.br'},
+                        'vinSUITE': {   'cats': [6],
+                                        'description': 'vinSUITE is a DTC software platform designed specifically for '
+                                                       'wineries, enabling streamlined management of customer '
+                                                       'relationships, inventory, sales, and marketing operations in '
+                                                       'one centralized system.',
+                                        'icon': 'vinSUITE.svg',
+                                        'meta': {'author': ['^vinsuite$']},
+                                        'website': 'https://vinsuite.com'},
                         'vxe-table': {   'cats': [59],
                                          'description': 'vxe-table is a Vue.js based PC form component, support add, '
                                                         'delete, change, virtual scroll, lazy load, shortcut menu, '
