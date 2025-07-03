@@ -15,10 +15,10 @@ import time
 @pytest.mark.asyncio
 async def test_analyze():
     wappalyzer = Wappalyzer()
-    webpage = await WebPage.new_from_url("https://ok.ru/")
+    webpage = await WebPage.new_from_url("https://wordpress.org/")
     result = await wappalyzer.analyze_full_info(webpage)
 
-    assert "PHP" in result
+    assert "React" in result
 
 
 @pytest.mark.asyncio
@@ -903,7 +903,7 @@ async def test_latest():
     analyzer = await Wappalyzer.latest()
 
     assert analyzer.categories["1"].name == "CMS"
-    assert "Apache" in analyzer.technologies
+    assert "Apache HTTP Server" in analyzer.technologies
 
 
 @pytest.mark.asyncio
