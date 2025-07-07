@@ -1,17 +1,15 @@
 """
 Implementation of WebPage based on selectolax.
-Optimized to prevent GIL blocking in multi-task environments.
 """
 
 from typing import Iterable, Iterator, Mapping
-import asyncio
 
 # Just to check if it's available
 import lxml  # type: ignore
 from selectolax.parser import HTMLParser, Node
 from cached_property import cached_property  # type: ignore
 
-from ._common import OptimizedBaseWebPage, BaseTag
+from ._common import BaseWebPage, BaseTag
 
 
 class Tag(BaseTag):
@@ -21,88 +19,45 @@ class Tag(BaseTag):
 
     @cached_property
     def inner_html(self) -> str:
-        try:
-            return self._node.html or ""
-        except Exception:
-            return ""
+        return self._node.html
 
 
-class WebPage(OptimizedBaseWebPage):
+class WebPage(BaseWebPage):
     """
-    Optimized WebPage implementation using selectolax.
+    Simple representation of a web page, decoupled
+    from any particular HTTP library's API.
 
-    HTML parsing is performed in thread pools to prevent GIL blocking
-    when used alongside other async tasks.
+    Well, except for the class methods that use `requests`
+    or `aiohttp` to create the WebPage.
 
-    This object is designed for high-throughput processing where multiple
-    webpages are analyzed concurrently.
+    This object is designed to be created for each website scanned
+    by python-Wappalyzer.
+    It will parse the HTML with selectolax to find <script> and <meta> tags.
+
+    You can create it from manually from HTML with the `WebPage()` method
+    or from the class methods.
     """
 
     def _parse_html(self):
         """
-        Parse the HTML with selectolax (runs in thread pool).
-        Includes robust error handling for malformed HTML.
+        Parse the HTML with selectolax to find <script> and <meta> tags.
         """
-        if not self.html:
-            self.scripts = []
-            self.meta = {}
-            self._parsed_html = None
-            return
+        self._parsed_html = parser = HTMLParser(self.html)
+        self.scripts.extend(
+            script.attributes["src"] for script in parser.css("script[src]")
+        )
+        self.meta = {
+            meta.attributes["name"].lower(): meta.attributes["content"]
+            for meta in parser.css("meta[name][content]")
+            if "name" in meta.attributes
+            and meta.attributes["name"] is not None
+            and "content" in meta.attributes
+        }
 
-        try:
-            self._parsed_html = parser = HTMLParser(self.html)
-
-            # Extract script sources with error handling
-            scripts = []
-            try:
-                script_elements = parser.css("script[src]")
-                for script in script_elements:
-                    if script and script.attributes and "src" in script.attributes:
-                        src = script.attributes["src"]
-                        if src and isinstance(src, str):
-                            scripts.append(src)
-            except Exception as e:
-                print(f"Warning: Failed to extract scripts: {e}")
-
-            self.scripts = scripts
-
-            # Extract meta tags with error handling
-            meta = {}
-            try:
-                meta_elements = parser.css("meta[name][content]")
-                for meta_el in meta_elements:
-                    if meta_el and meta_el.attributes:
-                        name = meta_el.attributes.get("name")
-                        content = meta_el.attributes.get("content")
-                        if (
-                            name
-                            and content
-                            and isinstance(name, str)
-                            and isinstance(content, str)
-                        ):
-                            meta[name.lower()] = content
-            except Exception as e:
-                print(f"Warning: Failed to extract meta tags: {e}")
-
-            self.meta = meta
-
-        except Exception as e:
-            print(f"Warning: HTML parsing failed completely: {e}")
-            self.scripts = []
-            self.meta = {}
-            self._parsed_html = None
-
-    def _select_sync(self, selector: str) -> Iterable[Tag]:
+    def select(self, selector: str) -> Iterable[Tag]:
         """Execute a CSS select and returns results as Tag objects."""
-        if not self._parsed_html:
-            return []
-
         try:
-            results = []
             for item in self._parsed_html.css(selector):
-                if item and item.tag and item.attributes is not None:
-                    results.append(Tag(item.tag, item.attributes, item))
-            return results
+                yield Tag(item.tag, item.attributes, item)
         except Exception as e:
-            print(f"Warning: CSS selector '{selector}' failed: {e}")
-            return []
+            return ()
