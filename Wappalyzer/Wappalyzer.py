@@ -1,5 +1,4 @@
 from typing import Callable, Dict, Iterable, List, Any, Mapping, Set, Union
-import json
 import regex as re
 import os
 import pathlib
@@ -8,6 +7,11 @@ import aiofiles
 
 from datetime import datetime, timedelta
 from typing import Optional
+
+try:
+    import orjson as json
+except ImportError:
+    import json
 
 from Wappalyzer.fingerprint import (
     Fingerprint,
@@ -368,7 +372,7 @@ class Wappalyzer:
                 version = pattern.version
                 # Check for a string to avoid enumerating the string
                 if isinstance(matches, str):
-                    matches = [(matches)]
+                    matches = [matches]
                 for index, match in enumerate(matches):
                     # Parse ternary operator
                     ternary = re.search(
