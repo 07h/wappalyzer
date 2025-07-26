@@ -8,10 +8,8 @@ import aiofiles
 from datetime import datetime, timedelta
 from typing import Optional
 
-try:
-    import orjson as json
-except ImportError:
-    import json
+import orjson as json
+
 
 from Wappalyzer.fingerprint import (
     Fingerprint,
@@ -106,8 +104,10 @@ class Wappalyzer:
         # library is available. Unsupported patterns fall back to re.
         # ------------------------------------------------------------------
 
-        self._hs_db = None
+        self._hs_db = None  # HTML patterns DB
+        self._hs_db_headers = None  # Headers patterns DB
         self._hs_id_to_pattern: Dict[int, Pattern] = {}
+        self._hs_header_id_to_pattern: Dict[int, Pattern] = {}
         if _HS_AVAILABLE:
             self._init_hyperscan_db()
 
@@ -240,51 +240,82 @@ class Wappalyzer:
     # ------------------------------------------------------------------
 
     def _init_hyperscan_db(self) -> None:
-        """Compile a Hyperscan database for all HTML pattern strings.
+        """Compile Hyperscan databases for HTML and header pattern strings.
 
-        Unsupported patterns (e.g. those with back-references) are skipped and
-        handled later with the normal regex engine.
+        Unsupported patterns (e.g. back-references) are skipped and handled via
+        fallback regex search.
         """
 
-        expressions: List[bytes] = []
-        ids: List[int] = []
-        flags: List[int] = []
+        # --------------------------------------------------------------
+        # HTML patterns
+        # --------------------------------------------------------------
 
-        next_id = 1
+        expressions_html: List[bytes] = []
+        ids_html: List[int] = []
+        flags_html: List[int] = []
+
+        next_id_html = 1
 
         for tech in self.technologies.values():
             for p in tech.html:
-                # Store default flag if pattern looks case-insensitive in JS; we
-                # always used re.I before, so use CASELESS.
                 try:
-                    expressions.append(p.string.encode("utf-8"))
-                    ids.append(next_id)
-                    flags.append(_hs.HS_FLAG_CASELESS | _hs.HS_FLAG_DOTALL)
-                    self._hs_id_to_pattern[next_id] = p
-                    # Attach hyperscan id to pattern for quick lookup later
-                    setattr(p, "_hs_id", next_id)
+                    expressions_html.append(p.string.encode("utf-8"))
+                    ids_html.append(next_id_html)
+                    flags_html.append(_hs.HS_FLAG_CASELESS | _hs.HS_FLAG_DOTALL)
+                    self._hs_id_to_pattern[next_id_html] = p
+                    setattr(p, "_hs_id", next_id_html)
                     setattr(p, "_hs_supported", True)
-                    next_id += 1
+                    next_id_html += 1
                 except Exception:
-                    # Pattern cannot be encoded or is otherwise invalid → mark as unsupported
                     setattr(p, "_hs_supported", False)
 
-        if not expressions:
-            # Nothing compiled (should not happen) – leave db as None
-            return
+        if expressions_html:
+            try:
+                db_html = _hs.Database()
+                db_html.compile(  # type: ignore[arg-type]
+                    expressions=expressions_html,
+                    ids=ids_html,
+                    flags=flags_html,
+                )
+                self._hs_db = db_html  # type: ignore[assignment]
+            except Exception:
+                self._hs_db = None
 
-        try:
-            db = _hs.Database()
-            db.compile(
-                expressions=expressions,
-                ids=ids,
-                flags=flags,
-                mode=_hs.HS_MODE_BLOCK,
-            )
-            self._hs_db = db
-        except Exception:
-            # If compilation fails (rare), fall back to regex entirely
-            self._hs_db = None
+        # --------------------------------------------------------------
+        # HEADER patterns
+        # --------------------------------------------------------------
+
+        expressions_hdr: List[bytes] = []
+        ids_hdr: List[int] = []
+        flags_hdr: List[int] = []
+
+        next_id_hdr = 1
+
+        for tech in self.technologies.values():
+            for patterns in tech.headers.values():
+                for p in patterns:
+                    try:
+                        expressions_hdr.append(p.string.encode("utf-8"))
+                        ids_hdr.append(next_id_hdr)
+                        flags_hdr.append(_hs.HS_FLAG_CASELESS | _hs.HS_FLAG_DOTALL)
+                        self._hs_header_id_to_pattern[next_id_hdr] = p
+                        setattr(p, "_hs_id_hdr", next_id_hdr)
+                        setattr(p, "_hs_header_supported", True)
+                        next_id_hdr += 1
+                    except Exception:
+                        setattr(p, "_hs_header_supported", False)
+
+        if expressions_hdr:
+            try:
+                db_hdr = _hs.Database()
+                db_hdr.compile(  # type: ignore[arg-type]
+                    expressions=expressions_hdr,
+                    ids=ids_hdr,
+                    flags=flags_hdr,
+                )
+                self._hs_db_headers = db_hdr  # type: ignore[assignment]
+            except Exception:
+                self._hs_db_headers = None
 
     def _hs_scan_html(self, html: str) -> Set[int]:
         """Return set of pattern ids matched in HTML using Hyperscan."""
@@ -306,11 +337,30 @@ class Wappalyzer:
             matched_ids.clear()
         return matched_ids
 
+    def _hs_scan_header(self, header_value: str) -> Set[int]:
+        """Return set of header pattern ids matched in given header value."""
+
+        if self._hs_db_headers is None:
+            return set()
+
+        matched_ids: Set[int] = set()
+
+        def _on_match(_id: int, _from: int, _to: int, _flags: int, _ctx):
+            matched_ids.add(_id)
+            return 0
+
+        try:
+            self._hs_db_headers.scan(header_value.encode("utf-8", "ignore"), match_event_handler=_on_match)
+        except Exception:
+            matched_ids.clear()
+        return matched_ids
+
     async def _has_technology(
         self,
         tech_fingerprint: Fingerprint,
         webpage: IWebPage,
         html_matched_ids: Set[int] | None = None,
+        header_cache: Dict[str, Set[int]] | None = None,
     ) -> bool:
         """
         Determine whether the web page matches the technology signature.
@@ -330,7 +380,34 @@ class Wappalyzer:
         for name, patterns in list(tech_fingerprint.headers.items()):
             if name in webpage.headers:
                 content = webpage.headers[name]
+
+                # Get hyperscan matches for this header value once
+                hs_ids: Set[int] | None = None
+                if _HS_AVAILABLE:
+                    if header_cache is not None and name in header_cache:
+                        hs_ids = header_cache[name]
+                    else:
+                        hs_ids = self._hs_scan_header(content)
+                        if header_cache is not None:
+                            header_cache[name] = hs_ids
+
                 for pattern in patterns:
+                    # Fast path via Hyperscan
+                    if _HS_AVAILABLE and getattr(pattern, "_hs_header_supported", False):
+                        if hs_ids is not None and getattr(pattern, "_hs_id_hdr", None) not in hs_ids:
+                            continue  # not matched
+                        self._set_detected_app(
+                            webpage.url,
+                            tech_fingerprint,
+                            "headers",
+                            pattern,
+                            value=content,
+                            key=name,
+                        )
+                        has_tech = True
+                        continue
+
+                    # Fallback regex search
                     if pattern.regex.search(content):
                         self._set_detected_app(
                             webpage.url,
@@ -606,8 +683,11 @@ class Wappalyzer:
         # Pre-scan HTML with Hyperscan – one pass for the whole page
         html_matched_ids: Set[int] = self._hs_scan_html(webpage.html) if _HS_AVAILABLE else set()
 
+        # cache for headers: header_name -> matched id set
+        header_cache: Dict[str, Set[int]] = {}
+
         for tech_name, technology in list(self.technologies.items()):
-            if await self._has_technology(technology, webpage, html_matched_ids):
+            if await self._has_technology(technology, webpage, html_matched_ids, header_cache):
                 detected_technologies.add(tech_name)
 
         detected_technologies.update(
