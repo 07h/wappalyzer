@@ -490,6 +490,46 @@ http2 = ["h2 (>=3,<5)"]
 socks = ["socksio (==1.*)"]
 
 [[package]]
+name = "hyperscan"
+version = "0.7.21"
+description = "Python bindings for Hyperscan."
+optional = false
+python-versions = "<4.0,>=3.9"
+files = [
+    {file = "hyperscan-0.7.21-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:ab36c969460052c18d5a3bf74267edcf281eb095246df5f05ab6068476a8b6f3"},
+    {file = "hyperscan-0.7.21-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:d4edaaee30216593c829a6e86e94c9afc3502557531cb08365e2284a7ca8fe96"},
+    {file = "hyperscan-0.7.21-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:428ade27b172ef15d15a03b35f72b1f0fe8f8a5021390d3500d27ee029a8ed41"},
+    {file = "hyperscan-0.7.21-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c3b03cf9b77247163304ec92b339ad14545183d588065084ac6adf59af50e406"},
+    {file = "hyperscan-0.7.21-cp310-cp310-musllinux_1_2_aarch64.whl", hash = "sha256:c4cc638ee767d0a06e2a72422c2ecfab2b3926693bd2349895a8ed0b184871f3"},
+    {file = "hyperscan-0.7.21-cp310-cp310-musllinux_1_2_x86_64.whl", hash = "sha256:c4e8e023405ec8970a2339b08f719c796d2eed91fa4ab5a77146dc9e5e51d94e"},
+    {file = "hyperscan-0.7.21-cp310-cp310-win_amd64.whl", hash = "sha256:c43f066817d9f431c14d725f5c5a4c97fffe13e23c780cf61417c8f8f1e365c9"},
+    {file = "hyperscan-0.7.21-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:e30556b27022fec1f7e3705906a16be0c9ed179f4ce83e9991500d9cdc012601"},
+    {file = "hyperscan-0.7.21-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:3096a06f02f162875c90e2ecee42f588923d3313f5889c538b426be13faf25b4"},
+    {file = "hyperscan-0.7.21-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:1a16b17c08dcaba7a95e8a7d1ee7ff5412bb2e261618b740e3b9db3611683ffb"},
+    {file = "hyperscan-0.7.21-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d7d349fd896f47564bc994c8f88103380ccad835e366e0edf69137e11f994a09"},
+    {file = "hyperscan-0.7.21-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:5524e23dc0d5163f459766cbee20a966ccc03e8d34af47b5d0103217baf4a1c5"},
+    {file = "hyperscan-0.7.21-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:eff16bd0345a3c9f4064a29273afc93edc4f99f40a0beb1df343b32cb8cf3c32"},
+    {file = "hyperscan-0.7.21-cp311-cp311-win_amd64.whl", hash = "sha256:9b9cb8272b184c467bbc030aeaabbdec20aa5a35e12c845788b65afcc13a98cf"},
+    {file = "hyperscan-0.7.21-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:bf5a81f300cb1f4e05f0955a088c67611fc912b82a3efbadd3ab175499a936d6"},
+    {file = "hyperscan-0.7.21-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:b754b482128cc6f60642e52680209973e213326300bb60be268a998db7f1d237"},
+    {file = "hyperscan-0.7.21-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8c9a657e29032aa75a70230465d35fa285649aee47432968484a276a21b180f2"},
+    {file = "hyperscan-0.7.21-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:723e9c5c6703de9724e4ce5054e66822a58862e839a5eae38471af384ae806f3"},
+    {file = "hyperscan-0.7.21-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:cb08dbef63b2de1c253328351bbebe5cb494b62e5737ae99b21b61279acfbcb6"},
+    {file = "hyperscan-0.7.21-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:546d804053ffc91e2d4a8fbbd143e5f9c1419d7dc70e3cbd46075d212b9be061"},
+    {file = "hyperscan-0.7.21-cp312-cp312-win_amd64.whl", hash = "sha256:8c58a1e24ada1175dc39895080a1d01f3e2c42f2a88ea3b34035ab71aa60b2a8"},
+    {file = "hyperscan-0.7.21-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:ed8210f10211373152215f6514c764be2e11599ce82ed7932eb53fa1458bfe07"},
+    {file = "hyperscan-0.7.21-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:ba0aa2f72dc2825bd146b4d2ff733d55a3012d88496fd958a3b18e973ced19eb"},
+    {file = "hyperscan-0.7.21-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:580b6f410575e32a165c5ea17651929e44b452d2962180cd9a445e6306462492"},
+    {file = "hyperscan-0.7.21-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ec9737bd766183c3328e96dc93128fce1da25e8abd3319c9fb88cebc9eb112bb"},
+    {file = "hyperscan-0.7.21-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:905f03dbaed3be46c607a5e343d5b8595c5ca8c7770153f8e8904478dad3704b"},
+    {file = "hyperscan-0.7.21-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:92cdb18ad3c47db62b44b90f3d89dd86902bcee44e6a6e77873c2164708483e9"},
+    {file = "hyperscan-0.7.21-cp313-cp313-win_amd64.whl", hash = "sha256:569be669fb6a7ee886778caab6f706a3b50282ac55b501069c6a7cabab2b8132"},
+    {file = "hyperscan-0.7.21-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:46a4e8bbbb1cc00113b2a7b12041f28e4adc899a0633df31898fb48abb6639a8"},
+    {file = "hyperscan-0.7.21-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ee494395ef4feac60d6d6637970ae63eed9e2f5316468a205a0683296e0e3c03"},
+    {file = "hyperscan-0.7.21.tar.gz", hash = "sha256:40248994e8da523da612d18445fefa9f159de59209ea9a530f35a2abcaa28f8d"},
+]
+
+[[package]]
 name = "idna"
 version = "3.10"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -1395,4 +1435,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.12"
-content-hash = "bf619030c92a46172ef6ad14acd76bf93790a95d4131fa34601639a92cdbdc4a"
+content-hash = "ddf0eccc4510797e27b81d00ff1019f967632bec9e11274b60c8a14ec072fbd4"

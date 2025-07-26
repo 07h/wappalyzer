@@ -17,6 +17,7 @@ python = ">=3.9,<3.12"
 regex = "^2024.11.6"
 selectolax = "^0.3.27"
 orjson = "^3.10.18"
+hyperscan = "^0.7.21"
 
 [tool.poetry.dev-dependencies]
 black = "^23.7.0"

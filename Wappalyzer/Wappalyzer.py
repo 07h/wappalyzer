@@ -22,6 +22,15 @@ from Wappalyzer.fingerprint import (
 )
 from Wappalyzer.webpage import WebPage, IWebPage
 
+# Try to import hyperscan for high-performance HTML pattern matching
+try:
+    import hyperscan as _hs  # type: ignore
+
+    _HS_AVAILABLE = True
+except ImportError:  # pragma: no cover
+    _hs = None  # type: ignore
+    _HS_AVAILABLE = False
+
 
 class WappalyzerError(Exception):
     # unused for now
@@ -91,6 +100,16 @@ class Wappalyzer:
         self.detected_technologies: Dict[str, Dict[str, Technology]] = {}
 
         self._confidence_regexp = re.compile(r"(.+)\\;confidence:(\d+)")
+
+        # ------------------------------------------------------------------
+        # Hyperscan: build one shared database for all HTML patterns, if the
+        # library is available. Unsupported patterns fall back to re.
+        # ------------------------------------------------------------------
+
+        self._hs_db = None
+        self._hs_id_to_pattern: Dict[int, Pattern] = {}
+        if _HS_AVAILABLE:
+            self._init_hyperscan_db()
 
     @classmethod
     async def latest(
@@ -216,8 +235,82 @@ class Wappalyzer:
             existent_files.append(potential_paths[0])
         return existent_files
 
+    # ------------------------------------------------------------------
+    # Hyperscan helper methods
+    # ------------------------------------------------------------------
+
+    def _init_hyperscan_db(self) -> None:
+        """Compile a Hyperscan database for all HTML pattern strings.
+
+        Unsupported patterns (e.g. those with back-references) are skipped and
+        handled later with the normal regex engine.
+        """
+
+        expressions: List[bytes] = []
+        ids: List[int] = []
+        flags: List[int] = []
+
+        next_id = 1
+
+        for tech in self.technologies.values():
+            for p in tech.html:
+                # Store default flag if pattern looks case-insensitive in JS; we
+                # always used re.I before, so use CASELESS.
+                try:
+                    expressions.append(p.string.encode("utf-8"))
+                    ids.append(next_id)
+                    flags.append(_hs.HS_FLAG_CASELESS | _hs.HS_FLAG_DOTALL)
+                    self._hs_id_to_pattern[next_id] = p
+                    # Attach hyperscan id to pattern for quick lookup later
+                    setattr(p, "_hs_id", next_id)
+                    setattr(p, "_hs_supported", True)
+                    next_id += 1
+                except Exception:
+                    # Pattern cannot be encoded or is otherwise invalid → mark as unsupported
+                    setattr(p, "_hs_supported", False)
+
+        if not expressions:
+            # Nothing compiled (should not happen) – leave db as None
+            return
+
+        try:
+            db = _hs.Database()
+            db.compile(
+                expressions=expressions,
+                ids=ids,
+                flags=flags,
+                mode=_hs.HS_MODE_BLOCK,
+            )
+            self._hs_db = db
+        except Exception:
+            # If compilation fails (rare), fall back to regex entirely
+            self._hs_db = None
+
+    def _hs_scan_html(self, html: str) -> Set[int]:
+        """Return set of pattern ids matched in HTML using Hyperscan."""
+
+        if self._hs_db is None:
+            return set()
+
+        matched_ids: Set[int] = set()
+
+        def _on_match(_id: int, _from: int, _to: int, _flags: int, _ctx):  # noqa: N803
+            matched_ids.add(_id)
+            # continue scanning
+            return 0
+
+        try:
+            self._hs_db.scan(html.encode("utf-8", "ignore"), match_event_handler=_on_match)
+        except Exception:
+            # If scan fails for some reason, return empty set so we fall back to regex
+            matched_ids.clear()
+        return matched_ids
+
     async def _has_technology(
-        self, tech_fingerprint: Fingerprint, webpage: IWebPage
+        self,
+        tech_fingerprint: Fingerprint,
+        webpage: IWebPage,
+        html_matched_ids: Set[int] | None = None,
     ) -> bool:
         """
         Determine whether the web page matches the technology signature.
@@ -280,6 +373,23 @@ class Wappalyzer:
         # analyze html patterns
         html_content = webpage.html
         for pattern in tech_fingerprint.html:
+            # Hyperscan fast-path
+            if _HS_AVAILABLE and getattr(pattern, "_hs_supported", False):
+                if html_matched_ids is not None and getattr(pattern, "_hs_id", None) not in html_matched_ids:
+                    # pattern not matched – skip heavy regex search
+                    continue
+                # pattern matched via HS
+                self._set_detected_app(
+                    webpage.url,
+                    tech_fingerprint,
+                    "html",
+                    pattern,
+                    value=html_content,
+                )
+                has_tech = True
+                continue  # no need regex search
+
+            # Fallback: traditional regex search
             if pattern.regex.search(html_content):
                 self._set_detected_app(
                     webpage.url, tech_fingerprint, "html", pattern, value=html_content
@@ -493,8 +603,11 @@ class Wappalyzer:
         """
         detected_technologies = set()
 
+        # Pre-scan HTML with Hyperscan – one pass for the whole page
+        html_matched_ids: Set[int] = self._hs_scan_html(webpage.html) if _HS_AVAILABLE else set()
+
         for tech_name, technology in list(self.technologies.items()):
-            if await self._has_technology(technology, webpage):
+            if await self._has_technology(technology, webpage, html_matched_ids):
                 detected_technologies.add(tech_name)
 
         detected_technologies.update(
