@@ -3,7 +3,6 @@ import json
 
 from pathlib import Path
 
-import respx
 import httpx
 import aiofiles
 
@@ -890,12 +889,9 @@ playback timings (ms):
 
 @pytest.mark.asyncio
 async def test_new_from_url():
-    with respx.mock(base_url="https://www.delish.com") as respx_mock:
-        respx_mock.get("/").mock(return_value=httpx.Response(200, text="snerble"))
+    webpage = await WebPage.new_from_url("https://www.delish.com/")
 
-        webpage = await WebPage.new_from_url("https://www.delish.com/")
-
-        assert webpage.html == "snerble"
+    assert webpage.html == "snerble"
 
 
 @pytest.mark.asyncio
