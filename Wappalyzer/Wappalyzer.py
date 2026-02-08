@@ -1,4 +1,5 @@
 from typing import Callable, Dict, Iterable, List, Any, Mapping, Set, Union
+import asyncio
 import regex as re
 import os
 import pathlib
@@ -355,7 +356,7 @@ class Wappalyzer:
             matched_ids.clear()
         return matched_ids
 
-    async def _has_technology(
+    def _has_technology_sync(
         self,
         tech_fingerprint: Fingerprint,
         webpage: IWebPage,
@@ -363,9 +364,9 @@ class Wappalyzer:
         header_cache: Dict[str, Set[int]] | None = None,
     ) -> bool:
         """
-        Determine whether the web page matches the technology signature.
+        Synchronous implementation: determine whether the web page matches
+        the technology signature. Run via asyncio.to_thread to avoid blocking.
         """
-
         has_tech = False
         # Search the easiest things first and save the full-text search of the
         # HTML for last
@@ -524,6 +525,25 @@ class Wappalyzer:
                                         has_tech = True
         return has_tech
 
+    async def _has_technology(
+        self,
+        tech_fingerprint: Fingerprint,
+        webpage: IWebPage,
+        html_matched_ids: Set[int] | None = None,
+        header_cache: Dict[str, Set[int]] | None = None,
+    ) -> bool:
+        """
+        Determine whether the web page matches the technology signature.
+        Runs _has_technology_sync in a thread pool to avoid blocking the event loop.
+        """
+        return await asyncio.to_thread(
+            self._has_technology_sync,
+            tech_fingerprint,
+            webpage,
+            html_matched_ids,
+            header_cache,
+        )
+
     def _set_detected_app(
         self,
         url: str,
@@ -680,8 +700,13 @@ class Wappalyzer:
         """
         detected_technologies = set()
 
-        # Pre-scan HTML with Hyperscan – one pass for the whole page
-        html_matched_ids: Set[int] = self._hs_scan_html(webpage.html) if _HS_AVAILABLE else set()
+        # Pre-scan HTML with Hyperscan – one pass for the whole page (run in thread to avoid blocking event loop)
+        if _HS_AVAILABLE:
+            html_matched_ids: Set[int] = await asyncio.to_thread(
+                self._hs_scan_html, webpage.html
+            )
+        else:
+            html_matched_ids = set()
 
         # cache for headers: header_name -> matched id set
         header_cache: Dict[str, Set[int]] = {}
@@ -690,9 +715,10 @@ class Wappalyzer:
             if await self._has_technology(technology, webpage, html_matched_ids, header_cache):
                 detected_technologies.add(tech_name)
 
-        detected_technologies.update(
-            self._get_implied_technologies(detected_technologies)
+        implied = await asyncio.to_thread(
+            self._get_implied_technologies, detected_technologies
         )
+        detected_technologies.update(implied)
 
         return detected_technologies
 
