@@ -19,10 +19,8 @@ python = ">=3.9"
 regex = "^2024.11.6"
 selectolax = "^0.3.27"
 
-[tool.poetry.dev-dependencies]
-black = "^23.7.0"
-
 [tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
 respx = "^0.21.1"
 
 [build-system]
